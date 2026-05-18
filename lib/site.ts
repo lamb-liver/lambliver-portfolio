@@ -19,11 +19,11 @@ export const site: SiteConfig = {
   name: "羊肝",
   nameEn: "lambliver",
   role: "Frontend & Android Engineer",
-  bio: "習慣從需求出發，把東西做出來。",
+  bio: "從需求出發，把東西做出來。",
   about: [
     "數學系背景，前端 / Android 工程師。",
     "主要技術棧為 React/Next.js 與 Kotlin。",
-    "習慣在動手前先把問題想清楚——將複雜需求拆解為可交付的核心功能，再逐步迭代。",
+    "在動手前先把問題想清楚——將複雜需求拆解為可交付的核心功能，再逐步迭代。",
   ],
   email: "lambliver.dev@gmail.com",
   domain: "lambliver.dev",

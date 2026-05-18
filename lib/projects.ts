@@ -67,7 +67,9 @@ export const projects: Project[] = [
     ],
     content:
       "擺攤／活動販售用的 Android 結帳工具，Jetpack Compose 建置 UI，支援商品管理、折扣規則、銷售統計與 CSV 匯出。",
-    links: {},
+    links: { github: "https://github.com/lamb-liver/appforsale",
+
+    },
   },
 ];
 
