@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+@source "../components/**/*.{ts,tsx}";
+@source "../app/**/*.{ts,tsx}";
+@source "../lib/**/*.{ts,tsx}";
+
+@theme {
+  --color-accent: #c0ff6b;
+  --color-muted: #656565;
+  --color-border-d: #656565;
+  --color-border-l: #656565;
+  --color-canvas: #ffffff;
+  --color-surface: #ffffff;
+  --color-foreground: #000000;
+  --color-border: #656565;
+  --font-sans: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", ui-sans-serif,
+    system-ui, sans-serif;
+  --font-mono: var(--font-fira-code), "Fira Code", ui-monospace, monospace;
+}
+
+.dark {
+  --color-canvas: #000000;
+  --color-surface: #0a0a0a;
+  --color-foreground: #d5d5d5;
+  --color-muted: #9a9a9a;
+  --color-border: #707070;
+  --color-border-l: #707070;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-muted) transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--color-muted);
+}
+
+.dark:hover {
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+.dark:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+}
+
+/* ── 按鈕 ── */
+
+@utility btn-primary {
+  @apply inline-flex items-center border px-4 py-2 font-mono text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+}
+
+html:not(.dark) .btn-primary {
+  border-color: var(--color-border);
+  background-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  color: var(--color-foreground);
+}
+
+html:not(.dark) .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+}
+
+.dark .btn-primary {
+  border-color: var(--color-foreground);
+  background-color: var(--color-accent);
+  color: #000000;
+}
+
+.dark .btn-primary:hover {
+  opacity: 0.9;
+}
+
+@utility btn-secondary {
+  @apply inline-flex items-center border border-border bg-surface px-4 py-2 font-mono text-sm text-muted transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+}
+
+html:not(.dark) .btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+.dark .btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  color: var(--color-foreground);
+}
+
+/* ── 連結 hover 底 ── */
+
+@utility link-interactive {
+  @apply transition-colors;
+}
+
+html:not(.dark) .link-interactive:hover {
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+.dark .link-interactive:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  color: var(--color-foreground);
+}
+
+/* ── Demo 連結（文字色，非色塊） ── */
+
+@utility demo-link {
+  @apply inline-flex items-center gap-1.5 font-mono text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+}
+
+html:not(.dark) .demo-link:hover,
+html:not(.dark) .group:hover .demo-link {
+  color: var(--color-accent);
+}
+
+.dark .demo-link:hover,
+.dark .group:hover .demo-link {
+  color: color-mix(in srgb, var(--color-accent) 85%, var(--color-foreground));
+}
+
+/* ── 主題切換 ── */
+
+@utility theme-toggle-btn {
+  @apply h-9 w-9 rounded-sm border border-border bg-surface text-muted transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+}
+
+html:not(.dark) .theme-toggle-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+.dark .theme-toggle-btn:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  color: var(--color-foreground);
+}
+
+/* ── 技能標籤 ── */
+
+@utility skill-chip {
+  @apply rounded-sm border border-muted/35 px-3 py-1 font-mono text-sm text-foreground transition-colors;
+}
+
+html:not(.dark) .skill-chip:hover {
+  border-color: var(--color-foreground);
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+.dark .skill-chip:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  color: var(--color-foreground);
+}
+
+/* ── 專案卡片 ── */
+
+@utility project-card {
+  @apply border border-border bg-surface transition-colors;
+}
+
+html:not(.dark) .project-card:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+}
+
+.dark .project-card:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+/* ── Placeholder 左側豎線 ── */
+
+@utility project-placeholder {
+  @apply grid place-items-center border border-border border-l-[3px] bg-surface leading-none text-muted;
+}
+
+html:not(.dark) .project-placeholder {
+  border-left-color: var(--color-foreground);
+}
+
+html:not(.dark) .group:hover .project-placeholder {
+  border-left-color: var(--color-accent);
+}
+
+.dark .project-placeholder {
+  border-left-color: var(--color-accent);
+}
+
+/* ── 其他 ── */
+
+@utility placeholder-grid {
+  background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-muted) 14%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-muted) 14%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 1rem 1rem;
+}
+
+@utility enter-fade-up {
+  @apply opacity-100 translate-y-0 transition-all duration-300 ease-out;
+  @apply starting:opacity-0 starting:translate-y-2;
+  @apply motion-reduce:transition-none motion-reduce:starting:translate-y-0;
+}
+
+@utility enter-fade-up-delay-75 {
+  @apply enter-fade-up delay-75;
+}
+
+@utility enter-fade-up-delay-150 {
+  @apply enter-fade-up delay-150;
+}
+
+@utility enter-fade-up-delay-200 {
+  @apply enter-fade-up delay-200;
+}
+
+@utility enter-fade-up-card-0 {
+  @apply opacity-100 translate-y-0 transition-all duration-300 ease-out;
+  @apply starting:opacity-0 starting:translate-y-4;
+  @apply motion-reduce:transition-none motion-reduce:starting:translate-y-0;
+}
+
+@utility enter-fade-up-card-1 {
+  @apply enter-fade-up-card-0 delay-100;
+}
+
+@utility enter-fade-up-card-2 {
+  @apply enter-fade-up-card-0 delay-200;
+}
+
+@utility anchor-target {
+  scroll-margin-top: 5rem;
+}

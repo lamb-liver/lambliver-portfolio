@@ -1,0 +1,80 @@
+export interface Project {
+  slug: string;
+  name: string;
+  description: string;
+  tags: string[];
+  coverImage?: string;
+  links?: {
+    github?: string;
+    demo?: string;
+  };
+  featured?: boolean;
+  platform?: string;
+  highlights?: string[];
+  content?: string;
+  status?: "in-progress";
+  monogram: string;
+}
+
+export const projects: Project[] = [
+  {
+    slug: "card-deck-builder",
+    monogram: "卡",
+    name: "控訴-查卡＆組牌＆QA",
+    description: "給真實玩家使用的組牌器，社群已有活躍用戶",
+    platform: "Web／React／Cloudflare Pages",
+    tags: ["React", "TypeScript", "全文搜尋", "JSON Export"],
+    highlights: [
+      "針對手機單手操作設計 UI",
+      "防抖搜尋優化",
+      "構築規則驗證邏輯",
+    ],
+    content:
+      "控訴卡牌查詢組牌工具。為桌遊《控訴》社群打造的查詢與組牌工具。支援卡名／效果全文搜尋、多條件篩選、構築規則驗證、牌組儲存與載入、匯出 JSON 備份及牌組圖片，針對手機單手操作情境設計 UI。已有社群玩家實際使用。",
+    featured: true,
+    links: {
+      github: "https://github.com/lamb-liver/accusation-card-tool",
+      demo: "https://accusation-card-tool.pages.dev/",
+    },
+  },
+  {
+    slug: "illustrator-portfolio",
+    monogram: "繪",
+    name: "繪師個人作品集網站",
+    description: "為客戶打造可自主更新的 SEO 友好展示站",
+    platform: "Web／Next.js／Vercel",
+    tags: ["Next.js", "Headless CMS", "Vercel", "SSG/SSR"],
+    highlights: [
+      "Lighthouse 4 項 90+",
+      "客戶可零技術自行更新作品",
+    ],
+    content:
+      "為繪師打造的作品集網站，整合 CMS 後台讓客戶自主管理內容，以 Next.js 建置兼顧 SEO。",
+    links: {},
+  },
+  {
+    slug: "offline-pos-android",
+    monogram: "攤",
+    name: "小攤位離線結帳 App",
+    description: "攤主的隨身收銀機，無網路照常運作",
+    platform: "Android／Jetpack Compose／持續開發中",
+    status: "in-progress",
+    tags: ["Kotlin", "Jetpack Compose", "Room Database", "MVVM"],
+    highlights: [
+      "離線優先架構",
+      "CSV 報表背景執行緒生成",
+      "MVP 持續開發中",
+    ],
+    content:
+      "擺攤／活動販售用的 Android 結帳工具，Jetpack Compose 建置 UI，支援商品管理、折扣規則、銷售統計與 CSV 匯出。",
+    links: {},
+  },
+];
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find((p) => p.slug === slug);
+}
+
+export function getAllProjectSlugs(): string[] {
+  return projects.map((p) => p.slug);
+}

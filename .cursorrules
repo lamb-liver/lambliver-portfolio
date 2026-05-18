@@ -1,0 +1,366 @@
+# lambliver-portfolio — Cursor Rules
+# Author: 羊肝 / lambliver
+# Domain: lambliver.dev
+# Stack: Next.js 15 (App Router) · TypeScript Strict · Tailwind CSS v4 · next-themes
+
+# ──────────────────────────────────────────────
+# 0. GOLDEN RULES（違反即重寫）
+# ──────────────────────────────────────────────
+
+- 這是一個極簡主義作品集，不是 SaaS 產品。不需要 toast、modal、drawer 等複雜 UI。
+
+
+- 所有設計決策必須基於「是否有助於展示作者」，而非技術炫技。
+- 禁止使用任何 UI library（MUI、Chakra、shadcn/ui 等）。純 Tailwind + 原生 HTML。
+- 禁止 `shadow-*`（box-shadow）。用 border + 間距替代層次感。
+- 禁止 gradient（除非明確標注為裝飾用且面積極小）。
+- 禁止在 globals.css 以外宣告 CSS 自訂變數或 @theme token。
+- 所有顏色、字體 token 只能從下方設計系統章節取用，禁止硬編碼 hex。
+
+# ──────────────────────────────────────────────
+# 1. 專案基本資訊
+# ──────────────────────────────────────────────
+
+Project:   lambliver-portfolio
+Author:    羊肝 / lambliver（Frontend & Android Engineer）
+Domain:    lambliver.dev
+Language:  zh-TW（所有 UI 文字、aria-label、placeholder 使用繁體中文）
+Theme:     Minimalist · Product-Minded · Developer Portfolio
+
+# ──────────────────────────────────────────────
+# 2. Tech Stack
+# ──────────────────────────────────────────────
+
+- Next.js 15 with App Router（禁止使用 Pages Router）
+- TypeScript Strict Mode（tsconfig strict: true，禁止 any，禁止 ts-ignore）
+- Tailwind CSS v4（用 @theme directive，禁止 tailwind.config.ts）
+- next-themes（class strategy，class="dark" 掛在 <html>）
+- 資料來源：lib/site.ts（個人資訊）、lib/projects.ts（專案列表）
+- 不使用資料庫、CMS、或任何外部 API（靜態資料即可）
+
+# ──────────────────────────────────────────────
+# 3. 設計系統（Design System）
+# ──────────────────────────────────────────────
+
+## 3.1 色彩系統（4色 + white，嚴格遵守用途）
+
+所有顏色透過 CSS 變數取用，在 app/globals.css 的 @theme 宣告：
+
+```css
+@theme {
+  --color-accent:   #c0ff6b;
+  --color-muted:    #656565;
+  --color-border-d: #656565;   /* dark mode border */
+  --color-border-l: #d5d5d5;   /* light mode border */
+}
+```
+
+| Token           | Hex       | 使用場景                                              | 禁止場景                        |
+|-----------------|-----------|-------------------------------------------------------|--------------------------------|
+| accent          | #c0ff6b   | hover 狀態、active link、focus ring、小型強調 bar      | 大面積背景、文字顏色、圖示填充   |
+| muted           | #656565   | 副標題、次要資訊、footer、disabled 文字                | primary text、heading           |
+| dark bg (page)  | #000000   | dark mode 最外層 page background                      | content area                   |
+| dark bg (content)| #0a0a0a~#111111 | dark mode content area background               | 不要用純黑                      |
+| dark text       | #d5d5d5   | dark mode primary text                                | —                              |
+| dark border     | #656565   | dark mode border（或 #d5d5d5 低透明度）                | —                              |
+| light bg (page) | #d5d5d5   | light mode 最外層 outer canvas                        | content area                   |
+| light bg (content)| #ffffff / #fafafa | light mode content area                    | —                              |
+| light text      | #000000   | light mode primary text                               | —                              |
+| light border    | #d5d5d5   | light mode border                                     | —                              |
+
+## 3.2 字體系統
+
+```css
+@theme {
+  --font-sans: 'Noto Sans TC', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+```
+
+| 變數       | 字體         | 使用場景                                                                 |
+|------------|--------------|--------------------------------------------------------------------------|
+| --font-sans | Noto Sans TC | body text、about section、taglines、project descriptions、footer          |
+| --font-mono | Fira Code    | Logo（羊肝）、H1/H2 標題、section title、技術 chip、slug、按鈕文字        |
+
+**判斷規則**：是「資訊說明」→ sans；是「識別元素 / 技術元素」→ mono。
+
+## 3.3 互動狀態
+
+- hover 顏色：`text-[#c0ff6b]` 或 `bg-[#c0ff6b]/10`（背景用低透明度）
+- focus-visible ring：`outline-2 outline-[#c0ff6b] outline-offset-2`
+- 禁止用 accent 作為靜態（non-interactive）元素的顏色
+- disabled：`text-[#656565] cursor-not-allowed opacity-60`
+
+## 3.4 間距 & 排版節奏
+
+- 頁面最大寬度：`max-w-3xl`（768px）或 `max-w-2xl`（672px），置中
+- section 間距：`py-16` 或 `py-24`
+- 內文行高：`leading-relaxed`（1.625）
+- anchor 目標需加 `scroll-margin-top: 80px`（header 高度），避免被遮擋
+
+# ──────────────────────────────────────────────
+# 4. 架構 & 路由
+# ──────────────────────────────────────────────
+
+## 4.1 目錄結構
+
+```
+app/
+  layout.tsx              # RootLayout：HTML lang、ThemeProvider、font vars
+  page.tsx                # 首頁（含 Hero、About、Projects、Contact）
+  globals.css             # 所有 @theme token、base styles
+  opengraph-image.tsx     # 首頁 OG image（next/og）
+  projects/
+    [slug]/
+      page.tsx            # 專案詳情（RSC）
+      opengraph-image.tsx # 動態 OG image
+components/
+  ThemeToggle.tsx         # 'use client'（唯一必須的 client component）
+  Nav.tsx                 # RSC（無互動）
+  Hero.tsx                # RSC
+  ProjectCard.tsx         # RSC
+  ProjectImagePlaceholder.tsx # RSC（無圖片時的佔位）
+  SkillChip.tsx           # RSC
+lib/
+  site.ts                 # 個人資訊、skills、social links
+  projects.ts             # 專案陣列
+```
+
+## 4.2 RSC vs Client 判斷準則
+
+**使用 RSC（預設）**：
+- 純展示元件（不需要事件監聽）
+- 讀取 lib/ 資料
+- SEO-critical 內容
+
+**使用 'use client'（最小化）**：
+- 需要 useState / useEffect / useRef
+- 需要瀏覽器 API（window、localStorage）
+- 需要事件處理（onClick 以外的互動邏輯）
+- ThemeToggle 是唯一確定需要 client 的元件
+
+**禁止**：在 RSC 內 import client-only library；在 client component 使用 async/await 頂層資料 fetch。
+
+## 4.3 路由規範
+
+- 首頁為 single-page，section 用 anchor（`/#about`、`/#projects`、`/#contact`）
+- 專案詳情：`/projects/[slug]`（動態路由，`generateStaticParams` 預先生成）
+- 禁止建立多餘的 route（如 `/blog`、`/resume`），除非明確需求
+
+# ──────────────────────────────────────────────
+# 5. 元件邏輯規範
+# ──────────────────────────────────────────────
+
+## 5.1 ProjectCard 連結邏輯
+
+```tsx
+// GitHub 連結
+if (project.links?.github) {
+  // 渲染 <a href={project.links.github}>GitHub</a>
+} else {
+  // 渲染 <span className="text-[#656565] cursor-not-allowed">GitHub（即將公開）</span>
+  // 禁止渲染 <a> 標籤
+}
+
+// Demo 連結
+if (project.links?.demo) {
+  // 渲染 <a href={project.links.demo}>Demo</a>
+} else {
+  // 完全不渲染 Demo 按鈕（不渲染任何替代元素）
+}
+```
+
+## 5.2 ProjectImagePlaceholder（無封面圖時）
+
+- 使用專案 name 或 slug 的首字大寫作為中央字母
+- 外框：`border border-[#d5d5d5]`
+- 左側強調 bar：`border-l-4 border-l-[#c0ff6b]`
+- 背景：`bg-[#0a0a0a] dark:bg-[#0a0a0a]` / `bg-[#fafafa]`
+- 字體：`font-mono text-4xl text-[#656565]`
+- 禁止使用隨機顏色或 gradient
+
+## 5.3 SkillChip
+
+- 字體：`font-mono text-sm`
+- 樣式：`border border-[#d5d5d5] px-3 py-1`
+- hover：`border-[#c0ff6b] text-[#c0ff6b]`
+- 不要用 badge / pill 圓角，用 `rounded-none` 或最多 `rounded-sm`
+
+## 5.4 Nav
+
+- Logo「羊肝」：`font-mono`，hover 加 accent 顏色
+- 連結 active state：底線用 `border-b-2 border-[#c0ff6b]`
+- ThemeToggle 放在最右側
+- 固定於頂部：`sticky top-0 z-50`，背景 `backdrop-blur-sm`（唯一允許的視覺效果）
+
+# ──────────────────────────────────────────────
+# 6. Tailwind v4 使用規範
+# ──────────────────────────────────────────────
+
+- 所有自訂 token 在 `app/globals.css` 的 `@theme {}` 宣告，禁止建立 `tailwind.config.ts`
+- 使用 `@starting-style` 實現元素進入動畫（Tailwind v4 原生支援）
+- 顏色 token 可直接用 `bg-accent`、`text-muted` 等 class（對應 --color-accent）
+- 使用 `text-[#c0ff6b]` 語法時，僅用於 hover/focus 等非 token 場景的單次覆蓋
+- 禁止在 component 內寫 inline style，除非是動態值（如 `style={{ width: `${progress}%` }}`）
+
+## 6.1 Dark Mode
+
+- 策略：class-based（`<html class="dark">`）
+- Tailwind：`dark:` variant
+- 禁止使用 `prefers-color-scheme` media query（因為用 next-themes class 控制）
+- 每個有背景色/文字色的元素都必須有對應的 `dark:` 版本
+
+## 6.2 動畫規範
+
+```css
+/* 使用 @starting-style 實現淡入 */
+@keyframes fade-in {
+  from { opacity: 0; translate: 0 8px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+
+.animate-enter {
+  animation: fade-in 0.3s ease forwards;
+}
+```
+
+- 動畫時長：0.2s ~ 0.4s（禁止超過 0.5s）
+- 緩動函數：`ease` 或 `ease-out`（禁止 `linear`、`bounce`）
+- 禁止 JavaScript-driven animation（framer-motion 等）
+
+# ──────────────────────────────────────────────
+# 7. SEO & Metadata
+# ──────────────────────────────────────────────
+
+## 7.1 Metadata API
+
+```tsx
+// app/layout.tsx（base metadata）
+export const metadata: Metadata = {
+  metadataBase: new URL('https://lambliver.dev'),
+  title: { default: '羊肝 · lambliver', template: '%s · lambliver' },
+  description: 'Frontend & Android Engineer 的作品集',
+  openGraph: { ... },
+  twitter: { card: 'summary_large_image', ... },
+}
+
+// app/projects/[slug]/page.tsx（動態 metadata）
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const project = getProjectBySlug(params.slug)
+  return {
+    title: project.name,
+    description: project.description,
+  }
+}
+```
+
+## 7.2 OG Image
+
+- 首頁：`app/opengraph-image.tsx`（使用 next/og ImageResponse）
+- 專案頁：`app/projects/[slug]/opengraph-image.tsx`
+- 尺寸：1200 × 630
+- 樣式：黑底、Fira Code 字體、accent 顏色強調、無圖片（純文字排版）
+
+## 7.3 generateStaticParams
+
+```tsx
+// app/projects/[slug]/page.tsx
+export async function generateStaticParams() {
+  return projects.map(p => ({ slug: p.slug }))
+}
+```
+
+# ──────────────────────────────────────────────
+# 8. 語意 HTML & a11y
+# ──────────────────────────────────────────────
+
+- 頁面結構：`<header>` → `<main>` → `<footer>`
+- Section 用 `<section>` + `aria-label` 或 `aria-labelledby`
+- 專案列表用 `<ul>` + `<li>`（禁止用 `<div>` 純列表）
+- 所有互動元素須可鍵盤操作（Tab 導航、Enter/Space 觸發）
+- 圖片必須有 `alt`，裝飾圖用 `alt=""`
+- 色彩對比：確保文字與背景的 WCAG AA 對比度（4.5:1 以上）
+- `<a>` 標籤需有清楚的 accessible name（禁止用「點此」、「more」）
+
+# ──────────────────────────────────────────────
+# 9. TypeScript 規範
+# ──────────────────────────────────────────────
+
+- strict: true（包含 strictNullChecks、noImplicitAny）
+- 禁止 `any`，使用 `unknown` + type narrowing
+- 禁止 `// @ts-ignore` 和 `// @ts-nocheck`
+- 所有 props 必須定義 interface 或 type
+- lib/projects.ts 的 Project type：
+
+```ts
+export interface Project {
+  slug: string
+  name: string
+  description: string
+  tags: string[]
+  coverImage?: string          // 選填，無圖時用 Placeholder
+  links?: {
+    github?: string            // 選填
+    demo?: string              // 選填
+  }
+  featured?: boolean
+}
+```
+
+- lib/site.ts 的 SiteConfig type：
+
+```ts
+export interface SiteConfig {
+  name: string
+  nameEn: string
+  role: string
+  bio: string
+  email: string
+  social: {
+    github?: string
+    linkedin?: string
+    twitter?: string
+  }
+  skills: string[]
+}
+```
+
+# ──────────────────────────────────────────────
+# 10. 禁止清單（AI 常見錯誤防護）
+# ──────────────────────────────────────────────
+
+## 絕對禁止
+- [ ] 使用 `shadow-*`（任何 box-shadow）
+- [ ] 使用 `gradient`（除非極小裝飾性且有明確 comment）
+- [ ] import 外部 UI library（shadcn、radix 等）
+- [ ] 在 globals.css 以外定義 @theme token
+- [ ] 建立 tailwind.config.ts
+- [ ] 在 RSC 使用 useState / useEffect
+- [ ] 在 Client Component 使用 top-level async/await
+- [ ] 對 GitHub 缺失的連結渲染 `<a>` 標籤
+- [ ] 對 Demo 缺失的連結渲染任何替代元素
+- [ ] 使用 `any` type
+- [ ] 硬編碼 hex 顏色（使用 CSS 變數或 Tailwind token）
+- [ ] 使用超過 0.5s 的動畫
+- [ ] 在 `<ul>` 列表以外使用純 `<div>` 堆疊列表項目
+- [ ] 在 zh-TW UI 文字中混入英文（除了技術術語、品牌名稱）
+- [ ] 使用 `position: fixed` 以外的 sticky header（sticky 才能不破壞 flow）
+- [ ] 建立非規格內的路由
+
+## 需要謹慎確認
+- [ ] 新增互動功能前，確認是否真的需要 'use client'
+- [ ] 新增 section 前，確認 anchor id 有 scroll-margin-top
+- [ ] 新增連結前，確認 accessible name 清楚
+- [ ] 使用 accent 顏色前，確認是 hover/focus 等互動狀態
+
+# ──────────────────────────────────────────────
+# 11. 效能 & Lighthouse 目標
+# ──────────────────────────────────────────────
+
+目標：全項目 90+（Performance / Accessibility / Best Practices / SEO）
+
+- 圖片使用 `next/image`（自動 WebP + lazy loading）
+- 字體使用 `next/font`（避免 FOUT，自動 font-display: swap）
+- 禁止 client-side data fetching（用 RSC 靜態讀取 lib/）
+- 禁止 `useEffect` 做初始資料載入
+- Lighthouse CI 可用 `.lighthouserc.js` 設定 threshold
