@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
-import { OpenIcon } from "./OpenIcon";
+import { DemoLink } from "./DemoLink";
 import { ProjectImagePlaceholder } from "./ProjectImagePlaceholder";
 
 const enterClasses = [
@@ -43,15 +43,7 @@ export function ProjectCard({
       </Link>
       {project.links?.demo ? (
         <div className="border-t border-muted/25 px-5 py-3">
-          <a
-            href={project.links.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="demo-link text-xs"
-          >
-            Demo
-            <OpenIcon className="transition-transform duration-200 ease-out group-hover:translate-x-[2px] group-hover:-translate-y-[2px]" />
-          </a>
+          <DemoLink href={project.links.demo} className="demo-link text-xs" />
         </div>
       ) : null}
     </article>

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { OpenIcon } from "./OpenIcon";
+import { DemoLink } from "./DemoLink";
 
 type ProjectLinksProps = {
   github?: string;
@@ -24,17 +24,7 @@ export function ProjectLinks({ github, demo, className }: ProjectLinksProps) {
           GitHub（即將公開）
         </span>
       )}
-      {demo ? (
-        <a
-          href={demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="demo-link text-sm"
-        >
-          Demo
-          <OpenIcon className="transition-transform duration-200 ease-out group-hover:translate-x-[2px] group-hover:-translate-y-[2px]" />
-        </a>
-      ) : null}
+      {demo ? <DemoLink href={demo} className="demo-link text-sm" /> : null}
     </div>
   );
 }
