@@ -53,6 +53,25 @@ export const projects: Project[] = [
     links: {},
   },
   {
+    slug: "lab",
+    monogram: "羊",
+    name: "羊·實驗",
+    description: "數學與演算法的互動式視覺化實驗站",
+    platform: "Web／React／p5.js",
+    tags: ["React", "TypeScript", "p5.js", "演算法視覺化"],
+    highlights: [
+      "以互動視覺化拆解抽象概念",
+      "沉穩的動態呈現，避免持續干擾閱讀",
+      "實驗內容可持續擴充",
+    ],
+    content:
+      "羊·實驗是一個數學與演算法的互動式視覺化實驗站，將抽象概念整理成可觀察、可操作的頁面，讓讀者透過圖形變化理解背後規則。",
+    links: {
+      github: "https://github.com/lamb-liver/lab",
+      demo: "https://lab.lambliver.dev/",
+    },
+  },
+  {
     slug: "offline-pos-android",
     monogram: "攤",
     name: "小攤位離線結帳 App",
