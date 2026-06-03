@@ -121,7 +121,8 @@ public/images/            # 靜態圖片（Hero 等）
 scripts/
   inline-critical-css.mjs # 建置後內聯關鍵 CSS
 
-AGENTS.md / .cursorrules  # 協作與設計規範（給維護者 / AI）
+docs/                     # Markdown 文件（本檔、AGENTS、CLAUDE）
+.cursorrules              # 設計與協作規範（根目錄，給 Cursor）
 ```
 
 ### 相依套件說明
@@ -140,11 +141,11 @@ AGENTS.md / .cursorrules  # 協作與設計規範（給維護者 / AI）
 
 ### 修改站點資訊
 
-編輯 [`lib/site.ts`](lib/site.ts)：`name`、`bio`、`about`、`skills`、`social`、`url` 等。
+編輯 [`lib/site.ts`](../lib/site.ts)：`name`、`bio`、`about`、`skills`、`social`、`url` 等。
 
 ### 新增或編輯專案
 
-1. 在 [`lib/projects.ts`](lib/projects.ts) 的 `projects` 陣列新增一筆 `Project`
+1. 在 [`lib/projects.ts`](../lib/projects.ts) 的 `projects` 陣列新增一筆 `Project`
 2. 必填：`slug`、`name`、`description`、`tags`、`monogram`
 3. 可選：`links.github`、`links.demo`、`highlights`、`content`、`status: "in-progress"`
 4. 建置後會透過 `generateStaticParams` 自動生成 `/projects/[slug]` 與 sitemap 條目
@@ -157,7 +158,7 @@ AGENTS.md / .cursorrules  # 協作與設計規範（給維護者 / AI）
 
 ### 修改樣式與主題
 
-- 色票與字體變數：[`app/globals.css`](app/globals.css) 的 `@theme`
+- 色票與字體變數：[`app/globals.css`](../app/globals.css) 的 `@theme`
 - Light / Dark 互動樣式：同檔案內 `html:not(.dark)` / `.dark` 選擇器（勿混用會互相污染的 `dark:` hover class）
 
 ---
@@ -173,7 +174,7 @@ AGENTS.md / .cursorrules  # 協作與設計規範（給維護者 / AI）
 | Node.js | 20+ |
 | Production Branch | `main` |
 
-首次 fork / 自建時：連接 GitHub repo → 設定自訂網域 → 確認 [`lib/site.ts`](lib/site.ts) 的 `url` 與實際網域一致（影響 `metadataBase`、sitemap、OG）。
+首次 fork / 自建時：連接 GitHub repo → 設定自訂網域 → 確認 [`lib/site.ts`](../lib/site.ts) 的 `url` 與實際網域一致（影響 `metadataBase`、sitemap、OG）。
 
 ---
 
@@ -191,7 +192,7 @@ AGENTS.md / .cursorrules  # 協作與設計規範（給維護者 / AI）
 協作或 AI 輔助開發時，可參考：
 
 - [`AGENTS.md`](AGENTS.md) — 專案現況與操作手冊
-- [`.cursorrules`](.cursorrules) — 設計與架構規範
+- [`.cursorrules`](../.cursorrules) — 設計與架構規範
 
 ---
 
