@@ -156,7 +156,7 @@ name, nameEn, role, bio, about[], email, domain, url, social{}, skillGroups[]
 ### `lib/projects.ts` — `Project`
 
 ```ts
-slug, name, description, tags[], monogram, applicationKind: "web" | "android", platform?, highlights?, content?, status?, links?: { github?, demo? }
+slug, name, description, tags[], monogram, applicationKind, caseStudy: { background, work, designFocus[], outcome }, platform?, status?, links?: { github?, demo? }
 ```
 
 - 新增專案 tag 須在 `skillGroups` 內，或加入 `PROJECT_ONLY_TAGS`（`lib/validateSkills.ts`）

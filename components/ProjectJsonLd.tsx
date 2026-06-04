@@ -1,5 +1,8 @@
 import { JsonLd } from "@/components/JsonLd";
-import type { Project } from "@/lib/projects";
+import {
+  getProjectSummaryForJsonLd,
+  type Project,
+} from "@/lib/projects";
 import { site } from "@/lib/site";
 import { resolvePublicUrl } from "@/lib/urls";
 
@@ -18,7 +21,7 @@ export function ProjectJsonLd({
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: project.name,
-    description: project.content ?? project.description,
+    description: getProjectSummaryForJsonLd(project),
     url: appUrl,
     mainEntityOfPage: pageUrl,
     applicationCategory:

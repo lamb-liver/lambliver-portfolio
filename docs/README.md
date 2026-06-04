@@ -148,7 +148,7 @@ docs/                     # Markdown 文件（本檔、AGENTS、CLAUDE）
 1. 在 [`lib/projects.ts`](../lib/projects.ts) 的 `projects` 陣列新增一筆 `Project`
 2. 必填：`slug`、`name`、`description`、`tags`、`monogram`、`applicationKind`（`web` | `android`）
 3. `tags` 須對應 `skillGroups`（執行 `npm run validate` 檢查）
-4. 可選：`links.github`、`links.demo`、`highlights`、`content`、`status: "in-progress"`
+4. 必填 `caseStudy`（背景、我做了什麼、設計重點、成果）；可選 `links`、`screenshots`、`status: "in-progress"`
 5. 建置後會透過 `generateStaticParams` 自動生成 `/projects/[slug]` 與 sitemap 條目
 
 目前專案 slug：

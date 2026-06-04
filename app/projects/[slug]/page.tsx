@@ -13,6 +13,28 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+function CaseSection({
+  title,
+  id,
+  children,
+}: {
+  title: string;
+  id: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mt-10" aria-labelledby={id}>
+      <h2
+        id={id}
+        className="font-mono text-xs uppercase tracking-widest text-muted"
+      >
+        {title}
+      </h2>
+      <div className="mt-3">{children}</div>
+    </section>
+  );
+}
+
 export function generateStaticParams() {
   return getAllProjectSlugs().map((slug) => ({ slug }));
 }
@@ -52,6 +74,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
   if (!project) notFound();
 
+  const { caseStudy } = project;
   const screenshots = project.screenshots ?? [];
 
   return (
@@ -88,45 +111,39 @@ export default async function ProjectPage({ params }: PageProps) {
             {project.description}
           </p>
 
-          {project.content ? (
-            <p className="mt-8 leading-relaxed text-muted">{project.content}</p>
-          ) : null}
+          <CaseSection title="背景" id="project-background">
+            <p className="leading-relaxed text-muted">{caseStudy.background}</p>
+          </CaseSection>
 
-          <div className="mt-10">
-            <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-              技術
-            </h2>
-            <ul className="mt-3 flex flex-wrap gap-2">
+          <CaseSection title="我做了什麼" id="project-work">
+            <p className="leading-relaxed text-muted">{caseStudy.work}</p>
+          </CaseSection>
+
+          <CaseSection title="設計重點" id="project-design">
+            <ul className="list-inside list-disc space-y-2 leading-relaxed text-muted">
+              {caseStudy.designFocus.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </CaseSection>
+
+          <CaseSection title="技術" id="project-tech">
+            <ul className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <li key={tag}>
                   <SkillChip label={tag} />
                 </li>
               ))}
             </ul>
-          </div>
+          </CaseSection>
 
-          {project.highlights && project.highlights.length > 0 ? (
-            <div className="mt-10">
-              <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
-                亮點
-              </h2>
-              <ul className="mt-3 list-inside list-disc space-y-2 leading-relaxed text-muted">
-                {project.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
+          <CaseSection title="成果" id="project-outcome">
+            <p className="leading-relaxed text-muted">{caseStudy.outcome}</p>
+          </CaseSection>
 
           {screenshots.length > 0 ? (
-            <section className="mt-10" aria-labelledby="project-screenshots">
-              <h2
-                id="project-screenshots"
-                className="font-mono text-xs uppercase tracking-widest text-muted"
-              >
-                畫面
-              </h2>
-              <ul className="mt-3 grid grid-cols-2 items-start gap-4">
+            <CaseSection title="畫面" id="project-screenshots">
+              <ul className="grid grid-cols-2 items-start gap-4">
                 {screenshots.map((screenshot) => (
                   <li
                     key={screenshot.src}
@@ -144,7 +161,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
-            </section>
+            </CaseSection>
           ) : null}
 
           <ProjectLinks

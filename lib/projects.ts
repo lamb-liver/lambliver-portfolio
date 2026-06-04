@@ -7,6 +7,13 @@ export interface ProjectScreenshot {
   orientation: "mobile" | "desktop";
 }
 
+export interface ProjectCaseStudy {
+  background: string;
+  work: string;
+  designFocus: string[];
+  outcome: string;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -20,8 +27,7 @@ export interface Project {
   };
   featured?: boolean;
   platform?: string;
-  highlights?: string[];
-  content?: string;
+  caseStudy: ProjectCaseStudy;
   status?: "in-progress";
   monogram: string;
   applicationKind: ProjectApplicationKind;
@@ -33,7 +39,8 @@ export const projects: Project[] = [
     applicationKind: "web",
     monogram: "卡",
     name: "控訴-查卡＆組牌＆QA",
-    description: "給真實玩家使用的組牌器，社群已有活躍用戶",
+    description:
+      "《控訴》玩家用的組牌工具：搜卡、篩選、驗構築規則，並匯出牌組與圖片分享。",
     platform: "Web／React／Cloudflare Pages",
     tags: [
       "React",
@@ -42,13 +49,18 @@ export const projects: Project[] = [
       "全文搜尋",
       "JSON Export",
     ],
-    highlights: [
-      "針對手機單手操作設計 UI",
-      "防抖搜尋優化",
-      "構築規則驗證邏輯",
-    ],
-    content:
-      "控訴卡牌查詢組牌工具。為桌遊《控訴》社群打造的查詢與組牌工具。支援卡名／效果全文搜尋、多條件篩選、構築規則驗證、牌組儲存與載入、匯出 JSON 備份及牌組圖片，針對手機單手操作情境設計 UI。已有社群玩家實際使用。",
+    caseStudy: {
+      background:
+        "《控訴》卡牌數量多，玩家需要一邊查效果一邊組牌，還得符合構築規則；社群裡缺少順手的手機組牌工具。",
+      work: "獨立完成查卡與全文搜尋、多條件篩選、組牌介面與構築規則檢查，並支援牌組儲存、JSON 備份與牌組圖片輸出。",
+      designFocus: [
+        "版面以單手操作為優先",
+        "搜尋輸入加上防抖，減少卡頓",
+        "規則不符時即時標示，組牌時能馬上修正",
+      ],
+      outcome:
+        "已部署至 accusation-card-tool.pages.dev，社群玩家實際用來查卡、組牌與分享牌組。",
+    },
     screenshots: [
       {
         src: "/images/projects/card-deck-builder-featured.webp",
@@ -74,15 +86,22 @@ export const projects: Project[] = [
     applicationKind: "web",
     monogram: "繪",
     name: "繪師個人作品集網站",
-    description: "為客戶打造可自主更新的 SEO 友好展示站",
+    description:
+      "繪師客戶的作品集網站：前台展示作品，後台可自行新增與更新內容。",
     platform: "Web／Next.js／Vercel",
     tags: ["Next.js", "Headless CMS", "Vercel", "SSG/SSR"],
-    highlights: [
-      "Lighthouse 4 項 90+",
-      "客戶可零技術自行更新作品",
-    ],
-    content:
-      "為繪師打造的作品集網站，整合 CMS 後台讓客戶自主管理內容，以 Next.js 建置兼顧 SEO。",
+    caseStudy: {
+      background:
+        "繪師需要對外展示作品，也希望之後能自己上架新圖、改介紹文字，而不是每次改版都找人改程式。",
+      work: "以 Next.js 建置前台頁面，串接 Headless CMS，讓客戶在後台管理作品與文案；並處理 SEO 與靜態產出設定。",
+      designFocus: [
+        "作品列表與詳情頁載入順暢",
+        "後台欄位對應前台區塊，減少客戶學習成本",
+        "Lighthouse 四項指標維持 90 分以上",
+      ],
+      outcome:
+        "完成可公開展示的作品集網站，網站結構支援後續新增作品與更新內容。",
+    },
     links: {},
   },
   {
@@ -90,16 +109,22 @@ export const projects: Project[] = [
     applicationKind: "web",
     monogram: "羊",
     name: "羊·實驗",
-    description: "數學與演算法的互動式視覺化實驗站",
+    description:
+      "數學與演算法的互動實驗站：用可調參數的圖形，把抽象概念變成能操作的頁面。",
     platform: "Web／React／p5.js",
     tags: ["React", "TypeScript", "p5.js", "演算法視覺化"],
-    highlights: [
-      "以互動視覺化拆解抽象概念",
-      "沉穩的動態呈現，避免持續干擾閱讀",
-      "實驗內容可持續擴充",
-    ],
-    content:
-      "羊·實驗是一個數學與演算法的互動式視覺化實驗站，將抽象概念整理成可觀察、可操作的頁面，讓讀者透過圖形變化理解背後規則。",
+    caseStudy: {
+      background:
+        "學數學或演算法時，光看公式不容易理解參數改變後圖形怎麼變；我想用網頁把這些關係做成可以試的實驗。",
+      work: "建立實驗站架構與共用版面，將各主題做成獨立互動頁，以 p5.js 繪製圖形並綁定參數控制。",
+      designFocus: [
+        "滑桿、輸入與圖形即時連動",
+        "動畫節制，避免干擾閱讀與操作",
+        "新主題可以照同一套模式擴充",
+      ],
+      outcome:
+        "已上線 lab.lambliver.dev，目前包含繁花曲線等實驗，可直接在瀏覽器調參數觀察變化。",
+    },
     screenshots: [
       {
         src: "/images/projects/lab-home.webp",
@@ -124,16 +149,36 @@ export const projects: Project[] = [
     applicationKind: "web",
     monogram: "租",
     name: "租屋筆記",
-    description: "手機優先的看房紀錄工具，用來快速記錄並比較多間房源差異",
+    description:
+      "看房現場用的紀錄工具：快速記下每間房，之後比較差異並以 JSON 備份，不需登入。",
     platform: "Web／React／Cloudflare",
     tags: ["React", "TypeScript", "Vite", "Cloudflare Pages", "localStorage"],
-    highlights: [
-      "手機優先的看房流程",
-      "Summary 與多間房源比較",
-      "JSON 備份匯入匯出",
+    caseStudy: {
+      background:
+        "一天看多間房時，價格、格局與備註容易混在一起；事後要比較哪一間比較划算，需要結構化紀錄。",
+      work: "製作手機優先的看房表單、Summary 整理頁與多房比較檢視；資料存在瀏覽器 localStorage，並支援 JSON 匯出與匯入還原。",
+      designFocus: [
+        "現場單手就能填完一筆紀錄",
+        "比較頁並排顯示關鍵欄位",
+        "備份檔可帶著走，換裝置也能還原",
+      ],
+      outcome:
+        "已部署 rent.lambliver.dev，看房時可直接開啟使用，無需註冊帳號。",
+    },
+    screenshots: [
+      {
+        src: "/images/projects/renthouse-home.webp",
+        alt: "租屋筆記首頁畫面",
+        caption: "首頁新增看房紀錄與最近紀錄",
+        orientation: "mobile",
+      },
+      {
+        src: "/images/projects/renthouse-checklist.webp",
+        alt: "檢查項目管理畫面",
+        caption: "預設懶人包檢查項目列表",
+        orientation: "mobile",
+      },
     ],
-    content:
-      "租屋筆記是不需要登入的看房紀錄工具，資料只存在使用者自己的瀏覽器。它針對看房現場快速填寫、事後整理 Summary、比較多間房源差異與本地備份還原設計，讓租屋決策資訊保持清楚可追溯。",
     links: {
       github: "https://github.com/lamb-liver/renthouse",
       demo: "https://rent.lambliver.dev",
@@ -144,17 +189,23 @@ export const projects: Project[] = [
     applicationKind: "android",
     monogram: "攤",
     name: "小攤位離線結帳 App",
-    description: "攤主的隨身收銀機，無網路照常運作",
+    description:
+      "給攤位與活動販售的 Android 結帳 App：離線可記帳、管理商品並匯出銷售 CSV。",
     platform: "Android／Jetpack Compose／持續開發中",
     status: "in-progress",
     tags: ["Kotlin", "Jetpack Compose", "Room Database", "MVVM"],
-    highlights: [
-      "離線優先架構",
-      "CSV 報表背景執行緒生成",
-      "MVP 持續開發中",
-    ],
-    content:
-      "擺攤／活動販售用的 Android 結帳工具，Jetpack Compose 建置 UI，支援商品管理、折扣規則、銷售統計與 CSV 匯出。",
+    caseStudy: {
+      background:
+        "戶外攤位網路常不穩，結帳要快，還得記住今天賣了什麼；紙筆或一般筆記 App 不好算折扣與統計。",
+      work: "以 Jetpack Compose 實作結帳流程、商品與庫存管理、折扣規則，以及 Room 儲存銷售紀錄；CSV 報表在背景執行緒產生。",
+      designFocus: [
+        "離線優先，沒網路也能完成結帳",
+        "結帳步驟壓在最少畫面",
+        "報表生成不阻塞結帳畫面",
+      ],
+      outcome:
+        "MVP 已提供 APK 安裝測試，結帳與商品管理可實際操作；銷售統計與報表細節持續補強中。",
+    },
     screenshots: [
       {
         src: "/images/projects/offline-pos-dashboard.webp",
@@ -188,6 +239,11 @@ export function getProjectBySlug(slug: string): Project | undefined {
 
 export function getAllProjectSlugs(): string[] {
   return projects.map((p) => p.slug);
+}
+
+export function getProjectSummaryForJsonLd(project: Project): string {
+  const { background, outcome } = project.caseStudy;
+  return `${background} ${outcome}`;
 }
 
 export const featuredProjectScreenshots = [

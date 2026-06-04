@@ -14,6 +14,12 @@ const baseProject: Project = {
   tags: ["React"],
   monogram: "範",
   applicationKind: "web",
+  caseStudy: {
+    background: "bg",
+    work: "work",
+    designFocus: ["focus"],
+    outcome: "outcome",
+  },
 };
 
 describe("validateSkillGroups", () => {
