@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { HashLink } from "@/components/HashLinkSlot";
 import { notFound } from "next/navigation";
 import { ProjectImagePlaceholder } from "@/components/ProjectImagePlaceholder";
+import { ProjectJsonLd } from "@/components/ProjectJsonLd";
 import { ProjectLinks } from "@/components/ProjectLinks";
 import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/projects";
+import { site } from "@/lib/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -22,10 +24,22 @@ export async function generateMetadata({
   const project = getProjectBySlug(slug);
   if (!project) return {};
 
+  const url = `${site.url}/projects/${slug}`;
+
   return {
     title: project.name,
     description: project.description,
+    alternates: { canonical: url },
     openGraph: {
+      title: project.name,
+      description: project.description,
+      locale: "zh_TW",
+      url,
+      type: "website",
+      siteName: site.name,
+    },
+    twitter: {
+      card: "summary_large_image",
       title: project.name,
       description: project.description,
     },
@@ -42,6 +56,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <ProjectJsonLd project={project} slug={slug} />
       <div className="rounded-sm border border-border bg-surface px-6 py-10 sm:px-10">
         <HashLink
           href="/#projects"

@@ -141,14 +141,15 @@ docs/                     # Markdown 文件（本檔、AGENTS、CLAUDE）
 
 ### 修改站點資訊
 
-編輯 [`lib/site.ts`](../lib/site.ts)：`name`、`bio`、`about`、`skills`、`social`、`url` 等。
+編輯 [`lib/site.ts`](../lib/site.ts)：`name`、`bio`、`about`、`skillGroups`、`social`、`url` 等。技能扁平列表用 `getAllSkills()`。
 
 ### 新增或編輯專案
 
 1. 在 [`lib/projects.ts`](../lib/projects.ts) 的 `projects` 陣列新增一筆 `Project`
-2. 必填：`slug`、`name`、`description`、`tags`、`monogram`
-3. 可選：`links.github`、`links.demo`、`highlights`、`content`、`status: "in-progress"`
-4. 建置後會透過 `generateStaticParams` 自動生成 `/projects/[slug]` 與 sitemap 條目
+2. 必填：`slug`、`name`、`description`、`tags`、`monogram`、`applicationKind`（`web` | `android`）
+3. `tags` 須對應 `skillGroups`（執行 `npm run validate` 檢查）
+4. 可選：`links.github`、`links.demo`、`highlights`、`content`、`status: "in-progress"`
+5. 建置後會透過 `generateStaticParams` 自動生成 `/projects/[slug]` 與 sitemap 條目
 
 目前專案 slug：
 

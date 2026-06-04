@@ -148,14 +148,19 @@ html:not(.dark) .skill-chip:hover { ... }  /* Light */
 ### `lib/site.ts` — `SiteConfig`
 
 ```ts
-name, nameEn, role, bio, about[], email, domain, url, social{}, skills[]
+name, nameEn, role, bio, about[], email, domain, url, social{}, skillGroups[]
+// skillGroups: { id, label, skills: { name, level?: "core" }[] }
+// 扁平技能列表：getAllSkills()
 ```
 
 ### `lib/projects.ts` — `Project`
 
 ```ts
-slug, name, description, tags[], monogram, platform?, highlights?, content?, status?, links?: { github?, demo? }
+slug, name, description, tags[], monogram, applicationKind: "web" | "android", platform?, highlights?, content?, status?, links?: { github?, demo? }
 ```
+
+- 新增專案 tag 須在 `skillGroups` 內，或加入 `PROJECT_ONLY_TAGS`（`lib/validateSkills.ts`）
+- 建置前執行 `npm run validate`；單元測試 `npm run test`
 
 - `monogram`：卡片/詳情 placeholder 顯示字（卡 / 繪 / 攤），非專案名首字
 - GitHub 無 URL → UI 顯示「GitHub（即將公開）」`<span>`，不可 `<a>`
@@ -186,6 +191,9 @@ slug, name, description, tags[], monogram, platform?, highlights?, content?, sta
 
 - `metadataBase`: `https://lambliver.dev`
 - `title`: 預設 `羊肝 · lambliver`，template `%s · lambliver`
+- 專案頁 `generateMetadata` 須覆寫 `openGraph` 與 `twitter`（含 `locale`、`url`、`twitter.title`）
+- `PersonJsonLd` 僅首頁（`app/page.tsx`）；專案頁用 `ProjectJsonLd`（`applicationKind` 決定 Web/Mobile）
+- JSON-LD 序列化：`lib/jsonLd.ts` → `serializeJsonLd()`（`components/JsonLd.tsx`）
 - `app/sitemap.ts`、`app/robots.ts` 必須保留
 - OG：`lib/og.tsx` → `createOgImage()`，黑底 + accent 左豎條
 

@@ -1,3 +1,5 @@
+export type ProjectApplicationKind = "web" | "android";
+
 export interface ProjectScreenshot {
   src: string;
   alt: string;
@@ -22,16 +24,24 @@ export interface Project {
   content?: string;
   status?: "in-progress";
   monogram: string;
+  applicationKind: ProjectApplicationKind;
 }
 
 export const projects: Project[] = [
   {
     slug: "card-deck-builder",
+    applicationKind: "web",
     monogram: "卡",
     name: "控訴-查卡＆組牌＆QA",
     description: "給真實玩家使用的組牌器，社群已有活躍用戶",
     platform: "Web／React／Cloudflare Pages",
-    tags: ["React", "TypeScript", "全文搜尋", "JSON Export"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Cloudflare Pages",
+      "全文搜尋",
+      "JSON Export",
+    ],
     highlights: [
       "針對手機單手操作設計 UI",
       "防抖搜尋優化",
@@ -61,6 +71,7 @@ export const projects: Project[] = [
   },
   {
     slug: "illustrator-portfolio",
+    applicationKind: "web",
     monogram: "繪",
     name: "繪師個人作品集網站",
     description: "為客戶打造可自主更新的 SEO 友好展示站",
@@ -76,6 +87,7 @@ export const projects: Project[] = [
   },
   {
     slug: "lab",
+    applicationKind: "web",
     monogram: "羊",
     name: "羊·實驗",
     description: "數學與演算法的互動式視覺化實驗站",
@@ -109,11 +121,12 @@ export const projects: Project[] = [
   },
   {
     slug: "renthouse",
+    applicationKind: "web",
     monogram: "租",
     name: "租屋筆記",
     description: "手機優先的看房紀錄工具，用來快速記錄並比較多間房源差異",
     platform: "Web／React／Cloudflare",
-    tags: ["React", "TypeScript", "Vite", "localStorage"],
+    tags: ["React", "TypeScript", "Vite", "Cloudflare Pages", "localStorage"],
     highlights: [
       "手機優先的看房流程",
       "Summary 與多間房源比較",
@@ -128,6 +141,7 @@ export const projects: Project[] = [
   },
   {
     slug: "offline-pos-android",
+    applicationKind: "android",
     monogram: "攤",
     name: "小攤位離線結帳 App",
     description: "攤主的隨身收銀機，無網路照常運作",

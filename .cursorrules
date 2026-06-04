@@ -122,8 +122,11 @@ components/
   ProjectImagePlaceholder.tsx # RSC（無圖片時的佔位）
   SkillChip.tsx           # RSC
 lib/
-  site.ts                 # 個人資訊、skills、social links
+  site.ts                 # 個人資訊、skillGroups、social links
   projects.ts             # 專案陣列
+  validateSkills.ts       # tags ↔ skillGroups 校驗（build 前 validate）
+  jsonLd.ts               # JSON-LD 安全序列化
+  urls.ts                 # resolvePublicUrl
 ```
 
 ## 4.2 RSC vs Client 判斷準則
@@ -244,12 +247,14 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', ... },
 }
 
-// app/projects/[slug]/page.tsx（動態 metadata）
+// app/projects/[slug]/page.tsx（動態 metadata — 須覆寫 twitter，避免繼承首頁標題）
 export async function generateMetadata({ params }): Promise<Metadata> {
   const project = getProjectBySlug(params.slug)
   return {
     title: project.name,
     description: project.description,
+    openGraph: { title, description, locale: 'zh_TW', url, type: 'website' },
+    twitter: { card: 'summary_large_image', title, description },
   }
 }
 ```
@@ -315,14 +320,16 @@ export interface SiteConfig {
   nameEn: string
   role: string
   bio: string
+  skillGroups: SkillGroup[]  // skills: { name, level?: 'core' }[]
   email: string
   social: {
     github?: string
     linkedin?: string
     twitter?: string
   }
-  skills: string[]
 }
+
+// Project 必填 applicationKind: 'web' | 'android'
 ```
 
 # ──────────────────────────────────────────────

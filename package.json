@@ -12,8 +12,10 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack && node scripts/inline-critical-css.mjs",
+    "build": "npm run validate && npm run test && next build --webpack && node scripts/inline-critical-css.mjs",
     "start": "next start",
+    "validate": "tsx scripts/validate-skills.ts",
+    "test": "vitest run",
     "lint": "eslint",
     "analyze": "ANALYZE=true next build --webpack"
   },
@@ -39,6 +41,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
   }
 }

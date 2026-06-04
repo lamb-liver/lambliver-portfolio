@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
@@ -34,6 +35,7 @@ function ContentShell({ children }: { children: React.ReactNode }) {
 export default function HomePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <PersonJsonLd />
       <ContentShell>
         <Hero />
 
@@ -81,13 +83,28 @@ export default function HomePage() {
           aria-labelledby="skills-heading"
         >
           <SectionHeading id="skills-heading">技能</SectionHeading>
-          <ul className="flex flex-wrap gap-2">
-            {site.skills.map((skill) => (
-              <li key={skill}>
-                <SkillChip label={skill} />
-              </li>
+          <p className="mb-6 text-sm text-muted">
+            較深邊框為核心技能（React、Next.js、TypeScript、Kotlin）。
+          </p>
+          <div className="space-y-8">
+            {site.skillGroups.map((group) => (
+              <div key={group.id} aria-labelledby={`skills-${group.id}`}>
+                <h3
+                  id={`skills-${group.id}`}
+                  className="mb-3 font-mono text-xs uppercase tracking-widest text-muted"
+                >
+                  {group.label}
+                </h3>
+                <ul className="flex flex-wrap gap-2">
+                  {group.skills.map((skill) => (
+                    <li key={skill.name}>
+                      <SkillChip label={skill.name} level={skill.level} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section
