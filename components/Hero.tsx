@@ -23,6 +23,9 @@ export function Hero() {
           <p className="enter-fade-up-delay-75 mt-3 text-lg text-muted">
             {site.role}
           </p>
+          <p className="enter-fade-up-delay-75 mt-2 text-base text-foreground">
+            {site.clientPitch}
+          </p>
           <p className="enter-fade-up-delay-150 mt-4 max-w-xl leading-relaxed text-muted">
             {site.bio}
           </p>
@@ -31,7 +34,7 @@ export function Hero() {
               查看專案
             </HashLink>
             <HashLink href="/#contact" className="btn-secondary">
-              聯絡
+              討論需求
             </HashLink>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { HashLink } from "@/components/HashLinkSlot";
 import { notFound } from "next/navigation";
 import { ProjectImagePlaceholder } from "@/components/ProjectImagePlaceholder";
 import { ProjectLinks } from "@/components/ProjectLinks";
+import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/projects";
 
@@ -37,6 +38,8 @@ export default async function ProjectPage({ params }: PageProps) {
 
   if (!project) notFound();
 
+  const screenshots = project.screenshots ?? [];
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
       <div className="rounded-sm border border-border bg-surface px-6 py-10 sm:px-10">
@@ -59,7 +62,9 @@ export default async function ProjectPage({ params }: PageProps) {
             ) : null}
           </div>
 
-          <ProjectImagePlaceholder project={project} size="lg" />
+          {screenshots.length === 0 ? (
+            <ProjectImagePlaceholder project={project} size="lg" />
+          ) : null}
 
           <h1 className="mt-8 font-mono text-3xl font-medium text-foreground">
             {project.name}
@@ -96,6 +101,35 @@ export default async function ProjectPage({ params }: PageProps) {
                 ))}
               </ul>
             </div>
+          ) : null}
+
+          {screenshots.length > 0 ? (
+            <section className="mt-10" aria-labelledby="project-screenshots">
+              <h2
+                id="project-screenshots"
+                className="font-mono text-xs uppercase tracking-widest text-muted"
+              >
+                畫面
+              </h2>
+              <ul className="mt-3 grid grid-cols-2 items-start gap-4">
+                {screenshots.map((screenshot) => (
+                  <li
+                    key={screenshot.src}
+                    className={
+                      screenshot.orientation === "desktop"
+                        ? "col-span-2"
+                        : undefined
+                    }
+                  >
+                    <ProjectScreenshotFigure
+                      project={project}
+                      screenshot={screenshot}
+                      variant="gallery"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
           ) : null}
 
           <ProjectLinks

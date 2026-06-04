@@ -1,7 +1,9 @@
 import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
-import { projects } from "@/lib/projects";
+import Link from "next/link";
+import { featuredProjectScreenshots, projects } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 function SectionHeading({
@@ -34,6 +36,31 @@ export default function HomePage() {
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
       <ContentShell>
         <Hero />
+
+        <section className="py-16" aria-labelledby="screenshots-heading">
+          <SectionHeading id="screenshots-heading">實作畫面</SectionHeading>
+          <ul className="grid grid-cols-2 items-start gap-4">
+            {featuredProjectScreenshots.map(({ project, screenshot }) => (
+              <li
+                key={`${project.slug}-${screenshot.src}`}
+                className={
+                  screenshot.orientation === "desktop" ? "col-span-2" : undefined
+                }
+              >
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="group block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+                >
+                  <ProjectScreenshotFigure
+                    project={project}
+                    screenshot={screenshot}
+                    variant="featured"
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         <section
           id="about"
@@ -84,9 +111,7 @@ export default function HomePage() {
           aria-labelledby="contact-heading"
         >
           <SectionHeading id="contact-heading">聯絡</SectionHeading>
-          <p className="leading-relaxed text-muted">
-            歡迎合作、side project 或技術交流，透過以下方式聯繫我。
-          </p>
+          <p className="leading-relaxed text-muted">{site.availability}</p>
           <ul className="mt-10 space-y-6">
             <li>
               <p className="font-mono text-xs uppercase tracking-widest text-muted">

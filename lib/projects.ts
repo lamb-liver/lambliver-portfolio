@@ -1,9 +1,17 @@
+export interface ProjectScreenshot {
+  src: string;
+  alt: string;
+  caption: string;
+  orientation: "mobile" | "desktop";
+}
+
 export interface Project {
   slug: string;
   name: string;
   description: string;
   tags: string[];
   coverImage?: string;
+  screenshots?: ProjectScreenshot[];
   links?: {
     github?: string;
     demo?: string;
@@ -31,6 +39,20 @@ export const projects: Project[] = [
     ],
     content:
       "控訴卡牌查詢組牌工具。為桌遊《控訴》社群打造的查詢與組牌工具。支援卡名／效果全文搜尋、多條件篩選、構築規則驗證、牌組儲存與載入、匯出 JSON 備份及牌組圖片，針對手機單手操作情境設計 UI。已有社群玩家實際使用。",
+    screenshots: [
+      {
+        src: "/images/projects/card-deck-builder-featured.webp",
+        alt: "組牌模式畫面",
+        caption: "手機單手操作的組牌模式",
+        orientation: "mobile",
+      },
+      {
+        src: "/images/projects/card-deck-builder-filter.webp",
+        alt: "篩選條件畫面",
+        caption: "多條件篩選卡池",
+        orientation: "mobile",
+      },
+    ],
     featured: true,
     links: {
       github: "https://github.com/lamb-liver/accusation-card-tool",
@@ -66,6 +88,20 @@ export const projects: Project[] = [
     ],
     content:
       "羊·實驗是一個數學與演算法的互動式視覺化實驗站，將抽象概念整理成可觀察、可操作的頁面，讓讀者透過圖形變化理解背後規則。",
+    screenshots: [
+      {
+        src: "/images/projects/lab-home.webp",
+        alt: "羊實驗首頁畫面",
+        caption: "互動視覺化實驗站首頁",
+        orientation: "desktop",
+      },
+      {
+        src: "/images/projects/lab-spirograph.webp",
+        alt: "繁花曲線互動畫面",
+        caption: "可調參數的繁花曲線視覺化",
+        orientation: "desktop",
+      },
+    ],
     links: {
       github: "https://github.com/lamb-liver/lab",
       demo: "https://lab.lambliver.dev/",
@@ -105,6 +141,26 @@ export const projects: Project[] = [
     ],
     content:
       "擺攤／活動販售用的 Android 結帳工具，Jetpack Compose 建置 UI，支援商品管理、折扣規則、銷售統計與 CSV 匯出。",
+    screenshots: [
+      {
+        src: "/images/projects/offline-pos-dashboard.webp",
+        alt: "今日儀表板畫面",
+        caption: "結帳後即時顯示今日營業額",
+        orientation: "mobile",
+      },
+      {
+        src: "/images/projects/offline-pos-checkout.webp",
+        alt: "結帳找零畫面",
+        caption: "現金與行動支付結帳找零",
+        orientation: "mobile",
+      },
+      {
+        src: "/images/projects/offline-pos-add-product.webp",
+        alt: "新增商品畫面",
+        caption: "設定商品名稱、價格與庫存",
+        orientation: "mobile",
+      },
+    ],
     links: {
       github: "https://github.com/lamb-liver/appforsale",
       demo: "/downloads/stallpos.apk",
@@ -119,3 +175,39 @@ export function getProjectBySlug(slug: string): Project | undefined {
 export function getAllProjectSlugs(): string[] {
   return projects.map((p) => p.slug);
 }
+
+export const featuredProjectScreenshots = [
+  {
+    projectSlug: "card-deck-builder",
+    screenshot: {
+      src: "/images/projects/card-deck-builder-featured.webp",
+      alt: "組牌模式畫面",
+      caption: "手機單手操作的組牌模式",
+      orientation: "mobile",
+    } satisfies ProjectScreenshot,
+  },
+  {
+    projectSlug: "offline-pos-android",
+    screenshot: {
+      src: "/images/projects/offline-pos-featured.webp",
+      alt: "今日儀表板畫面",
+      caption: "結帳後即時顯示今日營業額",
+      orientation: "mobile",
+    } satisfies ProjectScreenshot,
+  },
+  {
+    projectSlug: "lab",
+    screenshot: {
+      src: "/images/projects/lab-featured.webp",
+      alt: "羊實驗首頁畫面",
+      caption: "互動視覺化實驗站首頁",
+      orientation: "desktop",
+    } satisfies ProjectScreenshot,
+  },
+].map(({ projectSlug, screenshot }) => {
+  const project = getProjectBySlug(projectSlug);
+  if (!project) {
+    throw new Error(`Missing featured project: ${projectSlug}`);
+  }
+  return { project, screenshot };
+});
