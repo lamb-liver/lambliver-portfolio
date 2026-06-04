@@ -72,6 +72,25 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "renthouse",
+    monogram: "租",
+    name: "租屋筆記",
+    description: "手機優先的看房紀錄工具，用來快速記錄並比較多間房源差異",
+    platform: "Web／React／Cloudflare",
+    tags: ["React", "TypeScript", "Vite", "localStorage"],
+    highlights: [
+      "手機優先的看房流程",
+      "Summary 與多間房源比較",
+      "JSON 備份匯入匯出",
+    ],
+    content:
+      "租屋筆記是不需要登入的看房紀錄工具，資料只存在使用者自己的瀏覽器。它針對看房現場快速填寫、事後整理 Summary、比較多間房源差異與本地備份還原設計，讓租屋決策資訊保持清楚可追溯。",
+    links: {
+      github: "https://github.com/lamb-liver/renthouse",
+      demo: "https://rent.lambliver.dev",
+    },
+  },
+  {
     slug: "offline-pos-android",
     monogram: "攤",
     name: "小攤位離線結帳 App",
