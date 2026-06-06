@@ -228,7 +228,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/lamb-liver/appforsale",
-      demo: "/downloads/stallpos.apk",
+      demo: "/downloads/app-debug.apk",
     },
   },
 ];
