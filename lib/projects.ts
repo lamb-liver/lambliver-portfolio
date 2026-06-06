@@ -100,9 +100,25 @@ export const projects: Project[] = [
         "Lighthouse 四項指標維持 90 分以上",
       ],
       outcome:
-        "完成可公開展示的作品集網站，網站結構支援後續新增作品與更新內容。",
+        "已部署 artdemo.lambliver.dev 作為公開展示範本，客戶可透過 Notion CMS 新增作品與更新內容。",
     },
-    links: {},
+    screenshots: [
+      {
+        src: "/images/projects/illustrator-portfolio-home.webp",
+        alt: "作品集網站首頁畫面",
+        caption: "作品展示首頁與導覽結構",
+        orientation: "desktop",
+      },
+      {
+        src: "/images/projects/illustrator-portfolio-cms.webp",
+        alt: "Notion CMS 後台畫面",
+        caption: "Notion 後台管理作品與分類",
+        orientation: "desktop",
+      },
+    ],
+    links: {
+      demo: "https://artdemo.lambliver.dev/",
+    },
   },
   {
     slug: "lab",
