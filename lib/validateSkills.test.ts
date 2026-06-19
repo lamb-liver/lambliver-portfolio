@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Project } from "@/lib/projects";
+import { projects, type Project } from "@/lib/projects";
 import {
   PROJECT_ONLY_TAGS,
   validateProjectTags,
@@ -53,6 +53,10 @@ describe("validateSkillGroups", () => {
 });
 
 describe("validateProjectTags", () => {
+  it("通過目前專案資料", () => {
+    expect(() => validateProjectTags(projects)).not.toThrow();
+  });
+
   it("通過 catalog 內 tag", () => {
     expect(() => validateProjectTags([baseProject])).not.toThrow();
   });

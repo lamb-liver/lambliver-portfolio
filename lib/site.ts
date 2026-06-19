@@ -16,11 +16,9 @@ export interface SiteConfig {
   nameEn: string;
   role: string;
   clientPitch: string;
-  bio: string;
   availability: string;
   about: string[];
   email: string;
-  domain: string;
   url: string;
   social: {
     github?: string;
@@ -75,7 +73,6 @@ export const site: SiteConfig = {
   nameEn: "lambliver",
   role: "前端與 Android 開發",
   clientPitch: "把想法做成真的能用的網站或 App。",
-  bio: "",
   availability: "有想做的網站、工具或 App，可以先簡單說明你的想法。",
   about: [
     "目前就讀數學系大四，主要做前端網站、互動工具與 Android App。",
@@ -83,7 +80,6 @@ export const site: SiteConfig = {
     "歡迎 side project 或技術交流。",
   ],
   email: "lambliver.dev@gmail.com",
-  domain: "lambliver.dev",
   url: "https://lambliver.dev",
   social: {
     github: "https://github.com/lamb-liver",

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import { CrittersSafelist } from "@/components/CrittersSafelist";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { ThemeProvider } from "@/components/ThemeToggle";
@@ -49,7 +48,6 @@ export default function RootLayout({
       className={`${firaCode.variable} h-full`}
     >
       <body className="min-h-full bg-canvas font-sans antialiased">
-        <CrittersSafelist />
         <ThemeProvider>
           <Nav />
           <main>{children}</main>

@@ -1,4 +1,4 @@
-import { HashLink } from "@/components/HashLinkSlot";
+import { HashLink } from "@/components/HashLink";
 import Image from "next/image";
 import { site } from "@/lib/site";
 
@@ -11,27 +11,20 @@ const heroImage = {
 
 export function Hero() {
   return (
-    <section className="py-16" aria-labelledby="hero-heading">
-      <div className="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between">
+    <section className="py-8 sm:py-10" aria-labelledby="hero-heading">
+      <div className="grid gap-8 sm:grid-cols-[minmax(0,1fr)_13rem] sm:items-center lg:grid-cols-[minmax(0,1fr)_15rem]">
         <div className="min-w-0 flex-1">
           <h1
             id="hero-heading"
-            className="font-mono text-4xl font-medium tracking-tight text-foreground sm:text-5xl"
+            className="font-mono text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
             {site.name}
           </h1>
-          <p className="enter-fade-up-delay-75 mt-3 text-lg text-muted">
-            {site.role}
-          </p>
-          <p className="enter-fade-up-delay-75 mt-2 text-base text-foreground">
+          <p className="mt-3 text-lg text-muted">{site.role}</p>
+          <p className="mt-2 text-base text-foreground">
             {site.clientPitch}
           </p>
-          {site.bio ? (
-            <p className="enter-fade-up-delay-150 mt-4 max-w-xl leading-relaxed text-muted">
-              {site.bio}
-            </p>
-          ) : null}
-          <div className="enter-fade-up-delay-200 mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <HashLink href="/#projects" className="btn-primary">
               查看專案
             </HashLink>
@@ -41,16 +34,15 @@ export function Hero() {
           </div>
         </div>
 
-        <figure className="mx-auto shrink-0 border border-border bg-surface sm:mx-0">
+        <figure className="hero-portrait">
           <Image
             src={heroImage.src}
             alt={heroImage.alt}
             width={heroImage.width}
             height={heroImage.height}
-            priority
-            fetchPriority="high"
-            className="h-auto w-44 sm:w-52"
-            sizes="(max-width: 640px) 176px, 208px"
+            loading="eager"
+            className="h-auto w-40 sm:w-44 lg:w-52"
+            sizes="(max-width: 640px) 160px, (max-width: 1024px) 176px, 208px"
           />
         </figure>
       </div>

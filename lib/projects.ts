@@ -19,13 +19,11 @@ export interface Project {
   name: string;
   description: string;
   tags: string[];
-  coverImage?: string;
   screenshots?: ProjectScreenshot[];
   links?: {
     github?: string;
     demo?: string;
   };
-  featured?: boolean;
   platform?: string;
   caseStudy: ProjectCaseStudy;
   status?: "in-progress";
@@ -75,7 +73,6 @@ export const projects: Project[] = [
         orientation: "mobile",
       },
     ],
-    featured: true,
     links: {
       github: "https://github.com/lamb-liver/accusation-card-tool",
       demo: "https://accusation-card-tool.pages.dev/",

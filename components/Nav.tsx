@@ -1,7 +1,7 @@
-import { HashLink } from "@/components/HashLinkSlot";
+import { HashLink } from "@/components/HashLink";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { ThemeToggleSlot } from "./ThemeToggleSlot";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { href: "/#about", label: "關於" },
@@ -32,7 +32,7 @@ export function Nav() {
               {link.label}
             </HashLink>
           ))}
-          <ThemeToggleSlot />
+          <ThemeToggle />
         </nav>
       </div>
     </header>

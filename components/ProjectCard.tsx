@@ -3,23 +3,13 @@ import type { Project } from "@/lib/projects";
 import { DemoLink } from "./DemoLink";
 import { ProjectImagePlaceholder } from "./ProjectImagePlaceholder";
 
-const enterClasses = [
-  "enter-fade-up-card-0",
-  "enter-fade-up-card-1",
-  "enter-fade-up-card-2",
-] as const;
-
 export function ProjectCard({
   project,
-  index,
 }: {
   project: Project;
-  index: number;
 }) {
-  const enterClass = enterClasses[index] ?? enterClasses[0];
-
   return (
-    <article className={`group project-card ${enterClass}`}>
+    <article className="group project-card">
       <Link
         href={`/projects/${project.slug}`}
         className="block p-5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"

@@ -12,12 +12,10 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "npm run validate && npm run test && next build --webpack && node scripts/inline-critical-css.mjs",
+    "build": "npm run test && next build --webpack",
     "start": "next start",
-    "validate": "tsx scripts/validate-skills.ts",
     "test": "vitest run",
-    "lint": "eslint",
-    "analyze": "ANALYZE=true next build --webpack"
+    "lint": "eslint"
   },
   "browserslist": [
     "chrome >= 111",
@@ -26,14 +24,12 @@
     "safari >= 16.4"
   ],
   "dependencies": {
-    "critters": "^0.0.23",
     "next": "16.2.6",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^16.2.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -41,7 +37,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
-    "tsx": "^4.20.5",
     "typescript": "^5",
     "vitest": "^3.2.4"
   }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { HashLink } from "@/components/HashLinkSlot";
+import { HashLink } from "@/components/HashLink";
 import { notFound } from "next/navigation";
 import { ProjectImagePlaceholder } from "@/components/ProjectImagePlaceholder";
 import { ProjectJsonLd } from "@/components/ProjectJsonLd";
@@ -76,11 +76,12 @@ export default async function ProjectPage({ params }: PageProps) {
 
   const { caseStudy } = project;
   const screenshots = project.screenshots ?? [];
+  const [heroScreenshot, ...galleryScreenshots] = screenshots;
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
       <ProjectJsonLd project={project} slug={slug} />
-      <div className="rounded-sm border border-border bg-surface px-6 py-10 sm:px-10">
+      <div className="rounded-sm border border-border bg-surface px-6 py-8 sm:px-10">
         <HashLink
           href="/#projects"
           className="rounded-sm px-1 font-mono text-sm text-muted link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
@@ -88,63 +89,101 @@ export default async function ProjectPage({ params }: PageProps) {
           ← 專案
         </HashLink>
 
-        <article className="enter-fade-up mt-8">
-          <div className="mb-6 flex flex-wrap items-center gap-3">
-            {project.platform ? (
-              <p className="font-mono text-xs text-muted">{project.platform}</p>
-            ) : null}
-            {project.status === "in-progress" ? (
-              <span className="rounded-sm border border-border px-2 py-0.5 font-mono text-xs text-muted">
-                開發中
-              </span>
-            ) : null}
+        <article className="mt-8">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,24rem)] lg:items-start">
+            <div>
+              <div className="mb-6 flex flex-wrap items-center gap-3">
+                {project.platform ? (
+                  <p className="font-mono text-xs text-muted">
+                    {project.platform}
+                  </p>
+                ) : null}
+                {project.status === "in-progress" ? (
+                  <span className="rounded-sm border border-border px-2 py-0.5 font-mono text-xs text-muted">
+                    開發中
+                  </span>
+                ) : null}
+              </div>
+
+              <h1 className="font-mono text-3xl font-medium text-foreground sm:text-4xl">
+                {project.name}
+              </h1>
+              <p className="mt-3 text-lg leading-relaxed text-muted">
+                {project.description}
+              </p>
+            </div>
+
+            <div className="lg:pt-1">
+              {heroScreenshot ? (
+                <ProjectScreenshotFigure
+                  project={project}
+                  screenshot={heroScreenshot}
+                  variant="gallery"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                />
+              ) : (
+                <ProjectImagePlaceholder project={project} size="lg" />
+              )}
+            </div>
           </div>
 
-          {screenshots.length === 0 ? (
-            <ProjectImagePlaceholder project={project} size="lg" />
-          ) : null}
+          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
+            <div>
+              <CaseSection title="背景" id="project-background">
+                <p className="leading-relaxed text-muted">
+                  {caseStudy.background}
+                </p>
+              </CaseSection>
 
-          <h1 className="mt-8 font-mono text-3xl font-medium text-foreground">
-            {project.name}
-          </h1>
-          <p className="mt-3 text-lg leading-relaxed text-muted">
-            {project.description}
-          </p>
+              <CaseSection title="我做了什麼" id="project-work">
+                <p className="leading-relaxed text-muted">{caseStudy.work}</p>
+              </CaseSection>
 
-          <CaseSection title="背景" id="project-background">
-            <p className="leading-relaxed text-muted">{caseStudy.background}</p>
-          </CaseSection>
+              <CaseSection title="設計重點" id="project-design">
+                <ul className="list-inside list-disc space-y-2 leading-relaxed text-muted">
+                  {caseStudy.designFocus.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </CaseSection>
 
-          <CaseSection title="我做了什麼" id="project-work">
-            <p className="leading-relaxed text-muted">{caseStudy.work}</p>
-          </CaseSection>
+              <CaseSection title="成果" id="project-outcome">
+                <p className="leading-relaxed text-muted">
+                  {caseStudy.outcome}
+                </p>
+              </CaseSection>
+            </div>
 
-          <CaseSection title="設計重點" id="project-design">
-            <ul className="list-inside list-disc space-y-2 leading-relaxed text-muted">
-              {caseStudy.designFocus.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </CaseSection>
+            <aside className="border-t border-muted/25 pt-8 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+              <section aria-labelledby="project-tech">
+                <h2
+                  id="project-tech"
+                  className="font-mono text-xs uppercase tracking-widest text-muted"
+                >
+                  技術
+                </h2>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <li key={tag}>
+                      <SkillChip label={tag} />
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
-          <CaseSection title="技術" id="project-tech">
-            <ul className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <li key={tag}>
-                  <SkillChip label={tag} />
-                </li>
-              ))}
-            </ul>
-          </CaseSection>
+              <ProjectLinks
+                className="mt-8"
+                github={project.links?.github}
+                demo={project.links?.demo}
+              />
+            </aside>
+          </div>
 
-          <CaseSection title="成果" id="project-outcome">
-            <p className="leading-relaxed text-muted">{caseStudy.outcome}</p>
-          </CaseSection>
-
-          {screenshots.length > 0 ? (
+          {galleryScreenshots.length > 0 ? (
             <CaseSection title="畫面" id="project-screenshots">
               <ul className="grid grid-cols-2 items-start gap-4">
-                {screenshots.map((screenshot) => (
+                {galleryScreenshots.map((screenshot) => (
                   <li
                     key={screenshot.src}
                     className={
@@ -157,18 +196,17 @@ export default async function ProjectPage({ params }: PageProps) {
                       project={project}
                       screenshot={screenshot}
                       variant="gallery"
+                      sizes={
+                        screenshot.orientation === "desktop"
+                          ? "(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 960px"
+                          : "(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 384px"
+                      }
                     />
                   </li>
                 ))}
               </ul>
             </CaseSection>
           ) : null}
-
-          <ProjectLinks
-            className="mt-10"
-            github={project.links?.github}
-            demo={project.links?.demo}
-          />
         </article>
       </div>
     </div>

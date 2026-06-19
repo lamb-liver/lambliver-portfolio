@@ -9,6 +9,6 @@ export const contentType = "image/png";
 export default async function Image() {
   return createOgImage({
     title: `${site.name} · ${site.nameEn}`,
-    subtitle: `${site.role} — ${site.bio}`,
+    subtitle: `${site.role} — ${site.clientPitch}`,
   });
 }

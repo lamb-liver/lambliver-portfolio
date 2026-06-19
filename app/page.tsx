@@ -24,25 +24,20 @@ function SectionHeading({
   );
 }
 
-function ContentShell({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="mx-auto max-w-3xl rounded-sm border border-border bg-surface px-6 py-10 sm:px-10">
-      {children}
-    </div>
-  );
-}
-
 export default function HomePage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
       <PersonJsonLd />
-      <ContentShell>
+      <section className="rounded-sm border border-border bg-surface px-5 py-6 sm:px-8 lg:px-10">
         <Hero />
 
-        <section className="py-16" aria-labelledby="screenshots-heading">
+        <section
+          className="border-t border-muted/25 pt-8 sm:pt-10"
+          aria-labelledby="screenshots-heading"
+        >
           <SectionHeading id="screenshots-heading">實作畫面</SectionHeading>
-          <ul className="grid grid-cols-2 items-start gap-4">
-            {featuredProjectScreenshots.map(({ project, screenshot }) => (
+          <ul className="grid grid-cols-2 items-start gap-3 sm:gap-4 lg:gap-5">
+            {featuredProjectScreenshots.map(({ project, screenshot }, index) => (
               <li
                 key={`${project.slug}-${screenshot.src}`}
                 className={
@@ -57,29 +52,37 @@ export default function HomePage() {
                     project={project}
                     screenshot={screenshot}
                     variant="featured"
+                    priority={index === 0}
+                    sizes={
+                      screenshot.orientation === "desktop"
+                        ? "(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 928px"
+                        : "(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 456px"
+                    }
                   />
                 </Link>
               </li>
             ))}
           </ul>
         </section>
+      </section>
 
-        <section
-          id="about"
-          className="anchor-target py-16"
-          aria-labelledby="about-heading"
-        >
-          <SectionHeading id="about-heading">關於</SectionHeading>
-          <div className="space-y-3 leading-relaxed text-muted">
-            {site.about.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-        </section>
+      <section
+        id="about"
+        className="anchor-target mx-auto max-w-3xl px-1 py-14 sm:py-16"
+        aria-labelledby="about-heading"
+      >
+        <SectionHeading id="about-heading">關於</SectionHeading>
+        <div className="space-y-3 leading-relaxed text-muted">
+          {site.about.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </section>
 
-        <section
+      <section className="border-y border-muted/25 py-14 sm:py-16">
+        <div
           id="skills"
-          className="py-16"
+          className="mx-auto max-w-3xl"
           aria-labelledby="skills-heading"
         >
           <SectionHeading id="skills-heading">技能</SectionHeading>
@@ -105,60 +108,60 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section
-          id="projects"
-          className="anchor-target py-16"
-          aria-labelledby="projects-heading"
-        >
-          <SectionHeading id="projects-heading">專案</SectionHeading>
-          <ul className="space-y-4">
-            {projects.map((project, index) => (
-              <li key={project.slug}>
-                <ProjectCard project={project} index={index} />
-              </li>
-            ))}
-          </ul>
-        </section>
+      <section
+        id="projects"
+        className="anchor-target mx-auto max-w-3xl py-14 sm:py-16"
+        aria-labelledby="projects-heading"
+      >
+        <SectionHeading id="projects-heading">專案</SectionHeading>
+        <ul className="space-y-4">
+          {projects.map((project) => (
+            <li key={project.slug}>
+              <ProjectCard project={project} />
+            </li>
+          ))}
+        </ul>
+      </section>
 
-        <section
-          id="contact"
-          className="anchor-target py-16"
-          aria-labelledby="contact-heading"
-        >
-          <SectionHeading id="contact-heading">聯絡</SectionHeading>
-          <p className="leading-relaxed text-muted">{site.availability}</p>
-          <ul className="mt-10 space-y-6">
+      <section
+        id="contact"
+        className="anchor-target mx-auto max-w-3xl py-14 sm:py-16"
+        aria-labelledby="contact-heading"
+      >
+        <SectionHeading id="contact-heading">聯絡</SectionHeading>
+        <p className="leading-relaxed text-muted">{site.availability}</p>
+        <ul className="mt-10 space-y-6">
+          <li>
+            <p className="font-mono text-xs uppercase tracking-widest text-muted">
+              Email
+            </p>
+            <a
+              href={`mailto:${site.email}`}
+              className="mt-1 inline-block rounded-sm px-1 text-foreground link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+            >
+              {site.email}
+            </a>
+          </li>
+          {site.social.github ? (
             <li>
               <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                Email
+                GitHub
               </p>
               <a
-                href={`mailto:${site.email}`}
+                href={site.social.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-1 inline-block rounded-sm px-1 text-foreground link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
               >
-                {site.email}
+                {site.social.github}
               </a>
             </li>
-            {site.social.github ? (
-              <li>
-                <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                  GitHub
-                </p>
-                <a
-                  href={site.social.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-block rounded-sm px-1 text-foreground link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
-                >
-                  {site.social.github}
-                </a>
-              </li>
-            ) : null}
-          </ul>
-        </section>
-      </ContentShell>
+          ) : null}
+        </ul>
+      </section>
     </div>
   );
 }
