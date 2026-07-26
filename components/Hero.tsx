@@ -11,20 +11,25 @@ const heroImage = {
 
 export function Hero() {
   return (
-    <section className="py-8 sm:py-10" aria-labelledby="hero-heading">
-      <div className="grid gap-8 sm:grid-cols-[minmax(0,1fr)_13rem] sm:items-center lg:grid-cols-[minmax(0,1fr)_15rem]">
-        <div className="min-w-0 flex-1">
+    <section
+      className="hero-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12 lg:px-14 lg:py-14"
+      aria-labelledby="hero-heading"
+    >
+      <div className="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_18rem] lg:grid-cols-[minmax(0,1fr)_22rem]">
+        <div className="min-w-0">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+            {site.name} / {site.nameEn}
+          </p>
           <h1
             id="hero-heading"
-            className="font-mono text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+            className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.12] tracking-[-0.04em] text-foreground sm:text-5xl lg:text-6xl"
           >
-            {site.name}
-          </h1>
-          <p className="mt-3 text-lg text-muted">{site.role}</p>
-          <p className="mt-2 text-base text-foreground">
             {site.clientPitch}
+          </h1>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+            {site.role}，從介面、資料到部署，完成可實際使用的產品。
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-9 flex flex-wrap gap-3">
             <HashLink href="/#projects" className="btn-primary">
               查看專案
             </HashLink>
@@ -34,15 +39,15 @@ export function Hero() {
           </div>
         </div>
 
-        <figure className="hero-portrait">
+        <figure className="hero-portrait justify-self-center md:justify-self-end">
           <Image
             src={heroImage.src}
             alt={heroImage.alt}
             width={heroImage.width}
             height={heroImage.height}
             loading="eager"
-            className="h-auto w-40 sm:w-44 lg:w-52"
-            sizes="(max-width: 640px) 160px, (max-width: 1024px) 176px, 208px"
+            className="h-auto w-56 sm:w-64 lg:w-72"
+            sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
           />
         </figure>
       </div>

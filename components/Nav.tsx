@@ -11,11 +11,11 @@ const navLinks = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-surface/90 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4 sm:px-10">
+    <header className="sticky top-0 z-50 border-b border-border bg-canvas/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="rounded-sm px-1 font-mono text-lg font-medium text-foreground link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+          className="rounded-sm px-1 font-mono text-lg font-semibold text-foreground link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
         >
           {site.name}
         </Link>

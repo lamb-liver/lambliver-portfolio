@@ -62,8 +62,8 @@ export const projects: Project[] = [
     screenshots: [
       {
         src: "/images/projects/card-deck-builder-featured.webp",
-        alt: "組牌模式畫面",
-        caption: "手機單手操作的組牌模式",
+        alt: "查卡模式與卡片列表畫面",
+        caption: "手機查卡、搜尋與多條件篩選",
         orientation: "mobile",
       },
       {
@@ -102,8 +102,8 @@ export const projects: Project[] = [
     screenshots: [
       {
         src: "/images/projects/illustrator-portfolio-home.webp",
-        alt: "作品集網站首頁畫面",
-        caption: "作品展示首頁與導覽結構",
+        alt: "作品集網站關於模板畫面",
+        caption: "關於頁與可替換內容區塊",
         orientation: "desktop",
       },
       {
@@ -261,11 +261,20 @@ export function getProjectSummaryForJsonLd(project: Project): string {
 
 export const featuredProjectScreenshots = [
   {
+    projectSlug: "lab",
+    screenshot: {
+      src: "/images/projects/lab-featured.webp",
+      alt: "羊實驗首頁畫面",
+      caption: "數學與演算法實驗首頁",
+      orientation: "desktop",
+    } satisfies ProjectScreenshot,
+  },
+  {
     projectSlug: "card-deck-builder",
     screenshot: {
       src: "/images/projects/card-deck-builder-featured.webp",
-      alt: "組牌模式畫面",
-      caption: "手機單手操作的組牌模式",
+      alt: "查卡模式與卡片列表畫面",
+      caption: "手機查卡、搜尋與多條件篩選",
       orientation: "mobile",
     } satisfies ProjectScreenshot,
   },
@@ -276,15 +285,6 @@ export const featuredProjectScreenshots = [
       alt: "今日儀表板畫面",
       caption: "結帳後即時顯示今日營業額",
       orientation: "mobile",
-    } satisfies ProjectScreenshot,
-  },
-  {
-    projectSlug: "lab",
-    screenshot: {
-      src: "/images/projects/lab-featured.webp",
-      alt: "羊實驗首頁畫面",
-      caption: "互動視覺化實驗站首頁",
-      orientation: "desktop",
     } satisfies ProjectScreenshot,
   },
 ].map(({ projectSlug, screenshot }) => {

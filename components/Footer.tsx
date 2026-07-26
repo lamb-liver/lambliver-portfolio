@@ -17,8 +17,8 @@ function GitHubIcon({ className }: { className?: string }) {
 export function Footer() {
   return (
     <footer className="border-t border-border py-8">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <div className="flex flex-col gap-2 px-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-2 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>羊肝 · lambliver.dev © 2026</p>
           {site.social.github ? (
             <Link

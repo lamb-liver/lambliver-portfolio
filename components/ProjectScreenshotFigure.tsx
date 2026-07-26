@@ -30,27 +30,70 @@ export function ProjectScreenshotFigure({
   return (
     <figure
       className={cn(
-        "overflow-hidden border border-border bg-surface",
+        "overflow-hidden bg-surface",
         isFeatured && "project-card",
-        !isFeatured && isMobile && "mx-auto max-w-xs",
+        !isFeatured && "border border-border",
+        !isFeatured && isMobile && "mx-auto max-w-sm",
       )}
     >
-      <Image
-        src={screenshot.src}
-        alt={screenshot.alt}
-        width={width}
-        height={height}
-        sizes={imageSizes}
-        priority={priority}
-        loading={priority ? "eager" : undefined}
-        fetchPriority={priority ? "high" : undefined}
-        className="block h-auto w-full object-contain"
-      />
-      <figcaption className="border-t border-muted/25 px-4 py-3 leading-relaxed">
+      {isFeatured ? (
+        <div
+          className={cn(
+            "relative overflow-hidden bg-media",
+            isMobile ? "aspect-[4/5]" : "aspect-video",
+          )}
+        >
+          <Image
+            src={screenshot.src}
+            alt={screenshot.alt}
+            fill
+            sizes={imageSizes}
+            priority={priority}
+            loading={priority ? "eager" : undefined}
+            fetchPriority={priority ? "high" : undefined}
+            className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+          />
+        </div>
+      ) : (
+        <Image
+          src={screenshot.src}
+          alt={screenshot.alt}
+          width={width}
+          height={height}
+          sizes={imageSizes}
+          priority={priority}
+          loading={priority ? "eager" : undefined}
+          fetchPriority={priority ? "high" : undefined}
+          className="block h-auto w-full object-contain"
+        />
+      )}
+      <figcaption
+        className={cn(
+          "border-t border-border leading-snug",
+          isFeatured ? "px-5 py-5 sm:px-6 sm:py-6" : "px-4 py-3",
+        )}
+      >
         {isFeatured ? (
           <>
-            <p className="font-mono text-sm text-foreground">{project.name}</p>
-            <p className="mt-1 text-sm text-muted">{screenshot.caption}</p>
+            {project.platform ? (
+              <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
+                {project.platform}
+              </p>
+            ) : null}
+            <div className="mt-2 flex items-start justify-between gap-4">
+              <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+                {project.name}
+              </h3>
+              <span
+                className="shrink-0 font-mono text-sm text-accent"
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </div>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
+              {project.description}
+            </p>
           </>
         ) : (
           <p className="text-sm text-muted">{screenshot.caption}</p>

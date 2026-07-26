@@ -23,14 +23,15 @@ function CaseSection({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mt-10" aria-labelledby={id}>
+    <section className="mt-12 first:mt-0" aria-labelledby={id}>
       <h2
         id={id}
-        className="font-mono text-xs uppercase tracking-widest text-muted"
+        className="flex items-center gap-3 text-lg font-semibold tracking-tight text-foreground"
       >
+        <span className="h-px w-6 bg-accent" aria-hidden="true" />
         {title}
       </h2>
-      <div className="mt-3">{children}</div>
+      <div className="mt-4">{children}</div>
     </section>
   );
 }
@@ -79,9 +80,9 @@ export default async function ProjectPage({ params }: PageProps) {
   const [heroScreenshot, ...galleryScreenshots] = screenshots;
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
       <ProjectJsonLd project={project} slug={slug} />
-      <div className="rounded-sm border border-border bg-surface px-6 py-8 sm:px-10">
+      <div className="border border-border bg-surface px-6 py-8 sm:px-10 sm:py-10 lg:px-12">
         <HashLink
           href="/#projects"
           className="rounded-sm px-1 font-mono text-sm text-muted link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
@@ -89,31 +90,31 @@ export default async function ProjectPage({ params }: PageProps) {
           ← 專案
         </HashLink>
 
-        <article className="mt-8">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,24rem)] lg:items-start">
+        <article className="mt-10">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(28rem,1.2fr)] lg:items-start">
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3">
                 {project.platform ? (
-                  <p className="font-mono text-xs text-muted">
+                  <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
                     {project.platform}
                   </p>
                 ) : null}
                 {project.status === "in-progress" ? (
-                  <span className="rounded-sm border border-border px-2 py-0.5 font-mono text-xs text-muted">
+                  <span className="rounded-sm border border-accent/40 bg-accent/10 px-2 py-0.5 font-mono text-xs text-foreground">
                     開發中
                   </span>
                 ) : null}
               </div>
 
-              <h1 className="font-mono text-3xl font-medium text-foreground sm:text-4xl">
+              <h1 className="text-4xl font-semibold leading-tight tracking-[-0.035em] text-foreground sm:text-5xl">
                 {project.name}
               </h1>
-              <p className="mt-3 text-lg leading-relaxed text-muted">
+              <p className="mt-5 text-lg leading-relaxed text-muted">
                 {project.description}
               </p>
             </div>
 
-            <div className="lg:pt-1">
+            <div>
               {heroScreenshot ? (
                 <ProjectScreenshotFigure
                   project={project}
@@ -128,20 +129,22 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
+          <div className="mt-14 grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-start">
             <div>
               <CaseSection title="背景" id="project-background">
-                <p className="leading-relaxed text-muted">
+                <p className="leading-relaxed text-foreground/80">
                   {caseStudy.background}
                 </p>
               </CaseSection>
 
               <CaseSection title="我做了什麼" id="project-work">
-                <p className="leading-relaxed text-muted">{caseStudy.work}</p>
+                <p className="leading-relaxed text-foreground/80">
+                  {caseStudy.work}
+                </p>
               </CaseSection>
 
               <CaseSection title="設計重點" id="project-design">
-                <ul className="list-inside list-disc space-y-2 leading-relaxed text-muted">
+                <ul className="list-inside list-disc space-y-2 leading-relaxed text-foreground/80 marker:text-accent">
                   {caseStudy.designFocus.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -149,13 +152,13 @@ export default async function ProjectPage({ params }: PageProps) {
               </CaseSection>
 
               <CaseSection title="成果" id="project-outcome">
-                <p className="leading-relaxed text-muted">
+                <p className="leading-relaxed text-foreground/80">
                   {caseStudy.outcome}
                 </p>
               </CaseSection>
             </div>
 
-            <aside className="border-t border-muted/25 pt-8 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            <aside className="border-t border-border pt-8 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
               <section aria-labelledby="project-tech">
                 <h2
                   id="project-tech"
@@ -182,13 +185,13 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {galleryScreenshots.length > 0 ? (
             <CaseSection title="畫面" id="project-screenshots">
-              <ul className="grid grid-cols-2 items-start gap-4">
+              <ul className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
                 {galleryScreenshots.map((screenshot) => (
                   <li
                     key={screenshot.src}
                     className={
                       screenshot.orientation === "desktop"
-                        ? "col-span-2"
+                        ? "sm:col-span-2"
                         : undefined
                     }
                   >
