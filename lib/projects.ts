@@ -2,6 +2,7 @@ export type ProjectApplicationKind = "web" | "android";
 
 export interface ProjectScreenshot {
   src: string;
+  desktopSrc?: string;
   alt: string;
   caption: string;
   orientation: "mobile" | "desktop";
@@ -62,8 +63,9 @@ export const projects: Project[] = [
     screenshots: [
       {
         src: "/images/projects/card-deck-builder-featured.webp",
+        desktopSrc: "/images/projects/card-deck-builder-featured-desktop.webp",
         alt: "查卡模式與卡片列表畫面",
-        caption: "手機查卡、搜尋與多條件篩選",
+        caption: "查卡、搜尋與多條件篩選",
         orientation: "mobile",
       },
       {
@@ -273,8 +275,9 @@ export const featuredProjectScreenshots = [
     projectSlug: "card-deck-builder",
     screenshot: {
       src: "/images/projects/card-deck-builder-featured.webp",
+      desktopSrc: "/images/projects/card-deck-builder-featured-desktop.webp",
       alt: "查卡模式與卡片列表畫面",
-      caption: "手機查卡、搜尋與多條件篩選",
+      caption: "查卡、搜尋與多條件篩選",
       orientation: "mobile",
     } satisfies ProjectScreenshot,
   },

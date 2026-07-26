@@ -43,29 +43,45 @@ export function ProjectScreenshotFigure({
             isMobile ? "aspect-[4/5]" : "aspect-video",
           )}
         >
+          <picture className="absolute inset-0">
+            {screenshot.desktopSrc ? (
+              <source
+                media="(min-width: 768px)"
+                srcSet={screenshot.desktopSrc}
+              />
+            ) : null}
+            <Image
+              src={screenshot.src}
+              alt={screenshot.alt}
+              fill
+              sizes={imageSizes}
+              priority={priority}
+              loading={priority ? "eager" : undefined}
+              fetchPriority={priority ? "high" : undefined}
+              className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+            />
+          </picture>
+        </div>
+      ) : (
+        <picture>
+          {screenshot.desktopSrc ? (
+            <source
+              media="(min-width: 768px)"
+              srcSet={screenshot.desktopSrc}
+            />
+          ) : null}
           <Image
             src={screenshot.src}
             alt={screenshot.alt}
-            fill
+            width={width}
+            height={height}
             sizes={imageSizes}
             priority={priority}
             loading={priority ? "eager" : undefined}
             fetchPriority={priority ? "high" : undefined}
-            className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+            className="block h-auto w-full object-contain"
           />
-        </div>
-      ) : (
-        <Image
-          src={screenshot.src}
-          alt={screenshot.alt}
-          width={width}
-          height={height}
-          sizes={imageSizes}
-          priority={priority}
-          loading={priority ? "eager" : undefined}
-          fetchPriority={priority ? "high" : undefined}
-          className="block h-auto w-full object-contain"
-        />
+        </picture>
       )}
       <figcaption
         className={cn(
