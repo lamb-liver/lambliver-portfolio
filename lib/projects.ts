@@ -142,7 +142,7 @@ export const projects: Project[] = [
     },
     screenshots: [
       {
-        src: "/images/projects/lab-home.webp",
+        src: "/images/projects/lab-featured.webp",
         alt: "羊實驗首頁畫面",
         caption: "互動視覺化實驗站首頁",
         orientation: "desktop",

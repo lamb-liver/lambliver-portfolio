@@ -186,7 +186,7 @@ export default async function ProjectPage({ params }: PageProps) {
           {galleryScreenshots.length > 0 ? (
             <CaseSection title="畫面" id="project-screenshots">
               <ul className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
-                {galleryScreenshots.map((screenshot) => (
+                {galleryScreenshots.map((screenshot, index) => (
                   <li
                     key={screenshot.src}
                     className={
@@ -199,6 +199,7 @@ export default async function ProjectPage({ params }: PageProps) {
                       project={project}
                       screenshot={screenshot}
                       variant="gallery"
+                      priority={index === 0}
                       sizes={
                         screenshot.orientation === "desktop"
                           ? "(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 960px"

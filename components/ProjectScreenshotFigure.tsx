@@ -58,15 +58,16 @@ export function ProjectScreenshotFigure({
               priority={priority}
               loading={priority ? "eager" : undefined}
               fetchPriority={priority ? "high" : undefined}
+              unoptimized
               className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
             />
           </picture>
         </div>
       ) : (
-        <picture>
+        <picture className="block">
           {screenshot.desktopSrc ? (
             <source
-              media="(min-width: 768px)"
+              media="(min-width: 1024px)"
               srcSet={screenshot.desktopSrc}
             />
           ) : null}
@@ -79,6 +80,7 @@ export function ProjectScreenshotFigure({
             priority={priority}
             loading={priority ? "eager" : undefined}
             fetchPriority={priority ? "high" : undefined}
+            unoptimized
             className="block h-auto w-full object-contain"
           />
         </picture>

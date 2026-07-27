@@ -172,7 +172,7 @@ html:not(.light) .theme-toggle-btn:hover {
 /* ── 技能標籤 ── */
 
 @utility skill-chip {
-  @apply rounded-sm border border-border bg-surface px-3 py-1.5 font-mono text-sm text-foreground transition-colors;
+  @apply inline-flex items-center whitespace-nowrap rounded-sm border border-border bg-surface px-3 py-1.5 font-mono text-sm text-foreground transition-colors;
 }
 
 @utility skill-chip-core {
