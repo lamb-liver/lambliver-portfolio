@@ -10,14 +10,14 @@
 
 ## 證據快照
 
-- 主線：`main` 共 18 個 commit，從 `447766e`（2026-05-18）到 `e0c5787`（2026-07-28）。
-- 遠端：本機 `main`、`origin/main` 與 GitHub 均為 `e0c5787`。
-- 額外分支：`cursor/frontend-validation-dev-runner` 停在 `c18f965`，未合併、無 PR。
+- 主線：`main` 共 19 個 commit，從 `447766e`（2026-05-18）到 `88b7007`（2026-08-08）。
+- 遠端：本機 `main`、`origin/main` 與 GitHub 均為 `88b7007`。
+- 額外分支：`cursor/frontend-validation-dev-runner` 停在 `c18f965`，從未合併，並於 2026-08-08 刪除本機與遠端 branch；需要時仍可用該 SHA 重建。
 - Git tag：沒有；雖有 `v1.0.0`、`v1.1.0` commit 訊息，但並非正式 tag，`package.json` 仍是 `0.1.0`。
 - 目前 gates：`npm run lint`、8 個 Vitest 測試、`npm run build` 均通過；建置產生首頁與 5 個專案 SSG 頁。
-- 正式站：2026-08-08 可讀到目前新版文案與「精選專案」版面。
-- Lighthouse 結果會受測試條件影響：2026-08-08 使用者重測 Performance 為 99；同日另一輪冷啟動 mobile 診斷為 88、Desktop 四項皆 100。99 已可重現，兩次結果都不應單獨當長期基準。
-- 使用者的 99 分報告同時列出未計分的 Image Delivery insight：圖片共 448.3 KiB、估計可省 270.3 KiB，其中 `card-deck-builder-featured-desktop.webp` 一張就占 240.1 KiB 潛在節省。高分與仍有圖片改善空間並不矛盾。
+- 正式站：Vercel 已於 2026-08-08 成功部署 `88b7007`；首頁與專案頁實際載入新的 optimized image URL。
+- Lighthouse 結果會受測試條件影響：正式站以 Lighthouse 13.4.1 連跑三次 mobile，Performance 為 97／97／99，中位數 97；Accessibility／Best Practices／SEO 三次皆 100。99 是有效單次結果，不再當成固定基準。
+- 優化前的 99 分報告列出 Image Delivery 估計可省 270.3 KiB；部署後三次為 46／46／0 KiB。改善已成立，但 insight 仍會受 CDN cache 與單次載入內容影響。
 
 ## 從一開始到現在
 
@@ -116,7 +116,7 @@
 
 ### P1：整理一次即可
 
-5. 確認未合併 runner branch 不再需要後，刪除本機與遠端 `cursor/frontend-validation-dev-runner`。
+5. 已刪除不再需要的本機與遠端 `cursor/frontend-validation-dev-runner`，並保留原 commit SHA `c18f965` 供必要時重建。
 6. 下一個真正 release 才建立 tag；不要為了補齊外觀，倒推不存在的 release 語意。
 7. 已新增短的根目錄 `AGENTS.md`，只放語言、驗證指令與不可破壞的專案邊界。
 8. Footer 年份在跨到 2027 前處理；不要為它新增 client component。可接受每年改一行，或確認目前 Next build 對 build-time 年份的行為後使用最小方案。
@@ -131,8 +131,9 @@
 - `npm run lint`、8 項 Vitest、production build 與 `git diff --check` 全部通過。
 - 首頁與 `card-deck-builder` 詳情頁已檢查 390px／1440px、Light／Dark；沒有 error overlay 或 console error，主圖實際由 `/_next/image` 提供 responsive 版本。
 - axe WCAG 2 A／AA 為 0 violations；移除技能區無效的泛用元素 ARIA 命名，剩餘人工確認項只有 `aria-hidden` 裝飾箭頭的色彩對比。
-- 本機 production build 的三次 mobile Lighthouse Performance 為 96／98／98，中位數 98；Accessibility／Best Practices／SEO 三次皆 100，Image Delivery 潛在節省由使用者正式站報告的 270.3 KiB 降至約 6 KiB。這是本機條件，不取代使用者正式站已重現的 99 分。
-- 未刪除本機／遠端 runner branch、未建立 tag、未推送；這些外部狀態等正式交付時再決定。
+- 本機 production build 的三次 mobile Lighthouse Performance 為 96／98／98，中位數 98；Accessibility／Best Practices／SEO 三次皆 100，Image Delivery 潛在節省約 6 KiB。
+- PR [#1](https://github.com/lamb-liver/lambliver-portfolio/pull/1) 已 squash 合併為 `88b7007` 並成功部署。正式站三次 mobile Performance 為 97／97／99，中位數 97；其他三項皆 100，Image Delivery 潛在節省為 46／46／0 KiB。
+- 已刪除本機與遠端 runner branch，並將 GitHub About 改成不依賴單次分數的定性描述；未建立沒有 release 語意的 tag。
 
 ## 以後照這個流程工作
 
