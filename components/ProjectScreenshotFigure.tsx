@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import type { Project, ProjectScreenshot } from "@/lib/projects";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +26,14 @@ export function ProjectScreenshotFigure({
     (isFeatured
       ? "(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 456px"
       : "(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 672px");
+  const desktopSrcSet = screenshot.desktopSrc
+    ? getImageProps({
+        src: screenshot.desktopSrc,
+        alt: screenshot.alt,
+        fill: true,
+        sizes: imageSizes,
+      }).props.srcSet
+    : undefined;
 
   return (
     <figure
@@ -44,32 +52,24 @@ export function ProjectScreenshotFigure({
           )}
         >
           <picture className="absolute inset-0">
-            {screenshot.desktopSrc ? (
-              <source
-                media="(min-width: 768px)"
-                srcSet={screenshot.desktopSrc}
-              />
+            {desktopSrcSet ? (
+              <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
             ) : null}
             <Image
               src={screenshot.src}
               alt={screenshot.alt}
               fill
               sizes={imageSizes}
-              priority={priority}
               loading={priority ? "eager" : undefined}
               fetchPriority={priority ? "high" : undefined}
-              unoptimized
               className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
             />
           </picture>
         </div>
       ) : (
         <picture className="block">
-          {screenshot.desktopSrc ? (
-            <source
-              media="(min-width: 1024px)"
-              srcSet={screenshot.desktopSrc}
-            />
+          {desktopSrcSet ? (
+            <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
           ) : null}
           <Image
             src={screenshot.src}
@@ -77,10 +77,8 @@ export function ProjectScreenshotFigure({
             width={width}
             height={height}
             sizes={imageSizes}
-            priority={priority}
             loading={priority ? "eager" : undefined}
             fetchPriority={priority ? "high" : undefined}
-            unoptimized
             className="block h-auto w-full object-contain"
           />
         </picture>

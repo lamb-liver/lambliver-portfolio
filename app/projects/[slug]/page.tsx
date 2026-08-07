@@ -121,7 +121,11 @@ export default async function ProjectPage({ params }: PageProps) {
                   screenshot={heroScreenshot}
                   variant="gallery"
                   priority
-                  sizes="(max-width: 1024px) 100vw, 384px"
+                  sizes={
+                    heroScreenshot.orientation === "desktop"
+                      ? "(max-width: 1024px) 100vw, 624px"
+                      : "384px"
+                  }
                 />
               ) : (
                 <ProjectImagePlaceholder project={project} size="lg" />
@@ -186,7 +190,7 @@ export default async function ProjectPage({ params }: PageProps) {
           {galleryScreenshots.length > 0 ? (
             <CaseSection title="畫面" id="project-screenshots">
               <ul className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
-                {galleryScreenshots.map((screenshot, index) => (
+                {galleryScreenshots.map((screenshot) => (
                   <li
                     key={screenshot.src}
                     className={
@@ -199,11 +203,10 @@ export default async function ProjectPage({ params }: PageProps) {
                       project={project}
                       screenshot={screenshot}
                       variant="gallery"
-                      priority={index === 0}
                       sizes={
                         screenshot.orientation === "desktop"
                           ? "(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 960px"
-                          : "(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 384px"
+                          : "(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 384px"
                       }
                     />
                   </li>

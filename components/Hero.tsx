@@ -46,6 +46,7 @@ export function Hero() {
             width={heroImage.width}
             height={heroImage.height}
             loading="eager"
+            fetchPriority="high"
             className="h-auto w-56 sm:w-64 lg:w-72"
             sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
           />

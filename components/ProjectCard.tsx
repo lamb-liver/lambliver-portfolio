@@ -24,7 +24,6 @@ export function ProjectCard({
               alt=""
               fill
               sizes="(max-width: 640px) 100vw, 120px"
-              loading="eager"
               className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.025]"
             />
           </div>
