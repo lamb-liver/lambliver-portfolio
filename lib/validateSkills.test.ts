@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { projects, type Project } from "@/lib/projects";
+import { getProjectBySlug, projects, type Project } from "@/lib/projects";
 import {
   PROJECT_ONLY_TAGS,
   validateProjectTags,
@@ -80,5 +80,27 @@ describe("validateProjectTags", () => {
     expect(() =>
       validateProjectTags([{ ...baseProject, tags: ["React", "React"] }]),
     ).toThrow(/重複 tag/);
+  });
+});
+
+describe("公開專案事實", () => {
+  it("POS 使用 DataStore 且不再標示開發中或 Room", () => {
+    const project = getProjectBySlug("offline-pos-android");
+
+    expect(project).toBeDefined();
+    expect(project?.status).toBeUndefined();
+    expect(project?.platform).not.toContain("持續開發中");
+    expect(project?.tags).toContain("Jetpack DataStore");
+    expect(project?.tags).not.toContain("Room Database");
+    expect(project?.caseStudy.work).not.toContain("Room");
+  });
+
+  it("卡牌工具標示實際的 Vite 與 PWA 技術", () => {
+    const project = getProjectBySlug("card-deck-builder");
+
+    expect(project).toBeDefined();
+    expect(project?.tags).toContain("Vite");
+    expect(project?.tags).toContain("PWA");
+    expect(project?.tags).not.toContain("TypeScript");
   });
 });
