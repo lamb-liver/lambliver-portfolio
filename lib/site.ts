@@ -35,6 +35,7 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: "React", level: "core" },
       { name: "Next.js", level: "core" },
+      { name: "Astro" },
       { name: "TypeScript", level: "core" },
       { name: "Vite" },
       { name: "p5.js" },
@@ -47,7 +48,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Kotlin", level: "core" },
       { name: "Jetpack Compose" },
       { name: "MVVM" },
-      { name: "Room Database" },
+      { name: "Jetpack DataStore" },
     ],
   },
   {
@@ -58,9 +59,13 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "product",
     label: "產品與領域",
-    skills: ["全文搜尋", "Headless CMS", "JSON Export", "演算法視覺化"].map(
-      (name) => ({ name }),
-    ),
+    skills: [
+      "PWA",
+      "全文搜尋",
+      "Headless CMS",
+      "JSON Export",
+      "演算法視覺化",
+    ].map((name) => ({ name })),
   },
 ];
 
