@@ -27,3 +27,5 @@ npm run build
 新增專案時改 `lib/projects.ts`，tag 要存在於 `lib/site.ts` 的 `skillGroups`，或明確加入 `PROJECT_ONLY_TAGS`。
 
 主題切換使用 `next-themes`：`attribute="class"`、`defaultTheme="dark"`、`enableSystem={false}`。不要新增第二套 localStorage script。
+
+歷史決策、已知彎路與日常檢查表見 [`development-retrospective.md`](development-retrospective.md)。

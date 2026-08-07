@@ -54,7 +54,7 @@ export default function HomePage() {
           精選專案
         </SectionHeading>
         <ul className="grid items-start gap-4 md:grid-cols-2 lg:gap-6">
-          {featuredProjectScreenshots.map(({ project, screenshot }, index) => (
+          {featuredProjectScreenshots.map(({ project, screenshot }) => (
             <li
               key={`${project.slug}-${screenshot.src}`}
               className={
@@ -69,7 +69,6 @@ export default function HomePage() {
                   project={project}
                   screenshot={screenshot}
                   variant="featured"
-                  priority={index < 2}
                   sizes={
                     screenshot.orientation === "desktop"
                       ? "(max-width: 768px) 100vw, 1088px"
@@ -108,7 +107,7 @@ export default function HomePage() {
           </SectionHeading>
           <div className="space-y-6">
             {site.skillGroups.map((group) => (
-              <div key={group.id} aria-labelledby={`skills-${group.id}`}>
+              <div key={group.id}>
                 <h3
                   id={`skills-${group.id}`}
                   className="mb-3 font-mono text-xs uppercase tracking-[0.14em] text-muted"
