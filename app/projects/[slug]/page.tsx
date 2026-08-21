@@ -188,7 +188,7 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
 
           {galleryScreenshots.length > 0 ? (
-            <CaseSection title="畫面" id="project-screenshots">
+            <CaseSection title="功能畫面" id="project-screenshots">
               <ul className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2">
                 {galleryScreenshots.map((screenshot) => (
                   <li

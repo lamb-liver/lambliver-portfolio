@@ -84,6 +84,15 @@ describe("validateProjectTags", () => {
 });
 
 describe("公開專案事實", () => {
+  it.each(projects)("$name 至少提供兩張清楚的功能畫面", (project) => {
+    expect(project.screenshots?.length ?? 0).toBeGreaterThanOrEqual(2);
+
+    for (const screenshot of project.screenshots ?? []) {
+      expect(screenshot.alt.trim()).not.toBe("");
+      expect(screenshot.caption.trim()).not.toBe("");
+    }
+  });
+
   it("POS 使用 DataStore 且不再標示開發中或 Room", () => {
     const project = getProjectBySlug("offline-pos-android");
 

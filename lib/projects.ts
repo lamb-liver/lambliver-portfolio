@@ -75,6 +75,12 @@ export const projects: Project[] = [
         caption: "多條件篩選卡池",
         orientation: "mobile",
       },
+      {
+        src: "/images/projects/card-deck-builder-deck.png",
+        alt: "組牌模式顯示卡池、牌組進度與構築規則",
+        caption: "選擇教團、套用構築規則並管理牌組進度",
+        orientation: "mobile",
+      },
     ],
     links: {
       github: "https://github.com/lamb-liver/accusation-card-tool",
@@ -104,9 +110,9 @@ export const projects: Project[] = [
     },
     screenshots: [
       {
-        src: "/images/projects/illustrator-portfolio-home.webp",
-        alt: "作品集網站關於模板畫面",
-        caption: "關於頁與可替換內容區塊",
+        src: "/images/projects/illustrator-portfolio-works.png",
+        alt: "作品集頁顯示分類篩選與作品卡片",
+        caption: "公開作品集支援分類篩選與作品內頁",
         orientation: "desktop",
       },
       {
@@ -183,9 +189,9 @@ export const projects: Project[] = [
     },
     screenshots: [
       {
-        src: "/images/projects/renthouse-home.webp",
-        alt: "租屋筆記首頁畫面",
-        caption: "首頁新增看房紀錄與最近紀錄",
+        src: "/images/projects/renthouse-inspection.png",
+        alt: "看房檢查流程顯示完成度、狀況評級與現場筆記",
+        caption: "逐項記錄房屋狀況、評級與現場備註",
         orientation: "mobile",
       },
       {
