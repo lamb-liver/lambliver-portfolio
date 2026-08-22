@@ -249,6 +249,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/lamb-liver/appforsale",
+      demo: "https://github.com/lamb-liver/appforsale/releases/download/v1.5.0/StallPOS-1.5.0.apk",
     },
   },
 ];

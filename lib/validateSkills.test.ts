@@ -93,7 +93,7 @@ describe("公開專案事實", () => {
     }
   });
 
-  it("POS 以 Room 保存業務資料，DataStore 僅保留 UI 偏好", () => {
+  it("POS 以 Room 保存業務資料並提供正式 APK", () => {
     const project = getProjectBySlug("offline-pos-android");
 
     expect(project).toBeDefined();
@@ -103,7 +103,9 @@ describe("公開專案事實", () => {
     expect(project?.tags).toContain("Jetpack DataStore");
     expect(project?.caseStudy.work).toContain("Room／SQLite");
     expect(project?.caseStudy.work).toContain("DataStore 僅保留 UI 偏好");
-    expect(project?.links?.demo).toBeUndefined();
+    expect(project?.links?.demo).toBe(
+      "https://github.com/lamb-liver/appforsale/releases/download/v1.5.0/StallPOS-1.5.0.apk",
+    );
   });
 
   it("卡牌工具標示實際的 Vite 與 PWA 技術", () => {
