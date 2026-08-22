@@ -93,15 +93,17 @@ describe("公開專案事實", () => {
     }
   });
 
-  it("POS 使用 DataStore 且不再標示開發中或 Room", () => {
+  it("POS 以 Room 保存業務資料，DataStore 僅保留 UI 偏好", () => {
     const project = getProjectBySlug("offline-pos-android");
 
     expect(project).toBeDefined();
     expect(project?.status).toBeUndefined();
     expect(project?.platform).not.toContain("持續開發中");
+    expect(project?.tags).toContain("Room");
     expect(project?.tags).toContain("Jetpack DataStore");
-    expect(project?.tags).not.toContain("Room Database");
-    expect(project?.caseStudy.work).not.toContain("Room");
+    expect(project?.caseStudy.work).toContain("Room／SQLite");
+    expect(project?.caseStudy.work).toContain("DataStore 僅保留 UI 偏好");
+    expect(project?.links?.demo).toBeUndefined();
   });
 
   it("卡牌工具標示實際的 Vite 與 PWA 技術", () => {

@@ -110,8 +110,8 @@
    - 若要長期保留精確分數，應在 README 或量測紀錄補上日期、URL、Lighthouse 版本、strategy 與三次中位數。
 
 4. **已完成：移除未引用的 `public/downloads/stallpos.apk`。**
-   - 目前正式程式只引用 `app-debug.apk`。
-   - 後續 APK 優先放 GitHub Release 或其他版本化下載位置；若仍放 repo，使用可辨識版本檔名，不要長期用 `app-debug.apk`。
+   - v1.5 案例更新已移除最後一份 `app-debug.apk` 與網站下載入口。
+   - APK 改由對應專案的 GitHub Release 以版本化、簽章與 checksum 驗證後發布，不再直接放入網站 repo。
    - 暫時不重寫 Git 歷史；只有 clone／push 容量真的造成問題時才評估 `git filter-repo`。
 
 ### P1：整理一次即可

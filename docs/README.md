@@ -31,7 +31,7 @@ git diff --check
 - `lib/site.ts`：站點文字、技能、社群連結。
 - `lib/projects.ts`：專案案例、公開連結、截圖與精選順序的唯一來源。
 - `lib/validateSkills.ts`：專案 tags 與技能列表檢查，透過 Vitest 跑。
-- `public/images/projects/`：案例畫面；Android 安裝檔位於 `public/downloads/app-debug.apk`。
+- `public/images/projects/`：案例畫面；Android 安裝檔僅透過對應專案的 GitHub Release 發布，不直接納入網站。
 
 ## 維護
 

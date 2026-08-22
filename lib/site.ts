@@ -47,6 +47,7 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: "Kotlin", level: "core" },
       { name: "Jetpack Compose" },
+      { name: "Room" },
       { name: "MVVM" },
       { name: "Jetpack DataStore" },
     ],

@@ -214,18 +214,18 @@ export const projects: Project[] = [
     description:
       "給市集攤位使用的離線 Android POS：快速結帳、管理商品與庫存，並匯出銷售 CSV 或完整備份。",
     platform: "Android／Kotlin／Jetpack Compose",
-    tags: ["Kotlin", "Jetpack Compose", "Jetpack DataStore", "MVVM"],
+    tags: ["Kotlin", "Jetpack Compose", "Room", "Jetpack DataStore", "MVVM"],
     caseStudy: {
       background:
         "戶外攤位網路常不穩，結帳要快，還得記住今天賣了什麼；紙筆或一般筆記 App 不好算折扣與統計。",
-      work: "以 Jetpack Compose 實作商品、套組、購物車、折扣、庫存與結帳流程；交易狀態由 DataStore + JSON 持久化，並透過 Android SAF 完成 CSV 匯出及 JSON 備份還原。",
+      work: "以 Jetpack Compose 實作商品、套組、購物車、折扣、庫存與結帳流程；業務資料改由 Room／SQLite 管理，DataStore 僅保留 UI 偏好，並透過 Android SAF 完成 CSV 匯出及 JSON 備份還原。",
       designFocus: [
         "離線優先，沒有網路仍能完成整段結帳與查閱今日營收",
-        "在確認結帳時重新對帳金額與庫存，避免畫面快照過期造成錯帳",
-        "提供上一筆復原與版本化備份遷移，降低現場誤操作及資料遺失風險",
+        "結帳與復原在單一 Room transaction 完成，並以不刪除的交易與復原紀錄保留稽核歷史",
+        "保留原有操作與報表格式，同時驗證舊版升級、JSON 搬遷與 production signing",
       ],
       outcome:
-        "目前已提供 v1.2.0 APK，完整支援商品與套組、庫存、現金與行動支付、今日儀表、CSV 匯出及 JSON 備份還原，並以單元測試覆蓋金額、對帳、復原與備份遷移。",
+        "v1.5.0 production baseline 已完成實作與驗證：128 項單元測試、17 項 API 35 裝置測試通過，並實機驗證 v1.2／v1.3／v1.4 升級、未知簽章 JSON 搬遷及飛航模式核心流程。",
     },
     screenshots: [
       {
@@ -249,7 +249,6 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/lamb-liver/appforsale",
-      demo: "/downloads/app-debug.apk",
     },
   },
 ];
