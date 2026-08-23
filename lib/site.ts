@@ -55,7 +55,9 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "deploy",
     label: "部署與建置",
-    skills: ["Cloudflare Pages", "Vercel", "SSG/SSR"].map((name) => ({ name })),
+    skills: ["Cloudflare Pages", "Cloudflare Workers", "Vercel", "SSG/SSR"].map(
+      (name) => ({ name }),
+    ),
   },
   {
     id: "product",
@@ -64,6 +66,7 @@ export const skillGroups: SkillGroup[] = [
       "PWA",
       "全文搜尋",
       "Headless CMS",
+      "IndexedDB",
       "JSON Export",
       "演算法視覺化",
     ].map((name) => ({ name })),

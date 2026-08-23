@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { renderToStaticMarkup } from "react-dom/server";
+import { ProjectLinks } from "@/components/ProjectLinks";
 import { getProjectBySlug, projects, type Project } from "@/lib/projects";
 import {
   PROJECT_ONLY_TAGS,
@@ -115,5 +117,16 @@ describe("公開專案事實", () => {
     expect(project?.tags).toContain("Vite");
     expect(project?.tags).toContain("PWA");
     expect(project?.tags).not.toContain("TypeScript");
+  });
+
+  it("痛包規劃只提供正式站，不公開 GitHub 連結", () => {
+    const project = getProjectBySlug("itabag-planner");
+
+    expect(project?.links).toEqual({ demo: "https://itabag.lambliver.dev/" });
+    expect(project?.tags).toContain("Cloudflare Workers");
+    expect(project?.tags).toContain("IndexedDB");
+    expect(
+      renderToStaticMarkup(ProjectLinks({ demo: project?.links?.demo })),
+    ).not.toContain("GitHub");
   });
 });

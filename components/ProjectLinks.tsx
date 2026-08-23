@@ -19,11 +19,7 @@ export function ProjectLinks({ github, demo, className }: ProjectLinksProps) {
         >
           GitHub ↗
         </a>
-      ) : (
-        <span className="cursor-not-allowed font-mono text-sm text-muted opacity-60">
-          GitHub（即將公開）
-        </span>
-      )}
+      ) : null}
       {demo ? <DemoLink href={demo} className="demo-link text-sm" /> : null}
     </div>
   );
