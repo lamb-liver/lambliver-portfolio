@@ -251,20 +251,20 @@ export const projects: Project[] = [
     monogram: "攤",
     name: "小攤位離線結帳 App",
     description:
-      "給市集攤位使用的離線 Android POS：快速結帳、管理商品與庫存，並匯出銷售 CSV 或完整備份。",
-    platform: "Android／Kotlin／Jetpack Compose",
-    tags: ["Kotlin", "Jetpack Compose", "Room", "Jetpack DataStore", "MVVM"],
+      "給市集攤位使用的離線優先 Android POS：快速結帳、活動庫存、雲端備份／換機恢復與唯讀分析。",
+    platform: "Android／Kotlin／Jetpack Compose／Cloudflare Workers",
+    tags: ["Kotlin", "Jetpack Compose", "Room", "Jetpack DataStore", "MVVM", "Cloudflare Workers"],
     caseStudy: {
       background:
         "戶外攤位網路常不穩，結帳要快，還得記住今天賣了什麼；紙筆或一般筆記 App 不好算折扣與統計。",
-      work: "以 Jetpack Compose 實作商品、套組、購物車、折扣、庫存與結帳流程；業務資料改由 Room／SQLite 管理，DataStore 僅保留 UI 偏好，並透過 Android SAF 完成 CSV 匯出及 JSON 備份還原。",
+      work: "以 Jetpack Compose、加密 Room／SQLCipher 完成商品、套組、活動庫存、結帳、VOID 與本機交易查詢；Outbox 經 Cloudflare Worker／雙 D1 同步，並提供換機還原與唯讀 Web Dashboard。",
       designFocus: [
-        "離線優先，沒有網路仍能完成整段結帳與查閱今日營收",
-        "結帳與復原在單一 Room transaction 完成，並以不刪除的交易與復原紀錄保留稽核歷史",
-        "保留原有操作與報表格式，同時驗證舊版升級、JSON 搬遷與 production signing",
+        "離線 SALE／VOID 與 Outbox 在同一 Room transaction 完成，網路恢復後再依序重試",
+        "以 append-only snapshot 與冪等同步維持裝置庫存、雲端資料及報表一致",
+        "單一 ACTIVE Device、跨 D1 刪除 tombstone 與去識別診斷，縮小換機及 restore 風險",
       ],
       outcome:
-        "v1.5.0 production baseline 已完成實作與驗證：128 項單元測試、17 項 API 35 裝置測試通過，並實機驗證 v1.2／v1.3／v1.4 升級、未知簽章 JSON 搬遷及飛航模式核心流程。",
+        "v2.1.1 已完成 production-signed Android 發布與 Cloudflare production 部署；Android／Worker／雙 D1／Dashboard browser／signed upgrade gates 通過，官方 APK 由 immutable GitHub Release 提供。",
     },
     screenshots: [
       {
@@ -288,7 +288,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/lamb-liver/appforsale",
-      demo: "https://github.com/lamb-liver/appforsale/releases/download/v1.5.0/StallPOS-1.5.0.apk",
+      demo: "https://github.com/lamb-liver/appforsale/releases/download/v2.1.1/StallPOS-2.1.1.apk",
     },
   },
 ];

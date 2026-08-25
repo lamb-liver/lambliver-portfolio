@@ -103,10 +103,11 @@ describe("公開專案事實", () => {
     expect(project?.platform).not.toContain("持續開發中");
     expect(project?.tags).toContain("Room");
     expect(project?.tags).toContain("Jetpack DataStore");
-    expect(project?.caseStudy.work).toContain("Room／SQLite");
-    expect(project?.caseStudy.work).toContain("DataStore 僅保留 UI 偏好");
+    expect(project?.tags).toContain("Cloudflare Workers");
+    expect(project?.caseStudy.work).toContain("Room／SQLCipher");
+    expect(project?.caseStudy.outcome).toContain("v2.1.1");
     expect(project?.links?.demo).toBe(
-      "https://github.com/lamb-liver/appforsale/releases/download/v1.5.0/StallPOS-1.5.0.apk",
+      "https://github.com/lamb-liver/appforsale/releases/download/v2.1.1/StallPOS-2.1.1.apk",
     );
   });
 
