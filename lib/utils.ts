@@ -16,7 +16,7 @@ export function isApkDemoUrl(url: string): boolean {
 }
 
 export function getDemoLinkLabel(url: string): string {
-  return isApkDemoUrl(url) ? "下載 APK" : "Demo";
+  return isApkDemoUrl(url) ? "下載 App" : "打開網站";
 }
 
 export function getApkDownloadName(url: string): string {

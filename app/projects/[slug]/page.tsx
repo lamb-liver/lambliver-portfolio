@@ -147,7 +147,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 </p>
               </CaseSection>
 
-              <CaseSection title="設計重點" id="project-design">
+              <CaseSection title="特別在意" id="project-design">
                 <ul className="list-inside list-disc space-y-2 leading-relaxed text-foreground/80 marker:text-accent">
                   {caseStudy.designFocus.map((item) => (
                     <li key={item}>{item}</li>
@@ -168,7 +168,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   id="project-tech"
                   className="font-mono text-xs uppercase tracking-widest text-muted"
                 >
-                  技術
+                  用到什麼
                 </h2>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (

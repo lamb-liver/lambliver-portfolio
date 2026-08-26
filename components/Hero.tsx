@@ -27,14 +27,14 @@ export function Hero() {
             {site.clientPitch}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            {site.role}，從介面、資料到部署，完成可實際使用的產品。
+            {site.role}。畫面好用、資料穩、做完就能上線。
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <HashLink href="/#projects" className="btn-primary">
               查看專案
             </HashLink>
             <HashLink href="/#contact" className="btn-secondary">
-              討論需求
+              找我聊聊
             </HashLink>
           </div>
         </div>

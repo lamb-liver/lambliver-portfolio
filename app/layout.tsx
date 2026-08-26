@@ -20,19 +20,19 @@ export const metadata: Metadata = {
     default: `${site.name} · ${site.nameEn}`,
     template: `%s · ${site.nameEn}`,
   },
-  description: `${site.role} 的作品集`,
+  description: `羊肝的作品集：網站、小工具與攤位結帳 App。`,
   openGraph: {
     type: "website",
     locale: "zh_TW",
     url: site.url,
     siteName: site.name,
     title: `${site.name} · ${site.nameEn}`,
-    description: `${site.role} 的作品集`,
+    description: `羊肝的作品集：網站、小工具與攤位結帳 App。`,
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} · ${site.nameEn}`,
-    description: `${site.role} 的作品集`,
+    description: `羊肝的作品集：網站、小工具與攤位結帳 App。`,
   },
 };
 

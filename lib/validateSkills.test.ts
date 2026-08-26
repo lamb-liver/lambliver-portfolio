@@ -95,7 +95,7 @@ describe("公開專案事實", () => {
     }
   });
 
-  it("POS 以 Room 保存業務資料並提供正式 APK", () => {
+  it("POS 提供可安裝的正式 App", () => {
     const project = getProjectBySlug("offline-pos-android");
 
     expect(project).toBeDefined();
@@ -104,10 +104,10 @@ describe("公開專案事實", () => {
     expect(project?.tags).toContain("Room");
     expect(project?.tags).toContain("Jetpack DataStore");
     expect(project?.tags).toContain("Cloudflare Workers");
-    expect(project?.caseStudy.work).toContain("Room／SQLCipher");
-    expect(project?.caseStudy.outcome).toContain("v2.1.1");
+    expect(project?.caseStudy.work).toContain("沒網路也能賣完");
+    expect(project?.caseStudy.outcome).toContain("v2.1.3");
     expect(project?.links?.demo).toBe(
-      "https://github.com/lamb-liver/appforsale/releases/download/v2.1.1/StallPOS-2.1.1.apk",
+      "https://github.com/lamb-liver/appforsale/releases/download/v2.1.3/StallPOS-2.1.3.apk",
     );
   });
 

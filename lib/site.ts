@@ -31,7 +31,7 @@ export interface SiteConfig {
 export const skillGroups: SkillGroup[] = [
   {
     id: "frontend",
-    label: "前端框架",
+    label: "網站",
     skills: [
       { name: "React", level: "core" },
       { name: "Next.js", level: "core" },
@@ -43,7 +43,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     id: "mobile",
-    label: "行動開發",
+    label: "手機 App",
     skills: [
       { name: "Kotlin", level: "core" },
       { name: "Jetpack Compose" },
@@ -54,14 +54,14 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     id: "deploy",
-    label: "部署與建置",
+    label: "上線",
     skills: ["Cloudflare Pages", "Cloudflare Workers", "Vercel", "SSG/SSR"].map(
       (name) => ({ name }),
     ),
   },
   {
     id: "product",
-    label: "產品與領域",
+    label: "也會做",
     skills: [
       "PWA",
       "全文搜尋",
@@ -80,13 +80,13 @@ export function getAllSkills(groups: SkillGroup[] = skillGroups): string[] {
 export const site: SiteConfig = {
   name: "羊肝",
   nameEn: "lambliver",
-  role: "前端與 Android 開發",
-  clientPitch: "把想法做成真的能用的網站或 App。",
-  availability: "有想做的網站、工具或 App，可以先簡單說明你的想法。",
+  role: "做網站與手機 App",
+  clientPitch: "把想法做成你真的能拿去用的東西。",
+  availability: "有想做的網站、工具或 App，寫幾句你的想法就好。",
   about: [
-    "目前就讀數學系大四，主要做前端網站、互動工具與 Android App。",
-    "常用 React / Next.js / TypeScript 開發網站與互動介面，也使用 Kotlin / Jetpack Compose 製作 Android App。",
-    "歡迎 side project 或技術交流。",
+    "數學系大四，平常做網站、小工具，也做給手機用的 App。",
+    "喜歡把複雜的事情收成幾個清楚的按鈕：查卡、看房、結帳，打開就能用。",
+    "有 side project 或想一起做東西，歡迎來信。",
   ],
   email: "lambliver.dev@gmail.com",
   url: "https://lambliver.dev",
