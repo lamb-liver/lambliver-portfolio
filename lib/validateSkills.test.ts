@@ -104,7 +104,7 @@ describe("公開專案事實", () => {
     expect(project?.tags).toContain("Room");
     expect(project?.tags).toContain("Jetpack DataStore");
     expect(project?.tags).toContain("Cloudflare Workers");
-    expect(project?.caseStudy.work).toContain("沒網路也能賣完");
+    expect(project?.caseStudy.work).toContain("沒網路也能結帳");
     expect(project?.caseStudy.outcome).toContain("v2.1.3");
     expect(project?.links?.demo).toBe(
       "https://github.com/lamb-liver/appforsale/releases/download/v2.1.3/StallPOS-2.1.3.apk",

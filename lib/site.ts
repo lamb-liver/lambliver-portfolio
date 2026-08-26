@@ -61,7 +61,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     id: "product",
-    label: "也會做",
+    label: "其他",
     skills: [
       "PWA",
       "全文搜尋",
@@ -81,12 +81,12 @@ export const site: SiteConfig = {
   name: "羊肝",
   nameEn: "lambliver",
   role: "做網站與手機 App",
-  clientPitch: "把想法做成你真的能拿去用的東西。",
-  availability: "有想做的網站、工具或 App，寫幾句你的想法就好。",
+  clientPitch: "做能實際使用的網站和 App。",
+  availability: "想做網站、工具或 App，簡單說一下就可以。",
   about: [
-    "數學系大四，平常做網站、小工具，也做給手機用的 App。",
-    "喜歡把複雜的事情收成幾個清楚的按鈕：查卡、看房、結帳，打開就能用。",
-    "有 side project 或想一起做東西，歡迎來信。",
+    "數學系大四，平常做網站、小工具，也做手機 App。",
+    "做過查卡、看房紀錄、攤位結帳這類打開就能用的東西。",
+    "有 side project 或想一起做，歡迎來信。",
   ],
   email: "lambliver.dev@gmail.com",
   url: "https://lambliver.dev",

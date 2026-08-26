@@ -152,7 +152,7 @@ export default function HomePage() {
           id="contact-heading"
           className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
         >
-          有想法的話，一起做成能用的東西。
+          想做網站或 App，可以寫信給我。
         </h2>
         <p className="mt-4 max-w-xl leading-relaxed text-muted">
           {site.availability}
