@@ -165,6 +165,7 @@ export default function HomePage() {
         <SectionHeading id="contact-heading" index="05">
           聯絡
         </SectionHeading>
+        <p className="type-h2 mb-4">歡迎來信洽詢委託。</p>
         <p className="type-body max-w-xl">{site.availability}</p>
         <p className="mt-3 break-all font-mono text-sm text-foreground">
           {site.email}

@@ -45,21 +45,23 @@ export function ProjectScreenshotFigure({
       )}
     >
       {isFeatured ? (
-        <div className="relative aspect-[4/5] overflow-hidden bg-media md:aspect-video">
-          <picture className="absolute inset-0">
-            {desktopSrcSet ? (
-              <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
-            ) : null}
-            <Image
-              src={screenshot.src}
-              alt={screenshot.alt}
-              fill
-              sizes={imageSizes}
-              loading={priority ? "eager" : undefined}
-              fetchPriority={priority ? "high" : undefined}
-              className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.015]"
-            />
-          </picture>
+        <div className="bg-media p-2.5 md:p-3">
+          <div className="relative aspect-[4/5] overflow-hidden md:aspect-video">
+            <picture className="absolute inset-0">
+              {desktopSrcSet ? (
+                <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+              ) : null}
+              <Image
+                src={screenshot.src}
+                alt={screenshot.alt}
+                fill
+                sizes={imageSizes}
+                loading={priority ? "eager" : undefined}
+                fetchPriority={priority ? "high" : undefined}
+                className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+              />
+            </picture>
+          </div>
         </div>
       ) : (
         <picture className="block">

@@ -17,14 +17,16 @@ export function ProjectCard({
         className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
       >
         {screenshot ? (
-          <div className="relative aspect-[4/5] overflow-hidden bg-media md:aspect-video">
-            <Image
-              src={screenshot.src}
-              alt=""
-              fill
-              sizes="(max-width: 768px) 100vw, 536px"
-              className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.015]"
-            />
+          <div className="bg-media p-2.5 md:p-3">
+            <div className="relative aspect-[4/5] overflow-hidden md:aspect-video">
+              <Image
+                src={screenshot.src}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 100vw, 536px"
+                className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+              />
+            </div>
           </div>
         ) : (
           <ProjectImagePlaceholder project={project} size="sm" />
