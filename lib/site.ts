@@ -86,7 +86,7 @@ export const site: SiteConfig = {
   name: "羊肝",
   nameEn: "lambliver",
   role: "做網站與手機 App",
-  clientPitch: "協助建置作品集網站與實用工具，並支援後續內容更新與上線。",
+  clientPitch: "作品集網站與小型工具。",
   availability:
     "目前可承接網站與小型工具開發。請來信說明需求與期望時程，我將回覆可行性、時程與報價。",
   about: [

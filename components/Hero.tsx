@@ -27,7 +27,7 @@ export function Hero() {
             {site.clientPitch}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            網站、作品集站與小型工具。可支援內容更新與上線維護。
+            內容更新與上線維護，可一併討論。
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <HashLink href="/#projects" className="btn-primary">
