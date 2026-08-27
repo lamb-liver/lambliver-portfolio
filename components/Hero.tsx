@@ -15,7 +15,7 @@ export function Hero() {
       className="hero-panel overflow-hidden px-6 py-8 sm:px-10 sm:py-12 lg:px-14 lg:py-14"
       aria-labelledby="hero-heading"
     >
-      <div className="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_18rem] lg:grid-cols-[minmax(0,1fr)_22rem]">
+      <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_11rem] lg:grid-cols-[minmax(0,1fr)_13rem]">
         <div className="min-w-0">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
             {site.name} / {site.nameEn}
@@ -45,10 +45,11 @@ export function Hero() {
             alt={heroImage.alt}
             width={heroImage.width}
             height={heroImage.height}
+            unoptimized
             loading="eager"
             fetchPriority="high"
-            className="h-auto w-56 sm:w-64 lg:w-72"
-            sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
+            className="h-auto w-36 sm:w-44 lg:w-52"
+            sizes="(max-width: 640px) 144px, (max-width: 1024px) 176px, 208px"
           />
         </figure>
       </div>

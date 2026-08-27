@@ -46,11 +46,41 @@ export default function HomePage() {
       <Hero />
 
       <section
+        id="services"
+        className="anchor-target py-16 sm:py-20"
+        aria-labelledby="services-heading"
+      >
+        <SectionHeading id="services-heading" index="01">
+          可承接項目
+        </SectionHeading>
+        <ul className="grid gap-4 md:grid-cols-3">
+          {site.offerings.map((offering) => (
+            <li key={offering.title}>
+              <article className="project-card h-full p-5 sm:p-6">
+                <h3 className="font-semibold tracking-tight text-foreground">
+                  {offering.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">
+                  {offering.description}
+                </p>
+              </article>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+          {site.offeringsNote}
+        </p>
+        <a href={site.inquiryMailto} className="btn-primary mt-6">
+          來信洽詢委託
+        </a>
+      </section>
+
+      <section
         id="projects"
         className="anchor-target py-16 sm:py-20"
         aria-labelledby="projects-heading"
       >
-        <SectionHeading id="projects-heading" index="01">
+        <SectionHeading id="projects-heading" index="02">
           精選專案
         </SectionHeading>
         <ul className="grid items-start gap-4 md:grid-cols-2 lg:gap-6">
@@ -79,41 +109,46 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+        <p className="mt-8">
+          <a href={site.inquiryMailto} className="demo-link text-sm">
+            來信洽詢委託
+          </a>
+        </p>
       </section>
 
-      <div className="grid gap-14 border-y border-border py-16 sm:py-20 lg:grid-cols-2 lg:gap-20">
-        <section
-          id="about"
-          className="anchor-target"
-          aria-labelledby="about-heading"
-        >
-          <SectionHeading id="about-heading" index="02">
-            關於
-          </SectionHeading>
-          <div className="max-w-xl space-y-4 text-base leading-relaxed text-muted sm:text-lg">
-            {site.about.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-        </section>
-
-        <section
+      <section
+        id="about"
+        className="anchor-target border-y border-border py-16 sm:py-20"
+        aria-labelledby="about-heading"
+      >
+        <SectionHeading id="about-heading" index="03">
+          關於
+        </SectionHeading>
+        <div className="max-w-xl space-y-4 text-base leading-relaxed text-muted sm:text-lg">
+          {site.about.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+        <div
           id="skills"
-          className="anchor-target"
+          className="mt-12 max-w-3xl"
           aria-labelledby="skills-heading"
         >
-          <SectionHeading id="skills-heading" index="03">
+          <h3
+            id="skills-heading"
+            className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted"
+          >
             技能
-          </SectionHeading>
-          <div className="space-y-6">
+          </h3>
+          <div className="space-y-5">
             {site.skillGroups.map((group) => (
               <div key={group.id}>
-                <h3
+                <p
                   id={`skills-${group.id}`}
-                  className="mb-3 font-mono text-xs uppercase tracking-[0.14em] text-muted"
+                  className="mb-2 font-mono text-xs tracking-[0.12em] text-muted"
                 >
                   {group.label}
-                </h3>
+                </p>
                 <ul className="flex flex-wrap gap-2">
                   {group.skills.map((skill) => (
                     <li key={skill.name}>
@@ -124,37 +159,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </section>
-      </div>
-
-      <section
-        id="services"
-        className="anchor-target py-16 sm:py-20"
-        aria-labelledby="services-heading"
-      >
-        <SectionHeading id="services-heading" index="04">
-          可承接項目
-        </SectionHeading>
-        <dl className="max-w-xl space-y-6">
-          {site.offerings.map((offering) => (
-            <div key={offering.title}>
-              <dt className="font-semibold tracking-tight text-foreground">
-                {offering.title}
-              </dt>
-              <dd className="mt-2 text-base leading-relaxed text-muted sm:text-lg">
-                {offering.description}
-              </dd>
-            </div>
-          ))}
-        </dl>
-        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-          {site.offeringsNote}
-        </p>
+        </div>
       </section>
 
       {otherProjects.length > 0 ? (
         <section className="py-16 sm:py-20" aria-labelledby="other-projects-heading">
-          <SectionHeading id="other-projects-heading" index="05">
+          <SectionHeading id="other-projects-heading" index="04">
             其他專案
           </SectionHeading>
           <ul className="grid gap-4 md:grid-cols-2">
@@ -172,14 +182,10 @@ export default function HomePage() {
         className="contact-panel anchor-target mb-8 px-6 py-10 sm:px-10 sm:py-12 lg:px-14"
         aria-labelledby="contact-heading"
       >
-        <p className="font-mono text-xs tracking-[0.18em] text-accent">06 / 聯絡</p>
-        <h2
-          id="contact-heading"
-          className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
-        >
-          歡迎來信洽詢委託。
-        </h2>
-        <p className="mt-4 max-w-xl leading-relaxed text-muted">
+        <SectionHeading id="contact-heading" index="05">
+          聯絡
+        </SectionHeading>
+        <p className="max-w-xl leading-relaxed text-muted">
           {site.availability}
         </p>
         <p className="mt-3 break-all font-mono text-sm text-foreground">
