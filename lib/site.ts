@@ -80,6 +80,17 @@ export function getAllSkills(groups: SkillGroup[] = skillGroups): string[] {
   return groups.flatMap((group) => group.skills.map((skill) => skill.name));
 }
 
+export function getCoreSkillGroups(
+  groups: SkillGroup[] = skillGroups,
+): SkillGroup[] {
+  return groups
+    .map((group) => ({
+      ...group,
+      skills: group.skills.filter((skill) => skill.level === "core"),
+    }))
+    .filter((group) => group.skills.length > 0);
+}
+
 const email = "lambliver.dev@gmail.com";
 
 export const site: SiteConfig = {

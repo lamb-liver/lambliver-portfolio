@@ -105,8 +105,7 @@ export const projects: Project[] = [
         "圖片顯示穩定，降低外部連結失效造成的破圖",
         "發布前檢查必填欄位，減少上線後錯誤",
       ],
-      outcome:
-        "公開示範站：artdemo.lambliver.dev。可作為委託參考；實際專案可依品牌與流程調整。",
+      outcome: "作品與介紹可自行更新，無需改程式。",
     },
     screenshots: [
       {
@@ -224,8 +223,7 @@ export const projects: Project[] = [
         "裝得下、會不會超出、從外面看不看得到，分開顯示；結果只供參考",
         "不用註冊；資料預設只留在你的裝置上",
       ],
-      outcome:
-        "已上線 itabag.lambliver.dev，電腦和手機都能用。以前存的專案還可以打開。",
+      outcome: "買之前就能確認徽章、板子和包包裝不裝得下。",
     },
     screenshots: [
       {
@@ -263,8 +261,7 @@ export const projects: Project[] = [
         "手機和報表上的數字要對得上",
         "同一時間只有一台手機當結帳機，避免兩台一起賣把帳弄亂",
       ],
-      outcome:
-        "v2.1.3 可以下載安裝。沒網路也能結帳；報表要登入才看得到。",
+      outcome: "沒網路也能收錢，之後再上傳。",
     },
     screenshots: [
       {

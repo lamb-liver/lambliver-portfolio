@@ -5,7 +5,7 @@ import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
 import Link from "next/link";
 import { featuredProjectScreenshots, projects } from "@/lib/projects";
-import { site } from "@/lib/site";
+import { getCoreSkillGroups, site } from "@/lib/site";
 
 function SectionHeading({
   id,
@@ -97,11 +97,9 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-        <p className="mt-8">
-          <a href={site.inquiryMailto} className="demo-link text-sm">
-            來信洽詢委託
-          </a>
-        </p>
+        <a href={site.inquiryMailto} className="btn-secondary mt-8">
+          來信洽詢委託
+        </a>
       </section>
 
       <section
@@ -126,7 +124,7 @@ export default function HomePage() {
             技能
           </h3>
           <div className="grid gap-6 sm:grid-cols-2">
-            {site.skillGroups.map((group) => (
+            {getCoreSkillGroups().map((group) => (
               <div key={group.id}>
                 <p id={`skills-${group.id}`} className="type-meta mb-2">
                   {group.label}
