@@ -310,7 +310,8 @@ export const featuredProjectScreenshots = [
   {
     projectSlug: "illustrator-portfolio",
     screenshot: {
-      src: "/images/projects/illustrator-portfolio-works.png",
+      src: "/images/projects/illustrator-portfolio-featured.webp",
+      desktopSrc: "/images/projects/illustrator-portfolio-featured-desktop.webp",
       alt: "作品集頁顯示分類篩選與作品卡片",
       caption: "公開作品集支援分類篩選與作品內頁",
       orientation: "desktop",
@@ -319,7 +320,8 @@ export const featuredProjectScreenshots = [
   {
     projectSlug: "itabag-planner",
     screenshot: {
-      src: "/images/projects/itabag-arrange.jpg",
+      src: "/images/projects/itabag-featured.webp",
+      desktopSrc: "/images/projects/itabag-featured-desktop.webp",
       alt: "痛包規劃的快速排列與板面編輯畫面",
       caption: "快速排列與板面編輯",
       orientation: "desktop",
@@ -328,7 +330,8 @@ export const featuredProjectScreenshots = [
   {
     projectSlug: "offline-pos-android",
     screenshot: {
-      src: "/images/projects/offline-pos-featured.webp",
+      src: "/images/projects/offline-pos-featured-mobile.webp",
+      desktopSrc: "/images/projects/offline-pos-featured-desktop.webp",
       alt: "今日儀表板畫面",
       caption: "結帳後即時顯示今日營業額",
       orientation: "mobile",

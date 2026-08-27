@@ -45,12 +45,7 @@ export function ProjectScreenshotFigure({
       )}
     >
       {isFeatured ? (
-        <div
-          className={cn(
-            "relative overflow-hidden bg-media",
-            isMobile ? "aspect-[4/5]" : "aspect-video",
-          )}
-        >
+        <div className="relative aspect-[4/5] overflow-hidden bg-media md:aspect-video">
           <picture className="absolute inset-0">
             {desktopSrcSet ? (
               <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
@@ -62,7 +57,7 @@ export function ProjectScreenshotFigure({
               sizes={imageSizes}
               loading={priority ? "eager" : undefined}
               fetchPriority={priority ? "high" : undefined}
-              className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.015]"
+              className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.015]"
             />
           </picture>
         </div>
@@ -92,14 +87,10 @@ export function ProjectScreenshotFigure({
         {isFeatured ? (
           <>
             {project.platform ? (
-              <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
-                {project.platform}
-              </p>
+              <p className="type-meta">{project.platform}</p>
             ) : null}
             <div className="mt-2 flex items-start justify-between gap-4">
-              <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
-                {project.name}
-              </h3>
+              <h3 className="type-h3">{project.name}</h3>
               <span
                 className="shrink-0 font-mono text-sm text-accent"
                 aria-hidden="true"
@@ -107,12 +98,12 @@ export function ProjectScreenshotFigure({
                 →
               </span>
             </div>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-              {project.description}
+            <p className="type-body mt-3 line-clamp-2">
+              {project.caseStudy.outcome}
             </p>
           </>
         ) : (
-          <p className="text-sm text-muted">{screenshot.caption}</p>
+          <p className="type-body text-sm">{screenshot.caption}</p>
         )}
       </figcaption>
     </figure>

@@ -26,6 +26,7 @@
   --color-foreground: #161916;
   --color-muted: #636962;
   --color-border: #d1d5ce;
+  --color-accent: #4e6b16;
 }
 
 /* :root is the dark no-JS fallback; .dark mirrors next-themes' default class. */
@@ -37,6 +38,7 @@
   --color-foreground: #f1f3ee;
   --color-muted: #a0a59e;
   --color-border: #2f342e;
+  --color-accent: #c0ff6b;
 }
 
 body {
@@ -77,10 +79,36 @@ html:not(.light):hover::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
 }
 
+/*
+  字級五階：Display / H2 / H3 / Body / Meta。
+  mono tracking 只准 0.14em。
+  圓角：卡與按鈕直角；控件（nav、chip、theme toggle）rounded-sm。
+*/
+
+@utility type-display {
+  @apply text-4xl font-semibold leading-[1.12] tracking-[-0.04em] text-foreground sm:text-5xl lg:text-6xl;
+}
+
+@utility type-h2 {
+  @apply text-2xl font-semibold tracking-tight text-foreground sm:text-3xl;
+}
+
+@utility type-h3 {
+  @apply text-lg font-semibold tracking-tight text-foreground sm:text-xl;
+}
+
+@utility type-body {
+  @apply text-base leading-relaxed text-muted;
+}
+
+@utility type-meta {
+  @apply font-mono text-xs uppercase tracking-[0.14em] text-muted;
+}
+
 /* ── 按鈕 ── */
 
 @utility btn-primary {
-  @apply inline-flex min-h-11 items-center border px-5 py-2.5 font-mono text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+  @apply inline-flex min-h-11 items-center rounded-none border px-5 py-2.5 font-mono text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
 }
 
 html:not(.light) .btn-primary {
@@ -94,26 +122,27 @@ html:not(.light) .btn-primary:hover {
 }
 
 .light .btn-primary {
-  border-color: color-mix(in srgb, var(--color-accent) 70%, var(--color-foreground));
+  border-color: var(--color-accent);
   background-color: var(--color-accent);
-  color: var(--color-foreground);
+  color: var(--color-canvas);
 }
 
 .light .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--color-accent) 82%, white);
+  background-color: color-mix(in srgb, var(--color-accent) 88%, black);
+  border-color: color-mix(in srgb, var(--color-accent) 88%, black);
   opacity: 1;
 }
 
 @utility btn-secondary {
-  @apply inline-flex min-h-11 items-center border border-accent bg-transparent px-5 py-2.5 font-mono text-sm text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
+  @apply inline-flex min-h-11 items-center rounded-none border border-accent bg-transparent px-5 py-2.5 font-mono text-sm text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground;
 }
 
 html:not(.light) .btn-secondary:hover {
-  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
 }
 
 .light .btn-secondary:hover {
-  background-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
 }
 
 /* ── 連結 hover 底 ── */
@@ -128,7 +157,7 @@ html:not(.light) .link-interactive:hover {
 }
 
 .light .link-interactive:hover {
-  background-color: color-mix(in srgb, var(--color-accent) 55%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
   color: var(--color-foreground);
 }
 
@@ -145,8 +174,8 @@ html:not(.light) .group:hover .demo-link {
 
 .light .demo-link:hover,
 .light .group:hover .demo-link {
-  background-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
-  color: var(--color-foreground);
+  background-color: transparent;
+  color: var(--color-accent);
 }
 
 /* ── 主題切換 ── */
@@ -161,7 +190,7 @@ html:not(.light) .theme-toggle-btn:hover {
 }
 
 .light .theme-toggle-btn:hover {
-  background-color: color-mix(in srgb, var(--color-accent) 55%, transparent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
   color: var(--color-foreground);
 }
 
@@ -182,15 +211,15 @@ html:not(.light) .skill-chip:hover {
 }
 
 .light .skill-chip:hover {
-  border-color: var(--color-foreground);
-  background-color: color-mix(in srgb, var(--color-accent) 55%, transparent);
+  border-color: var(--color-accent);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, transparent);
   color: var(--color-foreground);
 }
 
 /* ── 專案卡片 ── */
 
 @utility project-card {
-  @apply overflow-hidden border border-border bg-surface transition-[background-color,border-color];
+  @apply overflow-hidden rounded-none border border-border bg-surface transition-[background-color,border-color];
 }
 
 html:not(.light) .project-card:hover {
@@ -199,7 +228,7 @@ html:not(.light) .project-card:hover {
 }
 
 .light .project-card:hover {
-  border-color: color-mix(in srgb, var(--color-accent) 55%, var(--color-border));
+  border-color: color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
   background-color: var(--color-surface-raised);
 }
 

@@ -17,14 +17,8 @@ function SectionHeading({
   children: React.ReactNode;
 }) {
   return (
-    <h2
-      id={id}
-      className="mb-8 flex items-baseline gap-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
-    >
-      <span
-        className="font-mono text-xs font-medium tracking-[0.18em] text-accent"
-        aria-hidden="true"
-      >
+    <h2 id={id} className="type-h2 mb-8 flex items-baseline gap-3">
+      <span className="type-meta text-accent" aria-hidden="true">
         {index}
       </span>
       {children}
@@ -57,19 +51,13 @@ export default function HomePage() {
           {site.offerings.map((offering) => (
             <li key={offering.title}>
               <article className="project-card h-full p-5 sm:p-6">
-                <h3 className="font-semibold tracking-tight text-foreground">
-                  {offering.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">
-                  {offering.description}
-                </p>
+                <h3 className="type-h3">{offering.title}</h3>
+                <p className="type-body mt-2">{offering.description}</p>
               </article>
             </li>
           ))}
         </ul>
-        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-          {site.offeringsNote}
-        </p>
+        <p className="type-body mt-8 max-w-xl">{site.offeringsNote}</p>
         <a href={site.inquiryMailto} className="btn-primary mt-6">
           來信洽詢委託
         </a>
@@ -124,29 +112,23 @@ export default function HomePage() {
         <SectionHeading id="about-heading" index="03">
           關於
         </SectionHeading>
-        <div className="max-w-xl space-y-4 text-base leading-relaxed text-muted sm:text-lg">
+        <div className="type-body max-w-2xl space-y-4">
           {site.about.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
         <div
           id="skills"
-          className="mt-12 max-w-3xl"
+          className="mt-12 max-w-2xl"
           aria-labelledby="skills-heading"
         >
-          <h3
-            id="skills-heading"
-            className="mb-4 font-mono text-xs uppercase tracking-[0.14em] text-muted"
-          >
+          <h3 id="skills-heading" className="type-h3 mb-6">
             技能
           </h3>
-          <div className="space-y-5">
+          <div className="grid gap-6 sm:grid-cols-2">
             {site.skillGroups.map((group) => (
               <div key={group.id}>
-                <p
-                  id={`skills-${group.id}`}
-                  className="mb-2 font-mono text-xs tracking-[0.12em] text-muted"
-                >
+                <p id={`skills-${group.id}`} className="type-meta mb-2">
                   {group.label}
                 </p>
                 <ul className="flex flex-wrap gap-2">
@@ -185,9 +167,7 @@ export default function HomePage() {
         <SectionHeading id="contact-heading" index="05">
           聯絡
         </SectionHeading>
-        <p className="max-w-xl leading-relaxed text-muted">
-          {site.availability}
-        </p>
+        <p className="type-body max-w-xl">{site.availability}</p>
         <p className="mt-3 break-all font-mono text-sm text-foreground">
           {site.email}
         </p>

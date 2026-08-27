@@ -26,7 +26,7 @@ function CaseSection({
     <section className="mt-12 first:mt-0" aria-labelledby={id}>
       <h2
         id={id}
-        className="flex items-center gap-3 text-lg font-semibold tracking-tight text-foreground"
+        className="type-h3 flex items-center gap-3"
       >
         <span className="h-px w-6 bg-accent" aria-hidden="true" />
         {title}
@@ -85,9 +85,9 @@ export default async function ProjectPage({ params }: PageProps) {
       <div className="border border-border bg-surface px-6 py-8 sm:px-10 sm:py-10 lg:px-12">
         <HashLink
           href="/#projects"
-          className="rounded-sm px-1 font-mono text-sm text-muted link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+          className="type-meta rounded-sm px-1 link-interactive focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
         >
-          ← 專案
+          ← 案例
         </HashLink>
 
         <article className="mt-10">
@@ -95,9 +95,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3">
                 {project.platform ? (
-                  <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted">
-                    {project.platform}
-                  </p>
+                  <p className="type-meta">{project.platform}</p>
                 ) : null}
                 {project.status === "in-progress" ? (
                   <span className="rounded-sm border border-accent/40 bg-accent/10 px-2 py-0.5 font-mono text-xs text-foreground">
@@ -106,12 +104,8 @@ export default async function ProjectPage({ params }: PageProps) {
                 ) : null}
               </div>
 
-              <h1 className="text-4xl font-semibold leading-tight tracking-[-0.035em] text-foreground sm:text-5xl">
-                {project.name}
-              </h1>
-              <p className="mt-5 text-lg leading-relaxed text-muted">
-                {project.description}
-              </p>
+              <h1 className="type-display">{project.name}</h1>
+              <p className="type-body mt-5">{project.description}</p>
             </div>
 
             <div>
@@ -136,15 +130,13 @@ export default async function ProjectPage({ params }: PageProps) {
           <div className="mt-14 grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-start">
             <div>
               <CaseSection title="背景" id="project-background">
-                <p className="leading-relaxed text-foreground/80">
+                <p className="type-body text-foreground/80">
                   {caseStudy.background}
                 </p>
               </CaseSection>
 
               <CaseSection title="我做了什麼" id="project-work">
-                <p className="leading-relaxed text-foreground/80">
-                  {caseStudy.work}
-                </p>
+                <p className="type-body text-foreground/80">{caseStudy.work}</p>
               </CaseSection>
 
               <CaseSection title="特別在意" id="project-design">
@@ -156,7 +148,7 @@ export default async function ProjectPage({ params }: PageProps) {
               </CaseSection>
 
               <CaseSection title="成果" id="project-outcome">
-                <p className="leading-relaxed text-foreground/80">
+                <p className="type-body text-foreground/80">
                   {caseStudy.outcome}
                 </p>
               </CaseSection>
@@ -166,7 +158,7 @@ export default async function ProjectPage({ params }: PageProps) {
               <section aria-labelledby="project-tech">
                 <h2
                   id="project-tech"
-                  className="font-mono text-xs uppercase tracking-widest text-muted"
+                  className="type-meta"
                 >
                   用到什麼
                 </h2>

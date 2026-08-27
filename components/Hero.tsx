@@ -17,16 +17,13 @@ export function Hero() {
     >
       <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_11rem] lg:grid-cols-[minmax(0,1fr)_13rem]">
         <div className="min-w-0">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <p className="type-meta text-accent">
             {site.name} / {site.nameEn}
           </p>
-          <h1
-            id="hero-heading"
-            className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.12] tracking-[-0.04em] text-foreground sm:text-5xl lg:text-6xl"
-          >
+          <h1 id="hero-heading" className="type-display mt-5 max-w-3xl">
             {site.clientPitch}
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="type-body mt-6 max-w-xl">
             內容更新與上線維護，可一併討論。
           </p>
           <div className="mt-9 flex flex-wrap gap-3">

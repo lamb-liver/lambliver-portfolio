@@ -4,8 +4,9 @@ import { site } from "@/lib/site";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
+  { href: "/#services", label: "項目" },
+  { href: "/#projects", label: "案例" },
   { href: "/#about", label: "關於" },
-  { href: "/#projects", label: "專案" },
   { href: "/#contact", label: "聯絡" },
 ] as const;
 
