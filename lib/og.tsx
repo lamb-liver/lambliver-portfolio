@@ -20,8 +20,8 @@ export async function createOgImage({
   subtitle: string;
   badge?: string;
 }) {
-  const [firaCode, notoSansTC] = await Promise.all([
-    loadGoogleFont("Fira+Code", 500),
+  const [plexMono, notoSansTC] = await Promise.all([
+    loadGoogleFont("IBM+Plex+Mono", 500),
     loadGoogleFont("Noto+Sans+TC", 400),
   ]);
 
@@ -59,7 +59,7 @@ export async function createOgImage({
                 fontSize: 22,
                 color: "#c0ff6b",
                 marginBottom: 16,
-                fontFamily: "Fira Code",
+                fontFamily: "IBM Plex Mono",
               }}
             >
               {badge}
@@ -71,7 +71,7 @@ export async function createOgImage({
               fontWeight: 500,
               color: "#d5d5d5",
               lineHeight: 1.2,
-              fontFamily: "Fira Code",
+              fontFamily: "Noto Sans TC",
               marginBottom: 20,
             }}
           >
@@ -95,7 +95,7 @@ export async function createOgImage({
               right: 0,
               fontSize: 24,
               color: "#656565",
-              fontFamily: "Fira Code",
+              fontFamily: "IBM Plex Mono",
             }}
           >
             lambliver.dev
@@ -106,7 +106,7 @@ export async function createOgImage({
     {
       ...size,
       fonts: [
-        { name: "Fira Code", data: firaCode, style: "normal", weight: 500 },
+        { name: "IBM Plex Mono", data: plexMono, style: "normal", weight: 500 },
         { name: "Noto Sans TC", data: notoSansTC, style: "normal", weight: 400 },
       ],
     },

@@ -13,9 +13,10 @@
   --color-media: #050605;
   --color-foreground: #f1f3ee;
   --color-border: #2f342e;
-  --font-sans: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", ui-sans-serif,
-    system-ui, sans-serif;
-  --font-mono: var(--font-fira-code), "Fira Code", ui-monospace, monospace;
+  --font-sans: var(--font-plex-sans), "PingFang TC", "Microsoft JhengHei",
+    "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "PingFang TC", "Microsoft JhengHei",
+    ui-monospace, monospace;
 }
 
 .light {

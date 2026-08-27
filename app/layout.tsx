@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fira_Code } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/Footer";
@@ -8,12 +8,20 @@ import { ThemeProvider } from "@/components/ThemeToggle";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const firaCode = Fira_Code({
-  variable: "--font-fira-code",
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-plex-sans",
   subsets: ["latin"],
-  weight: "500",
+  weight: ["400", "500", "600"],
   display: "swap",
-  preload: true,
+  preload: false,
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -47,7 +55,7 @@ export default function RootLayout({
     <html
       lang="zh-TW"
       suppressHydrationWarning
-      className={`${firaCode.variable} h-full`}
+      className={`${plexSans.variable} ${plexMono.variable} h-full`}
     >
       <body className="min-h-full bg-canvas font-sans antialiased">
         <ThemeProvider>
