@@ -93,20 +93,20 @@ export const projects: Project[] = [
     monogram: "繪",
     name: "繪師個人作品集網站",
     description:
-      "給繪師用的作品集網站：平常在 Notion 改圖和文字，網站會自己更新。",
+      "協助繪師建置對外作品集網站；作品與介紹可自行更新，無需改動程式。",
     platform: "網站",
     tags: ["Next.js", "Headless CMS", "Vercel", "SSG/SSR"],
     caseStudy: {
       background:
-        "繪師需要一個對外的作品集，但不想每次上新圖、改介紹都找人改程式。",
-      work: "網站內容接在 Notion：作品介紹、多圖、精選排序和委託資訊。改完後重新發布，網站就會更新。圖片會轉成適合網頁的格式。",
+        "繪師需要穩定的對外作品集，但不希望每次上新圖或調整介紹都必須修改程式碼。",
+      work: "建置作品集網站，並接上可自行維護的內容流程：作品介紹、多圖展示、精選排序與委託資訊。內容更新後重新發布即可反映至網站；圖片會轉成適合網頁載入的格式。內容來源可依需求接 Notion，或其他既有更新方式。",
       designFocus: [
-        "日常更新只在 Notion 完成，不必碰程式",
-        "圖片比較不會因為連結過期而打不開",
-        "有填錯的地方會先提示，再發布",
+        "日常維護以內容更新為主，不必接觸程式",
+        "圖片顯示穩定，降低外部連結失效造成的破圖",
+        "發布前檢查必填欄位，減少上線後錯誤",
       ],
       outcome:
-        "公開範本在 artdemo.lambliver.dev。改 Notion 就能更新網站內容。",
+        "公開示範站：artdemo.lambliver.dev。可作為委託參考；實際專案可依品牌與流程調整。",
     },
     screenshots: [
       {
@@ -308,31 +308,21 @@ export function getProjectSummaryForJsonLd(project: Project): string {
 
 export const featuredProjectScreenshots = [
   {
+    projectSlug: "illustrator-portfolio",
+    screenshot: {
+      src: "/images/projects/illustrator-portfolio-works.png",
+      alt: "作品集頁顯示分類篩選與作品卡片",
+      caption: "公開作品集支援分類篩選與作品內頁",
+      orientation: "desktop",
+    } satisfies ProjectScreenshot,
+  },
+  {
     projectSlug: "itabag-planner",
     screenshot: {
       src: "/images/projects/itabag-arrange.jpg",
       alt: "痛包規劃的快速排列與板面編輯畫面",
       caption: "快速排列與板面編輯",
       orientation: "desktop",
-    } satisfies ProjectScreenshot,
-  },
-  {
-    projectSlug: "lab",
-    screenshot: {
-      src: "/images/projects/lab-featured.webp",
-      alt: "羊實驗首頁畫面",
-      caption: "實驗站首頁",
-      orientation: "desktop",
-    } satisfies ProjectScreenshot,
-  },
-  {
-    projectSlug: "card-deck-builder",
-    screenshot: {
-      src: "/images/projects/card-deck-builder-featured.webp",
-      desktopSrc: "/images/projects/card-deck-builder-featured-desktop.webp",
-      alt: "查卡模式與卡片列表畫面",
-      caption: "查卡、搜尋與多條件篩選",
-      orientation: "mobile",
     } satisfies ProjectScreenshot,
   },
   {

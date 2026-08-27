@@ -27,15 +27,15 @@ export function Hero() {
             {site.clientPitch}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            數學系大四。網站、小工具、手機 App。
+            網站、作品集站與小型工具。可支援內容更新與上線維護。
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <HashLink href="/#projects" className="btn-primary">
-              查看專案
+              查看案例
             </HashLink>
-            <HashLink href="/#contact" className="btn-secondary">
-              聯絡我
-            </HashLink>
+            <a href={site.inquiryMailto} className="btn-secondary">
+              來信洽詢委託
+            </a>
           </div>
         </div>
 

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { ThemeProvider } from "@/components/ThemeToggle";
@@ -52,6 +54,8 @@ export default function RootLayout({
           <Nav />
           <main>{children}</main>
           <Footer />
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

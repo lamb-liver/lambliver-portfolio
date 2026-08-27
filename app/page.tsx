@@ -127,9 +127,34 @@ export default function HomePage() {
         </section>
       </div>
 
+      <section
+        id="services"
+        className="anchor-target py-16 sm:py-20"
+        aria-labelledby="services-heading"
+      >
+        <SectionHeading id="services-heading" index="04">
+          可承接項目
+        </SectionHeading>
+        <dl className="max-w-xl space-y-6">
+          {site.offerings.map((offering) => (
+            <div key={offering.title}>
+              <dt className="font-semibold tracking-tight text-foreground">
+                {offering.title}
+              </dt>
+              <dd className="mt-2 text-base leading-relaxed text-muted sm:text-lg">
+                {offering.description}
+              </dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+          {site.offeringsNote}
+        </p>
+      </section>
+
       {otherProjects.length > 0 ? (
         <section className="py-16 sm:py-20" aria-labelledby="other-projects-heading">
-          <SectionHeading id="other-projects-heading" index="04">
+          <SectionHeading id="other-projects-heading" index="05">
             其他專案
           </SectionHeading>
           <ul className="grid gap-4 md:grid-cols-2">
@@ -147,12 +172,12 @@ export default function HomePage() {
         className="contact-panel anchor-target mb-8 px-6 py-10 sm:px-10 sm:py-12 lg:px-14"
         aria-labelledby="contact-heading"
       >
-        <p className="font-mono text-xs tracking-[0.18em] text-accent">05 / 聯絡</p>
+        <p className="font-mono text-xs tracking-[0.18em] text-accent">06 / 聯絡</p>
         <h2
           id="contact-heading"
           className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
         >
-          想做網站或 App，可以寫信給我。
+          歡迎來信洽詢委託。
         </h2>
         <p className="mt-4 max-w-xl leading-relaxed text-muted">
           {site.availability}
@@ -161,11 +186,8 @@ export default function HomePage() {
           {site.email}
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
-          <a
-            href={`mailto:${site.email}`}
-            className="btn-primary break-all"
-          >
-            寫信給我
+          <a href={site.inquiryMailto} className="btn-primary">
+            來信洽詢委託
           </a>
           {site.social.github ? (
             <a
@@ -175,6 +197,16 @@ export default function HomePage() {
               className="demo-link rounded-sm px-1 py-1 text-sm"
             >
               GitHub ↗
+            </a>
+          ) : null}
+          {site.social.linkedin ? (
+            <a
+              href={site.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="demo-link rounded-sm px-1 py-1 text-sm"
+            >
+              LinkedIn ↗
             </a>
           ) : null}
         </div>

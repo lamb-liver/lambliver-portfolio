@@ -214,6 +214,12 @@ export default async function ProjectPage({ params }: PageProps) {
               </ul>
             </CaseSection>
           ) : null}
+
+          <div className="mt-14 border-t border-border pt-8">
+            <a href={site.inquiryMailto} className="btn-primary">
+              來信洽詢委託
+            </a>
+          </div>
         </article>
       </div>
     </div>
