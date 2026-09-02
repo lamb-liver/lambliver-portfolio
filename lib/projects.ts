@@ -15,6 +15,15 @@ export interface ProjectCaseStudy {
   outcome: string;
 }
 
+export interface ProjectInstallGuide {
+  lead: string;
+  steps: string[];
+  fileName?: string;
+  sha256?: string;
+  certSha256?: string;
+  playTestingNote?: string;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -27,6 +36,7 @@ export interface Project {
   };
   platform?: string;
   caseStudy: ProjectCaseStudy;
+  installGuide?: ProjectInstallGuide;
   status?: "in-progress";
   monogram: string;
   applicationKind: ProjectApplicationKind;
@@ -286,6 +296,20 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/lamb-liver/appforsale",
       demo: "https://github.com/lamb-liver/appforsale/releases/download/v2.1.3/StallPOS-2.1.3.apk",
+    },
+    installGuide: {
+      lead: "免費給攤友用，不是 Play 商店 App。請只從本頁或 GitHub Release 下載 StallPOS 2.1.3。",
+      steps: [
+        "用手機瀏覽器點「下載 App」。",
+        "若跳出「禁止安裝未知應用程式」：設定 → 應用程式 → 特殊應用程式存取 → 安裝未知的應用程式 → 只打開「Chrome」或「檔案」。不要開開發人員選項。",
+        "若 Play 保護說沒看過：優先選「仍要安裝」或「送出掃描」。沒有該選項才暫時關掉 Play 商店 → 頭像 → Play 保護 →「使用 Play 保護機制掃描應用程式」，裝完立刻再打開。只關這一次、只為這一個檔。",
+      ],
+      fileName: "StallPOS-2.1.3.apk",
+      sha256:
+        "d43c730d3858eb0963d0e015cd19640cd37406a15b110dc6c094e386223fbe74",
+      certSha256:
+        "BBCBA8463E3CCAE537AF154D26A58317E47544811CEFA7AEA411355B8B219CD8",
+      playTestingNote: "Play 內部測試尚未開放，有連結後會改在這裡。",
     },
   },
 ];

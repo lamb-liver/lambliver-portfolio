@@ -3,6 +3,7 @@ import { HashLink } from "@/components/HashLink";
 import { notFound } from "next/navigation";
 import { ProjectImagePlaceholder } from "@/components/ProjectImagePlaceholder";
 import { ProjectJsonLd } from "@/components/ProjectJsonLd";
+import { ProjectInstallGuide } from "@/components/ProjectInstallGuide";
 import { ProjectLinks } from "@/components/ProjectLinks";
 import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
@@ -178,6 +179,12 @@ export default async function ProjectPage({ params }: PageProps) {
               />
             </aside>
           </div>
+
+          {project.installGuide ? (
+            <CaseSection title="安裝說明" id="project-install">
+              <ProjectInstallGuide guide={project.installGuide} />
+            </CaseSection>
+          ) : null}
 
           {galleryScreenshots.length > 0 ? (
             <CaseSection title="功能畫面" id="project-screenshots">
