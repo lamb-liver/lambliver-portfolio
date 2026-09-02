@@ -129,4 +129,13 @@ describe("公開專案事實", () => {
       renderToStaticMarkup(ProjectLinks({ demo: project?.links?.demo })),
     ).not.toContain("GitHub");
   });
+
+  it("租屋筆記只提供正式站，不公開私人 GitHub 連結", () => {
+    const project = getProjectBySlug("renthouse");
+
+    expect(project?.links).toEqual({ demo: "https://rent.lambliver.dev" });
+    expect(
+      renderToStaticMarkup(ProjectLinks({ demo: project?.links?.demo })),
+    ).not.toContain("GitHub");
+  });
 });

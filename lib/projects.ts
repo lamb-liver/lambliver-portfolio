@@ -211,7 +211,6 @@ export const projects: Project[] = [
       },
     ],
     links: {
-      github: "https://github.com/lamb-liver/renthouse",
       demo: "https://rent.lambliver.dev",
     },
   },
