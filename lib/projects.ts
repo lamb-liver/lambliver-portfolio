@@ -47,7 +47,7 @@ export const projects: Project[] = [
     slug: "card-deck-builder",
     applicationKind: "web",
     monogram: "卡",
-    name: "控訴-查卡＆組牌＆QA",
+    name: "《控訴》查卡、組牌與規則 QA",
     description:
       "給《控訴》玩家用的組牌網站：手機就能查卡、組牌、看規則對不對，沒網路也能用。",
     platform: "網站",
@@ -220,7 +220,7 @@ export const projects: Project[] = [
     monogram: "痛",
     name: "痛包規劃",
     description:
-      "先排周邊，再看板子和包包裝不裝得下。檔案存在這台裝置，也可以帶走繼續改。",
+      "痛包排板：買之前確認徽章、板子和包包裝不裝得下。",
     platform: "網站",
     tags: ["React", "TypeScript", "Vite", "Cloudflare Workers", "IndexedDB"],
     caseStudy: {
@@ -258,7 +258,7 @@ export const projects: Project[] = [
     monogram: "攤",
     name: "小攤位離線結帳 App",
     description:
-      "免費給攤友用的手機結帳：沒網路也能收錢，之後再上傳。點進去有安裝說明。",
+      "免費市集攤位離線結帳。沒網路也能收錢；點進來有安裝說明。",
     platform: "手機 App",
     tags: ["Kotlin", "Jetpack Compose", "Room", "Jetpack DataStore", "MVVM", "Cloudflare Workers"],
     caseStudy: {
