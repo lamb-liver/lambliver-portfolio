@@ -259,7 +259,7 @@ export const projects: Project[] = [
     monogram: "攤",
     name: "小攤位離線結帳 App",
     description:
-      "給市集攤位用的手機結帳：沒網路也能收錢，之後再上傳；換手機可以把帳帶過去。",
+      "免費給攤友用的手機結帳：沒網路也能收錢，之後再上傳。點進去有安裝說明。",
     platform: "手機 App",
     tags: ["Kotlin", "Jetpack Compose", "Room", "Jetpack DataStore", "MVVM", "Cloudflare Workers"],
     caseStudy: {
@@ -271,7 +271,7 @@ export const projects: Project[] = [
         "手機和報表上的數字要對得上",
         "同一時間只有一台手機當結帳機，避免兩台一起賣把帳弄亂",
       ],
-      outcome: "沒網路也能收錢，之後再上傳。",
+      outcome: "免費給攤友用。沒網路也能收錢；點進來有安裝說明。",
     },
     screenshots: [
       {
