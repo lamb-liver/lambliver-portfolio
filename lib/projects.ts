@@ -253,6 +253,44 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "oshi-shelf",
+    applicationKind: "web",
+    monogram: "擺",
+    name: "擺飾規劃",
+    description:
+      "展示棚擺飾：先排立牌和娃娃，正面看後面會不會被擋。",
+    platform: "網站",
+    tags: ["React", "TypeScript", "Vite", "Cloudflare Workers", "localStorage"],
+    caseStudy: {
+      background:
+        "排展示棚時，前面的立牌會不會擋住後面、前後夠不夠深，是兩件不同的事。只看商品尺寸，很難在買之前心裡有數。",
+      work: "做成層架規劃：正面看遮擋，俯視看前後。可以加層、同一層加階梯地板，放入立牌、娃娃、卡片和徽章。資料存在這台裝置。介面有繁中、日文和英文。",
+      designFocus: [
+        "先排，再搬實物；正面看擋、俯視看前後",
+        "遮擋只算同一層；結果只供參考",
+        "不用註冊；資料預設只留在你的裝置上",
+      ],
+      outcome: "買之前或上架前，就能確認後面的立牌會不會被擋住。",
+    },
+    screenshots: [
+      {
+        src: "/images/projects/oshi-shelf-layer.jpg",
+        alt: "擺飾規劃同時顯示正面遮擋與俯視前後",
+        caption: "正面看擋、俯視看前後",
+        orientation: "desktop",
+      },
+      {
+        src: "/images/projects/oshi-shelf-cabinet.jpg",
+        alt: "擺飾規劃整座層架，下層立牌被娃娃擋住、上層放卡片",
+        caption: "整座一次看各層，遮擋只算同一層",
+        orientation: "desktop",
+      },
+    ],
+    links: {
+      demo: "https://oshi.lambliver.dev/",
+    },
+  },
+  {
     slug: "offline-pos-android",
     applicationKind: "android",
     monogram: "攤",

@@ -2,7 +2,7 @@
 
 [lambliver.dev](https://lambliver.dev) 的個人作品集。使用 Next.js 16 App Router、React 19 與 Tailwind CSS 4；內容維持在 TypeScript 靜態資料，不使用 CMS 或資料庫。
 
-目前展示《控訴》查卡組牌、創作者作品網站、羊・實驗、租屋筆記與離線 Android POS。首頁提供精選案例與聯絡入口，每個 `/projects/[slug]` 詳情頁包含背景、實作、設計重點、成果、技術標籤、真實畫面與可用連結。
+目前展示《控訴》查卡組牌、創作者作品網站、羊・實驗、租屋筆記、痛包規劃、擺飾規劃與離線 Android POS。首頁提供精選案例與聯絡入口，每個 `/projects/[slug]` 詳情頁包含背景、實作、設計重點、成果、技術標籤、真實畫面與可用連結。
 
 ## 本機開發
 
