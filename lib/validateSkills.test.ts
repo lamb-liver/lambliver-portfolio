@@ -130,6 +130,17 @@ describe("公開專案事實", () => {
     ).not.toContain("GitHub");
   });
 
+  it("擺飾規劃只提供正式站，不公開 GitHub 連結", () => {
+    const project = getProjectBySlug("oshi-shelf");
+
+    expect(project?.links).toEqual({ demo: "https://oshi.lambliver.dev/" });
+    expect(project?.tags).toContain("Cloudflare Workers");
+    expect(project?.tags).toContain("localStorage");
+    expect(
+      renderToStaticMarkup(ProjectLinks({ demo: project?.links?.demo })),
+    ).not.toContain("GitHub");
+  });
+
   it("租屋筆記只提供正式站，不公開私人 GitHub 連結", () => {
     const project = getProjectBySlug("renthouse");
 
