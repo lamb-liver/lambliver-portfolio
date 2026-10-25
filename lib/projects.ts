@@ -1,4 +1,4 @@
-export type ProjectApplicationKind = "web" | "android";
+export type ProjectApplicationKind = "web" | "android" | "browser-extension";
 
 export interface ProjectScreenshot {
   src: string;
@@ -292,7 +292,7 @@ export const projects: Project[] = [
   },
   {
     slug: "tft-trait-hover",
-    applicationKind: "web",
+    applicationKind: "browser-extension",
     monogram: "棋",
     name: "TFT羈絆提示",
     description:

@@ -27,7 +27,9 @@ export function ProjectJsonLd({
     applicationCategory:
       project.applicationKind === "android"
         ? "MobileApplication"
-        : "WebApplication",
+        : project.applicationKind === "browser-extension"
+          ? "BrowserApplication"
+          : "WebApplication",
     author: {
       "@type": "Person",
       name: site.name,
