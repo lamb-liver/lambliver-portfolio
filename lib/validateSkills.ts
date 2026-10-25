@@ -2,7 +2,13 @@ import type { Project } from "@/lib/projects";
 import { getAllSkills, skillGroups, type SkillGroup } from "@/lib/site";
 
 /** 僅出現在專案 tags、不列入首頁技能目錄的標籤 */
-export const PROJECT_ONLY_TAGS = new Set(["localStorage"]);
+export const PROJECT_ONLY_TAGS = new Set([
+  "localStorage",
+  "JavaScript",
+  "Python",
+  "Chrome 擴充功能",
+  "影像辨識",
+]);
 
 export function validateSkillGroups(groups: SkillGroup[] = skillGroups): void {
   const seen = new Set<string>();

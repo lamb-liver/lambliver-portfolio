@@ -291,6 +291,45 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "tft-trait-hover",
+    applicationKind: "web",
+    monogram: "棋",
+    name: "TFT羈絆提示",
+    description:
+      "看聯盟戰棋實況忘了羈絆或海克斯強化的效果？滑鼠移到圖示上就顯示說明。支援 Twitch 與 YouTube。",
+    platform: "Chrome 擴充功能",
+    tags: ["JavaScript", "Python", "Chrome 擴充功能", "影像辨識"],
+    caseStudy: {
+      background:
+        "看聯盟戰棋實況時，羈絆和海克斯強化很多，常常忘了效果，只能暫停去查。",
+      work: "做成 Chrome 擴充功能：在 Twitch 或 YouTube 實況畫面上認出羈絆圖示和海克斯強化名稱，滑鼠移過去就顯示繁中說明。另有選用的本機程式。",
+      designFocus: [
+        "滑鼠移過去才顯示，不擋畫面",
+        "畫面只在瀏覽器內處理，不上傳",
+        "海克斯強化只靠畫面上的名稱文字辨認",
+      ],
+      outcome: "看實況不用暫停，就能查羈絆和海克斯強化的效果。",
+    },
+    screenshots: [
+      {
+        src: "/images/projects/tft-trait-hover-trait.webp",
+        alt: "實況畫面上滑過羈絆圖示，顯示繁中羈絆說明",
+        caption: "滑過羈絆圖示，直接看繁中說明",
+        orientation: "desktop",
+      },
+      {
+        src: "/images/projects/tft-trait-hover-augment.webp",
+        alt: "實況畫面上滑過海克斯強化，顯示效果說明",
+        caption: "滑過海克斯強化，看效果說明",
+        orientation: "desktop",
+      },
+    ],
+    links: {
+      github: "https://github.com/lamb-liver/tft-trait-hover-companion/releases",
+      demo: "https://chromewebstore.google.com/detail/dbecljlecmdjkahidjjgidepdjkifeoj",
+    },
+  },
+  {
     slug: "offline-pos-android",
     applicationKind: "android",
     monogram: "攤",
