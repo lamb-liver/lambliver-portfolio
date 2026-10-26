@@ -16,7 +16,9 @@ export function isApkDemoUrl(url: string): boolean {
 }
 
 export function getDemoLinkLabel(url: string): string {
-  return isApkDemoUrl(url) ? "下載 App" : "打開網站";
+  if (isApkDemoUrl(url)) return "下載 App";
+  if (url.startsWith("https://chromewebstore.google.com/")) return "安裝擴充功能";
+  return "打開網站";
 }
 
 export function getApkDownloadName(url: string): string {
