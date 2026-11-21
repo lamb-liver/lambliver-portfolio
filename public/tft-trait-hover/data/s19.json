@@ -1,0 +1,6693 @@
+{
+ "schema": "tft-trait-hover.remote-text",
+ "schemaVersion": 1,
+ "set": 19,
+ "catalog": 9,
+ "dataVersion": 202611201221,
+ "patch": "19.1-pbe",
+ "generated": "2026-11-20T12:21:55+08:00",
+ "traits": {
+  "DA_Akali_TrueDamage19_UniqueTrait": {
+   "name": "自由式",
+   "nameEn": "Freestyle",
+   "nameOfficialZh": false,
+   "lines": [
+    "阿卡莉會在True Damage唱片的兩面分別獲得不同被動。A面可產生金錢。B面可回復玩家生命。"
+   ],
+   "linesEn": [
+    "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health."
+   ],
+   "units": "阿卡莉",
+   "unitsEn": "Akali",
+   "champions": [
+    {
+     "name": "阿卡莉",
+     "nameEn": "Akali",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Alistar19_UniqueTrait": {
+   "name": "鄉村音樂",
+   "nameEn": "Country",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：如果我方最強大的亞歷斯塔擁有超過500額外生命，他會獲得15% 續戰力。",
+    "目前：額外"
+   ],
+   "linesEn": [
+    "Combat Start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability.",
+    "Current: Bonus"
+   ],
+   "units": "亞歷斯塔",
+   "unitsEn": "Alistar",
+   "champions": [
+    {
+     "name": "亞歷斯塔",
+     "nameEn": "Alistar",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Amumu19_UniqueTrait": {
+   "name": "情緒搖滾",
+   "nameEn": "Emo",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，若阿姆姆沒有相鄰的友軍，獲得25/40/55雙防。"
+   ],
+   "linesEn": [
+    "Amumu gains 25/40/55 Armor and Magic Resist if he starts combat with no adjacent allies."
+   ],
+   "units": "阿姆姆",
+   "unitsEn": "Amumu",
+   "champions": [
+    {
+     "name": "阿姆姆",
+     "nameEn": "Amumu",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_BaronNashor19_UniqueTrait": {
+   "name": "一人怪物樂團",
+   "nameEn": "One Monster Band",
+   "nameOfficialZh": false,
+   "lines": [
+    "巴龍納什占用2個隊伍人口，且處於無法阻擋狀態。",
+    "巴龍納什首次施放技能後，會以歌曲籠罩整個棋盤，從所有敵軍竊取5%物攻、魔攻、攻速和暴擊率。"
+   ],
+   "linesEn": [
+    "Baron Nashor takes up 2 team slots and is unstoppable.",
+    "After the first time Baron Nashor casts, he envelops the board in song, stealing 5% Attack Damage, Ability Power, Attack Speed, and Critical Strike Chance from all enemies."
+   ],
+   "units": "巴龍納什",
+   "unitsEn": "Baron Nashor",
+   "champions": [
+    {
+     "name": "巴龍納什",
+     "nameEn": "Baron Nashor",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_DrMundo19_UniqueTrait": {
+   "name": "音樂界巨頭",
+   "nameEn": "Record Mogul",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在以及每4回合獲得一份唱片合約。簽約的英雄獲得5% 傷害增幅，取得擊殺時，賦予蒙多醫生25生命永久。",
+    "唱片藝人被出售或放到備戰區時，會退還唱片合約。"
+   ],
+   "linesEn": [
+    "Gain a Record Contract now and every 4 rounds. Contracted champions gain 5% Damage Amp and their kills grant Dr. Mundo 25 permanent Health.",
+    "The Record Contract is returned when the Recording Artist is sold or benched."
+   ],
+   "units": "蒙多醫生",
+   "unitsEn": "Dr. Mundo",
+   "champions": [
+    {
+     "name": "蒙多醫生",
+     "nameEn": "Dr. Mundo",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Garen19_UniqueTrait": {
+   "name": "合成波",
+   "nameEn": "Synthwave",
+   "nameOfficialZh": true,
+   "lines": [
+    "生命低於35%時，獲得持續6秒的護盾，護盾量等同於本場戰鬥所受治療與護盾量的50%。"
+   ],
+   "linesEn": [
+    "At 35% Health, gain Shield for 6 seconds equal to 50% of Healing and Shielding received this combat."
+   ],
+   "units": "蓋倫",
+   "unitsEn": "Garen",
+   "champions": [
+    {
+     "name": "蓋倫",
+     "nameEn": "Garen",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Gwen19_UniqueTrait": {
+   "name": "旋律之心",
+   "nameEn": "Melodic Heart",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始的前12秒，我方最強大的格溫會被迷霧包圍，且無法被攻擊鎖定。位於迷霧中的我方英雄獲得10%續戰力。"
+   ],
+   "linesEn": [
+    "For the first 12 seconds of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain 10% Durability while within the Mist."
+   ],
+   "units": "關",
+   "unitsEn": "Gwen",
+   "champions": [
+    {
+     "name": "關",
+     "nameEn": "Gwen",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Janna19_UniqueTrait": {
+   "name": "風之女神",
+   "nameEn": "Windblessed",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：我方最強大的珍娜釋放一道往前移動的龍捲風，擊飛路徑上的敵軍1.25秒。"
+   ],
+   "linesEn": [
+    "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path for 1.25/1.75/99 seconds."
+   ],
+   "units": "珍娜",
+   "unitsEn": "Janna",
+   "champions": [
+    {
+     "name": "珍娜",
+     "nameEn": "Janna",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Malzahar19_UniqueTrait": {
+   "name": "作曲家",
+   "nameEn": "Composer",
+   "nameOfficialZh": false,
+   "lines": [
+    "神祕樂器可能會出現在你的商店裡。每種稀有度各有一個。",
+    "每擁有一個，你的團隊就會獲得3% 魔攻。馬爾札哈獲得雙倍效果。",
+    "若他已造成60000傷害且你擁有全部5種樂器，馬爾札哈就會創作他的傑作，解鎖巴龍納什。"
+   ],
+   "linesEn": [
+    "Mystical Instruments can appear in your shop. There is one of each rarity.",
+    "For each one you have, your team gains 3% Ability Power. Malzahar gains double.",
+    "If he has dealt 60000 damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor."
+   ],
+   "units": "馬爾札哈",
+   "unitsEn": "Malzahar",
+   "champions": [
+    {
+     "name": "馬爾札哈",
+     "nameEn": "Malzahar",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_MissFortune19_UniqueTrait": {
+   "name": "8-Bit",
+   "nameEn": "8-Bit",
+   "nameOfficialZh": true,
+   "lines": [
+    "記錄我方隊伍的傷害分數，其中好運姐造成的傷害以三倍計算。突破高分時可獲得獎品。"
+   ],
+   "linesEn": [
+    "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize."
+   ],
+   "units": "好運姐",
+   "unitsEn": "Miss Fortune",
+   "champions": [
+    {
+     "name": "好運姐",
+     "nameEn": "Miss Fortune",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Nidalee19_UniqueTrait": {
+   "name": "流浪樂手",
+   "nameEn": "Mariachi",
+   "nameOfficialZh": true,
+   "lines": [
+    "當奈德麗的生命高於75%時施放技能，會變身為美洲獅形態並施放猛撲派對（非官方譯名）。否則會施放生命之舞（非官方譯名）。",
+    "每當她的生命降至50%以下，會躍離並變回人類形態。"
+   ],
+   "linesEn": [
+    "When Nidalee casts her Ability while above 75% Health, she transforms into Cougar Form and casts Pounce Party. Otherwise, she casts Dance of Life.",
+    "Whenever she drops below 50% Health, she leaps away and transforms back to Human form."
+   ],
+   "units": "奈德麗",
+   "unitsEn": "Nidalee",
+   "champions": [
+    {
+     "name": "奈德麗",
+     "nameEn": "Nidalee",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Nunu19_UniqueTrait": {
+   "name": "迪斯可",
+   "nameEn": "Disco",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍每秒回復1%最大生命。",
+    "施放6次技能後進入迪斯可狂熱（非官方譯名），使我方隊伍獲得125%攻速。"
+   ],
+   "linesEn": [
+    "Your team heals for 1% max Health per second.",
+    "Enter Disco Fever after casting 6 times, granting your team 125% Attack Speed."
+   ],
+   "units": "努努和威朗普",
+   "unitsEn": "Nunu & Willump",
+   "champions": [
+    {
+     "name": "努努和威朗普",
+     "nameEn": "Nunu & Willump",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Rakan19_UniqueTrait": {
+   "name": "男團",
+   "nameEn": "Boy Band",
+   "nameOfficialZh": true,
+   "lines": [
+    "拉克尚有2個可放置的分身跟隨，分身擁有他50%的最大生命，造成30%傷害，並複製他的完整道具、聖光道具與徽章道具。"
+   ],
+   "linesEn": [
+    "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his Completed, Radiant, and Emblem items."
+   ],
+   "units": "銳空",
+   "unitsEn": "Rakan",
+   "champions": [
+    {
+     "name": "銳空",
+     "nameEn": "Rakan",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Rell19_UniqueTrait": {
+   "name": "節奏大師",
+   "nameEn": "Beat Master",
+   "nameOfficialZh": true,
+   "lines": [
+    "當生命降至50%最大生命時，銳爾會上馬，並在2秒內完全回復生命。",
+    "上馬期間，她的最大魔力減少40，且每第3次攻擊會沿直線造成相當於她總護甲與魔抗500%的魔法傷害。"
+   ],
+   "linesEn": [
+    "At 50% max Health, Rell mounts up and fully heals over 2 seconds.",
+    "While mounted, her max Mana is reduced by 40 and every 3rd attack deals //500% of her total Armor and Magic Resist as magic damage in a line."
+   ],
+   "units": "銳兒",
+   "unitsEn": "Rell",
+   "champions": [
+    {
+     "name": "銳兒",
+     "nameEn": "Rell",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Seraphine19_IndieTrait": {
+   "name": "獨立音樂",
+   "nameEn": "Indie",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥結束後，莎月會吸引新的追隨者，使你獲得一個隨機英雄。",
+    "當你將一名英雄升至3星時，她會成為閃耀新星，升級她的技能並給予你一份特殊獎勵。",
+    "將4名英雄升至3星後，她會成為超級巨星！"
+   ],
+   "linesEn": [
+    "After combat, Seraphine attracts new followers, granting you a random champion.",
+    "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward.",
+    "After 3-starring 4 champions, she becomes a Superstar!"
+   ],
+   "units": "瑟菈紛",
+   "unitsEn": "Seraphine",
+   "champions": [
+    {
+     "name": "瑟菈紛",
+     "nameEn": "Seraphine",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Seraphine19_RisingStarTrait": {
+   "name": "閃耀新星",
+   "nameEn": "Rising Star",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥結束後，莎月會吸引新的追隨者，使你獲得一個隨機英雄。",
+    "當你將一名英雄升至3星時，她會成為閃耀新星，升級她的技能並給予你一份特殊獎勵。",
+    "將4名英雄升至3星後，她會成為超級巨星！"
+   ],
+   "linesEn": [
+    "After combat, Seraphine attracts new followers, granting you a random champion.",
+    "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward.",
+    "After 3-starring 4 champions, she becomes a Superstar!"
+   ],
+   "units": "",
+   "unitsEn": "",
+   "champions": [],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Seraphine19_SuperstarTrait": {
+   "name": "超級巨星",
+   "nameEn": "Superstar",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥結束後，瑟菈紛會吸引新粉絲，讓你獲得一名隨機英雄。",
+    "將一名英雄升至3星時，她會成為閃耀新星，技能也會升級，並提供特殊訂閱獎勵。",
+    "將4名英雄升至3星後，她將成為超級巨星！"
+   ],
+   "linesEn": [
+    "After combat, Seraphine attracts new followers, granting you a random champion.",
+    "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward.",
+    "After 3-starring 4 champions, she becomes a Superstar!"
+   ],
+   "units": "",
+   "unitsEn": "",
+   "champions": [],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Sona19_UniqueTrait": {
+   "name": "製作人",
+   "nameEn": "Producer",
+   "nameOfficialZh": true,
+   "lines": [
+    "索娜上場時，選擇一個樂團共同演出，並獲得他們的特性。",
+    "索娜會將所有額外的物攻與攻速轉化為魔攻。"
+   ],
+   "linesEn": [
+    "When Sona is fielded, choose a band to feature, gaining their trait.",
+    "Sona converts all bonus Attack Damage and Attack Speed into Ability Power."
+   ],
+   "units": "索娜",
+   "unitsEn": "Sona",
+   "champions": [
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Teemo19_UniqueTrait": {
+   "name": "熱潮製造者",
+   "nameEn": "Hype Man",
+   "nameOfficialZh": true,
+   "lines": [
+    "每當一名超流行英雄造成2500傷害或受到2500傷害，額外儲存1層超流行熱潮。"
+   ],
+   "linesEn": [
+    "Whenever a Hyperpop champion deals 2500 damage or takes 2500 damage, store an extra Hyperpop Hype."
+   ],
+   "units": "提摩",
+   "unitsEn": "Teemo",
+   "champions": [
+    {
+     "name": "提摩",
+     "nameEn": "Teemo",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_TwistedFate19_UniqueTrait": {
+   "name": "探戈",
+   "nameEn": "Tango",
+   "nameOfficialZh": true,
+   "lines": [
+    "逆命將最靠近的友軍標記為他的探戈舞伴。該友軍被點燃熱情，獲得15% 攻速，其傷害會對敵軍施加1%燃燒及33%重創，持續3秒。"
+   ],
+   "linesEn": [
+    "Twisted Fate marks the nearest ally as his Tango Partner. They ignite with passion, gaining 15% Attack Speed. Their damage 1% Burns and 33% Wounds enemies for 3 seconds."
+   ],
+   "units": "逆命",
+   "unitsEn": "Twisted Fate",
+   "champions": [
+    {
+     "name": "逆命",
+     "nameEn": "Twisted Fate",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Zeri19_UniqueTrait": {
+   "name": "哥特",
+   "nameEn": "Goth",
+   "nameOfficialZh": true,
+   "lines": [
+    "每場戰鬥中，我方最強大的婕莉首次對敵軍造成傷害時，吸血蝙蝠會從敵軍身上偷取8% 物攻，並帶回給婕莉。"
+   ],
+   "linesEn": [
+    "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal 8% Attack Damage from them, bringing it back to her."
+   ],
+   "units": "婕莉",
+   "unitsEn": "Zeri",
+   "champions": [
+    {
+     "name": "婕莉",
+     "nameEn": "Zeri",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "unique"
+    }
+   ]
+  },
+  "DA_Arcanist19": {
+   "name": "奧術大師",
+   "nameEn": "Arcanist",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加魔攻，奧術大師獲得更多加成。",
+    "(2) 12% 魔攻，適用於奧術大師：25% 魔攻",
+    "(4) 18% 魔攻，奧術大師則為50% 魔攻",
+    "(6) 30% 魔攻，奧術大師則為70% 魔攻"
+   ],
+   "linesEn": [
+    "Your team gains Ability Power, Arcanists gain more.",
+    "(2) 12% AP, 25% AP for Arcanists",
+    "(4) 18% AP, 50% AP for Arcanists",
+    "(6) 30% AP, 70% AP for Arcanists"
+   ],
+   "units": "希格斯、柔依、安妮、卡爾瑟斯、斯溫、梅爾、弗拉迪米爾",
+   "unitsEn": "Ziggs, Zoe, Annie, Karthus, Swain, Mel, Vladimir",
+   "champions": [
+    {
+     "name": "希格斯",
+     "nameEn": "Ziggs",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "柔依",
+     "nameEn": "Zoe",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "安妮",
+     "nameEn": "Annie",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡爾瑟斯",
+     "nameEn": "Karthus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "斯溫",
+     "nameEn": "Swain",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "梅爾",
+     "nameEn": "Mel",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "弗拉迪米爾",
+     "nameEn": "Vladimir",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Bodyguard19": {
+   "name": "保鑣",
+   "nameEn": "Bodyguard",
+   "nameOfficialZh": true,
+   "lines": [
+    "至少有一名保鑣存活時，我方隊伍獲得15雙防，保鑣獲得更多。",
+    "(2) 22護甲/魔抗",
+    "(4) 55護甲/魔抗",
+    "(6) 115護甲/魔抗"
+   ],
+   "linesEn": [
+    "While at least one Bodyguard is alive, your team gains 15 Armor and Magic Resist. Bodyguards gain more.",
+    "(2) 22 Armor/MR",
+    "(4) 55 Armor/MR",
+    "(6) 115 Armor/MR"
+   ],
+   "units": "凱能、莉莉亞、賈克斯、納瑟斯、卡桑帝、泰貝爾、雷歐娜",
+   "unitsEn": "Kennen, Lillia, Jax, Nasus, K'Sante, Tibbers, Leona",
+   "champions": [
+    {
+     "name": "凱能",
+     "nameEn": "Kennen",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "莉莉亞",
+     "nameEn": "Lillia",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "賈克斯",
+     "nameEn": "Jax",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "納瑟斯",
+     "nameEn": "Nasus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡桑帝",
+     "nameEn": "K'Sante",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "泰貝爾",
+     "nameEn": "Tibbers",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "雷歐娜",
+     "nameEn": "Leona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Choreographer19": {
+   "name": "編舞者",
+   "nameEn": "Choreographer",
+   "nameOfficialZh": true,
+   "lines": [
+    "開場位於前2排的我方英雄獲得護盾。其餘我方英雄獲得傷害增幅。編舞者獲得的效果加倍。",
+    "(2) 150護盾，6% 增傷",
+    "(3) 225護盾，10% 增傷",
+    "(4) 375護盾，15% 增傷",
+    "(5) 550護盾，20% 增傷"
+   ],
+   "linesEn": [
+    "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+    "(2) 150 Shield; 6% Damage Amp",
+    "(3) 225 Shield; 10% Damage Amp",
+    "(4) 375 Shield; 15% Damage Amp",
+    "(5) 550 Shield; 20% Damage Amp"
+   ],
+   "units": "露璐、睿娜妲．格萊斯克、星朵拉、維爾戈、阿璃、蓋倫、奈德麗、銳空",
+   "unitsEn": "Lulu, Renata Glasc, Syndra, Viego, Ahri, Garen, Nidalee, Rakan",
+   "champions": [
+    {
+     "name": "露璐",
+     "nameEn": "Lulu",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "睿娜妲．格萊斯克",
+     "nameEn": "Renata Glasc",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "星朵拉",
+     "nameEn": "Syndra",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "維爾戈",
+     "nameEn": "Viego",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "阿璃",
+     "nameEn": "Ahri",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "蓋倫",
+     "nameEn": "Garen",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "奈德麗",
+     "nameEn": "Nidalee",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "銳空",
+     "nameEn": "Rakan",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Collab19": {
+   "name": "合作",
+   "nameEn": "Collab",
+   "nameOfficialZh": true,
+   "lines": [
+    "合作英雄在受到或造成8次傷害後會受到鼓舞，提升雙攻。",
+    "玩家戰鬥期間，每累積7次鼓舞，可獲得合作英雄的複製體。",
+    "(3) 8% 物攻/魔攻",
+    "(5) 20% 物攻/魔攻"
+   ],
+   "linesEn": [
+    "Collab champions become inspired after taking or dealing damage 8 times, gaining Attack Damage and Ability Power.",
+    "Every 7 inspirations during player combat, gain copies of Collab champions.",
+    "(3) 8% AD/AP",
+    "(5) 20% AD/AP"
+   ],
+   "units": "索娜",
+   "unitsEn": "Sona",
+   "champions": [
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_DemonVision19": {
+   "name": "搖滾樂",
+   "nameEn": "Rock",
+   "nameOfficialZh": true,
+   "lines": [
+    "(3) 召喚煉獄偶像。",
+    "(4) 他會依搖滾樂英雄造成傷害的10%回復生命。",
+    "(5) 施放技能時，他會對穿過最多敵軍的路徑發射一道強力爆破！",
+    "(7) 每存活3秒，2道閃電會轟擊鄰近敵軍，重複由搖滾樂英雄造成傷害15%的魔法傷害。"
+   ],
+   "linesEn": [
+    "(3) Summon the Infernal Idol.",
+    "(4) He heals for 10% of damage dealt by Rock champions.",
+    "(5) On cast, he fires a massive blast through the most enemies!",
+    "(7) Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 15% of damage dealt by Rock champions as magic damage."
+   ],
+   "units": "歐拉夫、法洛士、卡蜜兒、斯溫、洛克、汎、派克",
+   "unitsEn": "Olaf, Varus, Camille, Swain, Locke, Vayne, Pyke",
+   "champions": [
+    {
+     "name": "歐拉夫",
+     "nameEn": "Olaf",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "法洛士",
+     "nameEn": "Varus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡蜜兒",
+     "nameEn": "Camille",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "斯溫",
+     "nameEn": "Swain",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "洛克",
+     "nameEn": "Locke",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "汎",
+     "nameEn": "Vayne",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "派克",
+     "nameEn": "Pyke",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_EDM19": {
+   "name": "電子舞曲",
+   "nameEn": "EDM",
+   "nameOfficialZh": true,
+   "lines": [
+    "(2) 電子舞曲技能變得更難、更好、更快、更強。"
+   ],
+   "linesEn": [
+    "(2) EDM Abilities become harder, better, faster, and stronger."
+   ],
+   "units": "賈克斯、菲艾",
+   "unitsEn": "Jax, Vi",
+   "champions": [
+    {
+     "name": "賈克斯",
+     "nameEn": "Jax",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "菲艾",
+     "nameEn": "Vi",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Encore19": {
+   "name": "要不要來首安可曲",
+   "nameEn": "Encore",
+   "nameOfficialZh": true,
+   "lines": [
+    "安可英雄使用技能發射射彈時，會額外發射一個效果減弱的射彈。",
+    "(2) 25%效果",
+    "(4) 50%效果"
+   ],
+   "linesEn": [
+    "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+    "(2) 25% effectiveness",
+    "(4) 50% effectiveness"
+   ],
+   "units": "妮可、法洛士、伊澤瑞爾、路西恩、燼、悠咪、塔莉雅",
+   "unitsEn": "Neeko, Varus, Ezreal, Lucian, Jhin, Yuumi, Taliyah",
+   "champions": [
+    {
+     "name": "妮可",
+     "nameEn": "Neeko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "法洛士",
+     "nameEn": "Varus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "伊澤瑞爾",
+     "nameEn": "Ezreal",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "路西恩",
+     "nameEn": "Lucian",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "燼",
+     "nameEn": "Jhin",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "悠咪",
+     "nameEn": "Yuumi",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "塔莉雅",
+     "nameEn": "Taliyah",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Frontman19": {
+   "name": "主唱",
+   "nameEn": "Frontman",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加100生命。主唱會獲得更多生命，並在首次施放技能後進一步提升。",
+    "(2) 15% 生命，提升至25% 生命",
+    "(4) 22% 生命，提升至40% 生命",
+    "(6) 35% 生命，提升至60% 生命"
+   ],
+   "linesEn": [
+    "Your team gains 100 Health. Frontmen gain more, which increases after the first time they cast.",
+    "(2) 15% Health, increased to 25% Health",
+    "(4) 22% Health, increased to 40% Health",
+    "(6) 35% Health, increased to 60% Health"
+   ],
+   "units": "伊莉絲、柯布柯、賽特、伊羅旖、雷尼克頓、加里歐、斯溫、希瓦娜、瑟雷西、努努和威朗普",
+   "unitsEn": "Elise, Kobuko, Sett, Illaoi, Renekton, Galio, Swain, Shyvana, Thresh, Nunu & Willump",
+   "champions": [
+    {
+     "name": "伊莉絲",
+     "nameEn": "Elise",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "柯布柯",
+     "nameEn": "Kobuko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "賽特",
+     "nameEn": "Sett",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "伊羅旖",
+     "nameEn": "Illaoi",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "雷尼克頓",
+     "nameEn": "Renekton",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "加里歐",
+     "nameEn": "Galio",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "斯溫",
+     "nameEn": "Swain",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "希瓦娜",
+     "nameEn": "Shyvana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "瑟雷西",
+     "nameEn": "Thresh",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "努努和威朗普",
+     "nameEn": "Nunu & Willump",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_GlitterBomb19": {
+   "name": "超流行",
+   "nameEn": "Hyperpop",
+   "nameOfficialZh": true,
+   "lines": [
+    "超流行英雄成員會獲得生命和攻速。在玩家戰鬥後，英雄會根據自身星等產生4/6/12/40點熱潮，每此參與擊殺可額外產生1點熱潮。",
+    "每當熱潮達到新的等級，還能獲得特殊獎勵！特性等級越高，可獲得更多熱潮！",
+    "(2) 100生命，10% 攻速",
+    "(3) 200生命、15% 攻速、1.5x熱潮",
+    "(4) 300生命、25% 攻速、3x熱潮",
+    "(5) 500生命、40% 攻速、3.5x熱潮"
+   ],
+   "linesEn": [
+    "Hyperpop champions gain Health and Attack Speed. After player combat, they generate 3/6/12/40 Hype based on their star level + 1 Hype per takedown.",
+    "Each time you hit a new Hype Level, gain special rewards! At higher trait tiers, gain more Hype!",
+    "(2) 100 Health, 10% AS",
+    "(3) 200 Health, 15% AS, 1.5x Hype",
+    "(4) 300 Health, 25% AS, 3x Hype",
+    "(5) 500 Health, 40% AS, 3.5x Hype"
+   ],
+   "units": "柯布柯、希格斯、露璐、崔絲塔娜、提摩",
+   "unitsEn": "Kobuko, Ziggs, Lulu, Tristana, Teemo",
+   "champions": [
+    {
+     "name": "柯布柯",
+     "nameEn": "Kobuko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "希格斯",
+     "nameEn": "Ziggs",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "露璐",
+     "nameEn": "Lulu",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "崔絲塔娜",
+     "nameEn": "Tristana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "提摩",
+     "nameEn": "Teemo",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Heartsteel19": {
+   "name": "心鋼之聲",
+   "nameEn": "Heartsteel",
+   "nameOfficialZh": true,
+   "lines": [
+    "(1) 心鋼之聲成員會為我方隊伍提供加成。",
+    "(3) 選擇一個偏好，強化其技能。",
+    "(5) 選擇第二個偏好。",
+    "(7) 心鋼之聲英雄會額外獲得150%的心鋼之聲獎勵效果。",
+    "稜鏡：坐好了，心鋼之聲回來了！"
+   ],
+   "linesEn": [
+    "(1) Heartsteel members grant your team bonuses.",
+    "(3) Choose a Bias, empowering their Ability.",
+    "(5) Choose a 2nd Bias.",
+    "(7) Heartsteel champions gain an additional 150% of active Heartsteel bonuses.",
+    "Prismatic: Buckle up—HEARTSTEEL IS BACK!"
+   ],
+   "units": "慨影、賽特、伊澤瑞爾、卡桑帝、亞盧妮、犽凝、亞菲利歐、索娜",
+   "unitsEn": "Kayn, Sett, Ezreal, K'Sante, Alune, Yone, Aphelios, Sona",
+   "champions": [
+    {
+     "name": "慨影",
+     "nameEn": "Kayn",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "賽特",
+     "nameEn": "Sett",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "伊澤瑞爾",
+     "nameEn": "Ezreal",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡桑帝",
+     "nameEn": "K'Sante",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "亞盧妮",
+     "nameEn": "Alune",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "犽凝",
+     "nameEn": "Yone",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "亞菲利歐",
+     "nameEn": "Aphelios",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "gold"
+    },
+    {
+     "min": 7,
+     "tier": "prismatic"
+    }
+   ]
+  },
+  "DA_Heavenscale19": {
+   "name": "古風",
+   "nameEn": "Gu Feng",
+   "nameOfficialZh": true,
+   "lines": [
+    "古風英雄提升能力值，並隨著玩家等級成長。",
+    "(2) 每級獲得2% 物攻 魔攻 ，以及2護甲 魔抗 。",
+    "(3) 以及每級獲得2% 生命 。",
+    "(4) 從兩個可由古風英雄裝備的卷軸中選擇其一。其中一個卷軸會開啟一條通往等級11的危險道路。"
+   ],
+   "linesEn": [
+    "Gu Feng champions gain stats, scaling with your player level.",
+    "(2) 2% AD AP and 2 Armor MR per level.",
+    "(3) and 2% Health per level.",
+    "(4) Choose between two Scrolls that can be equipped by Gu Feng champions. One of the Scrolls opens a dangerous path to Level 11."
+   ],
+   "units": "悟空、剎雅、珍娜、李星",
+   "unitsEn": "Wukong, Xayah, Janna, Lee Sin",
+   "champions": [
+    {
+     "name": "悟空",
+     "nameEn": "Wukong",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "剎雅",
+     "nameEn": "Xayah",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "珍娜",
+     "nameEn": "Janna",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "李星",
+     "nameEn": "Lee Sin",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Hitmaker19": {
+   "name": "金曲製造機",
+   "nameEn": "Hitmaker",
+   "nameOfficialZh": true,
+   "lines": [
+    "金曲製造機獲得12% 物攻。裝備最多道具的金曲製造機會成為大人物，獲得更多物攻。",
+    "(2) 1狂暴一擊，20% 物攻",
+    "(4) 2狂暴一擊，35% 物攻"
+   ],
+   "linesEn": [
+    "Hitmakers gain 12% Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
+    "(2) 1 Big Shot, 20% AD",
+    "(4) 2 Big Shots, 35% AD"
+   ],
+   "units": "路西恩、崔絲塔娜、姍娜、吉茵珂絲、剎雅、好運姐",
+   "unitsEn": "Lucian, Tristana, Senna, Jinx, Xayah, Miss Fortune",
+   "champions": [
+    {
+     "name": "路西恩",
+     "nameEn": "Lucian",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "崔絲塔娜",
+     "nameEn": "Tristana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "姍娜",
+     "nameEn": "Senna",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "吉茵珂絲",
+     "nameEn": "Jinx",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "剎雅",
+     "nameEn": "Xayah",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "好運姐",
+     "nameEn": "Miss Fortune",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Illbeats19": {
+   "name": "Illbeats",
+   "nameEn": "Illbeats",
+   "nameOfficialZh": true,
+   "lines": [
+    "開啟Illbeats混音器來分配分貝。Illbeats英雄會根據你的混音獲得不同能力值。我方隊伍獲得50%的混音效果。",
+    "(2) 10分貝",
+    "(3) 14分貝",
+    "(4) 18分貝。混音效果增為1.5倍。"
+   ],
+   "linesEn": [
+    "Open the Illbeats Mixer to allocate Decibels. Illbeats champions receive different stats based on your mix. Your team gains 50% of the mix.",
+    "(2) 10 Decibels",
+    "(3) 14 Decibels",
+    "(4) 18 Decibels. The mix is 1.5 stronger."
+   ],
+   "units": "伊羅旖、布郎姆、達瑞文、悠咪",
+   "unitsEn": "Illaoi, Braum, Draven, Yuumi",
+   "champions": [
+    {
+     "name": "伊羅旖",
+     "nameEn": "Illaoi",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "布郎姆",
+     "nameEn": "Braum",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "達瑞文",
+     "nameEn": "Draven",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "悠咪",
+     "nameEn": "Yuumi",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_IonicSpark19": {
+   "name": "離子星火",
+   "nameEn": "Ionic Spark",
+   "nameOfficialZh": true,
+   "lines": [
+    "粉絲每4秒會贈送禮物為離子星火成員應援。離子星火成員獲得生命。",
+    "(3) 100生命，能恢復2% 生命並賦予7% 攻速的信件",
+    "(5) 250生命，可賦予25% 物攻或25% 魔攻的個人化禮物",
+    "(7) 550生命，每2場玩家戰鬥，獲得金錢及消耗品！",
+    "(10) 粉絲衝上舞台！"
+   ],
+   "linesEn": [
+    "Fans cheer on Ionic Spark members with gifts every 4 seconds. Ionic Spark members gain Health.",
+    "(3) 100 Health; Letters that restore 2% Health and grant 7% AS",
+    "(5) 250 Health; Personalized gifts that grant 25% AD or 25% AP",
+    "(7) 550 Health; Every 2 player combats, gain gold and a consumable!",
+    "(10) Fans rush the stage!"
+   ],
+   "units": "伊莉絲、尤娜拉、安妮、拉克絲、布蕾爾、泰貝爾、歐羅拉、吉茵珂絲、希瓦娜、關、索娜",
+   "unitsEn": "Elise, Yunara, Annie, Lux, Briar, Tibbers, Aurora, Jinx, Shyvana, Gwen, Sona",
+   "champions": [
+    {
+     "name": "伊莉絲",
+     "nameEn": "Elise",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "尤娜拉",
+     "nameEn": "Yunara",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "安妮",
+     "nameEn": "Annie",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "拉克絲",
+     "nameEn": "Lux",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "布蕾爾",
+     "nameEn": "Briar",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "泰貝爾",
+     "nameEn": "Tibbers",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "歐羅拉",
+     "nameEn": "Aurora",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "吉茵珂絲",
+     "nameEn": "Jinx",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "希瓦娜",
+     "nameEn": "Shyvana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "關",
+     "nameEn": "Gwen",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "gold"
+    },
+    {
+     "min": 10,
+     "tier": "prismatic"
+    }
+   ]
+  },
+  "DA_Jazz19": {
+   "name": "爵士樂",
+   "nameEn": "Jazz",
+   "nameOfficialZh": true,
+   "lines": [
+    "每發動一項特性(唯一特性除外)，我方隊伍獲得額外生命和傷害增幅。",
+    "(2) 1.5% , 1%",
+    "(3) 2.5% 、1.5%",
+    "(4) 3.5% 、2%"
+   ],
+   "linesEn": [
+    "For each active trait (except uniques), your team gains bonus Health and Damage Amp.",
+    "(2) 1.5% , 1%",
+    "(3) 2.5% , 1.5%",
+    "(4) 3.5% , 2%"
+   ],
+   "units": "路西恩、巴德、加里歐、斯米奇",
+   "unitsEn": "Lucian, Bard, Galio, Smeech",
+   "champions": [
+    {
+     "name": "路西恩",
+     "nameEn": "Lucian",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "巴德",
+     "nameEn": "Bard",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "加里歐",
+     "nameEn": "Galio",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "斯米奇",
+     "nameEn": "Smeech",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Juggernaut19": {
+   "name": "重裝戰士",
+   "nameEn": "Juggernaut",
+   "nameOfficialZh": true,
+   "lines": [
+    "重裝戰士會獲得續戰力，並依已損失的生命提高。",
+    "(2) 15% 續戰力至25% 續戰力",
+    "(4) 25% 續戰力至35% 續戰力",
+    "(6) 35% 續戰力至45% 續戰力"
+   ],
+   "linesEn": [
+    "Juggernauts gain Durability, increasing based on their missing Health.",
+    "(2) 15% Durability to 25% Durability",
+    "(4) 25% Durability to 35% Durability",
+    "(6) 35% Durability to 45% Durability"
+   ],
+   "units": "歐拉夫、塔里克、安妮、古拉格斯、布郎姆、艾克、約瑞科、札克、菲艾",
+   "unitsEn": "Olaf, Taric, Annie, Gragas, Braum, Ekko, Yorick, Zac, Vi",
+   "champions": [
+    {
+     "name": "歐拉夫",
+     "nameEn": "Olaf",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "塔里克",
+     "nameEn": "Taric",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "安妮",
+     "nameEn": "Annie",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "古拉格斯",
+     "nameEn": "Gragas",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "布郎姆",
+     "nameEn": "Braum",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "艾克",
+     "nameEn": "Ekko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "約瑞科",
+     "nameEn": "Yorick",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "札克",
+     "nameEn": "Zac",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "菲艾",
+     "nameEn": "Vi",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_KDA19": {
+   "name": "K/DA",
+   "nameEn": "K/DA",
+   "nameOfficialZh": true,
+   "lines": [
+    "K/DA英雄會根據其總星等發表新歌曲。戰鬥開始時以及8秒後，他們會從自身的每首歌曲獲得力量。",
+    "(3星) 〈POP/STARS〉：最大魔力減少10%。",
+    "(5星) DRUM GO DUM：12% 生命護盾 持續8秒。",
+    "(7星) 惡棍：60% 攻速 ，會在8秒內逐漸衰減。",
+    "(10星) 〈I'LL SHOW YOU〉：先前所有效果提升1.25。",
+    "(13星) 看我厲害：暈眩所有敵軍1.25秒。",
+    "(15星) FIRESTARTER：敵軍會在8秒內受到相當於16%最大生命的魔法傷害。",
+    "(21星) 各位：K/DA成員升至4星。"
+   ],
+   "linesEn": [
+    "K/DA champions release new songs based on their total star level. At Combat Start and after 8 seconds, they gain power for each of their songs.",
+    "(3 Star ) POP/STARS: 10% reduced max Mana.",
+    "(5 Star ) DRUM GO DUM: 12% Health Shield for 8 seconds.",
+    "(7 Star ) VILLAIN: 60% AS that decays over 8 seconds.",
+    "(10 Star ) I'LL SHOW YOU: Boost all previous effects by 1.25.",
+    "(13 Star ) WATCH ME: Stun all enemies for 1.25 seconds.",
+    "(15 Star ) FIRESTARTER: Enemies take 16% max Health magic damage over 8 seconds.",
+    "(21 Star ) GIRLS: K/DA members ascend to 4-star."
+   ],
+   "units": "莉莉亞、妮可、古拉格斯、伊芙琳、凱莎、阿璃、雷歐娜、阿卡莉、索娜",
+   "unitsEn": "Lillia, Neeko, Gragas, Evelynn, Kai'Sa, Ahri, Leona, Akali, Sona",
+   "champions": [
+    {
+     "name": "莉莉亞",
+     "nameEn": "Lillia",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "妮可",
+     "nameEn": "Neeko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "古拉格斯",
+     "nameEn": "Gragas",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "伊芙琳",
+     "nameEn": "Evelynn",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "凱莎",
+     "nameEn": "Kai'Sa",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "阿璃",
+     "nameEn": "Ahri",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "雷歐娜",
+     "nameEn": "Leona",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "阿卡莉",
+     "nameEn": "Akali",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "silver"
+    },
+    {
+     "min": 10,
+     "tier": "silver"
+    },
+    {
+     "min": 13,
+     "tier": "silver"
+    },
+    {
+     "min": 15,
+     "tier": "gold"
+    },
+    {
+     "min": 21,
+     "tier": "prismatic"
+    }
+   ]
+  },
+  "DA_Manager19": {
+   "name": "經紀人",
+   "nameEn": "Manager",
+   "nameOfficialZh": true,
+   "lines": [
+    "社交名流：獲得一個聚光燈棋格。在其中開始戰鬥的友軍會在戰鬥開始時以及每5秒獲得增益效果。",
+    "(2) 6% 物攻/魔攻",
+    "(3) 且獲得8魔力",
+    "(4) 且會掉落1金錢！"
+   ],
+   "linesEn": [
+    "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and every 5 seconds.",
+    "(2) 6% AD/AP",
+    "(3) AND 8 Mana",
+    "(4) AND they drop 1 Gold!"
+   ],
+   "units": "亞盧妮、雷歐娜、蒙多醫生",
+   "unitsEn": "Alune, Leona, Dr. Mundo",
+   "champions": [
+    {
+     "name": "亞盧妮",
+     "nameEn": "Alune",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "雷歐娜",
+     "nameEn": "Leona",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "蒙多醫生",
+     "nameEn": "Dr. Mundo",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "gold"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Mosher19": {
+   "name": "殺戮者",
+   "nameEn": "Slayer",
+   "nameOfficialZh": true,
+   "lines": [
+    "殺戮者獲得攻速和全能吸血，最多增加100%，取決於自身已損失生命。",
+    "(2) 20% 攻速，8% 全能吸血",
+    "(4) 40% 攻速，10% 全能吸血",
+    "(6) 65% 攻速、12% 全能吸血"
+   ],
+   "linesEn": [
+    "Slayers gain Attack Speed and Omnivamp, which increases up to 100%, based on their missing Health.",
+    "(2) 20% AS, 8% Omnivamp",
+    "(4) 40% AS, 10% Omnivamp",
+    "(6) 65% AS, 12% Omnivamp"
+   ],
+   "units": "卡特蓮娜、慨影、卡蜜兒、布蕾爾、維爾戈、犽宿、犽凝、斯米奇",
+   "unitsEn": "Katarina, Kayn, Camille, Briar, Viego, Yasuo, Yone, Smeech",
+   "champions": [
+    {
+     "name": "卡特蓮娜",
+     "nameEn": "Katarina",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "慨影",
+     "nameEn": "Kayn",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡蜜兒",
+     "nameEn": "Camille",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "布蕾爾",
+     "nameEn": "Briar",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "維爾戈",
+     "nameEn": "Viego",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "犽宿",
+     "nameEn": "Yasuo",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "犽凝",
+     "nameEn": "Yone",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "斯米奇",
+     "nameEn": "Smeech",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_OceanSong19": {
+   "name": "海灘流行樂",
+   "nameEn": "Beach Pop",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得可部署的樂器，可強化相鄰友軍。受到強化的友軍每3秒回復2% 生命。",
+    "受到強化的海灘流行樂英雄會提升攻速，每3秒回復魔力。"
+   ],
+   "linesEn": [
+    "Gain placeable instruments that empower adjacent allies. Empowered allies regenerate 2% Health every 3 seconds.",
+    "Empowered Beach Pop champions gain Attack Speed and also regenerate Mana every 3 seconds."
+   ],
+   "units": "塔里克、柔依、艾希、雷尼克頓、星朵拉、葛雷夫、札克、塔莉雅",
+   "unitsEn": "Taric, Zoe, Ashe, Renekton, Syndra, Graves, Zac, Taliyah",
+   "champions": [
+    {
+     "name": "塔里克",
+     "nameEn": "Taric",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "柔依",
+     "nameEn": "Zoe",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "艾希",
+     "nameEn": "Ashe",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "雷尼克頓",
+     "nameEn": "Renekton",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "星朵拉",
+     "nameEn": "Syndra",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "葛雷夫",
+     "nameEn": "Graves",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "札克",
+     "nameEn": "Zac",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "塔莉雅",
+     "nameEn": "Taliyah",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Pentakill19": {
+   "name": "殺五社",
+   "nameEn": "Pentakill",
+   "nameOfficialZh": true,
+   "lines": [
+    "殺五社成員獲得物攻與魔攻。",
+    "前幾名生命降至10%以下的敵軍會遭到處決，並在原地召喚一個友方屍鬼。",
+    "(3) 15% 物攻 魔攻，2名敵軍",
+    "(5) 30% 物攻 魔攻 ，3名敵軍。",
+    "(7) 35% 物攻 魔攻 ，4名敵軍。第一個死亡的敵軍改為召喚鐵娘子。",
+    "(7) 35%，物攻 魔攻 搖滾區！！！！！！！"
+   ],
+   "linesEn": [
+    "Pentakill members gain Attack Damage and Ability Power.",
+    "The first few enemies to drop below 10% Health are executed and summon an allied ghoul in their place.",
+    "(3) 15% AD AP , 2 enemies",
+    "(5) 30% AD AP , 3 enemies",
+    "(7) 35% AD AP , 4 enemies. The first enemy to die summons the Iron Maiden instead.",
+    "(7) 35% AD AP . MOSH PIT!!!!!!!"
+   ],
+   "units": "吶兒、歐拉夫、卡爾瑟斯、維爾戈、凱爾、約瑞科、魔鬥凱薩、索娜",
+   "unitsEn": "Gnar, Olaf, Karthus, Viego, Kayle, Yorick, Mordekaiser, Sona",
+   "champions": [
+    {
+     "name": "吶兒",
+     "nameEn": "Gnar",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "歐拉夫",
+     "nameEn": "Olaf",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "卡爾瑟斯",
+     "nameEn": "Karthus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "維爾戈",
+     "nameEn": "Viego",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "凱爾",
+     "nameEn": "Kayle",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "約瑞科",
+     "nameEn": "Yorick",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "魔鬥凱薩",
+     "nameEn": "Mordekaiser",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "silver"
+    },
+    {
+     "min": 7,
+     "tier": "gold"
+    },
+    {
+     "min": 7,
+     "tier": "prismatic"
+    }
+   ]
+  },
+  "DA_Prodigy19": {
+   "name": "不世之才",
+   "nameEn": "Prodigy",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得1魔力回復。不世之才獲得更多。",
+    "(2) 2魔力回復",
+    "(3) 3魔力回復",
+    "(4) 6魔力回復",
+    "(5) 7魔力回復，生命最低的友軍會回復相當於「不世之才」技能傷害12%的生命。"
+   ],
+   "linesEn": [
+    "Your team gains 1 Mana Regen. Prodigies gain more.",
+    "(2) 2 Mana Regen",
+    "(3) 3 Mana Regen",
+    "(4) 6 Mana Regen",
+    "(5) 7 Mana Regen; The lowest Health ally heals for 12% of damage dealt by Prodigies' abilties."
+   ],
+   "units": "妮可、拉克絲、艾克、馬爾札哈、亞盧妮、珍娜",
+   "unitsEn": "Neeko, Lux, Ekko, Malzahar, Alune, Janna",
+   "champions": [
+    {
+     "name": "妮可",
+     "nameEn": "Neeko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "拉克絲",
+     "nameEn": "Lux",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "艾克",
+     "nameEn": "Ekko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "馬爾札哈",
+     "nameEn": "Malzahar",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "亞盧妮",
+     "nameEn": "Alune",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "珍娜",
+     "nameEn": "Janna",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Renegade19": {
+   "name": "叛徒",
+   "nameEn": "Renegade",
+   "nameOfficialZh": true,
+   "lines": [
+    "叛徒增加精準、暴擊率與暴擊傷害。",
+    "(2) 15% 暴擊率，12%",
+    "(3) 20% 暴擊率，18%",
+    "(4) 25% 暴擊率、22%",
+    "(5) 35% 暴擊率、25% 。此外，叛徒會獲得10% 續戰力。"
+   ],
+   "linesEn": [
+    "Renegades gain Precision, Critical Strike Chance, and Critical Strike Damage.",
+    "(2) 15% Crit Chance, 12%",
+    "(3) 20% Crit Chance, 18%",
+    "(4) 25% Crit Chance, 22%",
+    "(5) 35% Crit Chance, 25% Additionally, Renegades gain 10% Durability."
+   ],
+   "units": "姬亞娜、煞蜜拉、伊芙琳、歐羅拉、葛雷夫、派克",
+   "unitsEn": "Qiyana, Samira, Evelynn, Aurora, Graves, Pyke",
+   "champions": [
+    {
+     "name": "姬亞娜",
+     "nameEn": "Qiyana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "煞蜜拉",
+     "nameEn": "Samira",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "伊芙琳",
+     "nameEn": "Evelynn",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "歐羅拉",
+     "nameEn": "Aurora",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "葛雷夫",
+     "nameEn": "Graves",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "派克",
+     "nameEn": "Pyke",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_RnB19": {
+   "name": "節奏藍調",
+   "nameEn": "R&B",
+   "nameOfficialZh": false,
+   "lines": [
+    "(1) 我方戰隊受到的技能傷害減少6%。",
+    "(2) 我方最強大的梅爾與銳兒會進行靈魂連結。梅爾所受到70%的傷害會轉移給銳兒。銳兒會回復相當於梅爾所造成傷害20%的生命。"
+   ],
+   "linesEn": [
+    "(1) Your team takes 6% less damage from abilities.",
+    "(2) Your strongest Mel and Rell are soul-linked. 70% of damage Mel takes is redirected to Rell. Rell heals for 20% of damage dealt by Mel."
+   ],
+   "units": "梅爾、銳兒",
+   "unitsEn": "Mel, Rell",
+   "champions": [
+    {
+     "name": "梅爾",
+     "nameEn": "Mel",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "銳兒",
+     "nameEn": "Rell",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 1,
+     "tier": "bronze"
+    },
+    {
+     "min": 2,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Swiftstriker19": {
+   "name": "迅捷先鋒",
+   "nameEn": "Swiftstriker",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加10%攻速。",
+    "迅捷先鋒每2秒額外獲得更多，最多可疊加5次。",
+    "(2) 每層5% 攻速",
+    "(3) 每層7% 攻速",
+    "(4) 每層13% 攻速",
+    "(5) 每層20% 攻速"
+   ],
+   "linesEn": [
+    "Your team gains 10% Attack Speed.",
+    "Swiftstrikers gain more every 2 seconds, up to 5 times.",
+    "(2) 5% AS per stack",
+    "(3) 7% AS per stack",
+    "(4) 13% AS per stack",
+    "(5) 20% AS per stack"
+   ],
+   "units": "尤娜拉、希格斯、艾希、賈克斯、巴德、凱爾、洛克、婕莉",
+   "unitsEn": "Yunara, Ziggs, Ashe, Jax, Bard, Kayle, Locke, Zeri",
+   "champions": [
+    {
+     "name": "尤娜拉",
+     "nameEn": "Yunara",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "希格斯",
+     "nameEn": "Ziggs",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "艾希",
+     "nameEn": "Ashe",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "賈克斯",
+     "nameEn": "Jax",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "巴德",
+     "nameEn": "Bard",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "凱爾",
+     "nameEn": "Kayle",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "洛克",
+     "nameEn": "Locke",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "婕莉",
+     "nameEn": "Zeri",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_Trickshot19": {
+   "name": "炫技射手",
+   "nameEn": "Trickshot",
+   "nameOfficialZh": true,
+   "lines": [
+    "炫技射手的攻擊與技能會彈射。每次彈射造成前一次彈射傷害的一部分。",
+    "(2) 彈射1次，為前一次傷害的22%",
+    "(3) 1反彈，造成前一次傷害的33%",
+    "(4) 彈射2次，為前一次傷害的33%"
+   ],
+   "linesEn": [
+    "Trickshots' attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
+    "(2) 1 richochet; 22% of previous damage",
+    "(3) 1 richochet; 33% of previous damage",
+    "(4) 2 richochets; 33% of previous damage"
+   ],
+   "units": "吶兒、煞蜜拉、達瑞文、凱莎、汎、逆命",
+   "unitsEn": "Gnar, Samira, Draven, Kai'Sa, Vayne, Twisted Fate",
+   "champions": [
+    {
+     "name": "吶兒",
+     "nameEn": "Gnar",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "煞蜜拉",
+     "nameEn": "Samira",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "達瑞文",
+     "nameEn": "Draven",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "凱莎",
+     "nameEn": "Kai'Sa",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "汎",
+     "nameEn": "Vayne",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "逆命",
+     "nameEn": "Twisted Fate",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "silver"
+    },
+    {
+     "min": 4,
+     "tier": "gold"
+    }
+   ]
+  },
+  "DA_TrueDamage19": {
+   "name": "True Damage",
+   "nameEn": "True Damage",
+   "nameOfficialZh": true,
+   "lines": [
+    "在A區時，贏得玩家戰鬥可獲得閃光。在B面，輸了也能獲得閃光。每4回合，你可以選擇將閃光兌換成獎勵，或是繼續累積。",
+    "A面：獲勝",
+    "(3) True Damage成員造成額外18%真實傷害。擊殺時獲得2閃光，戰鬥獲勝時可再獲得10閃光。",
+    "B面：落敗",
+    "(3) 落敗後獲得14閃光，且B面每次連敗額外獲得6閃光。若獲勝，則失去50%閃光。",
+    "(5) 30%真實傷害。擊殺時獲得4閃光，戰鬥獲勝可再獲得18閃光。",
+    "(5) 67%真實傷害。擊殺時獲得10閃光 + 戰鬥獲勝再獲得20閃光。",
+    "稜鏡：唱片機中正播放著〈KNOW MY NAME〉！",
+    "True Damage成員造成99%額外真實傷害，並獲得雙倍閃光。",
+    "(5) 每回合的戰鬥結束後，回復2玩家生命並獲得2經驗值。",
+    "稜鏡：唱片機播放〈GIANTS〉的震撼樂音！",
+    "True Damage成員造成99%額外真實傷害，擊殺時會掉落金錢。"
+   ],
+   "linesEn": [
+    "While on the A-Side, earn Bling for winning player combat. On the B-Side, earn Bling for losing.",
+    "Every 4 rounds, choose to convert Bling into rewards or Keep Rising.",
+    "A-Side: Win",
+    "3) True Damage members deal 18% bonus true damage. Gain 2 Bling on kill + 10 if you win combat.",
+    "B-Side: Lose",
+    "3) After losing, gain 14 Bling + 6 per consecutive loss on the B-Side. If you win, lose 50% of your Bling.",
+    "5) 30% true damage. 4 Bling on kill + 18 if you win combat.",
+    "5) 67% true damage. 10 Bling on kill + 20 if you win combat.",
+    "Prismatic: KNOW MY NAME blasts from the record player!",
+    "True Damage members deal 99% bonus true damage and earn double the bling.",
+    "5) Each round after combat, heal 2 player Health and gain 2 XP.",
+    "Prismatic: GIANTS blasts from the record player!",
+    "True Damage members deal 99% bonus true damage and drop gold on kill."
+   ],
+   "units": "凱能、姬亞娜、艾克、姍娜、犽宿、阿卡莉、索娜",
+   "unitsEn": "Kennen, Qiyana, Ekko, Senna, Yasuo, Akali, Sona",
+   "champions": [
+    {
+     "name": "凱能",
+     "nameEn": "Kennen",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "姬亞娜",
+     "nameEn": "Qiyana",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "艾克",
+     "nameEn": "Ekko",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "姍娜",
+     "nameEn": "Senna",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "犽宿",
+     "nameEn": "Yasuo",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "阿卡莉",
+     "nameEn": "Akali",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "索娜",
+     "nameEn": "Sona",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 3,
+     "tier": "bronze"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    },
+    {
+     "min": 5,
+     "tier": "prismatic"
+    },
+    {
+     "min": 5,
+     "tier": "gold"
+    },
+    {
+     "min": 5,
+     "tier": "prismatic"
+    }
+   ]
+  },
+  "DA_Virtuosos19": {
+   "name": "古典樂",
+   "nameEn": "Classical",
+   "nameOfficialZh": true,
+   "lines": [
+    "古典樂英雄會以獨特的方式魅惑敵軍。他們獲得傷害增幅，敵軍處於被魅惑狀態每6秒再增加1%。",
+    "(2) 8% 增傷，被魅惑的單位造成的10% 傷害降低。",
+    "(4) 18% 增傷，被迷倒的敵軍死亡時會拋出玫瑰，為古典樂英雄回復10% 生命",
+    "(6) 33% 增傷，被迷倒的敵軍死亡時有15%機率加入我方備戰區。"
+   ],
+   "linesEn": [
+    "Classical champions Captivate enemies in unique ways. They gain Damage Amp, increased by 1% every 6 seconds an enemy is Captivated.",
+    "(2) 8% Damage Amp; the Captivated deal 10% reduced damage.",
+    "(4) 18% Damage Amp; the Captivated throw roses on death, healing a Classical champion for 10% Health",
+    "(6) 33% Damage Amp; the Captivated have a 15% chance to join your bench on death."
+   ],
+   "units": "卡特蓮娜、納瑟斯、睿娜妲．格萊斯克、煞蜜拉、燼、瑟雷西、弗拉迪米爾",
+   "unitsEn": "Katarina, Nasus, Renata Glasc, Samira, Jhin, Thresh, Vladimir",
+   "champions": [
+    {
+     "name": "卡特蓮娜",
+     "nameEn": "Katarina",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "納瑟斯",
+     "nameEn": "Nasus",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "睿娜妲．格萊斯克",
+     "nameEn": "Renata Glasc",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "煞蜜拉",
+     "nameEn": "Samira",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "燼",
+     "nameEn": "Jhin",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "瑟雷西",
+     "nameEn": "Thresh",
+     "nameOfficialZh": true
+    },
+    {
+     "name": "弗拉迪米爾",
+     "nameEn": "Vladimir",
+     "nameOfficialZh": true
+    }
+   ],
+   "breakpoints": [
+    {
+     "min": 2,
+     "tier": "bronze"
+    },
+    {
+     "min": 4,
+     "tier": "silver"
+    },
+    {
+     "min": 6,
+     "tier": "gold"
+    }
+   ]
+  }
+ },
+ "augments": {
+  "DA_AdvancedLoan": {
+   "name": "進階貸款",
+   "nameEn": "Advanced Loan",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得22金錢。我方下一件增幅裝置降低一級。"
+   ],
+   "linesEn": [
+    "Gain 22 Gold. Your next augment is one tier lower."
+   ]
+  },
+  "DA_AdvancedLoanPlus": {
+   "name": "進階貸款+",
+   "nameEn": "Advanced Loan+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得33金錢。我方下一件增幅裝置降低一級。"
+   ],
+   "linesEn": [
+    "Gain 33 Gold. Your next augment is one tier lower."
+   ]
+  },
+  "DA_19_AimHigh": {
+   "name": "志存高遠",
+   "nameEn": "Aim High",
+   "nameOfficialZh": true,
+   "lines": [
+    "前2次購買獨特可解鎖的5費英雄時，獲得一件為其推薦的道具。"
+   ],
+   "linesEn": [
+    "The first 2 times you purchase a unique unlockable 5-cost champion, gain a recommended item for them."
+   ]
+  },
+  "DA_AllThatShimmers": {
+   "name": "鱗光四射",
+   "nameEn": "All That Shimmers",
+   "nameOfficialZh": true,
+   "lines": [
+    "選擇1件能產生金錢的神器。獲得1台磁性卸除器。"
+   ],
+   "linesEn": [
+    "Choose a gold-generating Artifact. Gain a Magnetic Remover."
+   ]
+  },
+  "DA_AllThatShimmers+": {
+   "name": "鱗光四射+",
+   "nameEn": "All That Shimmers+",
+   "nameOfficialZh": true,
+   "lines": [
+    "選擇一件能產生金錢的神器。獲得一台磁性卸除器與4金錢。"
+   ],
+   "linesEn": [
+    "Choose a gold-generating Artifact. Gain a Magnetic Remover and 4 gold."
+   ]
+  },
+  "DA_ArcaneViktory": {
+   "name": "奧術：維克特必勝",
+   "nameEn": "Arcane Viktor-y",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始8秒後，暈眩敵方隊伍1.5秒。戰鬥開始18秒後重複一次。",
+    "2024《聯盟戰棋》澳門公開賽"
+   ],
+   "linesEn": [
+    "After 8 seconds of combat, stun the enemy team for 1.5 seconds. Repeat this after 18 seconds of combat.",
+    "TFT Macao Open, 2024"
+   ]
+  },
+  "DA_ArmedAndGenerous": {
+   "name": "武裝又大方",
+   "nameEn": "Armed and Generous",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得1把海克斯科技槍刃。你的槍刃對友軍的治療效果現在會以75%的效果額外作用於第二個目標。"
+   ],
+   "linesEn": [
+    "Gain a Hextech Gunblade. Your Gunblades' ally heal is now granted to a second target at 75% effectiveness."
+   ]
+  },
+  "DA_ArmorStand": {
+   "name": "護甲立架",
+   "nameEn": "Armor Stand",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個裝備竊賊手套的訓練假人。它總是會隨機出坦型道具。"
+   ],
+   "linesEn": [
+    "Gain a Training Dummy with a Thief's Gloves. It always rolls Tank items."
+   ]
+  },
+  "DA_Ascension": {
+   "name": "飛昇",
+   "nameEn": "Ascension",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始12秒後，我方單位獲得35% 傷害增幅。"
+   ],
+   "linesEn": [
+    "After 12 seconds of combat, your units gain 35% Damage Amp."
+   ]
+  },
+  "DA_PartialAscension": {
+   "name": "不完全飛昇",
+   "nameEn": "Partial Ascension",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始12秒後，我方單位獲得20% 傷害增幅。"
+   ],
+   "linesEn": [
+    "After 12 seconds of combat, your units gain 20% Damage Amp."
+   ]
+  },
+  "DA_AugmentedPower": {
+   "name": "增幅之力",
+   "nameEn": "Augmented Power",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方下一件增幅裝置提高一級。"
+   ],
+   "linesEn": [
+    "Your next augment is one tier higher."
+   ]
+  },
+  "DA_BacklineBlueprint": {
+   "name": "後排藍圖",
+   "nameEn": "Backline Blueprint",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個3費非坦克英雄，以及1枚對應其職業的徽章。"
+   ],
+   "linesEn": [
+    "Gain a 3-cost non-Tank champion and an Emblem that matches their class."
+   ]
+  },
+  "DA_BattleOfTheBands": {
+   "name": "樂團對決",
+   "nameEn": "Battle of the Bands",
+   "nameOfficialZh": false,
+   "lines": [
+    "若你有2個或以上已啟動的樂團，我方隊伍增加18%物攻和魔攻。"
+   ],
+   "linesEn": [
+    "If you have 2 or more active Bands, your team gains 18% Attack Damage and Ability Power."
+   ]
+  },
+  "DA_BirthdayPresent": {
+   "name": "生日禮物",
+   "nameEn": "Birthday Present",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次升級時，獲得1名2星英雄與1金錢。英雄的費用層級等同你的等級減4 (最高：5費)。"
+   ],
+   "linesEn": [
+    "Gain a 2-star champion and 1 gold each time you level up. The champion's cost tier is your level minus 4 (max: 5-cost)."
+   ]
+  },
+  "DA_VIPAccess": {
+   "name": "盲盒",
+   "nameEn": "Blind Box",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一個隨機的黃金海克斯，但失去5金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Gold Augment, but lose 5 gold."
+   ]
+  },
+  "DA_VIPAccessII": {
+   "name": "盲盒II",
+   "nameEn": "Blind Box II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機稜鏡增幅裝置，但會損失8金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Prismatic Augment, but lose 8 gold."
+   ]
+  },
+  "DA_VIPAccessIIPlus": {
+   "name": "盲盒II",
+   "nameEn": "Blind Box II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機稜鏡增幅裝置，但損失12金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Prismatic Augment, but lose 12 gold."
+   ]
+  },
+  "DA_VIPAccessPlus": {
+   "name": "盲盒",
+   "nameEn": "Blind Box",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機金色增幅裝置，但會失去8金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Gold Augment, but lose 8 gold."
+   ]
+  },
+  "DA_VIPAccessPlusPlus": {
+   "name": "盲盒",
+   "nameEn": "Blind Box",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機金級增幅裝置，但會失去11金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Gold Augment, but lose 11 gold."
+   ]
+  },
+  "DA_BodyguardTraining": {
+   "name": "保鑣訓練",
+   "nameEn": "Bodyguard Training",
+   "nameOfficialZh": true,
+   "lines": [
+    "友軍獲得15雙防，每有一個玩家等級，可再增加2。",
+    "2022《新發明 & 酷玩意》冠軍賽"
+   ],
+   "linesEn": [
+    "Allies gain 15 Armor and Magic Resist, increased by 2 per player level.",
+    "Gizmos & Gadgets Championship, 2022"
+   ]
+  },
+  "DA_BonusGift": {
+   "name": "額外禮物",
+   "nameEn": "Bonus Gifts",
+   "nameOfficialZh": true,
+   "lines": [
+    "開啟戰利品晶球時，有0.25機率獲得1顆灰色戰利品晶球。獲得1顆灰色戰利品晶球。"
+   ],
+   "linesEn": [
+    "Whenever you open a loot orb, you have a 0.25 chance to gain a gray loot orb. Gain 1 gray loot orbs."
+   ]
+  },
+  "DA_BonusGiftPlus": {
+   "name": "額外禮物+",
+   "nameEn": "Bonus Gifts+",
+   "nameOfficialZh": true,
+   "lines": [
+    "開啟戰利品晶球時，有0.25機率獲得1顆灰色戰利品晶球。獲得2顆灰色戰利品晶球。"
+   ],
+   "linesEn": [
+    "Whenever you open a loot orb, you have a 0.25 chance to gain a gray loot orb. Gain 2 gray loot orbs."
+   ]
+  },
+  "DA_BoosterBox": {
+   "name": "強化箱",
+   "nameEn": "Booster Box",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及下2個階段開始時，獲得多位英雄。(保證至少獲得1名全像造型英雄！)"
+   ],
+   "linesEn": [
+    "Now and at the start of the next 2 stages, gain a pack of champions. (At least one holographic guaranteed!)"
+   ]
+  },
+  "DA_BoosterPack": {
+   "name": "強化包",
+   "nameEn": "Booster Pack",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得總計12費的隨機英雄。(保證獲得至少1個3費！)"
+   ],
+   "linesEn": [
+    "Gain 12 gold of random champions. (At least one 3-cost guaranteed!)"
+   ]
+  },
+  "DA_BoosterPackPlus": {
+   "name": "強化包+",
+   "nameEn": "Booster Pack+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得總計18金錢的隨機英雄。(保證獲得至少1個4費！)"
+   ],
+   "linesEn": [
+    "Gain 18 gold of random champions. (At least one 4-cost guaranteed!)"
+   ]
+  },
+  "DA_BoosterPackPlusPlus": {
+   "name": "強化包++",
+   "nameEn": "Booster Pack++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得總計26費的隨機英雄。(保證獲得至少1個5費！)"
+   ],
+   "linesEn": [
+    "Gain 26 gold of random champions. (At least one 5-cost guaranteed!)"
+   ]
+  },
+  "DA_BoxingLessons": {
+   "name": "拳擊訓練",
+   "nameEn": "Boxing Lessons",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，前排每有一名英雄，我方隊伍增加30生命。"
+   ],
+   "linesEn": [
+    "Your team gains 30 Health for each ally that starts combat in the front row."
+   ]
+  },
+  "DA_BranchingOut": {
+   "name": "斜槓英雄",
+   "nameEn": "Branching Out",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。"
+   ],
+   "linesEn": [
+    "Gain a random Emblem."
+   ]
+  },
+  "DA_BranchingOutPlus": {
+   "name": "斜槓英雄+",
+   "nameEn": "Branching Out+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章及1台重鑄器。"
+   ],
+   "linesEn": [
+    "Gain a random Emblem and a Reforger."
+   ]
+  },
+  "DA_BronzeForLifeI": {
+   "name": "銅級之命I",
+   "nameEn": "Bronze For Life",
+   "nameOfficialZh": true,
+   "lines": [
+    "每啟動1項銅級特性，我方隊伍獲得2.5% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Your team gains 2.5% Damage Amp for each Bronze-tier trait."
+   ]
+  },
+  "DA_BronzeForLifeII": {
+   "name": "銅級之命II",
+   "nameEn": "Bronze For Life II",
+   "nameOfficialZh": true,
+   "lines": [
+    "每啟動1項銅級特性，我方隊伍獲得2.5% 傷害增幅與2.5雙防。"
+   ],
+   "linesEn": [
+    "Your team gains 2.5% Damage Amp and 2.5 Armor and Magic Resist for each Bronze-tier trait."
+   ]
+  },
+  "DA_BuildABud": {
+   "name": "開局新手包",
+   "nameEn": "Build A Bud",
+   "nameOfficialZh": true,
+   "lines": [
+    "隨機獲得一名3星1費英雄。獲得9金錢。"
+   ],
+   "linesEn": [
+    "Gain a random 3-star 1-cost champion. Gain 9 gold."
+   ]
+  },
+  "DA_BundleOShrooms": {
+   "name": "蘑菇大禮包",
+   "nameEn": "Bundle o' Shrooms",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得6朵蘑菇，每朵蘑菇提供1次重抽、2經驗值，或3聯盟棋手生命。",
+    "蘑菇有小機率變成超大蘑菇，給予雙倍戰利品"
+   ],
+   "linesEn": [
+    "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health.",
+    "Mushrooms have a small chance to be HUGE and grant double loot"
+   ]
+  },
+  "DA_BundleOShroomsSilver": {
+   "name": "蘑菇大禮包",
+   "nameEn": "Bundle o' Shrooms",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得6朵蘑菇，每朵蘑菇提供1次重抽、2經驗值，或3聯盟棋手生命。",
+    "蘑菇有小機率變成超大蘑菇，給予雙倍戰利品"
+   ],
+   "linesEn": [
+    "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health.",
+    "Mushrooms have a small chance to be HUGE and grant double loot"
+   ]
+  },
+  "DA_CalculatedLoss": {
+   "name": "這次戰敗也在計算之中",
+   "nameEn": "Calculated Loss",
+   "nameOfficialZh": true,
+   "lines": [
+    "在你的戰鬥落敗後，獲得2金錢與一次免費的商店刷新。"
+   ],
+   "linesEn": [
+    "After losing your combat, gain 2 gold and a free Shop reroll."
+   ]
+  },
+  "DA_CalledShot": {
+   "name": "打擊宣言",
+   "nameEn": "Called Shot",
+   "nameOfficialZh": true,
+   "lines": [
+    "將連勝數設為+4。獲得4金錢。"
+   ],
+   "linesEn": [
+    "Set your win streak to +4. Gain 4 gold."
+   ]
+  },
+  "DA_CapitalGainsI": {
+   "name": "資本利得I",
+   "nameEn": "Capital Gains",
+   "nameOfficialZh": true,
+   "lines": [
+    "儲存相當於你所獲利息的金錢。3-3階段時，獲得所存金錢100%的金錢。立即獲得1金錢。"
+   ],
+   "linesEn": [
+    "Store gold equal to the interest you earn. On 3-3, gain gold equal to 100% of the stored gold. Gain 1 gold now."
+   ]
+  },
+  "DA_CapitalGainsII": {
+   "name": "資本利得II",
+   "nameEn": "Capital Gains II",
+   "nameOfficialZh": true,
+   "lines": [
+    "儲存相當於你所獲利息的金錢。3-3階段時，獲得所存金錢125%的金錢。立即獲得3金錢。"
+   ],
+   "linesEn": [
+    "Store gold equal to the interest you earn. On 3-3, gain gold equal to 125% of the stored gold. Gain 3 gold now."
+   ]
+  },
+  "DA_CaretakersAlly": {
+   "name": "守望者之友",
+   "nameEn": "Caretaker's Ally",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1名隨機2費英雄。每次升級時，都會獲得同一名英雄。"
+   ],
+   "linesEn": [
+    "Gain a random 2-cost champion now. Gain the same one again every time you level up."
+   ]
+  },
+  "DA_CasterApprentice": {
+   "name": "法師弟子",
+   "nameEn": "Caster Apprentice",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1滴女神之淚。3場玩家戰鬥後，獲得1把巨型魔棒。"
+   ],
+   "linesEn": [
+    "Gain a Tear Of The Goddess. After 3 player combats, gain a Needlessly Large Rod."
+   ]
+  },
+  "DA_BeltSmith1": {
+   "name": "皮帶匠I",
+   "nameEn": "Beltsmith",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件由巨人腰帶合成的隨機完整道具。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from Giant's Belt."
+   ]
+  },
+  "DA_BeltSmith2": {
+   "name": "皮帶匠II",
+   "nameEn": "Beltsmith II",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1件由巨人腰帶合成的隨機完整道具，並在1回合後再獲得1件。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from Giant's Belt now and another in 1 round."
+   ]
+  },
+  "DA_StaffSmith1": {
+   "name": "杖匠I",
+   "nameEn": "Staffsmith",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件由巨型魔棒合成的隨機完整道具。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from Needlessly Large Rod."
+   ]
+  },
+  "DA_SwordSmith1": {
+   "name": "劍匠I",
+   "nameEn": "Swordsmith",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件由暴風之劍合成的隨機完整道具。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from B.F. Sword."
+   ]
+  },
+  "DA_CelestialBlessingI": {
+   "name": "天賜聖典I",
+   "nameEn": "Celestial Blessing",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得12% 全能吸血。溢補的治療量將轉變為護盾，護盾量上限為200生命。"
+   ],
+   "linesEn": [
+    "Your team gains 12% Omnivamp. Excess healing is converted to a shield up to 200 Health."
+   ]
+  },
+  "DA_CelestialBlessingII": {
+   "name": "天賜聖典II",
+   "nameEn": "Celestial Blessing II",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得18% 全能吸血。溢補的治療量將轉變為護盾，護盾量上限為400生命。"
+   ],
+   "linesEn": [
+    "Your team gains 18% Omnivamp. Excess healing is converted to a shield up to 400 Health."
+   ]
+  },
+  "DA_CelestialBlessingIII": {
+   "name": "天賜聖典III",
+   "nameEn": "Celestial Blessing III",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得25% 全能吸血。溢補的治療量將轉變為護盾，護盾量上限為1000生命。"
+   ],
+   "linesEn": [
+    "Your team gains 25% Omnivamp. Excess healing is converted to a shield up to 1000 Health."
+   ]
+  },
+  "DA_ChallengersGrace": {
+   "name": "挑戰者恩惠",
+   "nameEn": "Challenger's Grace",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，友軍獲得1.3攻速，持續4秒。參與擊殺時，友軍衝向下一個目標並再次獲得此增益效果。"
+   ],
+   "linesEn": [
+    "At the start of combat, allies gain 1.3 Attack Speed for 4 seconds. On takedown, allies dash to their next target and gain this bonus again."
+   ]
+  },
+  "DA_ChampDelivery": {
+   "name": "英雄外送",
+   "nameEn": "Champ Delivery",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3名2費英雄。6回合後，再獲得3個。"
+   ],
+   "linesEn": [
+    "Gain 3 2-cost champions. After 6 rounds, gain 3 more."
+   ]
+  },
+  "DA_ChampDeliveryPlus": {
+   "name": "英雄外送+",
+   "nameEn": "Champ Delivery+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3位3費英雄。6回合後，再獲得3個。"
+   ],
+   "linesEn": [
+    "Gain 3 3-cost champions. After 6 rounds, gain 3 more."
+   ]
+  },
+  "DA_ChampDeliveryPlusPlus": {
+   "name": "英雄外送++",
+   "nameEn": "Champ Delivery++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3名4費英雄。6回合後，再獲得3個。"
+   ],
+   "linesEn": [
+    "Gain 3 4-cost champions. After 6 rounds, gain 3 more."
+   ]
+  },
+  "DA_ChampionAirdrop": {
+   "name": "英雄空投",
+   "nameEn": "Champion Airdrop",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得3個2費英雄，並在5回合後再獲得3個。每次空投後，回合間隔與英雄數量各增加1。"
+   ],
+   "linesEn": [
+    "Gain 3 2-cost champions now and 3 more after 5 rounds. After each airdrop, increase the round delay and the number of champions by 1."
+   ]
+  },
+  "DA_CheatCode": {
+   "name": "作弊密碼",
+   "nameEn": "Cheat Code",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及每個階段開始時，都會獲得一組新的作弊碼。第一次完全依照順序完成動作時，獲得獎勵。"
+   ],
+   "linesEn": [
+    "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward."
+   ]
+  },
+  "DA_CheatCodeGold": {
+   "name": "作弊密碼 II",
+   "nameEn": "Cheat Code II",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及每個階段開始時，都會獲得一組新的作弊碼。第一次依照指定順序完成完全相同的動作時，即可獲得獎勵。"
+   ],
+   "linesEn": [
+    "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward."
+   ]
+  },
+  "DA_CheatCodePrismatic": {
+   "name": "作弊密碼 III",
+   "nameEn": "Cheat Code III",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及每個階段開始時，都會獲得一組新的作弊碼。第一次完全依照順序完成動作時，獲得獎勵。"
+   ],
+   "linesEn": [
+    "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward."
+   ]
+  },
+  "DA_ClearMind": {
+   "name": "思緒清晰",
+   "nameEn": "Clear Mind",
+   "nameOfficialZh": true,
+   "lines": [
+    "玩家戰鬥結束時，若我方備戰區沒有任何英雄，則獲得3經驗值。"
+   ],
+   "linesEn": [
+    "If there are no champions on your bench at the end of player combat, gain 3 XP."
+   ]
+  },
+  "DA_ClockworkAccelerator": {
+   "name": "發條加速器",
+   "nameEn": "Clockwork Accelerator",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍在戰鬥中每3秒增加1.12攻速。"
+   ],
+   "linesEn": [
+    "Your team gains 1.12 Attack Speed every 3 seconds in combat."
+   ]
+  },
+  "DA_Cloning": {
+   "name": "複製",
+   "nameEn": "Cloning",
+   "nameOfficialZh": true,
+   "lines": [
+    "每場玩家戰鬥後，獲得盤面上隨機一名英雄的複製體。",
+    "若你擁有的不重複英雄少於3名，可以改為獲得金錢"
+   ],
+   "linesEn": [
+    "After each player combat, gain a copy of a random champion on your board.",
+    "If you have fewer than 3 unique champions, you may instead instead gain gold"
+   ]
+  },
+  "DA_ClutteredMind": {
+   "name": "思緒雜亂",
+   "nameEn": "Cluttered Mind",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得4位1費英雄。在玩家戰鬥結束時，若我方備戰區已經全滿，則獲得3經驗值。"
+   ],
+   "linesEn": [
+    "Gain 4 1-cost champions now. If your bench is full at the end of player combat, gain 3 XP."
+   ]
+  },
+  "DA_CognitiveTax": {
+   "name": "智商稅",
+   "nameEn": "Cognitive Tax",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得8金錢和1經驗值。"
+   ],
+   "linesEn": [
+    "Gain 8 gold and 1 XP."
+   ]
+  },
+  "DA_CognitiveTaxPlus": {
+   "name": "智商稅+",
+   "nameEn": "Cognitive Tax+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得12金錢和3經驗值。"
+   ],
+   "linesEn": [
+    "Gain 12 gold and 3 XP."
+   ]
+  },
+  "DA_ComebackStory": {
+   "name": "逆轉佳話",
+   "nameEn": "Comeback Story",
+   "nameOfficialZh": true,
+   "lines": [
+    "玩家每失去1點生命，我方隊伍獲得4生命及0.4% 攻速。"
+   ],
+   "linesEn": [
+    "Your team gains 4 Health and 0.4% Attack Speed per missing player Health."
+   ]
+  },
+  "DA_CommerceCore": {
+   "name": "貿易核心",
+   "nameEn": "Commerce Core",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得16次免費商店重抽，且每回合再獲得3次，持續到遊戲結束。"
+   ],
+   "linesEn": [
+    "Gain 16 free Shop rerolls now and 3 every round for the rest of the game."
+   ]
+  },
+  "DA_ConstructACompanion": {
+   "name": "打造夥伴",
+   "nameEn": "Construct a Companion",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方購買的下一位1費英雄為3星。獲得2金錢。"
+   ],
+   "linesEn": [
+    "The next 1-cost champion you buy is 3-star. Gain 2 gold."
+   ]
+  },
+  "DA_ForgeAFriend": {
+   "name": "鑄造朋友",
+   "nameEn": "Forge A Friend",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方購買的下一位1費英雄為3星。獲得5金錢。"
+   ],
+   "linesEn": [
+    "The next 1-cost champion you buy is 3-star. Gain 5 gold."
+   ]
+  },
+  "DA_Corrosion": {
+   "name": "腐蝕",
+   "nameEn": "Corrosion",
+   "nameOfficialZh": true,
+   "lines": [
+    "前兩排敵軍每2秒失去3雙防。"
+   ],
+   "linesEn": [
+    "Enemies in the first two rows lose 3 Armor and Magic Resist every 2 seconds."
+   ]
+  },
+  "DA_CountingStars": {
+   "name": "數星星",
+   "nameEn": "Counting Stars",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得5金錢。每次將1名英雄升至3星，即可根據擁有的3星英雄數量獲得金錢，每有1名獲得5金錢。"
+   ],
+   "linesEn": [
+    "Gain 5 gold. Each time you 3-star a champion, gain 5 gold for each 3-star you have."
+   ]
+  },
+  "DA_CritQuintessence": {
+   "name": "暴擊精髓",
+   "nameEn": "Crit Rune",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得8金錢。我方隊伍增加1%暴擊率。"
+   ],
+   "linesEn": [
+    "Gain 8 gold. Your team gains 1% Critical Strike Chance."
+   ]
+  },
+  "DA_CritQuintessencePlus": {
+   "name": "暴擊精髓+",
+   "nameEn": "Crit Rune+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得14金錢。我方隊伍增加1%暴擊率。"
+   ],
+   "linesEn": [
+    "Gain 14 gold. Your team gains 1% Critical Strike Chance."
+   ]
+  },
+  "DA_CursedCrown": {
+   "name": "詛咒之冠",
+   "nameEn": "Cursed Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "最大隊伍規模+2，但輸掉玩家戰鬥時受到雙倍玩家傷害。"
+   ],
+   "linesEn": [
+    "Gain +2 max team size, but you take double player damage when you lose a player combat."
+   ]
+  },
+  "DA_GoldDestiny": {
+   "name": "金色命運",
+   "nameEn": "Gold Destiny",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機金級增幅裝置與3金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Gold Augment and 3 gold."
+   ]
+  },
+  "DA_GoldDestinyPlus": {
+   "name": "金色命運+",
+   "nameEn": "Gold Destiny+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機金級增幅裝置與5金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Gold Augment and 5 gold."
+   ]
+  },
+  "DA_PrismaticDestiny": {
+   "name": "稜鏡命運",
+   "nameEn": "Prismatic Destiny",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機稜鏡增幅裝置與2金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Prismatic Augment and 2 gold."
+   ]
+  },
+  "DA_PrismaticDestinyPlus": {
+   "name": "稜鏡命運+",
+   "nameEn": "Prismatic Destiny+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機稜鏡增幅裝置與7金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Prismatic Augment and 7 gold."
+   ]
+  },
+  "DA_SilverDestiny": {
+   "name": "銀色命運",
+   "nameEn": "Silver Destiny",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機銀級增幅裝置與2金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Silver Augment and 2 gold."
+   ]
+  },
+  "DA_SilverDestinyPlus": {
+   "name": "銀色命運+",
+   "nameEn": "Silver Destiny+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機銀色增幅裝置與4金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Silver Augment and 4 gold."
+   ]
+  },
+  "DA_SilverDestinyPlusPlus": {
+   "name": "銀色命運++",
+   "nameEn": "Silver Destiny++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一件隨機銀色增幅裝置與7金錢。"
+   ],
+   "linesEn": [
+    "Gain a random Silver Augment and 7 gold."
+   ]
+  },
+  "DA_DoubleTrouble": {
+   "name": "雙胞胎",
+   "nameEn": "Double Trouble",
+   "nameOfficialZh": true,
+   "lines": [
+    "部署正好2名相同英雄時，兩者都獲得25% 物攻和魔攻，以及25雙防。將其升至3星時，獲得1名2星的複製體。"
+   ],
+   "linesEn": [
+    "When you field exactly 2 copies of a champion, they both gain 25% Attack Damage and Ability Power and 25 Armor, and Magic Resist. When you 3-star, gain a 2-star copy."
+   ]
+  },
+  "DA_DuoQueue": {
+   "name": "雙排",
+   "nameEn": "Duo Queue",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2個隨機5費英雄及2個相同的隨機組件。"
+   ],
+   "linesEn": [
+    "Gain 2 random 5-cost champions and 2 copies of a random component."
+   ]
+  },
+  "DA_DuplicatorDeal": {
+   "name": "複製優惠",
+   "nameEn": "Duplicator Deal",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得3英雄複製裝置. 你將無法再3星 英雄。"
+   ],
+   "linesEn": [
+    "Gain 3 Champion Duplicators. You can no longer 3-star champions."
+   ]
+  },
+  "DA_EarlyLearnings": {
+   "name": "早期教育",
+   "nameEn": "Early Learnings",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得3% 物攻與魔攻。此數值在每有一場玩家戰鬥後提升1%。1費英雄獲得雙倍效果。"
+   ],
+   "linesEn": [
+    "Your team gains 3% Attack Damage & Ability Power. This increases by 1% after each player combat. 1-cost champions gain double."
+   ]
+  },
+  "DA_ElectrochargeI": {
+   "name": "電光反擊I",
+   "nameEn": "Electrocharge",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次一名友軍受到4次普攻，會對鄰近敵軍造成25-80(依當前階段而定)魔法傷害(1秒冷卻)。"
+   ],
+   "linesEn": [
+    "Every 4 attacks an ally takes, they deal 25-80 (based on current Stage) magic damage to nearby enemies (1 second cooldown)."
+   ]
+  },
+  "DA_ElectrochargeII": {
+   "name": "電光反擊II",
+   "nameEn": "Electrocharge II",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次一名友軍受到4次攻擊，會對鄰近敵軍造成35-120(依當前階段而定)魔法傷害(1秒冷卻)。"
+   ],
+   "linesEn": [
+    "Every 4 attacks an ally takes, they deal 35-120 (based on current Stage) magic damage to nearby enemies (1 second cooldown)."
+   ]
+  },
+  "DA_EpicRolldown": {
+   "name": "史詩重抽",
+   "nameEn": "Epic Rolldown",
+   "nameOfficialZh": true,
+   "lines": [
+    "升至等級8時，獲得20次商店重抽。",
+    "2023《符文大地重鑄新生》冠軍賽"
+   ],
+   "linesEn": [
+    "When you reach Level 8, gain 20 Shop rerolls.",
+    "Runeterra Reforged Championship, 2023"
+   ]
+  },
+  "DA_Epoch": {
+   "name": "紀元",
+   "nameEn": "Epoch",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在以及每個階段開始時，獲得4經驗值與2次免費重抽。"
+   ],
+   "linesEn": [
+    "Now, and at the start of every stage, gain 4 XP and 2 free rerolls."
+   ]
+  },
+  "DA_EpochPlus": {
+   "name": "紀元+",
+   "nameEn": "Epoch+",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在以及每個階段開始時獲得8經驗值與2次免費重抽機會。"
+   ],
+   "linesEn": [
+    "Now, and at the start of every stage, gain 8 XP and 2 free rerolls."
+   ]
+  },
+  "DA_ExplosiveGrowth": {
+   "name": "爆炸性成長",
+   "nameEn": "Explosive Growth",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及接下來3個回合開始時，各獲得7經驗值。"
+   ],
+   "linesEn": [
+    "Now and at the start of the next 3 rounds, gain 7 XP."
+   ]
+  },
+  "DA_ExplosiveGrowthPlus": {
+   "name": "爆炸性成長+",
+   "nameEn": "Explosive Growth+",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及接下來3個回合開始時，各獲得9經驗值。"
+   ],
+   "linesEn": [
+    "Now and at the start of the next 3 rounds, gain 9 XP."
+   ]
+  },
+  "DA_FeelingLucky": {
+   "name": "鴻運當頭",
+   "nameEn": "Feeling Lucky",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得12金錢，接著擲金幣。正面的話，再獲得4金錢。"
+   ],
+   "linesEn": [
+    "Gain 12 gold, then flip a coin. If heads, gain 4 more gold."
+   ]
+  },
+  "DA_FeelingLuckyPlus": {
+   "name": "鴻運當頭+",
+   "nameEn": "Feeling Lucky+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得12金錢，接著擲金幣。正面的話，再獲得4金錢。"
+   ],
+   "linesEn": [
+    "Gain 12 gold, then flip a coin. If heads, gain 4 more gold."
+   ]
+  },
+  "DA_FighterApprentice": {
+   "name": "鬥士弟子",
+   "nameEn": "Fighter Apprentice",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得格鬥手套。3場玩家戰鬥後，獲得1件鎖子甲。"
+   ],
+   "linesEn": [
+    "Gain Sparring Gloves. After 3 player combats, gain a Chain Vest."
+   ]
+  },
+  "DA_FighterFlightII": {
+   "name": "或戰或跑II",
+   "nameEn": "Fighter Flight II",
+   "nameOfficialZh": true,
+   "lines": [
+    "你的鬥士和刺客移動速度更快，並獲得18% 攻速。當你的生命低於50% 時，這些加成會加倍。"
+   ],
+   "linesEn": [
+    "Your Fighters and Assassins move faster and gain 18% Attack Speed. These bonuses are doubled while below 50% Health."
+   ]
+  },
+  "DA_FighterFlight": {
+   "name": "或戰或跑II",
+   "nameEn": "Fighter Flight",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方鬥士和刺客移動速度加快，並獲得10% 攻速。生命低於50%時，這些加成會加倍。"
+   ],
+   "linesEn": [
+    "Your Fighters and Assassins move faster and gain 10% Attack Speed. These bonuses are doubled while below 50% Health."
+   ]
+  },
+  "DA_FindYourCenter": {
+   "name": "中堅自強",
+   "nameEn": "Find Your Center",
+   "nameOfficialZh": true,
+   "lines": [
+    "在前排中央開始戰鬥的我方英雄獲得15% 傷害增幅和1.25最大生命。"
+   ],
+   "linesEn": [
+    "Your champion that starts combat in the center of the front row gains 15% Damage Amp and 1.25 max Health."
+   ]
+  },
+  "DA_FocusedFire": {
+   "name": "集中火力",
+   "nameEn": "Focused Fire",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加10% 物攻，每過5秒再增加4%。"
+   ],
+   "linesEn": [
+    "Your team gains 10% Attack Damage. Every 5 seconds, they gain 4% more."
+   ]
+  },
+  "DA_18_FOURcing": {
+   "name": "四之力",
+   "nameEn": "FOURcing",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1名隨機4費英雄。該英雄每裝備1件道具，你的戰隊就會獲得100生命。"
+   ],
+   "linesEn": [
+    "Gain a random 4-cost champion. For each item equipped to that champion, your team gains 100 health."
+   ]
+  },
+  "DA_FourFourTime": {
+   "name": "4/4拍",
+   "nameEn": "4/4 Time",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得4金錢、4玩家生命和4次重抽，並於4回合後獲得一個隨機的4費英雄。"
+   ],
+   "linesEn": [
+    "Gain 4 gold, 4 player Health, and 4 rerolls now, and a random 4-cost champion in 4 rounds."
+   ]
+  },
+  "DA_ThreeFourTime": {
+   "name": "3/4拍",
+   "nameEn": "3/4 Time",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得3金錢、3玩家生命和3次重抽，並於4回合後獲得一個隨機的3費英雄。"
+   ],
+   "linesEn": [
+    "Gain 3 gold, 3 player Health, and 3 rerolls now, and a random 3-cost champion in 4 rounds."
+   ]
+  },
+  "DA_FrontlineFoundation": {
+   "name": "前線基礎",
+   "nameEn": "Frontline Foundation",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個2星1費坦克英雄，以及1枚對應其職業的徽章。"
+   ],
+   "linesEn": [
+    "Gain a 2-star 1-cost Tank champion and an Emblem that matches their class."
+   ]
+  },
+  "DA_FutureFocused": {
+   "name": "著眼未來",
+   "nameEn": "Future Focused",
+   "nameOfficialZh": true,
+   "lines": [
+    "失去20棋手生命，經過5個玩家戰鬥回合後，獲得3名4費英雄和5金錢。"
+   ],
+   "linesEn": [
+    "Your Tactician loses 20 Health, but after 5 player combats, gain 3 4-cost champions and 5 gold."
+   ]
+  },
+  "DA_GainGold": {
+   "name": "獲得21金錢",
+   "nameEn": "Gain 21 Gold",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得21金錢。"
+   ],
+   "linesEn": [
+    "Gain 21 gold."
+   ]
+  },
+  "DA_GainGoldPlus": {
+   "name": "獲得21金錢+",
+   "nameEn": "Gain 21 Gold+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得21金錢。"
+   ],
+   "linesEn": [
+    "Gain 21 gold."
+   ]
+  },
+  "DA_GiantAndMighty": {
+   "name": "巨大強悍",
+   "nameEn": "Giant and Mighty",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍體型變大，增加225生命與1.1最大生命。"
+   ],
+   "linesEn": [
+    "Your team becomes large, gaining 225 Health and 1.1 max Health."
+   ]
+  },
+  "DA_GildedSteel": {
+   "name": "不破金鋼",
+   "nameEn": "Gilded Steel",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2個5費英雄。部署至少一個5費英雄後，我方1至4費英雄增加8% 續戰力。",
+    "2025《K.O.競技場》棋手皇冠"
+   ],
+   "linesEn": [
+    "Gain two 5-cost champions. If you field at least one 5-cost champion, your 1 to 4-cost champions gain 8% Durability.",
+    "K.O. Coliseum Tactician's Crown, 2025"
+   ]
+  },
+  "DA_GlassCannon_Silver": {
+   "name": "玻璃大砲I",
+   "nameEn": "Glass Cannon",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，後排友軍以80% 生命開場，但獲得16% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Allies that start combat in the back row begin combat at 80% Health but gain 16% Damage Amp."
+   ]
+  },
+  "DA_GlassCannon_Gold": {
+   "name": "玻璃大砲II",
+   "nameEn": "Glass Cannon II",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，後排友軍以80% 生命開場，但獲得25% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Allies that start combat in the back row begin combat at 80% Health but gain 25% Damage Amp."
+   ]
+  },
+  "DA_GoingLong": {
+   "name": "長久之計",
+   "nameEn": "Going Long",
+   "nameOfficialZh": true,
+   "lines": [
+    "你不再獲得利息。立即獲得10金錢。每場玩家戰鬥後獲得4經驗值。",
+    "利息是指每存10金錢可獲得的額外金錢。"
+   ],
+   "linesEn": [
+    "You no longer gain interest. Gain 10 gold now. Gain 4 XP after every player combat.",
+    "Interest is extra gold you gain per 10g saved."
+   ]
+  },
+  "DA_GoodForSomethingI": {
+   "name": "死得有價值I",
+   "nameEn": "Good For Something",
+   "nameOfficialZh": true,
+   "lines": [
+    "未持有道具的英雄死亡時，有40%機率掉落1金錢。"
+   ],
+   "linesEn": [
+    "Champions that aren't holding items have a 40% chance to drop 1 gold on death."
+   ]
+  },
+  "DA_GoodFOURtune": {
+   "name": "「四四」如意",
+   "nameEn": "Good FOURtune",
+   "nameOfficialZh": true,
+   "lines": [
+    "開啟一輪有2星4費英雄的商店。只能購買1個英雄。獲得16金錢。"
+   ],
+   "linesEn": [
+    "Open a shop of 2-star 4-cost champions. You can only buy 1. Gain 16 gold."
+   ]
+  },
+  "DA_GroupHugI": {
+   "name": "大家來抱抱 I",
+   "nameEn": "Group Hug",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：英雄賦予其他相鄰英雄7雙防。此效果可累加。"
+   ],
+   "linesEn": [
+    "Combat start: Allies grant other adjacent allies 7 Armor and Magic Resist. This effect stacks."
+   ]
+  },
+  "DA_GroupHugII": {
+   "name": "大家來抱抱II",
+   "nameEn": "Group Hug II",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：英雄賦予其他相鄰英雄10雙防。此效果可累加。"
+   ],
+   "linesEn": [
+    "Combat start: Allies grant other adjacent allies 10 Armor and Magic Resist. This effect stacks."
+   ]
+  },
+  "DA_HardBargain": {
+   "name": "討價還價",
+   "nameEn": "Hard Bargain",
+   "nameOfficialZh": true,
+   "lines": [
+    "你無法選擇聯合徵召獎勵。每次聯合徵召回合，獲得額外6玩家生命與8金錢。",
+    "未選擇聯合徵召獎勵時，獲得一位尚未被選取的英雄，以及該英雄攜帶的道具"
+   ],
+   "linesEn": [
+    "You cannot choose your Carousel rewards. Gain an additional 6 player health and 8 gold each carousel round.",
+    "When you do not pick a Carousel Reward, you are given an unpicked champion and the item it carries."
+   ]
+  },
+  "DA_HealingOrbsI": {
+   "name": "治癒靈球I",
+   "nameEn": "Healing Orbs",
+   "nameOfficialZh": true,
+   "lines": [
+    "敵軍陣亡後，1名鄰近友軍回復250生命。"
+   ],
+   "linesEn": [
+    "When an enemy dies, a nearby ally is healed for 250 Health."
+   ]
+  },
+  "DA_HealingOrbsII": {
+   "name": "治癒靈球II",
+   "nameEn": "Healing Orbs II",
+   "nameOfficialZh": true,
+   "lines": [
+    "敵軍陣亡後，1名鄰近友軍回復575生命。"
+   ],
+   "linesEn": [
+    "When an enemy dies, a nearby ally is healed for 575 Health."
+   ]
+  },
+  "DA_HedgeFund": {
+   "name": "避險基金",
+   "nameEn": "Hedge Fund",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得22金錢。利息上限提升至10。"
+   ],
+   "linesEn": [
+    "Gain 22 gold. Your max interest is increased to 10."
+   ]
+  },
+  "DA_HoldTheLine": {
+   "name": "堅守前線",
+   "nameEn": "Hold the Line",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，我方前排每有1名英雄，後2排的英雄獲得11% 魔攻和11% 物攻。"
+   ],
+   "linesEn": [
+    "Allies in your back 2 rows gain 11% Ability Power and 11% Attack Damage for each ally that starts combat in your front row."
+   ]
+  },
+  "DA_Hustler": {
+   "name": "私房錢",
+   "nameEn": "Hustler",
+   "nameOfficialZh": true,
+   "lines": [
+    "你不會獲得利息，但每個玩家戰鬥回合開始時獲得3金錢。立即獲得3金錢。",
+    "利息是指每存10金錢可獲得的額外金錢。"
+   ],
+   "linesEn": [
+    "You no longer gain interest but gain 3 gold at the start of every player combat round. Gain 3 gold now.",
+    "Interest is extra gold you gain per 10g saved."
+   ]
+  },
+  "DA_InvestmentStrategyI": {
+   "name": "投資策略I",
+   "nameEn": "Investment Strategy",
+   "nameOfficialZh": true,
+   "lines": [
+    "每賺取1點利息，我方英雄永久獲得8最大生命。立即獲得3金錢。"
+   ],
+   "linesEn": [
+    "Your champions gain 8 permanent max health per interest you earn. Gain 3 gold now."
+   ]
+  },
+  "DA_InvestmentStrategy": {
+   "name": "投資策略II",
+   "nameEn": "Investment Strategy II",
+   "nameOfficialZh": true,
+   "lines": [
+    "每賺取1點利息，我方英雄永久獲得10最大生命。利息上限提升2。立即獲得6金錢。"
+   ],
+   "linesEn": [
+    "Your champions gain 10 permanent max health per interest you earn. Your max interest is increased by 2. Gain 6 gold now."
+   ]
+  },
+  "DA_ItsMeBaby": {
+   "name": "是我，寶貝",
+   "nameEn": "It's Me, Baby",
+   "nameOfficialZh": true,
+   "lines": [
+    "右下角獲得1個冠軍賽棋格。聚光燈下的英雄獲得15% 傷害增幅和1.15攻速，且每參與擊殺5次，掉落1金錢。",
+    "2026「英雄棋譚」棋手皇冠"
+   ],
+   "linesEn": [
+    "Gain a championship hex in the bottom right corner. The champion in it gains 15% Damage Amp and 1.15 Attack Speed, and drops 1 gold every 5 takedowns.",
+    "Lore & Legends Tactician's Crown, 2026"
+   ]
+  },
+  "DA_JeweledLotus_I": {
+   "name": "珠光蓮花I",
+   "nameEn": "Jeweled Lotus",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加15% 暴擊率並獲得精準。",
+    "精準：技能傷害可以暴擊。額外精準會賦予10%暴擊傷害。"
+   ],
+   "linesEn": [
+    "Your team gains 15% Critical Strike Chance and Precision.",
+    "Precision: Ability damage can critically strike. Additional Precision grants 10% Critical Strike Damage."
+   ]
+  },
+  "DA_JeweledLotus_II": {
+   "name": "珠光蓮花II",
+   "nameEn": "Jeweled Lotus II",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加25% 暴擊率、10%暴擊傷害，並獲得精準。",
+    "精準：技能傷害可以暴擊。額外精準會賦予10%暴擊傷害。"
+   ],
+   "linesEn": [
+    "Your team gains 25% Critical Strike Chance, 10% Critical Strike Damage, and Precision.",
+    "Precision: Ability damage can critically strike. Additional Precision grants 10% Critical Strike Damage."
+   ]
+  },
+  "DA_Steamroll": {
+   "name": "掌握節拍",
+   "nameEn": "Keeping Tempo",
+   "nameOfficialZh": true,
+   "lines": [
+    "贏得玩家戰鬥後，獲得1次免費商店重抽。"
+   ],
+   "linesEn": [
+    "After winning player combat, gain a free Shop reroll."
+   ]
+  },
+  "DA_KickStart": {
+   "name": "加速開始",
+   "nameEn": "Kick Start",
+   "nameOfficialZh": true,
+   "lines": [
+    "隨機獲得一名2星2費英雄和1金錢。"
+   ],
+   "linesEn": [
+    "Gain a random 2-star 2-cost champion and 1 gold."
+   ]
+  },
+  "DA_Kingslayer": {
+   "name": "弒君之道",
+   "nameEn": "Kingslayer",
+   "nameOfficialZh": true,
+   "lines": [
+    "贏得玩家戰鬥後，獲得1金錢。若該玩家生命比你多，則改為獲得6金錢。獲得1金錢。"
+   ],
+   "linesEn": [
+    "After winning player combat, gain 1 gold. If they had more health than you, gain 6 Gold instead. Gain 1 gold."
+   ]
+  },
+  "DA_KnowledgeDownload": {
+   "name": "下載知識",
+   "nameEn": "Knowledge Download",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得20經驗值。"
+   ],
+   "linesEn": [
+    "Gain 20 XP."
+   ]
+  },
+  "DA_KnowledgeDownloadII": {
+   "name": "下載知識II",
+   "nameEn": "Knowledge Download II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得30經驗值。"
+   ],
+   "linesEn": [
+    "Gain 30 XP."
+   ]
+  },
+  "DA_KnowYourEnemy": {
+   "name": "知己知彼",
+   "nameEn": "Know Your Enemy",
+   "nameOfficialZh": true,
+   "lines": [
+    "可以得知下一場即將對戰的對手。我方隊伍獲得8% 傷害增幅，若我方與對手啟動任何相同的特性，改為獲得15% 傷害增幅。"
+   ],
+   "linesEn": [
+    "You can see who you will fight next. Your team gains 8% Damage Amp, increased to 15% if you and your opponent have any of the same traits active."
+   ]
+  },
+  "DA_LateGameScaling": {
+   "name": "大器晚成",
+   "nameEn": "Late Game Scaling",
+   "nameOfficialZh": true,
+   "lines": [
+    "玩家戰鬥回合開始時，獲得2經驗值。我方5費英雄獲得1.12生命與1.12攻速。",
+    "2025「機動魔都」棋手皇冠"
+   ],
+   "linesEn": [
+    "Gain 2 XP at the start of player combat rounds. Your 5-cost champions gain 1.12 Health and 1.12 Attack Speed.",
+    "Cyber City Tactician's Crown, 2025"
+   ]
+  },
+  "DA_LateGameSpecialist": {
+   "name": "專打後期",
+   "nameEn": "Late Game Specialist",
+   "nameOfficialZh": true,
+   "lines": [
+    "達到9級時，獲得27金錢。"
+   ],
+   "linesEn": [
+    "When you reach Level 9, gain 27 gold."
+   ]
+  },
+  "DA_LevelUp": {
+   "name": "升級！",
+   "nameEn": "Level Up!",
+   "nameOfficialZh": true,
+   "lines": [
+    "購買經驗值時，額外獲得2經驗值。立即獲得10經驗值。"
+   ],
+   "linesEn": [
+    "When you buy XP, gain an additional 2. Gain 10 immediately."
+   ]
+  },
+  "DA_LoadedDice": {
+   "name": "灌鉛骰子",
+   "nameEn": "Loaded Dice",
+   "nameOfficialZh": true,
+   "lines": [
+    "你的骰子和硬幣變得更幸運。",
+    "擲骰子，獲得等同於擲出點數的金錢。接著擲硬幣，若擲出正面，獲得1金錢。"
+   ],
+   "linesEn": [
+    "Your dice and coins are luckier.",
+    "Roll a die and gain gold equal to the number rolled. Then flip a coin and gain 1 gold if you flip heads."
+   ]
+  },
+  "DA_MadScience": {
+   "name": "瘋狂科學",
+   "nameEn": "Mad Science",
+   "nameOfficialZh": false,
+   "lines": [
+    "每個友軍會隨機變大或變小。",
+    "巨大單位獲得1.12最大生命與20% 物攻和魔攻。迷你單位獲得0.89續戰力與1.2攻速"
+   ],
+   "linesEn": [
+    "Each ally randomly becomes huge or tiny.",
+    "Huge units gain 1.12 max Health and 20% Attack Damage and Ability Power. Tiny units gain 0.89 Durability and 1.2 Attack Speed"
+   ]
+  },
+  "DA_MakeshiftArmorI": {
+   "name": "臨時戰甲I",
+   "nameEn": "Makeshift Armor",
+   "nameOfficialZh": true,
+   "lines": [
+    "未裝備道具的英雄增加30雙防。"
+   ],
+   "linesEn": [
+    "Champions without items equipped gain 30 Armor and Magic Resist."
+   ]
+  },
+  "DA_MakeshiftArmorII": {
+   "name": "臨時戰甲II",
+   "nameEn": "Makeshift Armor II",
+   "nameOfficialZh": true,
+   "lines": [
+    "未裝備道具的英雄增加50雙防。"
+   ],
+   "linesEn": [
+    "Champions without items equipped gain 50 Armor and Magic Resist."
+   ]
+  },
+  "DA_MaliciousMonetization": {
+   "name": "惡性經營",
+   "nameEn": "Malicious Monetization",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得6金錢。接下來2個回合，敵方英雄死亡時會掉落2金錢。"
+   ],
+   "linesEn": [
+    "Gain 6 gold. For the next 2 rounds, enemy champions drop 2 gold when killed."
+   ]
+  },
+  "DA_MarksmanApprentice": {
+   "name": "射手弟子",
+   "nameEn": "Marksman Apprentice",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把反曲弓。3場玩家戰鬥後，獲得1把暴風之劍。"
+   ],
+   "linesEn": [
+    "Gain a Recurve Bow. After 3 player combats, gain a B.F. Sword."
+   ]
+  },
+  "DA_MissedConnections": {
+   "name": "就差你一個",
+   "nameEn": "Missed Connections",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得所有1費英雄的複製體。"
+   ],
+   "linesEn": [
+    "Gain a copy of each 1-cost champion."
+   ]
+  },
+  "DA_MoneyHungry_NotBroken": {
+   "name": "貪財",
+   "nameEn": "Money Hungry",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得7金錢，並在每階段開始時獲得7金錢。撿起金錢會讓我方聯盟棋手變大。"
+   ],
+   "linesEn": [
+    "Gain 7 gold now, then 7 gold at the start of every stage. Picking up gold makes your Tactician larger."
+   ]
+  },
+  "DA_MoneyHungryPlus": {
+   "name": "貪財+",
+   "nameEn": "Money Hungry+",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得13金錢，並在每階段開始時獲得7金錢。撿起金錢會讓我方聯盟棋手變大。"
+   ],
+   "linesEn": [
+    "Gain 13 gold now, then 7 gold at the start of every stage. Picking up gold makes your Tactician larger."
+   ]
+  },
+  "DA_MoneyMonsoon": {
+   "name": "天外橫財",
+   "nameEn": "Money Monsoon",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在與每個回合獲得7金錢，持續到遊戲結束。"
+   ],
+   "linesEn": [
+    "Gain 7 gold now and every round for the rest of the game."
+   ]
+  },
+  "DA_NoScoutNoPivot": {
+   "name": "不偵察不換陣容",
+   "nameEn": "NO SCOUT NO PIVOT",
+   "nameOfficialZh": true,
+   "lines": [
+    "上場戰鬥的英雄無法放回備戰區也無法出售。經過玩家戰鬥後，你的英雄獲得1% 生命、1% 物攻及魔攻。"
+   ],
+   "linesEn": [
+    "Champions that fight in player combat cannot be benched or sold. Your champions gain 1% Health, and 1% Attack Damage and Ability Power after player combat."
+   ]
+  },
+  "DA_OneTwoFive": {
+   "name": "一、二、五！",
+   "nameEn": "One, Two, Five!",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個隨機組件、2金錢及1名隨機5費英雄。"
+   ],
+   "linesEn": [
+    "Gain 1 random component, 2 gold, and 1 random 5-cost champion."
+   ]
+  },
+  "DA_OneTwosThree": {
+   "name": "一、二、三",
+   "nameEn": "One Twos Three",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2名1費英雄、2名2費英雄及1名3費英雄。"
+   ],
+   "linesEn": [
+    "Gain 2 1-cost champions, 2 2-cost champions, and 1 3-cost champion."
+   ]
+  },
+  "DA_PandorasBench": {
+   "name": "潘朵拉的備戰區",
+   "nameEn": "Pandora's Bench",
+   "nameOfficialZh": true,
+   "lines": [
+    "在每回合開始時，在備戰區最右邊3格的英雄將隨機幻化為同費英雄。獲得1金錢。"
+   ],
+   "linesEn": [
+    "At the start of every round, champions on the 3 rightmost bench slots transform into random champions of the same cost. Gain 1 gold."
+   ]
+  },
+  "DA_PandorasBox": {
+   "name": "潘朵拉的寶盒",
+   "nameEn": "Pandora's Box",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方盤面上的英雄永久變成高1費的隨機英雄(上限為5費)。隨後重鑄所有道具，獲得一個隨機金級增幅裝置，並獲得一個隨機完整道具。"
+   ],
+   "linesEn": [
+    "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Then reforge all of your items, gain a random gold augment, and gain a random completed item."
+   ]
+  },
+  "DA_PatienceIsAVirtue": {
+   "name": "耐心是美德",
+   "nameEn": "Patience Is A Virtue",
+   "nameOfficialZh": true,
+   "lines": [
+    "立刻獲得5次重抽。若上一回合沒有購買英雄，則下一回合可獲得1次免費重抽。"
+   ],
+   "linesEn": [
+    "Gain 5 rerolls now. Each round, gain 1 free reroll if you did not buy a champion last round."
+   ]
+  },
+  "DA_PatientStudy": {
+   "name": "耐心學習",
+   "nameEn": "Patient Study",
+   "nameOfficialZh": true,
+   "lines": [
+    "玩家戰鬥勝利時獲得2經驗值，落敗獲得3經驗值。"
+   ],
+   "linesEn": [
+    "After player combat, gain 2 XP if you won or 3 XP if you lost."
+   ]
+  },
+  "DA_Pinata": {
+   "name": "皮納塔",
+   "nameEn": "Piñata",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個帶有3件巨人腰帶的訓練假人。你的訓練假人每受到700傷害就掉落1金錢。"
+   ],
+   "linesEn": [
+    "Gain a Training Dummy with 3 Giant's Belts. Your training dummies drop 1 gold for every 700 damage they take."
+   ]
+  },
+  "DA_PlotArmor": {
+   "name": "主角威能",
+   "nameEn": "Plot Armor",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍增加10雙防。生命低於0.5時，此加成提高至40，持續到戰鬥結束。"
+   ],
+   "linesEn": [
+    "Your team gains 10 Armor and Magic Resist. After falling below 0.5 Health, increase this to 40 for the rest of combat."
+   ]
+  },
+  "DA_PrismaticTicket": {
+   "name": "稜鏡票券",
+   "nameEn": "Prismatic Ticket",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次刷新商店，有45%機率獲得1次免費刷新。"
+   ],
+   "linesEn": [
+    "Each time your shop is rerolled you have a 45% chance to gain a free reroll."
+   ]
+  },
+  "DA_19_PyramidScheme": {
+   "name": "金字塔計畫",
+   "nameEn": "Pyramid Scheme",
+   "nameOfficialZh": true,
+   "lines": [
+    "在對上不在金字塔計畫中的玩家之後，從對方竊取3金錢，並給對方這個海克斯的較弱複製。",
+    "回合開始時：這個計畫中每有一名玩家就獲得1金錢，若所有玩家都在這個計畫中則獲得10金錢。"
+   ],
+   "linesEn": [
+    "After fighting a player who isn't in the Pyramid Scheme, steal 3 gold from them and give them a weaker copy of this augment.",
+    "Round Start: Gain 1 gold per player in the Scheme, or 10 gold if all players are in the Scheme"
+   ]
+  },
+  "DA_19_PyramidScheme_Level2": {
+   "name": "金字塔計畫，等級2",
+   "nameEn": "Pyramid Scheme, Level 2",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：如果你的對手尚未加入金字塔計畫，就會從對手身上偷取2金錢，並給予對手此增幅裝置的弱化版本。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level3": {
+   "name": "金字塔計畫，等級3",
+   "nameEn": "Pyramid Scheme, Level 3",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時：若你的對手還沒加入金字塔計畫，從對方竊取2金錢，並給對方這個海克斯的較弱複製。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level4": {
+   "name": "金字塔計畫，等級4",
+   "nameEn": "Pyramid Scheme, Level 4",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：如果對手尚未加入金字塔計畫，就從對手身上偷取2金錢，並給予對手此增幅裝置的弱化版本。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level5": {
+   "name": "金字塔計畫，等級5",
+   "nameEn": "Pyramid Scheme, Level 5",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時：若你的對手還沒加入金字塔計畫，從對方竊取2金錢，並給對方這個海克斯的較弱複製。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level6": {
+   "name": "金字塔計畫，等級6",
+   "nameEn": "Pyramid Scheme, Level 6",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：如果對手尚未加入金字塔計畫，就從對手身上偷取2金錢，並給予對手此增幅裝置的弱化版本。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level7": {
+   "name": "金字塔計畫，等級7",
+   "nameEn": "Pyramid Scheme, Level 7",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：如果對手尚未加入金字塔計畫，就從對手身上偷取?金錢，並給予對手此增幅裝置的弱化版本。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal ? gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_19_PyramidScheme_Level8": {
+   "name": "金字塔計畫，等級8",
+   "nameEn": "Pyramid Scheme, Level 8",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時：若你的對手還沒加入金字塔計畫，從對方竊取2金錢，並給對方這個海克斯的較弱複製。"
+   ],
+   "linesEn": [
+    "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
+   ]
+  },
+  "DA_QuickStreaks": {
+   "name": "接二連三",
+   "nameEn": "Quick Streaks",
+   "nameOfficialZh": true,
+   "lines": [
+    "你獲得的連勝和連敗進度加倍。獲得2金錢。"
+   ],
+   "linesEn": [
+    "You gain twice as much progress towards win and loss streaks. Gain 2 gold."
+   ]
+  },
+  "DA_19_RareCollection": {
+   "name": "稀有收藏",
+   "nameEn": "Rare Collection",
+   "nameOfficialZh": true,
+   "lines": [
+    "每部署一名不同的可解鎖英雄，我方隊伍獲得50生命及3% 攻速。"
+   ],
+   "linesEn": [
+    "Your team gains 50 Health and 3% Attack Speed per unique unlockable champion fielded."
+   ]
+  },
+  "DA_ReunionShowI": {
+   "name": "重聚演出",
+   "nameEn": "Reunion Show",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得總價值10金錢且擁有相同特性的單位。"
+   ],
+   "linesEn": [
+    "Gain 10g of champions that all share a trait."
+   ]
+  },
+  "DA_ReunionShowII": {
+   "name": "重聚演出II",
+   "nameEn": "Reunion Show II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得價值16金錢、都擁有同一個羈絆的英雄。"
+   ],
+   "linesEn": [
+    "Gain 16g of champions that all share a trait."
+   ]
+  },
+  "DA_RollingForDays": {
+   "name": "抽好抽滿",
+   "nameEn": "Rolling For Days",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得10次免費商店重抽機會。"
+   ],
+   "linesEn": [
+    "Gain 10 free Shop rerolls."
+   ]
+  },
+  "DA_Royalties": {
+   "name": "版稅",
+   "nameEn": "Royalties",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1頂棋手皇冠和2金錢。每個回合獲得2金錢，持續到遊戲結束。"
+   ],
+   "linesEn": [
+    "Gain a Tactician’s Crown and 2 gold. Every round for the rest of the game, gain 2 gold."
+   ]
+  },
+  "DA_Omelas": {
+   "name": "獻祭假人",
+   "nameEn": "Sacrificial Dummy",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個具有0.5續戰力的訓練假人。只要假人在場，我方英雄將受到的所有傷害都會轉移到假人身上。"
+   ],
+   "linesEn": [
+    "Gain a Training Dummy with 0.5 Durability. While it lives, all damage your champions would take is redirected to the dummy."
+   ]
+  },
+  "DA_ShoppingSpree": {
+   "name": "賺錢不手軟",
+   "nameEn": "Shopping Spree",
+   "nameOfficialZh": true,
+   "lines": [
+    "升級時，獲得等同於等級數字+1的商店刷新次數。獲得7金錢。"
+   ],
+   "linesEn": [
+    "When you level up, gain a number of Shop refreshes equal to your level +1. Gain 7 gold."
+   ]
+  },
+  "DA_SilverSpoon": {
+   "name": "銀湯匙",
+   "nameEn": "Silver Spoon",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得10經驗值。"
+   ],
+   "linesEn": [
+    "Gain 10 XP."
+   ]
+  },
+  "DA_SliceOfLife": {
+   "name": "循序漸進",
+   "nameEn": "Slice of Life",
+   "nameOfficialZh": true,
+   "lines": [
+    "每個階段兩次，隨機獲得1位英雄，其費用將隨每個階段提升。此效果在獲得1位5費英雄時結束。"
+   ],
+   "linesEn": [
+    "Twice per stage, gain a random champion. Its cost increases by Stage. This effect ends after receiving 1 5-cost champion."
+   ]
+  },
+  "DA_SoulAwakening": {
+   "name": "魂力覺醒",
+   "nameEn": "Soul Awakening",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始：我方隊伍每秒增加1.5% 物攻和魔攻，持續10秒。滿層時會造成12%額外真實傷害。"
+   ],
+   "linesEn": [
+    "Combat start: Your team gains 1.5% Attack Damage and Ability Power per second for 10 seconds. At max stacks, deal 12% bonus true damage."
+   ]
+  },
+  "DA_StandUnited": {
+   "name": "並肩作戰",
+   "nameEn": "Stand United",
+   "nameOfficialZh": true,
+   "lines": [
+    "隊伍中每有一項啟動中的非唯一特性，我方單位便增加1.5% 物攻和1.5% 魔攻。"
+   ],
+   "linesEn": [
+    "Your units gain 1.5% Attack Damage and 1.5% Ability Power for each non-unique Trait active across your team."
+   ]
+  },
+  "DA_StarOfTheShow": {
+   "name": "全場焦點",
+   "nameEn": "Star of the Show",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得1個2星1費非坦克英雄，以及1枚對應其特性的徽章。在階段3-1時，獲得6個該英雄的複製體。"
+   ],
+   "linesEn": [
+    "Gain a 2-star 1-cost non-Tank champion and an Emblem for one of their traits. On Stage 3-1, gain 6 more copies of that champion."
+   ]
+  },
+  "DA_StatsOnStats": {
+   "name": "能力值堆起來",
+   "nameEn": "Stats On Stats",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在和每經過5回合後，獲得3個提升能力值的消耗品。"
+   ],
+   "linesEn": [
+    "Now and after every 5 rounds, gain 3 stat boosting consumables."
+   ]
+  },
+  "DA_StatsOnStatsII": {
+   "name": "能力值堆起來II",
+   "nameEn": "Stats On Stats II",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即，並且 之後每5回合，獲得4能力值強化消耗品。"
+   ],
+   "linesEn": [
+    "Now and after every 5 rounds, gain 4 stat boosting consumables."
+   ]
+  },
+  "DA_DangerousDuetII": {
+   "name": "奇妙二重唱II",
+   "nameEn": "Strange Duet II",
+   "nameOfficialZh": false,
+   "lines": [
+    "戰鬥開始時，成對孤立的友軍獲得0.95續戰力和8% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Allies that start combat isolated in pairs gain 0.95 Durability and 8% Damage Amp."
+   ]
+  },
+  "DA_DangerousDuetIII": {
+   "name": "奇妙二重唱III",
+   "nameEn": "Strange Duet III",
+   "nameOfficialZh": false,
+   "lines": [
+    "戰鬥開始時，成對孤立的友軍獲得0.92續戰力和14% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Allies that start combat isolated in pairs gain 0.92 Durability and 14% Damage Amp."
+   ]
+  },
+  "DA_DangerousDuet": {
+   "name": "奇妙二重唱",
+   "nameEn": "Strange Duet",
+   "nameOfficialZh": false,
+   "lines": [
+    "戰鬥開始時，成對孤立的友軍獲得0.97續戰力和5% 傷害增幅。"
+   ],
+   "linesEn": [
+    "Allies that start combat isolated in pairs gain 0.97 Durability and 5% Damage Amp."
+   ]
+  },
+  "DA_SubmitToThePit": {
+   "name": "進入衝撞區",
+   "nameEn": "Submit to the Pit",
+   "nameOfficialZh": true,
+   "lines": [
+    "友軍位於戰場中央4排時，每秒可獲得3% 物攻與魔攻。"
+   ],
+   "linesEn": [
+    "Allies gain 3% Attack Damage and Ability Power for every second they're in the center 4 rows of the battlefield."
+   ]
+  },
+  "DA_ChaliceOfPowerAugment": {
+   "name": "力量聖杯",
+   "nameEn": "Chalice of Power",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個力量聖杯，此道具會賦予裝備者和同一排2格內的友軍25% 魔攻和魔力回復1。"
+   ],
+   "linesEn": [
+    "Gain a Chalice of Power, an item which grants 25% Ability Power and 1 Mana Regen to the holder and allies within 2 hexes in the same row."
+   ]
+  },
+  "DA_RanduinsOmenAugment": {
+   "name": "蘭頓之兆",
+   "nameEn": "Randuin's Omen",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得蘭頓之兆，這個道具會賦予裝備者以及1格內的友軍30雙防。"
+   ],
+   "linesEn": [
+    "Gain a Randuin's Omen, an item which grants 30 Armor and Magic Resist to the holder and allies within 1 hex."
+   ]
+  },
+  "DA_ZekesHeraldAugment": {
+   "name": "錫柯的號角",
+   "nameEn": "Zeke's Herald",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1支錫柯的號角，此道具會賦予裝備者和同一排2格內的友軍1.3攻速。"
+   ],
+   "linesEn": [
+    "Gain a Zeke's Herald, an item which grants 1.3 Attack Speed to the holder and allies within 2 hexes in the same row."
+   ]
+  },
+  "DA_ZZRotAugment": {
+   "name": "虛空之門",
+   "nameEn": "Zz'Rot Portal",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個虛空之門，這件道具會召喚一隻大型虛空蟲。"
+   ],
+   "linesEn": [
+    "Gain a Zz'Rot Portal, an item which summons a large Voidspawn."
+   ]
+  },
+  "DA_TankApprentice": {
+   "name": "坦克弟子",
+   "nameEn": "Tank Apprentice",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1條巨人腰帶。3場玩家戰鬥後，獲得1件負極斗篷。"
+   ],
+   "linesEn": [
+    "Gain a Giant's Belt. After 3 player combats, gain a Negatron Cloak."
+   ]
+  },
+  "DA_ThatsThatEspresso": {
+   "name": "濃縮咖啡",
+   "nameEn": "Espresso",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把反曲弓。我方隊伍增加1.1攻速。進入戰鬥12秒後，提升至1.3。"
+   ],
+   "linesEn": [
+    "Gain a Recurve Bow. Your team gains 1.1 Attack Speed. After 12 seconds of combat, increase this to 1.3."
+   ]
+  },
+  "DA_TheDropGold": {
+   "name": "錢從天降II",
+   "nameEn": "The Drop II",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥進行12秒後，我方隊伍回復30%最大生命，敵軍則受到12%最大生命真實傷害。"
+   ],
+   "linesEn": [
+    "After 12 seconds of combat, your team heals 30% max Health and enemies take 12% max Health true damage."
+   ]
+  },
+  "DA_TheDrop": {
+   "name": "電音高潮",
+   "nameEn": "The Drop",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始12秒後，我方隊伍回復20%最大生命，且敵軍受到8%最大生命的真實傷害。"
+   ],
+   "linesEn": [
+    "After 12 seconds of combat, your team heals 20% max Health and enemies take 8% max Health true damage."
+   ]
+  },
+  "DA_ThreeStepsAhead": {
+   "name": "領先三步",
+   "nameEn": "Three Steps Ahead",
+   "nameOfficialZh": true,
+   "lines": [
+    "接下來3次在玩家戰鬥中落敗時，獲得1位5費英雄與2個組件",
+    "2026「星穹神話」棋手皇冠"
+   ],
+   "linesEn": [
+    "The next 3 times you lose a player combat, gain a 5-cost champion and 2 components.",
+    "Space Gods Tactician's Crown, 2026"
+   ]
+  },
+  "DA_TimeSkip": {
+   "name": "時光跳躍",
+   "nameEn": "Time Skip",
+   "nameOfficialZh": true,
+   "lines": [
+    "在接下來3個回合中關閉你的商店。接著獲得32經驗值。"
+   ],
+   "linesEn": [
+    "Disable your Shop for the next 3 rounds. Then gain 32 XP."
+   ]
+  },
+  "DA_TonsOfStatsI": {
+   "name": "能力值大補包",
+   "nameEn": "Tons of Stats!",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得44生命、4% 物攻、4% 魔攻、4物防、4魔防、1.04攻速及4魔力。"
+   ],
+   "linesEn": [
+    "Your team gains 44 Health, 4% Attack Damage, 4% Ability Power, 4 Armor, 4 Magic Resist, 1.04 Attack Speed, and 4 Mana."
+   ]
+  },
+  "DA_TonsOfStatsII": {
+   "name": "能力值大補包",
+   "nameEn": "TONS of Stats!",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方隊伍獲得88生命、8% 物攻、8% 魔攻、8物防、8魔防、1.08攻速及8魔力。"
+   ],
+   "linesEn": [
+    "Your team gains 88 Health, 8% Attack Damage, 8% Ability Power, 8 Armor, 8 Magic Resist, 1.08 Attack Speed, and 8 Mana."
+   ]
+  },
+  "DA_TradeSector": {
+   "name": "交易之星",
+   "nameEn": "Trade Sector",
+   "nameOfficialZh": true,
+   "lines": [
+    "每個回合獲得一次商店刷新。獲得2金錢。"
+   ],
+   "linesEn": [
+    "Gain a Shop reroll every round. Gain 2 gold."
+   ]
+  },
+  "DA_TradeSectorPlus": {
+   "name": "交易之星+",
+   "nameEn": "Trade Sector+",
+   "nameOfficialZh": true,
+   "lines": [
+    "每個回合獲得一次商店刷新。獲得8金錢。"
+   ],
+   "linesEn": [
+    "Gain a Shop reroll every round. Gain 8 gold."
+   ]
+  },
+  "DA_TwinGuardians": {
+   "name": "雙生守衛",
+   "nameEn": "Twin Guardians",
+   "nameOfficialZh": true,
+   "lines": [
+    "若第一排剛好有2名友軍，賦予他們100生命、35物防與35魔防。"
+   ],
+   "linesEn": [
+    "If you have exactly 2 allies in your first row, grant them 100 Health, 35 Armor, and 35 Magic Resist."
+   ]
+  },
+  "DA_UpwardMobility": {
+   "name": "向上流動",
+   "nameEn": "Upward Mobility",
+   "nameOfficialZh": true,
+   "lines": [
+    "購買經驗值費用減1。每次升級時，獲得2生命和2次商店重抽。"
+   ],
+   "linesEn": [
+    "Buying XP costs 1 less. Gain 2 Health and 2 Shop rerolls whenever you level up."
+   ]
+  },
+  "DA_VerticalityI": {
+   "name": "特性參天 I",
+   "nameEn": "Verticality",
+   "nameOfficialZh": true,
+   "lines": [
+    "每有1名擁有相同特性的友軍，英雄就會增加1.5% 物攻、1.5% 魔攻、1.5物防和1.5魔防。"
+   ],
+   "linesEn": [
+    "Champions gain 1.5% Attack Damage, 1.5% Ability Power, 1.5 Armor, and 1.5 Magic Resist for each ally that shares a trait with them."
+   ]
+  },
+  "DA_VerticalityII": {
+   "name": "特性參天 II",
+   "nameEn": "Verticality II",
+   "nameOfficialZh": true,
+   "lines": [
+    "每有1名擁有相同特性的友軍，英雄就會增加2.5% 物攻、2.5% 魔攻、2物防和2魔防。"
+   ],
+   "linesEn": [
+    "Champions gain 2.5% Attack Damage, 2.5% Ability Power, 2 Armor, and 2 Magic Resist for each ally that shares a trait with them."
+   ]
+  },
+  "DA_VerticalityIII": {
+   "name": "特性參天 III",
+   "nameEn": "Verticality III",
+   "nameOfficialZh": true,
+   "lines": [
+    "每有1名擁有相同特性的友軍，英雄就會增加4% 物攻、4% 魔攻、3.5物防和3.5魔防。"
+   ],
+   "linesEn": [
+    "Champions gain 4% Attack Damage, 4% Ability Power, 3.5 Armor, and 3.5 Magic Resist for each ally that shares a trait with them."
+   ]
+  },
+  "DA_18_WeightTheWorth": {
+   "name": "衡量價值",
+   "nameEn": "Weight The Worth",
+   "nameOfficialZh": true,
+   "lines": [
+    "首次將英雄升到3星後，接下來每回合都會獲得1個該英雄的複製體，持續到這場遊戲結束。再次將同一名英雄升到3星後，獲得額外複製體。獲得1件初級英雄複製裝置。"
+   ],
+   "linesEn": [
+    "The first time you 3-star a champion, gain a copy of them each round for the rest of the game. 3-starring the same champion again grants additional copies. Gain a Lesser Champion Duplicator."
+   ]
+  },
+  "DA_WorldTour": {
+   "name": "世界巡演",
+   "nameEn": "World Tour",
+   "nameOfficialZh": false,
+   "lines": [
+    "每6場玩家戰鬥後，獲得一個完整道具鐵砧。"
+   ],
+   "linesEn": [
+    "After every 6 player combats, gain a completed item anvil."
+   ]
+  },
+  "DA_WorththeWait": {
+   "name": "值得等待",
+   "nameEn": "Worth the Wait",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1名隨機1費英雄。回合開始時再獲得1個其複製體，持續到這場遊戲結束。"
+   ],
+   "linesEn": [
+    "Gain a random 1-cost champion. Gain another copy of them at the start of each round for the rest of the game."
+   ]
+  },
+  "DA_WorththeWaitII": {
+   "name": "值得等待II",
+   "nameEn": "Worth the Wait II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得隨機2費英雄的2個複製體。回合開始時再獲得1個其複製體，持續到這場遊戲結束。"
+   ],
+   "linesEn": [
+    "Gain 2 copies of a random 2-cost champion. Gain another copy of them at the start of each round for the rest of the game."
+   ]
+  },
+  "DA_YoungAndWildAndFree": {
+   "name": "自由奔放",
+   "nameEn": "Young and Wild and Free",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方可在每個聯合徵召回合自由移動。獲得5金錢。"
+   ],
+   "linesEn": [
+    "You can always move freely on Carousel rounds. Gain 5 gold."
+   ]
+  },
+  "DA_BackupBows": {
+   "name": "備用弓箭",
+   "nameEn": "Backup Bows",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把反曲弓。英雄普攻1000次後，再獲得2個。"
+   ],
+   "linesEn": [
+    "Gain a Recurve Bow. After your champions attack 1000 times, get 2 more."
+   ]
+  },
+  "DA_BandOfThieves": {
+   "name": "神偷軍團",
+   "nameEn": "Band of Thieves",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1副竊賊手套。"
+   ],
+   "linesEn": [
+    "Gain 1 Thief's Gloves."
+   ]
+  },
+  "DA_BandOfThievesII": {
+   "name": "神偷軍團II",
+   "nameEn": "Band of Thieves II",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2副竊賊手套。5場玩家戰鬥後，再獲得1副。"
+   ],
+   "linesEn": [
+    "Gain 2 Thief's Gloves. After 5 player combats, gain another."
+   ]
+  },
+  "DA_BandOfThievesIIPlus": {
+   "name": "神偷軍團II+",
+   "nameEn": "Band of Thieves II+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2副竊賊手套。5場玩家戰鬥後，再獲得1副。"
+   ],
+   "linesEn": [
+    "Gain 2 Thief's Gloves. After 5 player combats, gain another."
+   ]
+  },
+  "DA_BandOfThievesIIPlusPlus": {
+   "name": "神偷軍團II++",
+   "nameEn": "Band of Thieves II++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2副竊賊手套。3場玩家戰鬥後，再獲得1副。"
+   ],
+   "linesEn": [
+    "Gain 2 Thief's Gloves. After 3 player combats, gain another."
+   ]
+  },
+  "DA_BaronsLair": {
+   "name": "巴龍巢穴",
+   "nameEn": "Baron's Lair",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機坦克道具。戰鬥開始8秒後，我方隊伍每秒增加4%額外物攻和魔攻，持續到戰鬥結束。",
+    "2025《聯盟戰棋》巴黎公開賽"
+   ],
+   "linesEn": [
+    "Gain a random Tank item. After 8 seconds of combat, your team gains 4% bonus Attack Damage and Ability Power every second for the rest of combat.",
+    "TFT Paris Open, 2025"
+   ]
+  },
+  "DA_BeltOverflow": {
+   "name": "腰帶多多",
+   "nameEn": "Belt Overflow",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得4個巨人腰帶。你的巨人腰帶會賦予+85額外生命。"
+   ],
+   "linesEn": [
+    "Gain 4 Giant's Belts. Your Giant's Belts grant +85 bonus Health."
+   ]
+  },
+  "DA_BirthdayReunion": {
+   "name": "生日團聚",
+   "nameEn": "Birthday Reunion",
+   "nameOfficialZh": true,
+   "lines": [
+    "隨機獲得1名2星2費英雄。等級6時，隨機獲得1個道具組件。等級9時，隨機獲得一名2星5費英雄。",
+    "2024《聯盟戰棋：彩墨書話》棋手皇冠"
+   ],
+   "linesEn": [
+    "Gain a random 2-star 2-cost champion. At Level 6, gain a random item component. At Level 9, gain a random 2-star 5-cost champion.",
+    "Inkborn Fables Tactician's Crown, 2024"
+   ]
+  },
+  "DA_BuriedTreasuresIII": {
+   "name": "地底寶藏III",
+   "nameEn": "Buried Treasures III",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及接下來6個回合開始時，各獲得1個隨機道具組件。"
+   ],
+   "linesEn": [
+    "Gain a random item component now and at the start of the next 6 rounds."
+   ]
+  },
+  "DA_CallToChaos": {
+   "name": "混沌召喚",
+   "nameEn": "Call To Chaos",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個強大的隨機獎勵。"
+   ],
+   "linesEn": [
+    "Gain a powerful and random reward."
+   ]
+  },
+  "DA_CaretakersFavor": {
+   "name": "守望者眷顧",
+   "nameEn": "Caretaker's Favor",
+   "nameOfficialZh": true,
+   "lines": [
+    "達到等級5、6、7和8時，各獲得1個組件鐵砧。",
+    "組件鐵砧提供4種選擇。"
+   ],
+   "linesEn": [
+    "Gain a component anvil when you reach level 5, 6, 7, and 8.",
+    "Component anvils offer 4 choices."
+   ]
+  },
+  "DA_CarveAPath": {
+   "name": "殺出血路",
+   "nameEn": "Carve a Path",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把暴風之劍。我方英雄造成65000物理傷害後，再獲得2把。"
+   ],
+   "linesEn": [
+    "Gain a B.F. Sword. After your champions deal 65000 physical damage, gain 2 more."
+   ]
+  },
+  "DA_Staffsmith": {
+   "name": "杖匠II",
+   "nameEn": "Staffsmith II",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1件由巨型魔棒合成的隨機完整道具，並於1回合後再獲得1件。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from Needlessly Large Rod now and another in 1 round."
+   ]
+  },
+  "DA_Swordsmith": {
+   "name": "劍匠II",
+   "nameEn": "Swordsmith II",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1件由暴風之劍合成的隨機完整道具，並於1回合後再獲得1件。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item that builds from B.F. Sword now and another in 1 round."
+   ]
+  },
+  "DA_CognitiveOverload": {
+   "name": "認知超載",
+   "nameEn": "Cognitive Overload",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得7金錢、1個2星1費英雄、1個2費英雄、2個3費英雄、1經驗值，以及1次商店重抽機會。"
+   ],
+   "linesEn": [
+    "Gain 7 gold, 1 2-star 1-cost champion, 1 2-cost champion, 2 3-cost champions, 1 XP, and 1 Shop reroll."
+   ]
+  },
+  "DA_ComponentBuffet": {
+   "name": "組件自助餐",
+   "nameEn": "Component Buffet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得組件時，改為獲得組件鐵砧。獲得1個隨機組件。此鐵砧提供4種選擇。"
+   ],
+   "linesEn": [
+    "Whenever you would get a component, gain a component anvil instead. Gain a random component. The anvil offers 4 choices."
+   ]
+  },
+  "DA_ComponentQuest": {
+   "name": "組件任務",
+   "nameEn": "Component Quest",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個隨機組件和1金錢。接下來7場玩家戰鬥勝場，每場獲得1個不同的隨機組件。最後再獲得1金錢。"
+   ],
+   "linesEn": [
+    "Gain a random component and 1 gold. The next 7 times you win a player combat, gain a different random component. Afterwards, gain 1 gold."
+   ]
+  },
+  "DA_CookingPot": {
+   "name": "烹飪鍋",
+   "nameEn": "Cooking Pot",
+   "nameOfficialZh": true,
+   "lines": [
+    "每回合開始時，所有裝備平底鍋或鍋鏟道具的友軍，會賦予最靠近的英雄70永久生命。獲得1個平底鍋。"
+   ],
+   "linesEn": [
+    "At the start of each round, all allies holding a Frying Pan or Spatula item grant the nearest champion 70 permanent Health. Gain a Frying Pan."
+   ]
+  },
+  "DA_CraftedCrafting": {
+   "name": "精心製作",
+   "nameEn": "Crafted Crafting",
+   "nameOfficialZh": true,
+   "lines": [
+    "每合成一件完整道具，獲得2次重抽機會。"
+   ],
+   "linesEn": [
+    "Whenever you craft a completed item, gain 2 rerolls."
+   ]
+  },
+  "DA_CryMeARiver": {
+   "name": "淚如泉湧",
+   "nameEn": "Cry Me A River",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1滴女神之淚。我方隊伍獲得1魔力回復。戰鬥開始12秒後，提升至3。"
+   ],
+   "linesEn": [
+    "Gain a Tear of the Goddess. Your team gains 1 Mana Regen. After 12 seconds in combat, increase this to 3."
+   ]
+  },
+  "DA_CyberneticImplants_Gold": {
+   "name": "模控機械移植",
+   "nameEn": "Cybernetic Implants",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方英雄只要裝備道具，便獲得100生命與15% 物攻。獲得1把暴風之劍。"
+   ],
+   "linesEn": [
+    "Your champions holding an item gain 100 Health and 15% Attack Damage. Gain a B.F. Sword."
+   ]
+  },
+  "DA_CyberneticUplink_Gold": {
+   "name": "模控機械上鏈",
+   "nameEn": "Cybernetic Uplink",
+   "nameOfficialZh": true,
+   "lines": [
+    "裝備道具的我方英雄增加100生命，並獲得2魔力回復。獲得1滴女神之淚。"
+   ],
+   "linesEn": [
+    "Your champions holding an item gain 100 Health and 2 Mana Regen. Gain a Tear of the Goddess."
+   ]
+  },
+  "DA_DeadlierBlades": {
+   "name": "更致命之刃",
+   "nameEn": "Deadlier Blades",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把死神之刃。裝備死神之刃的單位參與擊殺時，永久獲得1% 物攻。"
+   ],
+   "linesEn": [
+    "Gain a Deathblade. Deathblades permanently gain 1% Attack Damage whenever their holders score a takedown."
+   ]
+  },
+  "DA_DeadlierCaps": {
+   "name": "致死之帽",
+   "nameEn": "Deadlier Caps",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1頂死亡之帽。裝備死亡之帽的單位參與擊殺時，賦予1魔力回復並永久獲得1% 魔攻。"
+   ],
+   "linesEn": [
+    "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant 1 Mana Regen and permanently gain 1% Ability Power whenever their holders score a takedown."
+   ]
+  },
+  "DA_Dummify": {
+   "name": "鈍化",
+   "nameEn": "Dummify",
+   "nameOfficialZh": true,
+   "lines": [
+    "失去我方盤面和備戰區中所有英雄。獲得1個訓練假人，生命為所有英雄生命總和的60%。假人在每個階段都會獲得1150生命。獲得1名隨機非坦克的2星2費英雄。"
+   ],
+   "linesEn": [
+    "Lose all champions on your board and bench. Gain a Training Dummy with 60% of their combined health. The dummy gains 1150 Health per stage. Gain a random non-tank 2-star 2 cost champion."
+   ]
+  },
+  "DA_ExclusiveCustomization": {
+   "name": "量身訂做",
+   "nameEn": "Exclusive Customization",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個幸運道具寶箱、1台磁性卸除器與7金錢。"
+   ],
+   "linesEn": [
+    "Gain a Lucky Item Chest, a Magnetic Remover and 7 gold."
+   ]
+  },
+  "DA_Expedition": {
+   "name": "遠征",
+   "nameEn": "Expedition",
+   "nameOfficialZh": true,
+   "lines": [
+    "每回合開始時，失去位於備戰區最右側格子的英雄。以這個方式失去總計33金錢的英雄後，獲得一項強力獎勵。立刻獲得1個3費英雄。"
+   ],
+   "linesEn": [
+    "At the start of every round, lose the champion in the rightmost bench slot. After losing 33 gold of champions in this way, gain a powerful reward. Gain a 3-cost champion now."
+   ]
+  },
+  "DA_ExtraBuckles": {
+   "name": "額外扣環",
+   "nameEn": "Extra Buckles",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1條巨人腰帶。我方英雄受到75000傷害後，再獲得2條。"
+   ],
+   "linesEn": [
+    "Gain a Giant's Belt. After your champions take 75000 damage, get 2 more."
+   ]
+  },
+  "DA_Flexible": {
+   "name": "靈活變通",
+   "nameEn": "Flexible",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。每個階段開始時，隨機獲得1枚徽章。我方隊伍每持有1枚徽章，增加30生命。"
+   ],
+   "linesEn": [
+    "Gain 1 random Emblem. At the start of every Stage, gain a random Emblem. Your team gains 30 Health for each Emblem they are holding."
+   ]
+  },
+  "DA_FlowingTears": {
+   "name": "淚光閃閃",
+   "nameEn": "Flowing Tears",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1滴女神之淚。我方英雄消耗7000魔力後，再獲得2滴。"
+   ],
+   "linesEn": [
+    "Gain a Tear of the Goddess. After your champions spend 7000 Mana, gain 2 more."
+   ]
+  },
+  "DA_ForgedInStrength": {
+   "name": "力量鍛造",
+   "nameEn": "Forged In Strength",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機神器。生命低於35時，額外獲得1件隨機神器、1件隨機完整道具與3個隨機組件。",
+    "2023「音樂大亂鬥」冠軍賽"
+   ],
+   "linesEn": [
+    "Gain 1 random Artifact. When you drop below 35 Health, gain 1 more random Artifact, 1 random completed item, and 3 random components.",
+    "Remix Rumble Championship, 2023"
+   ]
+  },
+  "DA_GoldenEgg": {
+   "name": "黃金蛋",
+   "nameEn": "The Golden Egg",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一顆金蛋，在11回合後孵化出大量戰利品。贏得玩家戰鬥可使孵化速度額外加快1回合。"
+   ],
+   "linesEn": [
+    "Gain a golden egg that hatches in 11 rounds for a huge amount of loot. Winning player combat speeds up the hatch timer by an extra round."
+   ]
+  },
+  "DA_GoldenGamble": {
+   "name": "黃金豪賭",
+   "nameEn": "Golden Gamble",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2金錢並擲硬幣。若為正面，獲得1個聖光幸運道具寶箱。若為反面，獲得2個完整道具鐵砧。"
+   ],
+   "linesEn": [
+    "Gain 2 gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain 2 Completed Item anvils."
+   ]
+  },
+  "DA_GoldenGamblePlus": {
+   "name": "黃金豪賭+",
+   "nameEn": "Golden Gamble+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3金錢並擲硬幣。若為正面，獲得1個聖光幸運道具寶箱。若為反面，獲得2個完整道具鐵砧。"
+   ],
+   "linesEn": [
+    "Gain 3 gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain 2 Completed Item anvils."
+   ]
+  },
+  "DA_GoldenGamblePlusPlus": {
+   "name": "黃金豪賭++",
+   "nameEn": "Golden Gamble++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得6金錢並擲硬幣。若為正面，獲得1個聖光幸運道具寶箱。若為反面，獲得2個完整道具鐵砧。"
+   ],
+   "linesEn": [
+    "Gain 6 gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain 2 Completed Item anvils."
+   ]
+  },
+  "DA_HardCommit": {
+   "name": "強力投入",
+   "nameEn": "Hard Commit",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。現在以及每個階段開始時，獲得1位該特性的1星英雄，費用等同於階段數(最多為5)，以及3金錢。"
+   ],
+   "linesEn": [
+    "Gain a random emblem. Now and at the start of each stage, gain a 1-star champion of that trait with a cost equal to the Stage (max 5) and 3 gold."
+   ]
+  },
+  "DA_HeartOfSteel": {
+   "name": "心之抗防",
+   "nameEn": "Heart of Steel",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個堅定之心。裝備者在戰鬥中每存活10秒，堅定之心獲得額外18永久最大生命。"
+   ],
+   "linesEn": [
+    "Gain a Steadfast Heart. Every 10 seconds of combat its holder survives, Steadfast Heart gains additional 18 permanent max Health."
+   ]
+  },
+  "DA_HeroicGrabBag": {
+   "name": "英雄禮包",
+   "nameEn": "Heroic Grab Bag",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2件初級英雄複製裝置。獲得6金錢。"
+   ],
+   "linesEn": [
+    "Gain 2 Lesser Champion Duplicators. Gain 6 gold."
+   ]
+  },
+  "DA_HeroicGrabBagPlus": {
+   "name": "英雄禮包+",
+   "nameEn": "Heroic Grab Bag+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2件初級英雄複製裝置。獲得8金錢。"
+   ],
+   "linesEn": [
+    "Gain 2 Lesser Champion Duplicators. Gain 8 gold."
+   ]
+  },
+  "DA_HeroicGrabBagPlusPlus": {
+   "name": "英雄禮包++",
+   "nameEn": "Heroic Grab Bag++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2件初級英雄複製裝置。獲得14金錢。"
+   ],
+   "linesEn": [
+    "Gain 2 Lesser Champion Duplicators. Gain 14 gold."
+   ]
+  },
+  "DA_InfinityProtection": {
+   "name": "無限守護",
+   "nameEn": "Infinity Protection",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得3金錢。在3-7階段，獲得1個無盡之力。「無盡之力」會賦予同一排的友軍等同12% 生命的護盾。",
+    "2023《怪物來襲！》冠軍賽"
+   ],
+   "linesEn": [
+    "Gain 3 gold now. On Stage 3-7, gain an Infinity Force. Infinity Force gives allies in the same row a 12% Health shield.",
+    "Monsters Attack Championship, 2023"
+   ]
+  },
+  "DA_InvestedPlus": {
+   "name": "投資+",
+   "nameEn": "Invested+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得26金錢。每回合開始時，超過50金錢後每有10金錢(最多採計至80金錢)，獲得1次商店重抽機會。"
+   ],
+   "linesEn": [
+    "Gain 26 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold)."
+   ]
+  },
+  "DA_InvestedPlusPlus": {
+   "name": "投資++",
+   "nameEn": "Invested++",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得45金錢。每回合開始時，超過50金錢後每有10金錢(最多採計至80金錢)，便獲得1次商店重抽機會。"
+   ],
+   "linesEn": [
+    "Gain 45 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold)."
+   ]
+  },
+  "DA_IronAssets": {
+   "name": "鋼鐵素材",
+   "nameEn": "Iron Assets",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個組件鐵砧及3金錢。"
+   ],
+   "linesEn": [
+    "Gain a component anvil and 3 gold."
+   ]
+  },
+  "DA_ItemGrabBag": {
+   "name": "道具組合包I",
+   "nameEn": "Item Grab Bag",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件隨機完整道具。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item."
+   ]
+  },
+  "DA_LatentForge": {
+   "name": "潛在火爐",
+   "nameEn": "Latent Forge",
+   "nameOfficialZh": true,
+   "lines": [
+    "在8個玩家對戰回合後，獲得1個神器鐵砧。"
+   ],
+   "linesEn": [
+    "After 8 player combats, gain an Artifact Anvil."
+   ]
+  },
+  "DA_LegionOfThrees": {
+   "name": "「三」之軍團",
+   "nameEn": "Legion Of Threes",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。我方3費英雄及所有裝備徽章的友軍獲得150生命及1.12攻速。",
+    "2021《最終審判》冠軍賽"
+   ],
+   "linesEn": [
+    "Gain a random Emblem. Your 3-cost champions and all allies equipped with an Emblem gain 150 Health and 1.12 Attack Speed.",
+    "Reckoning Championship, 2021"
+   ]
+  },
+  "DA_LivingForge": {
+   "name": "活火爐",
+   "nameEn": "Living Forge",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1個神器鐵砧，且每打10場玩家戰鬥可獲得1個神器鐵砧。"
+   ],
+   "linesEn": [
+    "Gain an Artifact Anvil now and after every 10 player combats."
+   ]
+  },
+  "DA_LuckyGloves": {
+   "name": "好運手套",
+   "nameEn": "Lucky Gloves",
+   "nameOfficialZh": true,
+   "lines": [
+    "竊賊手套必定給予我方英雄理想的道具。獲得2副格鬥手套和4金錢。"
+   ],
+   "linesEn": [
+    "Thief's Gloves will always give your champions ideal items. Gain 2 Sparring Gloves and 4 gold."
+   ]
+  },
+  "DA_LuckyGlovesPlus": {
+   "name": "好運手套+",
+   "nameEn": "Lucky Gloves+",
+   "nameOfficialZh": true,
+   "lines": [
+    "竊賊手套必定給予我方英雄理想的道具。立即獲得2副格鬥手套，4場玩家戰鬥後再獲得一副。"
+   ],
+   "linesEn": [
+    "Thief's Gloves will always give your champions ideal items. Gain 2 Sparring Gloves now, then another after 4 player combats."
+   ]
+  },
+  "DA_LuxurySubscription": {
+   "name": "訂購奢侈品",
+   "nameEn": "Luxury Subscription",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個組合包，內含1名5費英雄，1名2星1費英雄及5金錢。",
+    "接下來2個階段開始時，再次獲得組合包。"
+   ],
+   "linesEn": [
+    "Gain a package containing a 5-cost champion, a 2-star 1-cost champion, and 5 gold.",
+    "At the start of the next 2 stages, gain the package again."
+   ]
+  },
+  "DA_ExpectedUnexpectedness": {
+   "name": "預料中的意外",
+   "nameEn": "Expected Unexpectedness",
+   "nameOfficialZh": true,
+   "lines": [
+    "現在及下2個階段開始時，擲骰3次。根據總數獲得不同獎勵。"
+   ],
+   "linesEn": [
+    "Now and at the start of the next 2 stages, roll 3 dice. Gain various rewards based on their total."
+   ]
+  },
+  "DA_MagicRoll": {
+   "name": "魔法擲骰",
+   "nameEn": "Magic Roll",
+   "nameOfficialZh": true,
+   "lines": [
+    "擲3顆骰子。根據總數獲得獎勵。"
+   ],
+   "linesEn": [
+    "Roll 3 dice. Gain rewards based on their total."
+   ]
+  },
+  "DA_SlightlyMagicRoll": {
+   "name": "一點點重抽魔法",
+   "nameEn": "Slightly Magic Roll",
+   "nameOfficialZh": true,
+   "lines": [
+    "擲一顆骰子。根據擲出點數獲得獎勵。"
+   ],
+   "linesEn": [
+    "Roll a die. Gain rewards based on the number rolled."
+   ]
+  },
+  "DA_MaxBuild": {
+   "name": "頂裝",
+   "nameEn": "Max Build",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得10次免費商店重抽機會。升至等級9時，獲得3次免費商店重抽以及1件英雄複製裝置。",
+    "2020「浩瀚星河」冠軍賽"
+   ],
+   "linesEn": [
+    "Gain 10 free Shop rerolls. When you reach level 9, gain 3 free Shop rerolls and a Champion Duplicator.",
+    "Galaxies Championship, 2020"
+   ]
+  },
+  "DA_Min_Max": {
+   "name": "最大最小化",
+   "nameEn": "Min-Max",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1台黃金裝備移除器、4個隨機組件及4金錢。"
+   ],
+   "linesEn": [
+    "Gain a Golden Item Remover, 4 random components, and 4 gold."
+   ]
+  },
+  "DA_NestingAnvils": {
+   "name": "套娃鐵砧",
+   "nameEn": "Nesting Anvils",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個神器鐵砧。開啟時，獲得1個組件鐵砧。開啟時，獲得6金錢。"
+   ],
+   "linesEn": [
+    "Gain an Artifact Anvil. After you open it, gain a Component Anvil. After you open that, gain 6 gold."
+   ]
+  },
+  "DA_NestingAnvilsPlus": {
+   "name": "套娃鐵砧+",
+   "nameEn": "Nesting Anvils+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個神器鐵砧。開啟時，獲得1個組件鐵砧。開啟時，獲得8金錢。"
+   ],
+   "linesEn": [
+    "Gain an Artifact Anvil. After you open it, gain a Component Anvil. After you open that, gain 8 gold."
+   ]
+  },
+  "DA_OneBuffTwoBuff": {
+   "name": "一個Buff，兩個Buff",
+   "nameEn": "One Buff Two Buff",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個紅Buff、1個藍Buff及1件英雄複製裝置。"
+   ],
+   "linesEn": [
+    "Gain a Red Buff, a Blue Buff, and a Champion Duplicator."
+   ]
+  },
+  "DA_PandorasItemsI": {
+   "name": "潘朵拉的道具I",
+   "nameEn": "Pandora's Items",
+   "nameOfficialZh": true,
+   "lines": [
+    "回合開始：我方備戰區中的道具將隨機變化。",
+    "獲得1個隨機組件。"
+   ],
+   "linesEn": [
+    "Round start: items on your bench are randomized.",
+    "Gain 1 random component."
+   ]
+  },
+  "DA_PandorasItemsIIPlus": {
+   "name": "潘朵拉的道具II+",
+   "nameEn": "Pandora's Items II+",
+   "nameOfficialZh": true,
+   "lines": [
+    "回合開始：我方備戰區中的道具將隨機變化。",
+    "獲得2個隨機組件及4金錢。"
+   ],
+   "linesEn": [
+    "Round start: items on your bench are randomized.",
+    "Gain 2 random components and 4 gold."
+   ]
+  },
+  "DA_PandorasItemsIII": {
+   "name": "潘朵拉的道具III",
+   "nameEn": "Pandora's Items III",
+   "nameOfficialZh": true,
+   "lines": [
+    "回合開始：我方備戰區中的道具將隨機變化。",
+    "獲得1件聖光道具。"
+   ],
+   "linesEn": [
+    "Round start: items on your bench are randomized.",
+    "Gain 1 Radiant item."
+   ]
+  },
+  "DA_Pilfer": {
+   "name": "盜取",
+   "nameEn": "Pilfer",
+   "nameOfficialZh": true,
+   "lines": [
+    "每回合，獲得1個上次戰鬥擊殺的第一位英雄的1星複製體。以此方式首次獲得價值21金錢的英雄時，獲得1副竊賊手套。"
+   ],
+   "linesEn": [
+    "Each round, gain a 1-star copy of the first champion you killed last combat. The first time you gain 21 gold worth of champions in this way, gain a Thief's Gloves."
+   ]
+  },
+  "DA_PortableForge": {
+   "name": "攜帶型打鐵舖",
+   "nameEn": "Portable Forge",
+   "nameOfficialZh": true,
+   "lines": [
+    "從4個神器中選擇1個。神器是擁有獨特效果的強大道具。"
+   ],
+   "linesEn": [
+    "Choose 1 of 4 Artifacts. Artifacts are more powerful items with a unique effect."
+   ]
+  },
+  "DA_PromisedProtection": {
+   "name": "誓言守護",
+   "nameEn": "Promised Protection",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個保衛者之誓。保衛者之誓的裝備者從所有來源額外獲得20%魔力，並增加175最大生命。"
+   ],
+   "linesEn": [
+    "Gain a Protector's Vow. Protector's Vow grants its holder 20% additional Mana from all sources and 175 max Health."
+   ]
+  },
+  "DA_RadiantRascal": {
+   "name": "聖光無賴",
+   "nameEn": "Radiant Rascal",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1副聖光竊賊手套。此道具每回合會隨機裝備2件聖光道具。"
+   ],
+   "linesEn": [
+    "Gain a Radiant Thief's Gloves item. This equips 2 random Radiant items every round."
+   ]
+  },
+  "DA_RadiantRelic": {
+   "name": "聖物抉擇",
+   "nameEn": "Radiant Relics",
+   "nameOfficialZh": true,
+   "lines": [
+    "從5件聖光道具中擇1。獲得1台磁性卸除器。"
+   ],
+   "linesEn": [
+    "Choose 1 of 5 Radiant Items. Gain a Magnetic Remover."
+   ]
+  },
+  "DA_Recombobulator": {
+   "name": "重整裝置",
+   "nameEn": "Recombobulator",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方盤面上的英雄永久變成高1費的隨機英雄(上限為5費)。獲得2台磁性卸除器和3次免費重抽。"
+   ],
+   "linesEn": [
+    "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Gain 2 Magnetic Removers and 3 free rerolls."
+   ]
+  },
+  "DA_Replication": {
+   "name": "複製",
+   "nameEn": "Replication",
+   "nameOfficialZh": true,
+   "lines": [
+    "從3個組件中選擇1個。接下來2回合，獲得該組件的1個複製品。"
+   ],
+   "linesEn": [
+    "Choose 1 of 3 components. For the next 2 rounds, gain a copy of that component."
+   ]
+  },
+  "DA_Retribution": {
+   "name": "復仇",
+   "nameEn": "Retribution",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2副正義手套。裝備正義手套的友軍會獲得精準和15% 暴擊率。",
+    "精準：技能傷害可以暴擊。額外精準會賦予10%暴擊傷害。"
+   ],
+   "linesEn": [
+    "Gain 2 Hands of Justice. Allies equipped with Hand of Justice gain Precision and 15% Critical Strike Chance.",
+    "Precision: Ability damage can critically strike. Additional Precision grants 10% Critical Strike Damage."
+   ]
+  },
+  "DA_SalvageBin": {
+   "name": "回收再利用",
+   "nameEn": "Salvage Bin",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1件隨機的完整道具，並在經歷8場玩家戰鬥後，獲得1個組件。將英雄賣出時，會將他們身上的完整道具分解為組件(棋手道具和徽章除外)。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item now, and 1 component after 8 player combats. Selling champions breaks completed items into components (excluding Tactician's items and Emblems)."
+   ]
+  },
+  "DA_SalvageBinPlus": {
+   "name": "回收再利用+",
+   "nameEn": "Salvage Bin+",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得1件隨機的完整道具，並在4場玩家戰鬥後，獲得1個組件。將英雄賣出時，會將他們身上的完整道具分解為組件(棋手道具和徽章除外)。"
+   ],
+   "linesEn": [
+    "Gain 1 random completed item now, and 1 component after 4 player combats. Selling champions breaks completed items into components (excluding Tactician's items and Emblems)."
+   ]
+  },
+  "DA_SeraphimsStaff": {
+   "name": "熾天使之杖",
+   "nameEn": "Seraphim's Staff",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把大天使之杖。若裝備者擁有2.1以上魔攻，大天使之杖將賦予2額外魔力回復。"
+   ],
+   "linesEn": [
+    "Gain an Archangel's Staff. Archangel's Staff grants 2 additional Mana Regen if its holder has 2.1 or more Ability Power."
+   ]
+  },
+  "DA_ShimmerscaleEssence": {
+   "name": "微光龍鱗精粹",
+   "nameEn": "Shimmerscale Essence",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一把賭徒之刀。6場玩家戰鬥後，獲得1件權貴之甲。"
+   ],
+   "linesEn": [
+    "Gain a Gambler's Blade. After 6 player combats, gain a Mogul's Mail."
+   ]
+  },
+  "DA_Slammin": {
+   "name": "砸起來",
+   "nameEn": "Slammin'",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3金錢。每場玩家戰鬥結束後，若備戰區沒有任何道具(消耗品除外)，獲得2經驗值。"
+   ],
+   "linesEn": [
+    "Gain 3 gold. After each player combat, if there are no items on your bench (other than consumables), gain 2 XP."
+   ]
+  },
+  "DA_SlamminPlus": {
+   "name": "砸起來+",
+   "nameEn": "Slammin'+",
+   "nameOfficialZh": true,
+   "lines": [
+    "立即獲得4金錢和10經驗值。每場玩家戰鬥結束後，若備戰區沒有任何道具(消耗品除外)，獲得2經驗值。"
+   ],
+   "linesEn": [
+    "Gain 4 gold and 10 XP now. After each player combat, if there are no items on your bench (other than consumables), gain 2 XP."
+   ]
+  },
+  "DA_SmallGrabBag": {
+   "name": "小型禮包",
+   "nameEn": "Small Grab Bag",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2個隨機道具組件。"
+   ],
+   "linesEn": [
+    "Gain 2 random item components."
+   ]
+  },
+  "DA_SoloLeveling": {
+   "name": "獨自升等",
+   "nameEn": "Solo Leveling",
+   "nameOfficialZh": true,
+   "lines": [
+    "接下來5場戰鬥，你的隊伍大小為1，但部署之英雄的能力值將大幅提升。每次取得擊殺，獲得1經驗值。接著，獲得2個道具組件。"
+   ],
+   "linesEn": [
+    "For the next 5 combats, your team size is 1, but the champion you field has massively increased stats. Gain 1 XP for every kill they get. Afterwards, gain 2 item components."
+   ]
+  },
+  "DA_SoloPlate": {
+   "name": "單人磐核",
+   "nameEn": "Solo Plate",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件石像鬼磐核。戰鬥開始時，若裝備石像鬼磐核的友軍是該排的唯一單位，獲得1.17最大生命。"
+   ],
+   "linesEn": [
+    "Gain a Gargoyle Stoneplate. Allies holding Gargoyle Stoneplate gain 1.17 max Health if they start combat alone in their row."
+   ]
+  },
+  "DA_SpeedyDoubleKill": {
+   "name": "疾速雙殺",
+   "nameEn": "Speedy Double Kill",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把鬼索的狂暴之刃。在2名玩家淘汰後，獲得40金錢。",
+    "2021《命運》冠軍賽"
+   ],
+   "linesEn": [
+    "Gain a Guinsoo's Rageblade. When 2 players are eliminated, gain 40 gold.",
+    "Fates Championship, 2021"
+   ]
+  },
+  "DA_SpiritOfRedemption": {
+   "name": "靈魂救贖",
+   "nameEn": "Spirit Of Redemption",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件振奮盔甲。每5秒，振奮盔甲會治療1格內的友軍，治療量等同於其已損失生命的9%。"
+   ],
+   "linesEn": [
+    "Gain a Spirit Visage. Every 5 seconds, Spirit Visage heals allies within 1 hex for 9% of their missing Health."
+   ]
+  },
+  "DA_SpreadingRoots": {
+   "name": "荊棘蔓延",
+   "nameEn": "Spreading Roots",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。3場戰鬥後，再獲得1枚。"
+   ],
+   "linesEn": [
+    "Gain a random Emblems. After 3 combats, gain another."
+   ]
+  },
+  "DA_SpreadingRootsPlus": {
+   "name": "荊棘蔓延+",
+   "nameEn": "Spreading Roots+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2枚隨機徽章及2金錢。"
+   ],
+   "linesEn": [
+    "Gain 2 random Emblems and 2 gold."
+   ]
+  },
+  "DA_SweetTreats": {
+   "name": "美味甜點",
+   "nameEn": "Sweet Treats",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個神器鐵砧。我方英雄每裝備1件道具，我方隊伍獲得16生命。"
+   ],
+   "linesEn": [
+    "Gain an Artifact anvil. Your team gains 16 Health for each item equipped on champions."
+   ]
+  },
+  "DA_SwordOverflow": {
+   "name": "刀劍湧流",
+   "nameEn": "Sword Overflow",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得4把暴風之劍。我方暴風之劍給予4% 攻速。"
+   ],
+   "linesEn": [
+    "Gain 4 BF Swords. Your BF Swords grant +4% Attack Speed."
+   ]
+  },
+  "DA_TacticiansKitchen": {
+   "name": "棋手廚房",
+   "nameEn": "Tactician's Kitchen",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。3回合後，獲得1件棋手披風。"
+   ],
+   "linesEn": [
+    "Gain a random Emblem. After 3 rounds, gain a Tactician's Cape."
+   ]
+  },
+  "DA_TeamBuilding": {
+   "name": "建立團隊",
+   "nameEn": "Team Building",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件初級英雄複製裝置，5場玩家戰鬥後再獲得1件。",
+    "此道具可用來複製一個3費以下的英雄。"
+   ],
+   "linesEn": [
+    "Gain a Lesser Champion Duplicator. Gain another after 5 player combats.",
+    "This item allows you to copy a 3-cost or less champion."
+   ]
+  },
+  "DA_TheGoldenDragon": {
+   "name": "黃金巨龍",
+   "nameEn": "The Golden Dragon",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1件權貴之甲。持有權貴之甲的英雄會占用1個隊伍人口，但會增加600生命與15% 續戰力。",
+    "權貴之甲會賦予金錢及戰鬥力。",
+    "2022「龍之國度」冠軍賽"
+   ],
+   "linesEn": [
+    "Gain a Mogul's Mail. Champions holding Mogul's Mail take up +1 team slot but gain 600 Health and 15% Durability.",
+    "Mogul's Mail gives gold as well as combat power.",
+    "Dragonlands Championship, 2022"
+   ]
+  },
+  "DA_TheTower": {
+   "name": "防禦高塔",
+   "nameEn": "The Tower",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個巨型訓練假人。每4秒，電擊最靠近的3名敵軍，造成5%最大生命的真實傷害。"
+   ],
+   "linesEn": [
+    "Gain a giant Training Dummy. Every 4 seconds, it zaps the 3 nearest enemies dealing 5% max Health true damage."
+   ]
+  },
+  "DA_TheTraitTree": {
+   "name": "特性神木",
+   "nameEn": "The Trait Tree",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3枚隨機徽章及2金錢。"
+   ],
+   "linesEn": [
+    "Gain 3 random Emblems and 2 gold."
+   ]
+  },
+  "DA_TheTraitTreePlus": {
+   "name": "特性神木+",
+   "nameEn": "The Trait Tree+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得3枚隨機徽章、1台重鑄器，以及4金錢。"
+   ],
+   "linesEn": [
+    "Gain 3 random Emblems, a Reforger, and 4 gold."
+   ]
+  },
+  "DA_TraitLadder": {
+   "name": "特性階梯",
+   "nameEn": "Trait Ladder",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚隨機徽章。在一場玩家戰鬥中部署2項非唯一特性後，獲得獎勵。然後提高所需特性數量和獎勵規模。"
+   ],
+   "linesEn": [
+    "Gain a random emblem. After fielding 2 non-unique traits in a player combat, gain a reward. Then increase the number of traits needed and the size of the reward."
+   ]
+  },
+  "DA_URF": {
+   "name": "阿福快打",
+   "nameEn": "U.R.F",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個鍋鏟。裝備鍋鏟或平底鍋道具的英雄增加20% 攻速和3魔力回復。"
+   ],
+   "linesEn": [
+    "Gain a Spatula. Spatula and Frying Pan items gain 20% Attack Speed and 3 Mana Regen."
+   ]
+  },
+  "DA_UrfsGrabBag": {
+   "name": "阿福大禮包",
+   "nameEn": "Urf's Grab Bag",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1把鍋鏟、3個隨機組件，以及5金錢。"
+   ],
+   "linesEn": [
+    "Gain 1 Spatula, 3 random components, and 5 gold."
+   ]
+  },
+  "DA_WandOverflow": {
+   "name": "魔杖湧流",
+   "nameEn": "Wand Overflow",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得4支巨型魔棒。我方巨型魔棒給予5% 攻速。"
+   ],
+   "linesEn": [
+    "Gain 4 Needlessly Large Rods. Your Needlessly Large Rods grant +5% Attack Speed."
+   ]
+  },
+  "DA_Warpath": {
+   "name": "刃馬合一",
+   "nameEn": "Warpath",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1位2星2費英雄。造成80玩家傷害後，獲得高費英雄和道具的寶箱。"
+   ],
+   "linesEn": [
+    "Gain a 2-star 2-cost champion. After dealing 80 player damage, gain a chest of high cost champions and items."
+   ]
+  },
+  "DA_WeStickTogether": {
+   "name": "攜手同行",
+   "nameEn": "We Stick Together",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一枚隨機特性徽章和一個完整道具鐵砧。擁有該特性的友軍獲得1.25攻速。",
+    "2025「追尋奧術」棋手皇冠"
+   ],
+   "linesEn": [
+    "Gain an Emblem of a random trait and a completed item anvil. Allies with that trait gain 1.25 Attack Speed.",
+    "Into The Arcane Tactician's Crown, 2025"
+   ]
+  },
+  "DA_WovenMagic": {
+   "name": "魔力編織",
+   "nameEn": "Woven Magic",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個隨機道具組件。我方英雄每消耗2200魔力，額外獲得1個組件(上限：/3)。"
+   ],
+   "linesEn": [
+    "Gain a random item component. Every 2200 Mana spent by your champions, grants an additional component (max: /3)."
+   ]
+  },
+  "DA_Annie19_HeroAugment": {
+   "name": "泰貝爾！我看不到舞臺",
+   "nameEn": "Tibbers! I Can't See the Stage",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得1個安妮並解鎖泰貝爾。我方最強大的安妮變成魔攻法師，在戰鬥開始時跳到我方最強大的泰貝爾身上。"
+   ],
+   "linesEn": [
+    "Gain an Annie and unlock Tibbers. Your strongest Annie becomes a Magic Caster that leaps onto your strongest Tibbers at the start of combat."
+   ]
+  },
+  "DA_Elise19_HeroAugment": {
+   "name": "咬痕",
+   "nameEn": "Bite Marks",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個伊莉絲。我方最強大的伊莉絲成為魔法刺客，她的撕咬會在擊殺低生命敵軍後再次施放。"
+   ],
+   "linesEn": [
+    "Gain an Elise. Your strongest Elise becomes a Magic Assassin with a bite that she recasts on low Health enemies on kill."
+   ]
+  },
+  "DA_Kennen19_HeroAugment": {
+   "name": "他是閃電使者",
+   "nameEn": "He's Electric",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個凱能。我方最強大的凱能變成魔法刺客，每次擊殺都會使其技能永久增加真實傷害。"
+   ],
+   "linesEn": [
+    "Gain a Kennen. Your strongest Kennen becomes a Magic Assassin who permanently adds True Damage to his spell on kills."
+   ]
+  },
+  "DA_Lillia19_HeroAugment": {
+   "name": "舞動炫步",
+   "nameEn": "Dancin' n' Prancin'",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個莉莉亞。我方最強大的的莉莉亞變成魔攻鬥士，在盤面上輕盈穿梭，並持續造成疊加的魔法傷害。"
+   ],
+   "linesEn": [
+    "Gain a Lillia. Your strongest Lillia becomes a Magic Fighter that prances around the board and deals stacking magic damage over time."
+   ]
+  },
+  "DA_Olaf19_HeroAugment": {
+   "name": "斧勢漸強",
+   "nameEn": "Axe Crescendo",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個歐拉夫。我方最強大的歐拉夫變成遠程普攻射手，擁有單體技能，且每次施放都會變得更強。"
+   ],
+   "linesEn": [
+    "Gain an Olaf. Your strongest Olaf becomes a ranged Attack Marksman with a single target Ability that gets stronger with each cast."
+   ]
+  },
+  "DA_Renekton19_HeroAugment": {
+   "name": "救生員值勤中",
+   "nameEn": "Lifeguard on Duty",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個雷尼克頓。我方最強大的雷尼克頓變成物攻鬥士，戰鬥開始時會先日光浴，當友軍陷入危險時才會衝入戰場。"
+   ],
+   "linesEn": [
+    "Gain a Renekton. Your strongest Renekton becomes an Attack Fighter who starts combat sunbathing, diving into action when an ally is in danger."
+   ]
+  },
+  "DA_Sett19_HeroAugment": {
+   "name": "笑點出擊",
+   "nameEn": "Punch Line",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得1個賽特。我方最強大的賽特變成物攻鬥士，能夠揮舞重拳處決敵軍，並將其擊飛。"
+   ],
+   "linesEn": [
+    "Gain a Sett. Your strongest Sett becomes an Attack Fighter with a punch that can execute enemies, making them fly away."
+   ]
+  },
+  "DA_19_ArcanistCirclet": {
+   "name": "奧術大師之環",
+   "nameEn": "Arcanist Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚奧術大師徽章、1滴女神之淚及1個阿璃。"
+   ],
+   "linesEn": [
+    "Gain an Arcanist Emblem, a Tear of the Goddess, and a Swain."
+   ]
+  },
+  "DA_19_ArcanistCrown": {
+   "name": "奧術大師之冠",
+   "nameEn": "Arcanist Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚奧術大師 徽章、1個寶石手套及1個斯溫。"
+   ],
+   "linesEn": [
+    "Gain an Arcanist Emblem, a Jeweled Gauntlet, and a Swain."
+   ]
+  },
+  "DA_19_ChoreographerCirclet": {
+   "name": "編舞者之環",
+   "nameEn": "Choreographer Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚編舞者 徽章、1個巨人腰帶及1個蓋倫。"
+   ],
+   "linesEn": [
+    "Gain a Choreographer Emblem, a Giant's Belt, and a Garen."
+   ]
+  },
+  "DA_19_ChoreographerCrown": {
+   "name": "編舞者之冠",
+   "nameEn": "Choreographer Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚編舞者徽章、1頂適性神盔及1個星朵拉。"
+   ],
+   "linesEn": [
+    "Gain a Choreographer Emblem, an Adaptive Helm, and a Syndra."
+   ]
+  },
+  "DA_Choreographer19_DanceParty": {
+   "name": "熱舞派對",
+   "nameEn": "Dance Party",
+   "nameOfficialZh": false,
+   "lines": [
+    "當你贏得戰鬥時，每名存活的英雄有5%機率掉落1金錢。你每出戰一名編舞者，機率再增加15%。獲得2個編舞者。"
+   ],
+   "linesEn": [
+    "When you win combat, each surviving champion has a 5% chance to drop 1 gold. The chance increases by 15% for each Choreographer you're fielding. Gain 2 Choreographers."
+   ]
+  },
+  "DA_19_DemonVisionCirclet": {
+   "name": "搖滾樂之環",
+   "nameEn": "Rock Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚搖滾樂徽章、1把巨型魔棒及1個洛克。"
+   ],
+   "linesEn": [
+    "Gain a Rock Emblem, a Needlessly Large Rod, and a Swain."
+   ]
+  },
+  "DA_19_DemonVisionCrown": {
+   "name": "搖滾樂之冠",
+   "nameEn": "Rock Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚搖滾樂徽章、1副正義手套及1個卡蜜兒。"
+   ],
+   "linesEn": [
+    "Gain a Rock Emblem, a Hand Of Justice, and a Camille."
+   ]
+  },
+  "DA_DemonVision19_Deathbringer": {
+   "name": "冥使威壓",
+   "nameEn": "Deathbringer",
+   "nameOfficialZh": true,
+   "lines": [
+    "搖滾樂英雄或煉獄偶像每參與擊殺2次，永久獲得15生命和2% 物攻與魔攻。獲得3名搖滾樂英雄。"
+   ],
+   "linesEn": [
+    "Every 2 takedowns by Rock champions or the Infernal Idol permanently grants him 15 Health and 2% Attack Damage and Ability Power. Gain 3 Rock champions."
+   ]
+  },
+  "DA_DemonVision19_RockAllNite": {
+   "name": "徹夜搖滾",
+   "nameEn": "Rock All Nite",
+   "nameOfficialZh": true,
+   "lines": [
+    "搖滾樂英雄增加10%物攻和魔攻。煉獄偶像每存活2秒，他們再獲得1%。獲得3個搖滾樂英雄。"
+   ],
+   "linesEn": [
+    "Rock champions gain 10% Attack Damage and Ability Power. Every 2 seconds the Infernal Idol lives, they gain 1% more. Gain 3 Rock champions."
+   ]
+  },
+  "DA_Glitterbomb19_RerollExe": {
+   "name": "重擲.exe",
+   "nameEn": "reroll.exe",
+   "nameOfficialZh": false,
+   "lines": [
+    "包括此階段在內的所有階段開始時，獲得2次免費重抽，且每有250點超流行熱潮，額外加1次。獲得1個2星希格斯。"
+   ],
+   "linesEn": [
+    "At the start of every stage, including this one, gain 2 free rerolls, plus 1 for every 250 Hyperpop Hype you have. Gain a 2-star Ziggs."
+   ]
+  },
+  "DA_Augment19_Heartsteel_BigSolo": {
+   "name": "單打獨鬥",
+   "nameEn": "Big Solo",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方心鋼之聲偏好英雄會額外獲得150%所有已啟用的心鋼之聲加成。獲得3名心鋼之聲英雄。"
+   ],
+   "linesEn": [
+    "Your Heartsteel Biases gain 150% more of all active Heartsteel bonuses. Gain 3 Heartsteel champions."
+   ]
+  },
+  "DA_19_HeartsteelCirclet": {
+   "name": "心鋼之聲之環",
+   "nameEn": "Heartsteel Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚心鋼之聲 徽章、1個格鬥手套及1個卡桑帝。"
+   ],
+   "linesEn": [
+    "Gain a Heartsteel Emblem, a Sparring Gloves, and a K'Sante."
+   ]
+  },
+  "DA_19_HeartsteelCrown": {
+   "name": "心鋼之聲之冠",
+   "nameEn": "Heartsteel Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚心鋼之聲徽章、1個堅定之心及1個卡桑帝。"
+   ],
+   "linesEn": [
+    "Gain a Heartsteel Emblem, a Steadfast Heart, and a K'Sante."
+   ]
+  },
+  "DA_19_HeartsteelPrismaticTour": {
+   "name": "心鋼之聲稜鏡巡演",
+   "nameEn": "Heartsteel Prismatic Tour",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個心鋼之聲 稜鏡任務、3個心鋼之聲 英雄、1個幸運道具寶箱及7金錢。",
+    "讓心鋼之聲我方英雄在7個心鋼之聲啟動時造成傷害、抵擋傷害並回復生命！"
+   ],
+   "linesEn": [
+    "Gain the Heartsteel Prismatic Quest, 3 Heartsteel champions, a Lucky Item Chest, and 7 gold.",
+    "Have Heartsteel allies deal damage, block damage, and heal health with 7 Heartsteel active!"
+   ]
+  },
+  "DA_19_HeartsteelPrismaticTourPlus": {
+   "name": "心鋼之聲稜鏡巡演+",
+   "nameEn": "Heartsteel Prismatic Tour+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個心鋼之聲 稜鏡任務、3個心鋼之聲 英雄、3個組件及2金錢。",
+    "讓心鋼之聲我方英雄在7個心鋼之聲啟動時造成傷害、抵擋傷害並回復生命！"
+   ],
+   "linesEn": [
+    "Gain the Heartsteel Prismatic Quest, 3 Heartsteel champions, 3 components, and 2 gold.",
+    "Have Heartsteel allies deal damage, block damage, and heal health with 7 Heartsteel active!"
+   ]
+  },
+  "DA_Augment19_Heartsteel_SmallSquad": {
+   "name": "小隊",
+   "nameEn": "Small Squad",
+   "nameOfficialZh": false,
+   "lines": [
+    "當你場上有3名或更少的心鋼之聲英雄時，其加成會提升100%。獲得2名心鋼之聲英雄。"
+   ],
+   "linesEn": [
+    "When you field 3 or fewer Heartsteel champions, increase their bonuses by 100%. Gain 2 Heartsteel champions."
+   ]
+  },
+  "DA_Heavenscale19_TheImmortalJourney": {
+   "name": "無盡旅程",
+   "nameEn": "The Immortal Journey",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個剎雅、1把精進之矛及3金錢。"
+   ],
+   "linesEn": [
+    "Gain a Xayah, a Spear of Shojin and 3 gold."
+   ]
+  },
+  "DA_19_HitmakerCirclet": {
+   "name": "金曲製造機之環",
+   "nameEn": "Hitmaker Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚金曲製造機徽章、1把暴風之劍及1個姍娜。"
+   ],
+   "linesEn": [
+    "Gain a Hitmaker Emblem, a B.F. Sword, and a Senna."
+   ]
+  },
+  "DA_19_HitmakerCrown": {
+   "name": "金曲製造機之冠",
+   "nameEn": "Hitmaker Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚金曲製造機徽章、1把無盡之刃及1個姍娜。"
+   ],
+   "linesEn": [
+    "Gain a Hitmaker Emblem, an Infinity Edge, and a Senna."
+   ]
+  },
+  "DA_19_IllBeatsCirclet": {
+   "name": "Illbeats之環",
+   "nameEn": "Illbeats Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚Illbeats徽章、1個女神之淚及1個達瑞文。"
+   ],
+   "linesEn": [
+    "Gain an Illbeats Emblem, a Tear Of The Goddess, and a Draven."
+   ]
+  },
+  "DA_19_IllBeatsCrown": {
+   "name": "Illbeats之冠",
+   "nameEn": "Illbeats Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚Illbeats徽章、1個石像鬼磐核及1個布郎姆。"
+   ],
+   "linesEn": [
+    "Gain an Illbeats Emblem, a Gargoyle Stoneplate, and a Braum."
+   ]
+  },
+  "DA_19_IonicSparkCirclet": {
+   "name": "離子星火之環",
+   "nameEn": "Ionic Spark Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚離子星火 徽章、1把巨型魔棒及1個布蕾爾。"
+   ],
+   "linesEn": [
+    "Gain an Ionic Spark Emblem, a Needlessly Large Rod, and a Briar."
+   ]
+  },
+  "DA_19_IonicSparkCrown": {
+   "name": "Ionic Spark之冠",
+   "nameEn": "Ionic Spark Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚離子星火徽章、1個離子星火及1個安妮。"
+   ],
+   "linesEn": [
+    "Gain an Ionic Spark Emblem, an Ionic Spark, and an Annie."
+   ]
+  },
+  "DA_IonicSpark19_ForeverBurningBrighter": {
+   "name": "永遠熾亮燃燒",
+   "nameEn": "Forever Burning Brighter",
+   "nameOfficialZh": true,
+   "lines": [
+    "我方離子星火英雄增加8% 物攻和魔攻，粉絲每贈送30份禮物，該加成永久提升1%。獲得3名離子星火英雄。"
+   ],
+   "linesEn": [
+    "Your Ionic Spark champions gain 8% Attack Damage and Ability Power, increased permanently by 1% for every 30 gifts given by fans. Gain 3 Ionic Spark champions."
+   ]
+  },
+  "DA_19_IonicSparkPrismaticTour": {
+   "name": "離子星火稜鏡巡演",
+   "nameEn": "Ionic Spark Prismatic Tour",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個離子星火 稜鏡任務、3個離子星火 英雄、1個幸運道具寶箱及7金錢。",
+    "在7個離子星火啟動時，於10回合內收集專輯簽名，然後出戰10個離子星火！"
+   ],
+   "linesEn": [
+    "Gain the Ionic Spark Prismatic Quest, 3 Ionic Spark champions, a Lucky Item Chest, and 7 gold.",
+    "With 7 Ionic Spark active, collect album signatures over 10 rounds, then field 10 Ionic Spark!"
+   ]
+  },
+  "DA_19_IonicSparkPrismaticTourPlus": {
+   "name": "離子星火稜鏡巡演+",
+   "nameEn": "Ionic Spark Prismatic Tour+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得離子星火稜鏡任務、3名離子星火英雄、2個組件與10金錢。",
+    "啟用7離子星火時，持續10回合收集專輯簽名，然後部署10個離子星火！"
+   ],
+   "linesEn": [
+    "Gain the Ionic Spark Prismatic Quest, 3 Ionic Spark champions, 2 components, and 10 gold.",
+    "With 7 Ionic Spark active, collect album signatures over 10 rounds, then field 10 Ionic Spark!"
+   ]
+  },
+  "DA_IonicSpark19_LightUpTheSky": {
+   "name": "點亮星空",
+   "nameEn": "Light up the Sky",
+   "nameOfficialZh": true,
+   "lines": [
+    "每3秒，生命值最高的3名敵軍會受到5%最大生命的魔法傷害，場上每有一位離子星火英雄，傷害增加1%。獲得3名離子星火英雄。"
+   ],
+   "linesEn": [
+    "Every 3 seconds, the 3 highest Health enemies take 5% max Health magic damage + 1% for every Ionic Spark champion you have fielded. Gain 3 Ionic Spark champions."
+   ]
+  },
+  "DA_IonicSpark19_OurHeartsAligned": {
+   "name": "我們心心相印",
+   "nameEn": "Our Hearts Aligned",
+   "nameOfficialZh": true,
+   "lines": [
+    "每當 離子星火 英雄 合計消耗600魔力，他們都會獲得10% 最大生命 護盾 持續6秒. 獲得3離子星火 英雄。"
+   ],
+   "linesEn": [
+    "Every time Ionic Spark champions collectively spend 600 Mana, they all gain a 10% max Health Shield for 6 seconds. Gain 3 Ionic Spark champions."
+   ]
+  },
+  "DA_19_JazzCirclet": {
+   "name": "爵士樂之環",
+   "nameEn": "Jazz Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚爵士樂 徽章、1把反曲弓及1個巴德。"
+   ],
+   "linesEn": [
+    "Gain a Jazz Emblem, a Recurve Bow, and a Bard."
+   ]
+  },
+  "DA_19_JazzCrown": {
+   "name": "爵士樂之冠",
+   "nameEn": "Jazz Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚爵士樂徽章、1把精進之矛及1個路西恩。"
+   ],
+   "linesEn": [
+    "Gain a Jazz Emblem, a Spear of Shojin, and a Lucian."
+   ]
+  },
+  "DA_Jazz19_DigOnThis": {
+   "name": "全心享受",
+   "nameEn": "Dig on This",
+   "nameOfficialZh": true,
+   "lines": [
+    "你的爵士樂英雄來自爵士樂羈絆的生命與傷害增幅提升150%。獲得1個路西恩及1個加里歐。"
+   ],
+   "linesEn": [
+    "Your Jazz champions gain 150% increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio."
+   ]
+  },
+  "DA_19_KDACirclet": {
+   "name": "K/DA之環",
+   "nameEn": "K/DA Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚K/DA徽章、1把巨型魔棒及1個雷歐娜。"
+   ],
+   "linesEn": [
+    "Gain a K/DA Emblem, a Needlessly Large Rod, and a Kai'Sa."
+   ]
+  },
+  "DA_19_KDACrown": {
+   "name": "K/DA之冠",
+   "nameEn": "K/DA Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一枚K/DA徽章、1個鬼索的狂暴之刃及1個凱莎。"
+   ],
+   "linesEn": [
+    "Gain a K/DA Emblem, a Guinsoo's Rageblade, and a Kai'Sa."
+   ]
+  },
+  "DA_19_KDAPrismaticTour": {
+   "name": "K/DA 稜鏡巡演",
+   "nameEn": "K/DA Prismatic Tour",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得K/DA稜鏡任務、3名K/DA英雄、2個小小複製裝置、1個初級英雄複製裝置及10金錢。",
+    "K/DA英雄總星等達到21！"
+   ],
+   "linesEn": [
+    "Gain the K/DA Prismatic Quest, 3 K/DA champions, 2 Tiny Duplicators, a Lesser Champion Duplicator, and 10 gold.",
+    "Reach 21 star levels of K/DA champions!"
+   ]
+  },
+  "DA_19_KDAPrismaticTourPlus": {
+   "name": "K/DA稜鏡巡演+",
+   "nameEn": "K/DA Prismatic Tour+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得K/DA稜鏡任務、3名K/DA英雄、2個小小複製裝置、2個初級英雄複製裝置及6次免費重抽機會。",
+    "K/DA英雄總星等達到21！"
+   ],
+   "linesEn": [
+    "Gain the K/DA Prismatic Quest, 3 K/DA champions, 2 Tiny Duplicators, 2 Lesser Champion Duplicators, and 6 free rerolls.",
+    "Reach 21 star levels of K/DA champions!"
+   ]
+  },
+  "DA_KDA19_RunningWild": {
+   "name": "猛禽走獸",
+   "nameEn": "Running Wild",
+   "nameOfficialZh": true,
+   "lines": [
+    "戰鬥開始時，你2最強的K/DA英雄（未持有3道具）會獲得一個暫時推薦道具和250生命。「獲得1個妮可和1個精進之矛。"
+   ],
+   "linesEn": [
+    "At Combat Start, your 2 strongest K/DA champions without 3 items get a temporary recommended item and 250 Health. Gain a Neeko and a Lillia."
+   ]
+  },
+  "DA_KDA19_StarPower": {
+   "name": "星光力量",
+   "nameEn": "Star Power",
+   "nameOfficialZh": true,
+   "lines": [
+    "當你將一名K/DA英雄升至2星時，獲得一個免費的K/DA英雄。獲得1個莉莉亞及1個妮可。"
+   ],
+   "linesEn": [
+    "When you 2-star a K/DA champion, gain a free K/DA champion. Gain a Lillia and a Neeko."
+   ]
+  },
+  "DA_19_ManagerCirclet": {
+   "name": "經紀人之環",
+   "nameEn": "Manager Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚經紀人徽章、1個鎖子甲及1個雷歐娜。"
+   ],
+   "linesEn": [
+    "Gain a Manager Emblem, a Chain Vest, and a Leona."
+   ]
+  },
+  "DA_Augment19_Manager_ManagementTrack": {
+   "name": "經紀人路線",
+   "nameEn": "Management Track",
+   "nameOfficialZh": false,
+   "lines": [
+    "獲得40枚經紀人徽章及1個雷歐娜。當英雄從經紀人獲得加成時，有60%機率獲得1金錢。",
+    "從經紀人羈絆累積獲得30金錢後，獲得1個蒙多醫生及1個好戰者鎧甲。"
+   ],
+   "linesEn": [
+    "Gain a Manager Emblem and a Leona. When champions gain bonuses from Manager there is a 40% chance to gain 1 gold.",
+    "After collecting 30 gold from the Manager trait, gain a Dr. Mundo and a Warmog's Armor."
+   ]
+  },
+  "DA_Augment19_Manager_StakeholderMeeting": {
+   "name": "利害關係人管理",
+   "nameEn": "Stakeholder Management",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2個額外的經紀人棋格。放置在經紀人棋格上的經紀人會獲得1.1最大生命，並額外獲得1.5棋格加成。4回合後，獲得1個雷歐娜。"
+   ],
+   "linesEn": [
+    "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain 1.1 max Health and an additional 1.5 of hex bonuses. In 4 rounds gain a Leona and 2 Prodigy champions."
+   ]
+  },
+  "DA_Augment19_Manager_StakeholderMeetingLate": {
+   "name": "相關人員管理+",
+   "nameEn": "Stakeholder Management+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得2個額外的經紀人棋格。放置在經紀人棋格上的經紀人會獲得1.1最大生命，並額外獲得1.5棋格加成。獲得1個雷歐娜。"
+   ],
+   "linesEn": [
+    "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain 1.1 max Health and an additional 1.5 of hex bonuses. Gain a Leona and 2 Prodigy champions."
+   ]
+  },
+  "DA_19_MosherCirclet": {
+   "name": "殺戮者之環",
+   "nameEn": "Slayer Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚殺戮者徽章、1個鎖子甲及1個犽凝。"
+   ],
+   "linesEn": [
+    "Gain a Slayer Emblem, a Chain Vest, and a Briar."
+   ]
+  },
+  "DA_19_MosherCrown": {
+   "name": "殺戮者之冠",
+   "nameEn": "Slayer Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚殺戮者 徽章、1個泰坦的決意及1個布蕾爾。"
+   ],
+   "linesEn": [
+    "Gain a Slayer Emblem, a Titan's Resolve, and a Briar."
+   ]
+  },
+  "DA_19_OceanSongCirclet": {
+   "name": "海灘流行樂之環",
+   "nameEn": "Beach Pop Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚海灘流行樂徽章、1副格鬥手套及1個葛雷夫。"
+   ],
+   "linesEn": [
+    "Gain a Beach Pop Emblem, a Sparring Gloves, and a Syndra."
+   ]
+  },
+  "DA_19_OceanSongCrown": {
+   "name": "海灘流行樂之冠",
+   "nameEn": "Beach Pop Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得一個海灘流行徽章、一個藍Buff，以及一個星朵拉。"
+   ],
+   "linesEn": [
+    "Gain a Beach Pop Emblem, a Blue Buff, and a Syndra."
+   ]
+  },
+  "DA_Oceansong19_EconAugment": {
+   "name": "出土寶藏",
+   "nameEn": "Unearthed Treasure",
+   "nameOfficialZh": true,
+   "lines": [
+    "在玩家戰鬥結束後，每種受到海灘流行樂器強化的海灘流行樂英雄都有機會發現一些戰利品！獲得1個塔里克、1個柔依及1個雷尼克頓。"
+   ],
+   "linesEn": [
+    "After player combat, each unique Beach Pop champion empowered by a Beach Pop instrument has a chance to uncover some loot! Gain a Taric, a Zoe, and a Renekton."
+   ]
+  },
+  "DA_19_PentakillCirclet": {
+   "name": "殺五社之環",
+   "nameEn": "Pentakill Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚殺五社 徽章、1個負極斗篷及1個維爾戈。"
+   ],
+   "linesEn": [
+    "Gain a Pentakill Emblem, a Negatron Cloak, and a Viego."
+   ]
+  },
+  "DA_19_PentakillCrown": {
+   "name": "殺五社皇冠",
+   "nameEn": "Pentakill Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚殺五社徽章、1個巨人殺手及1個維爾戈。"
+   ],
+   "linesEn": [
+    "Gain a Pentakill Emblem, a Giant Slayer, and a Viego."
+   ]
+  },
+  "DA_Pentakill19_GatheringStorm": {
+   "name": "天寒地凍",
+   "nameEn": "Gathering Storm",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次殺五社特性處決敵軍，我方殺五社英雄永久增加10生命。獲得3名殺五社英雄。"
+   ],
+   "linesEn": [
+    "Your Pentakill champions gain 10 Health permanently every time the Pentakill trait executes an enemy. Gain 3 Pentakill champions."
+   ]
+  },
+  "DA_19_PentakillPrismaticTour": {
+   "name": "殺五社稜鏡巡演",
+   "nameEn": "Pentakill Prismatic Tour",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1個殺五社 稜鏡任務、3個殺五社 英雄、1個幸運道具寶箱及7金錢。",
+    "在7個殺五社啟動時，讓光明使者（非官方譯名）取得擊殺並達到等級10！"
+   ],
+   "linesEn": [
+    "Gain the Pentakill Prismatic Quest, 3 Pentakill champions, a Lucky Item Chest, and 7 gold.",
+    "With 7 Pentakill active, have the Lightbringer get kills and reach level 10!"
+   ]
+  },
+  "DA_19_PentakillPrismaticTourPlus": {
+   "name": "殺五社稜鏡巡演+",
+   "nameEn": "Pentakill Prismatic Tour+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得殺五社稜鏡任務、3名殺五社英雄、2個組件及10金錢。",
+    "達到等級10，並啟動7殺五社特性時，讓1名殺五社友軍取得連續擊殺！"
+   ],
+   "linesEn": [
+    "Gain the Pentakill Prismatic Quest, 3 Pentakill champions, 2 components, and 10 gold.",
+    "With 7 Pentakill active, have the Lightbringer get kills and reach level 10!"
+   ]
+  },
+  "DA_19_RenegadeCirclet": {
+   "name": "叛徒之環",
+   "nameEn": "Renegade Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚叛徒 徽章、1個格鬥手套及1個2星姬亞娜。"
+   ],
+   "linesEn": [
+    "Gain a Renegade Emblem, a Sparring Gloves, and a 2-star Qiyana."
+   ]
+  },
+  "DA_19_RenegadeCrown": {
+   "name": "叛徒之冠",
+   "nameEn": "Renegade Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚叛徒 徽章、1個正義手套及1個姬亞娜。"
+   ],
+   "linesEn": [
+    "Gain a Renegade Emblem, a Hand of Justice, and a Qiyana."
+   ]
+  },
+  "DA_Renegade19_HighRolling": {
+   "name": "豪賭一把",
+   "nameEn": "High Rolling",
+   "nameOfficialZh": true,
+   "lines": [
+    "叛徒擊殺時有機會掉落戰利品，機率隨暴擊率提高。戰利品的價值也能爆擊，從而獲得更多戰利品。獲得1個姬亞娜。"
+   ],
+   "linesEn": [
+    "Renegade kills have a chance to drop loot, scaling with Critical Strike Chance. The value of the loot given can also critically strike, granting even more loot. Gain a Qiyana."
+   ]
+  },
+  "DA_19_SwiftstrikerCirclet": {
+   "name": "迅捷先鋒之環",
+   "nameEn": "Swiftstriker Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚迅捷先鋒徽章、1把反曲弓及1個巴德。"
+   ],
+   "linesEn": [
+    "Gain a Swiftstriker Emblem, a Recurve Bow, and a Bard."
+   ]
+  },
+  "DA_19_SwiftstrikerCrown": {
+   "name": "迅捷先鋒之冠",
+   "nameEn": "Swiftstriker Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚迅捷先鋒 徽章、1把海克斯科技槍刃及1個巴德。"
+   ],
+   "linesEn": [
+    "Gain a Swiftstriker Emblem, a Hextech Gunblade, and a Bard."
+   ]
+  },
+  "DA_Swiftstriker19_DeathByAThousandCuts": {
+   "name": "千刀萬剮",
+   "nameEn": "Death by a Thousand Cuts",
+   "nameOfficialZh": true,
+   "lines": [
+    "在迅捷先鋒攻擊達到250次與1000次後，獲得1個完整道具鐵砧及12金錢。獲得1個吉格斯及1個芸阿娜。"
+   ],
+   "linesEn": [
+    "After 250 and 1000 Swiftstriker attacks, gain a Completed Item Anvil and 12 Gold. Gain a Ziggs and a Yunara."
+   ]
+  },
+  "DA_19_TrueDamageCirclet": {
+   "name": "True Damage之環",
+   "nameEn": "True Damage Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚真實傷害 徽章、1個巨人腰帶及1個艾克。"
+   ],
+   "linesEn": [
+    "Gain a True Damage Emblem, a Giant's Belt, and an Ekko."
+   ]
+  },
+  "DA_19_TrueDamageCrown": {
+   "name": "True Damage之冠",
+   "nameEn": "True Damage Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚True Damage徽章、1把無盡之刃及1個姍娜。"
+   ],
+   "linesEn": [
+    "Gain a True Damage Emblem, an Infinity Edge, and a Senna."
+   ]
+  },
+  "DA_TrueDamage19_PainIntoPassion": {
+   "name": "化苦痛為熱情",
+   "nameEn": "Pain into Passion",
+   "nameOfficialZh": true,
+   "lines": [
+    "在A面，True Damage英雄每收集30個閃光，就會增加1% 攻速和10生命。在B面，輸掉戰鬥會獲得3金錢。",
+    "獲得3名True Damage英雄。"
+   ],
+   "linesEn": [
+    "On the A-Side, True Damage champions gain 1% Attack Speed and 10 Health for every 30 Bling collected. On the B-Side, gain 3 Gold after losing combat.",
+    "Gain 3 True Damage champions."
+   ]
+  },
+  "DA_19_TrueDamagePrismaticTour": {
+   "name": "True Damage 稜鏡巡演",
+   "nameEn": "True Damage Prismatic Tour",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得True Damage稜鏡任務、3名True Damage英雄、3個組件和2金錢。",
+    "在5名True Damage成員位於隊伍中時，達成正確的勝負順序！"
+   ],
+   "linesEn": [
+    "Gain the True Damage Prismatic Quest, 3 True Damage champions, 3 components, and 2 gold.",
+    "Hit the right sequence of wins and losses with 5 True Damage active!"
+   ]
+  },
+  "DA_Classical19_CombatAugment": {
+   "name": "劇場傳奇",
+   "nameEn": "Immortalized in Theater",
+   "nameOfficialZh": true,
+   "lines": [
+    "每次戰鬥中，前3名陣亡的友軍會變成雕像。雕像死亡時，會迷倒相鄰敵軍，持續4秒。獲得1個卡特蓮娜及1個睿娜妲．格萊斯克。"
+   ],
+   "linesEn": [
+    "The first 3 allies to die each combat become statues. When the statues die, they Captivate adjacent enemies for 4 seconds. Gain a Katarina and a Renata Glasc."
+   ]
+  },
+  "DA_19_VirtuososCirclet": {
+   "name": "古典樂之環",
+   "nameEn": "Classical Circlet",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚古典樂徽章、1把暴風之劍及1個燼。"
+   ],
+   "linesEn": [
+    "Gain a Classical Emblem, a Tear of the Goddess, and a 2-star Renata."
+   ]
+  },
+  "DA_19_VirtuososCrown": {
+   "name": "古典樂之冠",
+   "nameEn": "Classical Crown",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚古典樂徽章、1副振奮盔甲及1個納瑟斯。"
+   ],
+   "linesEn": [
+    "Gain a Classical Emblem, a Spirit Visage, and a Nasus."
+   ]
+  }
+ }
+}
