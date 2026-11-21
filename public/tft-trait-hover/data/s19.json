@@ -3,19 +3,19 @@
  "schemaVersion": 1,
  "set": 19,
  "catalog": 9,
- "dataVersion": 202611201221,
+ "dataVersion": 202611211451,
  "patch": "19.1-pbe",
- "generated": "2026-11-20T12:21:55+08:00",
+ "generated": "2026-11-21T14:51:03+08:00",
  "traits": {
   "DA_Akali_TrueDamage19_UniqueTrait": {
-   "name": "自由式",
+   "name": "自由發揮",
    "nameEn": "Freestyle",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
     "阿卡莉會在True Damage唱片的兩面分別獲得不同被動。A面可產生金錢。B面可回復玩家生命。"
    ],
    "linesEn": [
-    "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health."
+    "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores player health."
    ],
    "units": "阿卡莉",
    "unitsEn": "Akali",
@@ -42,7 +42,7 @@
     "目前：額外"
    ],
    "linesEn": [
-    "Combat Start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability.",
+    "Combat start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability.",
     "Current: Bonus"
    ],
    "units": "亞歷斯塔",
@@ -231,7 +231,7 @@
     "若他已造成60000傷害且你擁有全部5種樂器，馬爾札哈就會創作他的傑作，解鎖巴龍納什。"
    ],
    "linesEn": [
-    "Mystical Instruments can appear in your shop. There is one of each rarity.",
+    "Mystical Instruments can appear in your Shop. There is one of each rarity.",
     "For each one you have, your team gains 3% Ability Power. Malzahar gains double.",
     "If he has dealt 60000 damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor."
    ],
@@ -282,8 +282,8 @@
    "nameEn": "Mariachi",
    "nameOfficialZh": true,
    "lines": [
-    "當奈德麗的生命高於75%時施放技能，會變身為美洲獅形態並施放猛撲派對（非官方譯名）。否則會施放生命之舞（非官方譯名）。",
-    "每當她的生命降至50%以下，會躍離並變回人類形態。"
+    "奈德麗在生命高於75%時施放技能，會變身為美洲獅形態並施放「撲擊派對」。人類形態時，她會施放「生命之舞」。",
+    "生命低於50%時，她會跳開並變回人類形態。"
    ],
    "linesEn": [
     "When Nidalee casts her Ability while above 75% Health, she transforms into Cougar Form and casts Pounce Party. Otherwise, she casts Dance of Life.",
@@ -310,11 +310,11 @@
    "nameEn": "Disco",
    "nameOfficialZh": true,
    "lines": [
-    "我方隊伍每秒回復1%最大生命。",
+    "我方隊伍每秒回復0.8%最大生命。",
     "施放6次技能後進入迪斯可狂熱（非官方譯名），使我方隊伍獲得125%攻速。"
    ],
    "linesEn": [
-    "Your team heals for 1% max Health per second.",
+    "Your team heals for 0.8% max Health per second.",
     "Enter Disco Fever after casting 6 times, granting your team 125% Attack Speed."
    ],
    "units": "努努和威朗普",
@@ -338,10 +338,10 @@
    "nameEn": "Boy Band",
    "nameOfficialZh": true,
    "lines": [
-    "拉克尚有2個可放置的分身跟隨，分身擁有他50%的最大生命，造成30%傷害，並複製他的完整道具、聖光道具與徽章道具。"
+    "銳空會帶著2個可部署的分身，這些分身擁有他50%的最大生命、能造成他30%的傷害，並且複製他的完整、聖光和徽章道具。"
    ],
    "linesEn": [
-    "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his Completed, Radiant, and Emblem items."
+    "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his completed, Radiant, and Emblem items."
    ],
    "units": "銳空",
    "unitsEn": "Rakan",
@@ -364,11 +364,11 @@
    "nameEn": "Beat Master",
    "nameOfficialZh": true,
    "lines": [
-    "當生命降至50%最大生命時，銳爾會上馬，並在2秒內完全回復生命。",
+    "At 50% 生命，銳兒 會上馬及完全回復生命 在2秒內。",
     "上馬期間，她的最大魔力減少40，且每第3次攻擊會沿直線造成相當於她總護甲與魔抗500%的魔法傷害。"
    ],
    "linesEn": [
-    "At 50% max Health, Rell mounts up and fully heals over 2 seconds.",
+    "At 50% Health, Rell mounts up and fully heals over 2 seconds.",
     "While mounted, her max Mana is reduced by 40 and every 3rd attack deals //500% of her total Armor and Magic Resist as magic damage in a line."
    ],
    "units": "銳兒",
@@ -392,9 +392,9 @@
    "nameEn": "Indie",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥結束後，莎月會吸引新的追隨者，使你獲得一個隨機英雄。",
-    "當你將一名英雄升至3星時，她會成為閃耀新星，升級她的技能並給予你一份特殊獎勵。",
-    "將4名英雄升至3星後，她會成為超級巨星！"
+    "戰鬥結束後，瑟菈紛會吸引新粉絲，讓你獲得一名隨機英雄。",
+    "將一名英雄升至3星時，她會成為閃耀新星，技能也會升級，並提供特殊訂閱獎勵。",
+    "將4名英雄升至3星後，她將成為超級巨星！"
    ],
    "linesEn": [
     "After combat, Seraphine attracts new followers, granting you a random champion.",
@@ -422,9 +422,9 @@
    "nameEn": "Rising Star",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥結束後，莎月會吸引新的追隨者，使你獲得一個隨機英雄。",
-    "當你將一名英雄升至3星時，她會成為閃耀新星，升級她的技能並給予你一份特殊獎勵。",
-    "將4名英雄升至3星後，她會成為超級巨星！"
+    "戰鬥結束後，瑟菈紛會吸引新粉絲，讓你獲得一名隨機英雄。",
+    "將一名英雄升至3星時，她會成為閃耀新星，技能也會升級，並提供特殊訂閱獎勵。",
+    "將4名英雄升至3星後，她將成為超級巨星！"
    ],
    "linesEn": [
     "After combat, Seraphine attracts new followers, granting you a random champion.",
@@ -579,13 +579,13 @@
     "我方隊伍增加魔攻，奧術大師獲得更多加成。",
     "(2) 12% 魔攻，適用於奧術大師：25% 魔攻",
     "(4) 18% 魔攻，奧術大師則為50% 魔攻",
-    "(6) 30% 魔攻，奧術大師則為70% 魔攻"
+    "(6) 30% 魔攻，奧術大師則為75% 魔攻"
    ],
    "linesEn": [
     "Your team gains Ability Power, Arcanists gain more.",
     "(2) 12% AP, 25% AP for Arcanists",
     "(4) 18% AP, 50% AP for Arcanists",
-    "(6) 30% AP, 70% AP for Arcanists"
+    "(6) 30% AP, 75% AP for Arcanists"
    ],
    "units": "希格斯、柔依、安妮、卡爾瑟斯、斯溫、梅爾、弗拉迪米爾",
    "unitsEn": "Ziggs, Zoe, Annie, Karthus, Swain, Mel, Vladimir",
@@ -649,13 +649,13 @@
     "至少有一名保鑣存活時，我方隊伍獲得15雙防，保鑣獲得更多。",
     "(2) 22護甲/魔抗",
     "(4) 55護甲/魔抗",
-    "(6) 115護甲/魔抗"
+    "(6) 105護甲/魔抗"
    ],
    "linesEn": [
     "While at least one Bodyguard is alive, your team gains 15 Armor and Magic Resist. Bodyguards gain more.",
     "(2) 22 Armor/MR",
     "(4) 55 Armor/MR",
-    "(6) 115 Armor/MR"
+    "(6) 105 Armor/MR"
    ],
    "units": "凱能、莉莉亞、賈克斯、納瑟斯、卡桑帝、泰貝爾、雷歐娜",
    "unitsEn": "Kennen, Lillia, Jax, Nasus, K'Sante, Tibbers, Leona",
@@ -716,7 +716,7 @@
    "nameEn": "Choreographer",
    "nameOfficialZh": true,
    "lines": [
-    "開場位於前2排的我方英雄獲得護盾。其餘我方英雄獲得傷害增幅。編舞者獲得的效果加倍。",
+    "開局時位於前2排的友軍獲得護盾，其他所有友軍獲得傷害增幅。編舞者獲得雙倍增益。",
     "(2) 150護盾，6% 增傷",
     "(3) 225護盾，10% 增傷",
     "(4) 375護盾，15% 增傷",
@@ -836,13 +836,13 @@
     "(3) 召喚煉獄偶像。",
     "(4) 他會依搖滾樂英雄造成傷害的10%回復生命。",
     "(5) 施放技能時，他會對穿過最多敵軍的路徑發射一道強力爆破！",
-    "(7) 每存活3秒，2道閃電會轟擊鄰近敵軍，重複由搖滾樂英雄造成傷害15%的魔法傷害。"
+    "(7) 每存活3秒，2道閃電會轟擊鄰近敵軍，重複由搖滾樂英雄造成傷害18%的魔法傷害。"
    ],
    "linesEn": [
     "(3) Summon the Infernal Idol.",
     "(4) He heals for 10% of damage dealt by Rock champions.",
     "(5) On cast, he fires a massive blast through the most enemies!",
-    "(7) Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 15% of damage dealt by Rock champions as magic damage."
+    "(7) Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 18% of damage dealt by Rock champions as magic damage."
    ],
    "units": "歐拉夫、法洛士、卡蜜兒、斯溫、洛克、汎、派克",
    "unitsEn": "Olaf, Varus, Camille, Swain, Locke, Vayne, Pyke",
@@ -943,7 +943,7 @@
     "(4) 50%效果"
    ],
    "linesEn": [
-    "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+    "When Encore champions fire projectiles with their Abilities, they fire an extra one with reduced effectiveness.",
     "(2) 25% effectiveness",
     "(4) 50% effectiveness"
    ],
@@ -1090,17 +1090,17 @@
     "超流行英雄成員會獲得生命和攻速。在玩家戰鬥後，英雄會根據自身星等產生4/6/12/40點熱潮，每此參與擊殺可額外產生1點熱潮。",
     "每當熱潮達到新的等級，還能獲得特殊獎勵！特性等級越高，可獲得更多熱潮！",
     "(2) 100生命，10% 攻速",
-    "(3) 200生命、15% 攻速、1.5x熱潮",
-    "(4) 300生命、25% 攻速、3x熱潮",
-    "(5) 500生命、40% 攻速、3.5x熱潮"
+    "(3) 150生命、15% 攻速、1.5x熱潮",
+    "(4) 200生命、20% 攻速、2.5x熱潮",
+    "(5) 350生命、33% 攻速、3x熱潮"
    ],
    "linesEn": [
     "Hyperpop champions gain Health and Attack Speed. After player combat, they generate 3/6/12/40 Hype based on their star level + 1 Hype per takedown.",
     "Each time you hit a new Hype Level, gain special rewards! At higher trait tiers, gain more Hype!",
     "(2) 100 Health, 10% AS",
-    "(3) 200 Health, 15% AS, 1.5x Hype",
-    "(4) 300 Health, 25% AS, 3x Hype",
-    "(5) 500 Health, 40% AS, 3.5x Hype"
+    "(3) 150 Health, 15% AS, 1.5x Hype",
+    "(4) 200 Health, 20% AS, 2.5x Hype",
+    "(5) 350 Health, 33% AS, 3x Hype"
    ],
    "units": "柯布柯、希格斯、露璐、崔絲塔娜、提摩",
    "unitsEn": "Kobuko, Ziggs, Lulu, Tristana, Teemo",
@@ -1158,14 +1158,14 @@
     "(1) 心鋼之聲成員會為我方隊伍提供加成。",
     "(3) 選擇一個偏好，強化其技能。",
     "(5) 選擇第二個偏好。",
-    "(7) 心鋼之聲英雄會額外獲得150%的心鋼之聲獎勵效果。",
+    "(7) 心鋼之聲英雄會額外獲得120%的心鋼之聲獎勵效果。",
     "稜鏡：坐好了，心鋼之聲回來了！"
    ],
    "linesEn": [
     "(1) Heartsteel members grant your team bonuses.",
     "(3) Choose a Bias, empowering their Ability.",
     "(5) Choose a 2nd Bias.",
-    "(7) Heartsteel champions gain an additional 150% of active Heartsteel bonuses.",
+    "(7) Heartsteel champions gain an additional 120% of active Heartsteel bonuses.",
     "Prismatic: Buckle up—HEARTSTEEL IS BACK!"
    ],
    "units": "慨影、賽特、伊澤瑞爾、卡桑帝、亞盧妮、犽凝、亞菲利歐、索娜",
@@ -1297,12 +1297,12 @@
    "lines": [
     "金曲製造機獲得12% 物攻。裝備最多道具的金曲製造機會成為大人物，獲得更多物攻。",
     "(2) 1狂暴一擊，20% 物攻",
-    "(4) 2狂暴一擊，35% 物攻"
+    "(4) 2個大人物，40% 物攻"
    ],
    "linesEn": [
     "Hitmakers gain 12% Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
     "(2) 1 Big Shot, 20% AD",
-    "(4) 2 Big Shots, 35% AD"
+    "(4) 2 Big Shots, 40% AD"
    ],
    "units": "路西恩、崔絲塔娜、姍娜、吉茵珂絲、剎雅、好運姐",
    "unitsEn": "Lucian, Tristana, Senna, Jinx, Xayah, Miss Fortune",
@@ -1356,14 +1356,14 @@
    "lines": [
     "開啟Illbeats混音器來分配分貝。Illbeats英雄會根據你的混音獲得不同能力值。我方隊伍獲得50%的混音效果。",
     "(2) 10分貝",
-    "(3) 14分貝",
-    "(4) 18分貝。混音效果增為1.5倍。"
+    "(3) 15分貝",
+    "(4) 18分貝。混音效果增為1.65倍。"
    ],
    "linesEn": [
     "Open the Illbeats Mixer to allocate Decibels. Illbeats champions receive different stats based on your mix. Your team gains 50% of the mix.",
     "(2) 10 Decibels",
-    "(3) 14 Decibels",
-    "(4) 18 Decibels. The mix is 1.5 stronger."
+    "(3) 15 Decibels",
+    "(4) 18 Decibels. The mix is 1.65 stronger."
    ],
    "units": "伊羅旖、布郎姆、達瑞文、悠咪",
    "unitsEn": "Illaoi, Braum, Draven, Yuumi",
@@ -1411,15 +1411,15 @@
    "lines": [
     "粉絲每4秒會贈送禮物為離子星火成員應援。離子星火成員獲得生命。",
     "(3) 100生命，能恢復2% 生命並賦予7% 攻速的信件",
-    "(5) 250生命，可賦予25% 物攻或25% 魔攻的個人化禮物",
-    "(7) 550生命，每2場玩家戰鬥，獲得金錢及消耗品！",
+    "(5) 225生命，可賦予22% 物攻或22% 魔攻的個人化禮物",
+    "(7) 450生命，每2場玩家戰鬥，獲得金錢和1件消耗品！",
     "(10) 粉絲衝上舞台！"
    ],
    "linesEn": [
     "Fans cheer on Ionic Spark members with gifts every 4 seconds. Ionic Spark members gain Health.",
     "(3) 100 Health; Letters that restore 2% Health and grant 7% AS",
-    "(5) 250 Health; Personalized gifts that grant 25% AD or 25% AP",
-    "(7) 550 Health; Every 2 player combats, gain gold and a consumable!",
+    "(5) 225 Health; Personalized gifts that grant 22% AD or 22% AP",
+    "(7) 450 Health; Every 2 player combats, gain gold and a consumable!",
     "(10) Fans rush the stage!"
    ],
    "units": "伊莉絲、尤娜拉、安妮、拉克絲、布蕾爾、泰貝爾、歐羅拉、吉茵珂絲、希瓦娜、關、索娜",
@@ -1561,15 +1561,15 @@
    "nameOfficialZh": true,
    "lines": [
     "重裝戰士會獲得續戰力，並依已損失的生命提高。",
-    "(2) 15% 續戰力至25% 續戰力",
-    "(4) 25% 續戰力至35% 續戰力",
-    "(6) 35% 續戰力至45% 續戰力"
+    "(2) 18% 續戰力至25% 續戰力",
+    "(4) 28% 續戰力至35% 續戰力",
+    "(6) 35% 續戰力至48% 續戰力"
    ],
    "linesEn": [
     "Juggernauts gain Durability, increasing based on their missing Health.",
-    "(2) 15% Durability to 25% Durability",
-    "(4) 25% Durability to 35% Durability",
-    "(6) 35% Durability to 45% Durability"
+    "(2) 18% Durability to 25% Durability",
+    "(4) 28% Durability to 35% Durability",
+    "(6) 35% Durability to 48% Durability"
    ],
    "units": "歐拉夫、塔里克、安妮、古拉格斯、布郎姆、艾克、約瑞科、札克、菲艾",
    "unitsEn": "Olaf, Taric, Annie, Gragas, Braum, Ekko, Yorick, Zac, Vi",
@@ -1643,20 +1643,20 @@
     "K/DA英雄會根據其總星等發表新歌曲。戰鬥開始時以及8秒後，他們會從自身的每首歌曲獲得力量。",
     "(3星) 〈POP/STARS〉：最大魔力減少10%。",
     "(5星) DRUM GO DUM：12% 生命護盾 持續8秒。",
-    "(7星) 惡棍：60% 攻速 ，會在8秒內逐漸衰減。",
+    "(7星) 惡棍：45% 攻速 ，會在8秒內逐漸衰減。",
     "(10星) 〈I'LL SHOW YOU〉：先前所有效果提升1.25。",
-    "(13星) 看我厲害：暈眩所有敵軍1.25秒。",
-    "(15星) FIRESTARTER：敵軍會在8秒內受到相當於16%最大生命的魔法傷害。",
+    "(13星) 看我厲害：暈眩所有敵軍1秒。",
+    "(15星) FIRESTARTER：敵軍會在8秒內受到相當於12%最大生命的魔法傷害。",
     "(21星) 各位：K/DA成員升至4星。"
    ],
    "linesEn": [
-    "K/DA champions release new songs based on their total star level. At Combat Start and after 8 seconds, they gain power for each of their songs.",
-    "(3 Star ) POP/STARS: 10% reduced max Mana.",
+    "K/DA champions release new songs based on their total star level. At combat start and after 8 seconds, they gain power for each of their songs.",
+    "(3 Star ) POP/STARS: Abilities cost 10% less Mana.",
     "(5 Star ) DRUM GO DUM: 12% Health Shield for 8 seconds.",
-    "(7 Star ) VILLAIN: 60% AS that decays over 8 seconds.",
+    "(7 Star ) VILLAIN: 45% AS that decays over 8 seconds.",
     "(10 Star ) I'LL SHOW YOU: Boost all previous effects by 1.25.",
-    "(13 Star ) WATCH ME: Stun all enemies for 1.25 seconds.",
-    "(15 Star ) FIRESTARTER: Enemies take 16% max Health magic damage over 8 seconds.",
+    "(13 Star ) WATCH ME: Stun all enemies for 1 second.",
+    "(15 Star ) FIRESTARTER: Enemies take 12% max Health magic damage over 8 seconds.",
     "(21 Star ) GIRLS: K/DA members ascend to 4-star."
    ],
    "units": "莉莉亞、妮可、古拉格斯、伊芙琳、凱莎、阿璃、雷歐娜、阿卡莉、索娜",
@@ -1750,7 +1750,7 @@
     "(4) 且會掉落1金錢！"
    ],
    "linesEn": [
-    "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and every 5 seconds.",
+    "Gain a spotlight hex. The ally standing in it gains bonuses at combat start and every 5 seconds.",
     "(2) 6% AD/AP",
     "(3) AND 8 Mana",
     "(4) AND they drop 1 Gold!"
@@ -1942,7 +1942,7 @@
    "lines": [
     "殺五社成員獲得物攻與魔攻。",
     "前幾名生命降至10%以下的敵軍會遭到處決，並在原地召喚一個友方屍鬼。",
-    "(3) 15% 物攻 魔攻，2名敵軍",
+    "(3) 15% 物攻 魔攻 ，2名敵軍",
     "(5) 30% 物攻 魔攻 ，3名敵軍。",
     "(7) 35% 物攻 魔攻 ，4名敵軍。第一個死亡的敵軍改為召喚鐵娘子。",
     "(7) 35%，物攻 魔攻 搖滾區！！！！！！！"
@@ -2026,15 +2026,15 @@
     "我方隊伍獲得1魔力回復。不世之才獲得更多。",
     "(2) 2魔力回復",
     "(3) 3魔力回復",
-    "(4) 6魔力回復",
-    "(5) 7魔力回復，生命最低的友軍會回復相當於「不世之才」技能傷害12%的生命。"
+    "(4) 5魔力回復",
+    "(5) 6魔力回復，生命最低的友軍會回復相當於「不世之才」技能傷害10%的生命。"
    ],
    "linesEn": [
     "Your team gains 1 Mana Regen. Prodigies gain more.",
     "(2) 2 Mana Regen",
     "(3) 3 Mana Regen",
-    "(4) 6 Mana Regen",
-    "(5) 7 Mana Regen; The lowest Health ally heals for 12% of damage dealt by Prodigies' abilties."
+    "(4) 5 Mana Regen",
+    "(5) 6 Mana Regen; The lowest Health ally heals for 10% of damage dealt by Prodigies' abilties."
    ],
    "units": "妮可、拉克絲、艾克、馬爾札哈、亞盧妮、珍娜",
    "unitsEn": "Neeko, Lux, Ekko, Malzahar, Alune, Janna",
@@ -2169,7 +2169,7 @@
     "(2) 我方最強大的梅爾與銳兒會進行靈魂連結。梅爾所受到70%的傷害會轉移給銳兒。銳兒會回復相當於梅爾所造成傷害20%的生命。"
    ],
    "linesEn": [
-    "(1) Your team takes 6% less damage from abilities.",
+    "(1) Your team takes 6% less damage from Abilities.",
     "(2) Your strongest Mel and Rell are soul-linked. 70% of damage Mel takes is redirected to Rell. Rell heals for 20% of damage dealt by Mel."
    ],
    "units": "梅爾、銳兒",
@@ -2285,10 +2285,10 @@
    "nameEn": "Trickshot",
    "nameOfficialZh": true,
    "lines": [
-    "炫技射手的攻擊與技能會彈射。每次彈射造成前一次彈射傷害的一部分。",
+    "炫技射手的普攻和技能可彈射。每次彈射會造成相當於上次彈射一定比例的傷害。",
     "(2) 彈射1次，為前一次傷害的22%",
     "(3) 1反彈，造成前一次傷害的33%",
-    "(4) 彈射2次，為前一次傷害的33%"
+    "(4) 2次反彈，造成前一次傷害的33%"
    ],
    "linesEn": [
     "Trickshots' attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
@@ -2352,11 +2352,11 @@
    "lines": [
     "在A區時，贏得玩家戰鬥可獲得閃光。在B面，輸了也能獲得閃光。每4回合，你可以選擇將閃光兌換成獎勵，或是繼續累積。",
     "A面：獲勝",
-    "(3) True Damage成員造成額外18%真實傷害。擊殺時獲得2閃光，戰鬥獲勝時可再獲得10閃光。",
+    "(3) True Damage成員造成額外18%真實傷害。擊殺時獲得2閃光，戰鬥獲勝時可再獲得15閃光。",
     "B面：落敗",
     "(3) 落敗後獲得14閃光，且B面每次連敗額外獲得6閃光。若獲勝，則失去50%閃光。",
-    "(5) 30%真實傷害。擊殺時獲得4閃光，戰鬥獲勝可再獲得18閃光。",
-    "(5) 67%真實傷害。擊殺時獲得10閃光 + 戰鬥獲勝再獲得20閃光。",
+    "(5) 30%真實傷害。擊殺時獲得4閃光，戰鬥獲勝可再獲得20閃光。",
+    "(5) 67%真實傷害。擊殺時獲得10閃光 + 戰鬥獲勝再獲得30閃光。",
     "稜鏡：唱片機中正播放著〈KNOW MY NAME〉！",
     "True Damage成員造成99%額外真實傷害，並獲得雙倍閃光。",
     "(5) 每回合的戰鬥結束後，回復2玩家生命並獲得2經驗值。",
@@ -2367,11 +2367,11 @@
     "While on the A-Side, earn Bling for winning player combat. On the B-Side, earn Bling for losing.",
     "Every 4 rounds, choose to convert Bling into rewards or Keep Rising.",
     "A-Side: Win",
-    "3) True Damage members deal 18% bonus true damage. Gain 2 Bling on kill + 10 if you win combat.",
+    "3) True Damage members deal 18% bonus true damage. Gain 2 Bling on kill + 15 if you win combat.",
     "B-Side: Lose",
     "3) After losing, gain 14 Bling + 6 per consecutive loss on the B-Side. If you win, lose 50% of your Bling.",
-    "5) 30% true damage. 4 Bling on kill + 18 if you win combat.",
-    "5) 67% true damage. 10 Bling on kill + 20 if you win combat.",
+    "5) 30% true damage. 4 Bling on kill + 20 if you win combat.",
+    "5) 67% true damage. 10 Bling on kill + 30 if you win combat.",
     "Prismatic: KNOW MY NAME blasts from the record player!",
     "True Damage members deal 99% bonus true damage and earn double the bling.",
     "5) Each round after combat, heal 2 player Health and gain 2 XP.",
@@ -2450,15 +2450,15 @@
    "nameOfficialZh": true,
    "lines": [
     "古典樂英雄會以獨特的方式魅惑敵軍。他們獲得傷害增幅，敵軍處於被魅惑狀態每6秒再增加1%。",
-    "(2) 8% 增傷，被魅惑的單位造成的10% 傷害降低。",
-    "(4) 18% 增傷，被迷倒的敵軍死亡時會拋出玫瑰，為古典樂英雄回復10% 生命",
-    "(6) 33% 增傷，被迷倒的敵軍死亡時有15%機率加入我方備戰區。"
+    "(2) 8% 增傷，被迷倒的敵軍造成的傷害降低10% 。",
+    "(4) 20% 增傷，被迷倒的敵軍死亡時會拋出玫瑰，為古典樂英雄回復10% 生命",
+    "(6) 35% 增傷，被迷倒的敵軍死亡時有15%機率加入我方備戰區。"
    ],
    "linesEn": [
     "Classical champions Captivate enemies in unique ways. They gain Damage Amp, increased by 1% every 6 seconds an enemy is Captivated.",
     "(2) 8% Damage Amp; the Captivated deal 10% reduced damage.",
-    "(4) 18% Damage Amp; the Captivated throw roses on death, healing a Classical champion for 10% Health",
-    "(6) 33% Damage Amp; the Captivated have a 15% chance to join your bench on death."
+    "(4) 20% Damage Amp; the Captivated throw roses on death, healing a Classical champion for 10% Health",
+    "(6) 35% Damage Amp; the Captivated have a 15% chance to join your bench on death."
    ],
    "units": "卡特蓮娜、納瑟斯、睿娜妲．格萊斯克、煞蜜拉、燼、瑟雷西、弗拉迪米爾",
    "unitsEn": "Katarina, Nasus, Renata Glasc, Samira, Jhin, Thresh, Vladimir",
@@ -2585,9 +2585,9 @@
    ]
   },
   "DA_ArmedAndGenerous": {
-   "name": "武裝又大方",
+   "name": "全副武裝慷慨大方",
    "nameEn": "Armed and Generous",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
     "獲得1把海克斯科技槍刃。你的槍刃對友軍的治療效果現在會以75%的效果額外作用於第二個目標。"
    ],
@@ -2655,7 +2655,7 @@
    "nameEn": "Battle of the Bands",
    "nameOfficialZh": false,
    "lines": [
-    "若你有2個或以上已啟動的樂團，我方隊伍增加18%物攻和魔攻。"
+    "如果你有2個或更多啟動中的樂團，我方隊伍獲得18% 物攻和魔攻。"
    ],
    "linesEn": [
     "If you have 2 or more active Bands, your team gains 18% Attack Damage and Ability Power."
@@ -2873,8 +2873,8 @@
    ]
   },
   "DA_BundleOShrooms": {
-   "name": "蘑菇大禮包",
-   "nameEn": "Bundle o' Shrooms",
+   "name": "蘑菇大禮包II",
+   "nameEn": "Bundle o' Shrooms II",
    "nameOfficialZh": true,
    "lines": [
     "獲得6朵蘑菇，每朵蘑菇提供1次重抽、2經驗值，或3聯盟棋手生命。",
@@ -2882,7 +2882,7 @@
    ],
    "linesEn": [
     "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health.",
-    "Mushrooms have a small chance to be HUGE and grant double loot"
+    "Mushrooms have a small chance to be HUGE and grant double loot."
    ]
   },
   "DA_BundleOShroomsSilver": {
@@ -2895,7 +2895,7 @@
    ],
    "linesEn": [
     "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health.",
-    "Mushrooms have a small chance to be HUGE and grant double loot"
+    "Mushrooms have a small chance to be HUGE and grant double loot."
    ]
   },
   "DA_CalculatedLoss": {
@@ -3161,7 +3161,7 @@
    ],
    "linesEn": [
     "After each player combat, gain a copy of a random champion on your board.",
-    "If you have fewer than 3 unique champions, you may instead instead gain gold"
+    "If you have fewer than 3 unique champions, you may instead gain gold."
    ]
   },
   "DA_ClutteredMind": {
@@ -3257,10 +3257,10 @@
    "nameEn": "Counting Stars",
    "nameOfficialZh": true,
    "lines": [
-    "獲得5金錢。每次將1名英雄升至3星，即可根據擁有的3星英雄數量獲得金錢，每有1名獲得5金錢。"
+    "獲得8金錢。每次將1名英雄升至3星，即可根據擁有的3星英雄數量獲得金錢，每有1名獲得4金錢。"
    ],
    "linesEn": [
-    "Gain 5 gold. Each time you 3-star a champion, gain 5 gold for each 3-star you have."
+    "Gain 8 gold. Each time you 3-star a champion, gain 4 gold for each 3-star you have."
    ]
   },
   "DA_CritQuintessence": {
@@ -3541,7 +3541,7 @@
    ]
   },
   "DA_FighterFlight": {
-   "name": "或戰或跑II",
+   "name": "或戰或跑",
    "nameEn": "Fighter Flight",
    "nameOfficialZh": true,
    "lines": [
@@ -4001,7 +4001,7 @@
   "DA_MadScience": {
    "name": "瘋狂科學",
    "nameEn": "Mad Science",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
     "每個友軍會隨機變大或變小。",
     "巨大單位獲得1.12最大生命與20% 物攻和魔攻。迷你單位獲得0.89續戰力與1.2攻速"
@@ -4181,7 +4181,7 @@
    "nameEn": "Piñata",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1個帶有3件巨人腰帶的訓練假人。你的訓練假人每受到700傷害就掉落1金錢。"
+    "獲得1個裝備3條巨人腰帶的訓練假人。我方訓練假人每受到700點傷害，掉落1金錢。"
    ],
    "linesEn": [
     "Gain a Training Dummy with 3 Giant's Belts. Your training dummies drop 1 gold for every 700 damage they take."
@@ -4238,7 +4238,7 @@
    "nameEn": "Pyramid Scheme, Level 3",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥開始時：若你的對手還沒加入金字塔計畫，從對方竊取2金錢，並給對方這個海克斯的較弱複製。"
+    "戰鬥開始：如果對手尚未加入金字塔計畫，就從對手身上偷取2金錢，並給予對手此增幅裝置的弱化版本。"
    ],
    "linesEn": [
     "Combat start: If your opponent isn't already in the Pyramid Scheme, steal 2 gold from them and give them a weaker copy of this augment."
@@ -4329,7 +4329,7 @@
     "獲得總價值10金錢且擁有相同特性的單位。"
    ],
    "linesEn": [
-    "Gain 10g of champions that all share a trait."
+    "Gain 10 gold of champions that all share a trait."
    ]
   },
   "DA_ReunionShowII": {
@@ -4337,10 +4337,10 @@
    "nameEn": "Reunion Show II",
    "nameOfficialZh": true,
    "lines": [
-    "獲得價值16金錢、都擁有同一個羈絆的英雄。"
+    "獲得16金錢of英雄that都擁有同一個羈絆。"
    ],
    "linesEn": [
-    "Gain 16g of champions that all share a trait."
+    "Gain 16 gold of champions that all share a trait."
    ]
   },
   "DA_RollingForDays": {
@@ -4414,10 +4414,10 @@
    "nameEn": "Soul Awakening",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥開始：我方隊伍每秒增加1.5% 物攻和魔攻，持續10秒。滿層時會造成12%額外真實傷害。"
+    "戰鬥開始：我方隊伍每秒增加1.5% 物攻和魔攻，持續10秒。滿層時會造成10%額外真實傷害。"
    ],
    "linesEn": [
-    "Combat start: Your team gains 1.5% Attack Damage and Ability Power per second for 10 seconds. At max stacks, deal 12% bonus true damage."
+    "Combat start: Your team gains 1.5% Attack Damage and Ability Power per second for 10 seconds. At max stacks, deal 10% bonus true damage."
    ]
   },
   "DA_StandUnited": {
@@ -4428,7 +4428,7 @@
     "隊伍中每有一項啟動中的非唯一特性，我方單位便增加1.5% 物攻和1.5% 魔攻。"
    ],
    "linesEn": [
-    "Your units gain 1.5% Attack Damage and 1.5% Ability Power for each non-unique Trait active across your team."
+    "Your team gains 1.5% Attack Damage and 1.5% Ability Power for each active non-unique trait."
    ]
   },
   "DA_StarOfTheShow": {
@@ -4458,7 +4458,7 @@
    "nameEn": "Stats On Stats II",
    "nameOfficialZh": true,
    "lines": [
-    "立即，並且 之後每5回合，獲得4能力值強化消耗品。"
+    "現在和每經過5回合後，獲得4個提升能力值的消耗品。"
    ],
    "linesEn": [
     "Now and after every 5 rounds, gain 4 stat boosting consumables."
@@ -4524,10 +4524,10 @@
    "nameEn": "Randuin's Omen",
    "nameOfficialZh": true,
    "lines": [
-    "獲得蘭頓之兆，這個道具會賦予裝備者以及1格內的友軍30雙防。"
+    "獲得蘭頓之兆，這個道具會賦予裝備者以及1格內的友軍33雙防。"
    ],
    "linesEn": [
-    "Gain a Randuin's Omen, an item which grants 30 Armor and Magic Resist to the holder and allies within 1 hex."
+    "Gain a Randuin's Omen, an item which grants 33 Armor and Magic Resist to the holder and allies within 1 hex."
    ]
   },
   "DA_ZekesHeraldAugment": {
@@ -4535,10 +4535,10 @@
    "nameEn": "Zeke's Herald",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1支錫柯的號角，此道具會賦予裝備者和同一排2格內的友軍1.3攻速。"
+    "獲得1支錫柯的號角，此道具會賦予裝備者和同一排2格內的友軍1.33攻速。"
    ],
    "linesEn": [
-    "Gain a Zeke's Herald, an item which grants 1.3 Attack Speed to the holder and allies within 2 hexes in the same row."
+    "Gain a Zeke's Herald, an item which grants 1.33 Attack Speed to the holder and allies within 2 hexes in the same row."
    ]
   },
   "DA_ZZRotAugment": {
@@ -4579,10 +4579,10 @@
    "nameEn": "The Drop II",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥進行12秒後，我方隊伍回復30%最大生命，敵軍則受到12%最大生命真實傷害。"
+    "戰鬥進行12秒後，我方隊伍回復24%最大生命，敵軍則受到12%最大生命真實傷害。"
    ],
    "linesEn": [
-    "After 12 seconds of combat, your team heals 30% max Health and enemies take 12% max Health true damage."
+    "After 12 seconds of combat, your team heals 24% max Health and enemies take 12% max Health true damage."
    ]
   },
   "DA_TheDrop": {
@@ -4590,10 +4590,10 @@
    "nameEn": "The Drop",
    "nameOfficialZh": true,
    "lines": [
-    "戰鬥開始12秒後，我方隊伍回復20%最大生命，且敵軍受到8%最大生命的真實傷害。"
+    "戰鬥開始12秒後，我方隊伍回復18%最大生命，且敵軍受到8%最大生命的真實傷害。"
    ],
    "linesEn": [
-    "After 12 seconds of combat, your team heals 20% max Health and enemies take 8% max Health true damage."
+    "After 12 seconds of combat, your team heals 18% max Health and enemies take 8% max Health true damage."
    ]
   },
   "DA_ThreeStepsAhead": {
@@ -4735,10 +4735,10 @@
    "nameEn": "World Tour",
    "nameOfficialZh": false,
    "lines": [
-    "每6場玩家戰鬥後，獲得一個完整道具鐵砧。"
+    "每7場玩家戰鬥後，獲得一個完整道具鐵砧。"
    ],
    "linesEn": [
-    "After every 6 player combats, gain a completed item anvil."
+    "After every 7 player combats, gain a completed item anvil."
    ]
   },
   "DA_WorththeWait": {
@@ -5128,7 +5128,7 @@
    "nameEn": "The Golden Egg",
    "nameOfficialZh": true,
    "lines": [
-    "獲得一顆金蛋，在11回合後孵化出大量戰利品。贏得玩家戰鬥可使孵化速度額外加快1回合。"
+    "獲得一顆黃金蛋，11回合後孵化出大量戰利品。贏得玩家戰鬥可使孵化速度加快1回合。"
    ],
    "linesEn": [
     "Gain a golden egg that hatches in 11 rounds for a huge amount of loot. Winning player combat speeds up the hatch timer by an extra round."
@@ -5823,7 +5823,7 @@
    "nameEn": "U.R.F",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1個鍋鏟。裝備鍋鏟或平底鍋道具的英雄增加20% 攻速和3魔力回復。"
+    "獲得1把鍋鏟。鍋鏟和平底鍋道具增加20% 攻速和3魔力回復。"
    ],
    "linesEn": [
     "Gain a Spatula. Spatula and Frying Pan items gain 20% Attack Speed and 3 Mana Regen."
@@ -5916,7 +5916,7 @@
     "獲得1個凱能。我方最強大的凱能變成魔法刺客，每次擊殺都會使其技能永久增加真實傷害。"
    ],
    "linesEn": [
-    "Gain a Kennen. Your strongest Kennen becomes a Magic Assassin who permanently adds True Damage to his spell on kills."
+    "Gain a Kennen. Your strongest Kennen becomes a Magic Assassin who permanently adds True Damage to his Ability on kills."
    ]
   },
   "DA_Lillia19_HeroAugment": {
@@ -5953,9 +5953,9 @@
    ]
   },
   "DA_Sett19_HeroAugment": {
-   "name": "笑點出擊",
+   "name": "關鍵句",
    "nameEn": "Punch Line",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
     "獲得1個賽特。我方最強大的賽特變成物攻鬥士，能夠揮舞重拳處決敵軍，並將其擊飛。"
    ],
@@ -5979,7 +5979,7 @@
    "nameEn": "Arcanist Crown",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚奧術大師 徽章、1個寶石手套及1個斯溫。"
+    "獲得1枚奧術大師徽章、1副寶石手套及1個斯溫。"
    ],
    "linesEn": [
     "Gain an Arcanist Emblem, a Jeweled Gauntlet, and a Swain."
@@ -5990,7 +5990,7 @@
    "nameEn": "Choreographer Circlet",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚編舞者 徽章、1個巨人腰帶及1個蓋倫。"
+    "獲得1枚編舞者徽章、1條巨人腰帶及1個蓋倫。"
    ],
    "linesEn": [
     "Gain a Choreographer Emblem, a Giant's Belt, and a Garen."
@@ -6008,11 +6008,11 @@
    ]
   },
   "DA_Choreographer19_DanceParty": {
-   "name": "熱舞派對",
+   "name": "舞蹈派對",
    "nameEn": "Dance Party",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
-    "當你贏得戰鬥時，每名存活的英雄有5%機率掉落1金錢。你每出戰一名編舞者，機率再增加15%。獲得2個編舞者。"
+    "當你贏得戰鬥時，每位存活的英雄都有5%機率掉落1金錢。每有一名編舞者在場，機率就會提升15%。獲得2名編舞者。"
    ],
    "linesEn": [
     "When you win combat, each surviving champion has a 5% chance to drop 1 gold. The chance increases by 15% for each Choreographer you're fielding. Gain 2 Choreographers."
@@ -6056,7 +6056,7 @@
    "nameEn": "Rock All Nite",
    "nameOfficialZh": true,
    "lines": [
-    "搖滾樂英雄增加10%物攻和魔攻。煉獄偶像每存活2秒，他們再獲得1%。獲得3個搖滾樂英雄。"
+    "搖滾英雄增加10% 物攻和魔攻。煉獄偶像每存活2秒，再增加1%。獲得3名搖滾樂英雄。"
    ],
    "linesEn": [
     "Rock champions gain 10% Attack Damage and Ability Power. Every 2 seconds the Infernal Idol lives, they gain 1% more. Gain 3 Rock champions."
@@ -6124,8 +6124,8 @@
    "nameEn": "Heartsteel Prismatic Tour+",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1個心鋼之聲 稜鏡任務、3個心鋼之聲 英雄、3個組件及2金錢。",
-    "讓心鋼之聲我方英雄在7個心鋼之聲啟動時造成傷害、抵擋傷害並回復生命！"
+    "獲得心鋼之聲稜鏡任務、3名心鋼之聲英雄、3個組件及2金錢。",
+    "啟動(7)心鋼之聲時，使用心鋼之聲友軍造成傷害、格擋傷害和回復生命！"
    ],
    "linesEn": [
     "Gain the Heartsteel Prismatic Quest, 3 Heartsteel champions, 3 components, and 2 gold.",
@@ -6133,9 +6133,9 @@
    ]
   },
   "DA_Augment19_Heartsteel_SmallSquad": {
-   "name": "小隊",
+   "name": "小分隊",
    "nameEn": "Small Squad",
-   "nameOfficialZh": false,
+   "nameOfficialZh": true,
    "lines": [
     "當你場上有3名或更少的心鋼之聲英雄時，其加成會提升100%。獲得2名心鋼之聲英雄。"
    ],
@@ -6195,7 +6195,7 @@
     "獲得1枚Illbeats徽章、1個石像鬼磐核及1個布郎姆。"
    ],
    "linesEn": [
-    "Gain an Illbeats Emblem, a Gargoyle Stoneplate, and a Braum."
+    "Gain an Illbeats Emblem, a Spear of Shojin, and a Draven."
    ]
   },
   "DA_19_IonicSparkCirclet": {
@@ -6217,7 +6217,7 @@
     "獲得1枚離子星火徽章、1個離子星火及1個安妮。"
    ],
    "linesEn": [
-    "Gain an Ionic Spark Emblem, an Ionic Spark, and an Annie."
+    "Gain an Ionic Spark Emblem, a Negatron Cloak, and an Elise."
    ]
   },
   "DA_IonicSpark19_ForeverBurningBrighter": {
@@ -6273,7 +6273,7 @@
    "nameEn": "Our Hearts Aligned",
    "nameOfficialZh": true,
    "lines": [
-    "每當 離子星火 英雄 合計消耗600魔力，他們都會獲得10% 最大生命 護盾 持續6秒. 獲得3離子星火 英雄。"
+    "每當離子星火英雄總共消耗600魔力時，他們會獲得一個10%最大生命的護盾，持續6秒。獲得3名離子星火英雄。"
    ],
    "linesEn": [
     "Every time Ionic Spark champions collectively spend 600 Mana, they all gain a 10% max Health Shield for 6 seconds. Gain 3 Ionic Spark champions."
@@ -6284,7 +6284,7 @@
    "nameEn": "Jazz Circlet",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚爵士樂 徽章、1把反曲弓及1個巴德。"
+    "獲得1枚爵士樂徽章、1把反曲弓及1個巴德。"
    ],
    "linesEn": [
     "Gain a Jazz Emblem, a Recurve Bow, and a Bard."
@@ -6298,7 +6298,7 @@
     "獲得1枚爵士樂徽章、1把精進之矛及1個路西恩。"
    ],
    "linesEn": [
-    "Gain a Jazz Emblem, a Spear of Shojin, and a Lucian."
+    "Gain a Jazz Emblem, a Spirit Visage, and a Galio."
    ]
   },
   "DA_Jazz19_DigOnThis": {
@@ -6306,10 +6306,10 @@
    "nameEn": "Dig on This",
    "nameOfficialZh": true,
    "lines": [
-    "你的爵士樂英雄來自爵士樂羈絆的生命與傷害增幅提升150%。獲得1個路西恩及1個加里歐。"
+    "我方爵士樂英雄透過爵士樂特性獲得100%額外生命和傷害增幅。獲得1個路西恩及1個加里歐。"
    ],
    "linesEn": [
-    "Your Jazz champions gain 150% increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio."
+    "Your Jazz champions gain 100% increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio."
    ]
   },
   "DA_19_KDACirclet": {
@@ -6331,7 +6331,7 @@
     "獲得一枚K/DA徽章、1個鬼索的狂暴之刃及1個凱莎。"
    ],
    "linesEn": [
-    "Gain a K/DA Emblem, a Guinsoo's Rageblade, and a Kai'Sa."
+    "Gain a K/DA Emblem, a Needlessly Large Rod, and a Neeko."
    ]
   },
   "DA_19_KDAPrismaticTour": {
@@ -6382,28 +6382,30 @@
     "When you 2-star a K/DA champion, gain a free K/DA champion. Gain a Lillia and a Neeko."
    ]
   },
-  "DA_19_ManagerCirclet": {
-   "name": "經紀人之環",
-   "nameEn": "Manager Circlet",
+  "DA_Augment19_Manager_ManagementTrack": {
+   "name": "管理進度",
+   "nameEn": "Management Track",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚經紀人徽章、1個鎖子甲及1個雷歐娜。"
-   ],
-   "linesEn": [
-    "Gain a Manager Emblem, a Chain Vest, and a Leona."
-   ]
-  },
-  "DA_Augment19_Manager_ManagementTrack": {
-   "name": "經紀人路線",
-   "nameEn": "Management Track",
-   "nameOfficialZh": false,
-   "lines": [
-    "獲得40枚經紀人徽章及1個雷歐娜。當英雄從經紀人獲得加成時，有60%機率獲得1金錢。",
-    "從經紀人羈絆累積獲得30金錢後，獲得1個蒙多醫生及1個好戰者鎧甲。"
+    "獲得1枚經紀人徽章及1個雷歐娜。當英雄從經紀人獲得加成時，有40%機率獲得1金錢。",
+    "從經紀人羈絆累積獲得40金錢後，獲得1個蒙多醫生及1個好戰者鎧甲。"
    ],
    "linesEn": [
     "Gain a Manager Emblem and a Leona. When champions gain bonuses from Manager there is a 40% chance to gain 1 gold.",
-    "After collecting 30 gold from the Manager trait, gain a Dr. Mundo and a Warmog's Armor."
+    "After collecting 40 gold from the Manager trait, gain a Dr. Mundo and a Warmog's Armor."
+   ]
+  },
+  "DA_Augment19_Manager_ManagementTrackPlus": {
+   "name": "管理進度+",
+   "nameEn": "Management Track+",
+   "nameOfficialZh": true,
+   "lines": [
+    "獲得1枚經紀人徽章及1個雷歐娜。當英雄從經紀人獲得加成時，有40%機率獲得1金錢。",
+    "從經紀人特性取得40金錢後，獲得1個蒙多醫生和1件好戰者鎧甲。"
+   ],
+   "linesEn": [
+    "Gain a Manager Emblem and a Leona. When champions gain bonuses from Manager there is a 40% chance to gain 1 gold.",
+    "After collecting 40 gold from the Manager trait, gain a Dr. Mundo and a Warmog's Armor."
    ]
   },
   "DA_Augment19_Manager_StakeholderMeeting": {
@@ -6444,10 +6446,10 @@
    "nameEn": "Slayer Crown",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚殺戮者 徽章、1個泰坦的決意及1個布蕾爾。"
+    "獲得1枚殺戮者 徽章、1個泰坦的決意及1個卡蜜兒。"
    ],
    "linesEn": [
-    "Gain a Slayer Emblem, a Titan's Resolve, and a Briar."
+    "Gain a Slayer Emblem, a Titan's Resolve, and a Camille."
    ]
   },
   "DA_19_OceanSongCirclet": {
@@ -6502,7 +6504,7 @@
     "獲得1枚殺五社徽章、1個巨人殺手及1個維爾戈。"
    ],
    "linesEn": [
-    "Gain a Pentakill Emblem, a Giant Slayer, and a Viego."
+    "Gain a Pentakill Emblem, a Recurve Bow, and a Gnar."
    ]
   },
   "DA_Pentakill19_GatheringStorm": {
@@ -6510,10 +6512,10 @@
    "nameEn": "Gathering Storm",
    "nameOfficialZh": true,
    "lines": [
-    "每次殺五社特性處決敵軍，我方殺五社英雄永久增加10生命。獲得3名殺五社英雄。"
+    "每次殺五社特性處決敵軍，我方殺五社英雄永久增加8生命。獲得3名殺五社英雄。"
    ],
    "linesEn": [
-    "Your Pentakill champions gain 10 Health permanently every time the Pentakill trait executes an enemy. Gain 3 Pentakill champions."
+    "Your Pentakill champions gain 8 Health permanently every time the Pentakill trait executes an enemy. Gain 3 Pentakill champions."
    ]
   },
   "DA_19_PentakillPrismaticTour": {
@@ -6521,8 +6523,8 @@
    "nameEn": "Pentakill Prismatic Tour",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1個殺五社 稜鏡任務、3個殺五社 英雄、1個幸運道具寶箱及7金錢。",
-    "在7個殺五社啟動時，讓光明使者（非官方譯名）取得擊殺並達到等級10！"
+    "獲得殺五社稜鏡任務、3名殺五社英雄、1個幸運道具寶箱及7金錢。",
+    "啟動7殺五社特性時，讓光之使者取得多次擊殺並達到等級10！"
    ],
    "linesEn": [
     "Gain the Pentakill Prismatic Quest, 3 Pentakill champions, a Lucky Item Chest, and 7 gold.",
@@ -6535,7 +6537,7 @@
    "nameOfficialZh": true,
    "lines": [
     "獲得殺五社稜鏡任務、3名殺五社英雄、2個組件及10金錢。",
-    "達到等級10，並啟動7殺五社特性時，讓1名殺五社友軍取得連續擊殺！"
+    "啟動7殺五社特性時，讓光之使者取得多次擊殺並達到等級10！"
    ],
    "linesEn": [
     "Gain the Pentakill Prismatic Quest, 3 Pentakill champions, 2 components, and 10 gold.",
@@ -6558,7 +6560,7 @@
    "nameEn": "Renegade Crown",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚叛徒 徽章、1個正義手套及1個姬亞娜。"
+    "獲得1枚叛徒徽章、1副正義手套及1個姬亞娜。"
    ],
    "linesEn": [
     "Gain a Renegade Emblem, a Hand of Justice, and a Qiyana."
@@ -6569,7 +6571,7 @@
    "nameEn": "High Rolling",
    "nameOfficialZh": true,
    "lines": [
-    "叛徒擊殺時有機會掉落戰利品，機率隨暴擊率提高。戰利品的價值也能爆擊，從而獲得更多戰利品。獲得1個姬亞娜。"
+    "叛徒造成擊殺時有機率掉落戰利品，掉落率會隨暴擊率提升。戰利品的價值也能觸發暴擊，進而賦予更多戰利品。獲得1個姬亞娜。"
    ],
    "linesEn": [
     "Renegade kills have a chance to drop loot, scaling with Critical Strike Chance. The value of the loot given can also critically strike, granting even more loot. Gain a Qiyana."
@@ -6591,10 +6593,10 @@
    "nameEn": "Swiftstriker Crown",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚迅捷先鋒 徽章、1把海克斯科技槍刃及1個巴德。"
+    "獲得1枚迅捷先鋒徽章、1把海克斯科技槍刃及1個巴德。"
    ],
    "linesEn": [
-    "Gain a Swiftstriker Emblem, a Hextech Gunblade, and a Bard."
+    "Gain a Swiftstriker Emblem, a Rabadon's Deathcap, and a Bard."
    ]
   },
   "DA_Swiftstriker19_DeathByAThousandCuts": {
@@ -6613,7 +6615,7 @@
    "nameEn": "True Damage Circlet",
    "nameOfficialZh": true,
    "lines": [
-    "獲得1枚真實傷害 徽章、1個巨人腰帶及1個艾克。"
+    "獲得1枚True Damage徽章、1條巨人腰帶及1個艾克。"
    ],
    "linesEn": [
     "Gain a True Damage Emblem, a Giant's Belt, and an Ekko."
@@ -6686,7 +6688,7 @@
     "獲得1枚古典樂徽章、1副振奮盔甲及1個納瑟斯。"
    ],
    "linesEn": [
-    "Gain a Classical Emblem, a Spirit Visage, and a Nasus."
+    "Gain a Classical Emblem, a Gargoyle Stoneplate, and a Nasus."
    ]
   }
  }
