@@ -123,6 +123,7 @@ describe("公開專案事實", () => {
     const project = getProjectBySlug("itabag-planner");
 
     expect(project?.links).toEqual({ demo: "https://itabag.lambliver.dev/" });
+    expect(project?.caseStudy.work).toContain("徽章清單能帶到擺飾規劃");
     expect(project?.tags).toContain("Cloudflare Workers");
     expect(project?.tags).toContain("IndexedDB");
     expect(
@@ -145,6 +146,7 @@ describe("公開專案事實", () => {
     const project = getProjectBySlug("oshi-shelf");
 
     expect(project?.links).toEqual({ demo: "https://oshi.lambliver.dev/" });
+    expect(project?.caseStudy.work).toContain("痛包的徽章清單可以帶過來");
     expect(project?.tags).toContain("Cloudflare Workers");
     expect(project?.tags).toContain("localStorage");
     expect(
