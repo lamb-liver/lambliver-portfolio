@@ -4,10 +4,24 @@ import { DemoLink } from "./DemoLink";
 type ProjectLinksProps = {
   github?: string;
   demo?: string;
+  example?: string;
   className?: string;
 };
 
-export function ProjectLinks({ github, demo, className }: ProjectLinksProps) {
+export function ExampleLink({ href }: { href: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="demo-link text-sm"
+    >
+      完成範例
+    </a>
+  );
+}
+
+export function ProjectLinks({ github, demo, example, className }: ProjectLinksProps) {
   return (
     <div className={cn("flex flex-wrap items-center gap-4", className)}>
       {github ? (
@@ -21,6 +35,7 @@ export function ProjectLinks({ github, demo, className }: ProjectLinksProps) {
         </a>
       ) : null}
       {demo ? <DemoLink href={demo} className="demo-link text-sm" /> : null}
+      {example ? <ExampleLink href={example} /> : null}
     </div>
   );
 }
