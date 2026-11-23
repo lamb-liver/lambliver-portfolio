@@ -1,4 +1,5 @@
 import { DemoLink } from "@/components/DemoLink";
+import { ExampleLink } from "@/components/ProjectLinks";
 import { Hero } from "@/components/Hero";
 import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -97,9 +98,13 @@ export default function HomePage() {
                     }
                   />
                 </Link>
-                {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
-                  <div className="border-t border-border px-5 py-3 sm:px-6">
-                    <DemoLink href={project.links.demo} className="demo-link text-sm" />
+                {(project.links?.demo && !isApkDemoUrl(project.links.demo)) ||
+                project.links?.example ? (
+                  <div className="flex flex-wrap gap-4 border-t border-border px-5 py-3 sm:px-6">
+                    {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
+                      <DemoLink href={project.links.demo} className="demo-link text-sm" />
+                    ) : null}
+                    {project.links?.example ? <ExampleLink href={project.links.example} /> : null}
                   </div>
                 ) : null}
               </div>

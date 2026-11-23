@@ -33,6 +33,7 @@ export interface Project {
   links?: {
     github?: string;
     demo?: string;
+    example?: string;
   };
   platform?: string;
   caseStudy: ProjectCaseStudy;
@@ -133,6 +134,7 @@ export const projects: Project[] = [
     ],
     links: {
       demo: "https://artdemo.lambliver.dev/",
+      example: "https://hoshihan.vercel.app/",
     },
   },
   {

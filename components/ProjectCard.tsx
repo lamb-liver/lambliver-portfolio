@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Project } from "@/lib/projects";
 import { isApkDemoUrl } from "@/lib/utils";
 import { DemoLink } from "./DemoLink";
+import { ExampleLink } from "./ProjectLinks";
 import { ProjectImagePlaceholder } from "./ProjectImagePlaceholder";
 
 export function ProjectCard({
@@ -13,6 +14,7 @@ export function ProjectCard({
   const screenshot = project.screenshots?.[0];
   const demo = project.links?.demo;
   const liveHref = demo && !isApkDemoUrl(demo) ? demo : undefined;
+  const exampleHref = project.links?.example;
 
   return (
     <article className="group project-card project-card-open h-full">
@@ -43,9 +45,10 @@ export function ProjectCard({
           <p className="type-body mt-2 line-clamp-2">{project.description}</p>
         </div>
       </Link>
-      {liveHref ? (
-        <div className="border-t border-border px-4 py-3 sm:px-5">
-          <DemoLink href={liveHref} className="demo-link text-sm" />
+      {liveHref || exampleHref ? (
+        <div className="flex flex-wrap gap-4 border-t border-border px-4 py-3 sm:px-5">
+          {liveHref ? <DemoLink href={liveHref} className="demo-link text-sm" /> : null}
+          {exampleHref ? <ExampleLink href={exampleHref} /> : null}
         </div>
       ) : null}
     </article>

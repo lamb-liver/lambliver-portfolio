@@ -136,6 +136,7 @@ describe("公開專案事實", () => {
     expect(project?.description).toContain("模板");
     expect(project?.caseStudy.outcome).toContain("公開示範");
     expect(project?.links?.demo).toBe("https://artdemo.lambliver.dev/");
+    expect(project?.links?.example).toBe("https://hoshihan.vercel.app/");
   });
 
   it("擺飾規劃只提供正式站，不公開 GitHub 連結", () => {

@@ -176,6 +176,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 className="mt-8"
                 github={project.links?.github}
                 demo={project.links?.demo}
+                example={project.links?.example}
               />
             </aside>
           </div>
