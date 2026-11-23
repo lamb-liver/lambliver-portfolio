@@ -134,7 +134,9 @@ describe("公開專案事實", () => {
     const project = getProjectBySlug("illustrator-portfolio");
 
     expect(project?.description).toContain("模板");
-    expect(project?.caseStudy.outcome).toContain("公開示範");
+    expect(project?.caseStudy.outcome).toBe(
+      "模板可以自己填作品、介紹和委託，介面可切中英日。",
+    );
     expect(project?.links?.demo).toBe("https://artdemo.lambliver.dev/");
     expect(project?.links?.example).toBe("https://hoshihan.vercel.app/");
   });

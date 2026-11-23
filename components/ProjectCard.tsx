@@ -17,7 +17,7 @@ export function ProjectCard({
   const exampleHref = project.links?.example;
 
   return (
-    <article className="group project-card project-card-open h-full">
+    <article className="group project-card project-card-open flex h-full flex-col">
       <Link
         href={`/projects/${project.slug}`}
         className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
@@ -46,7 +46,7 @@ export function ProjectCard({
         </div>
       </Link>
       {liveHref || exampleHref ? (
-        <div className="flex flex-wrap gap-4 border-t border-border px-4 py-3 sm:px-5">
+        <div className="mt-auto flex flex-wrap items-center gap-4 border-t border-border px-4 py-3 sm:px-5">
           {liveHref ? <DemoLink href={liveHref} className="demo-link text-sm" /> : null}
           {exampleHref ? <ExampleLink href={exampleHref} /> : null}
         </div>

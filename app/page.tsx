@@ -1,5 +1,4 @@
 import { DemoLink } from "@/components/DemoLink";
-import { ExampleLink } from "@/components/ProjectLinks";
 import { Hero } from "@/components/Hero";
 import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -82,7 +81,7 @@ export default function HomePage() {
                 screenshot.orientation === "desktop" ? "md:col-span-2" : undefined
               }
             >
-              <div className="project-card project-card-open group h-full">
+              <div className="project-card project-card-open group flex h-full flex-col">
                 <Link
                   href={`/projects/${project.slug}`}
                   className="block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
@@ -100,14 +99,21 @@ export default function HomePage() {
                 </Link>
                 {(project.links?.demo && !isApkDemoUrl(project.links.demo)) ||
                 project.links?.example ? (
-                  <div className="flex flex-wrap items-center gap-4 border-t border-border px-5 py-3 sm:px-6">
+                  <div className="mt-auto flex flex-wrap items-center gap-3 border-t border-border px-5 py-3 sm:px-6">
                     {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
                       <DemoLink
                         href={project.links.demo}
+                        label={project.links.example ? "看模板" : undefined}
                         className="btn-secondary gap-1.5 text-sm"
                       />
                     ) : null}
-                    {project.links?.example ? <ExampleLink href={project.links.example} /> : null}
+                    {project.links?.example ? (
+                      <DemoLink
+                        href={project.links.example}
+                        label="看完成範例"
+                        className="btn-secondary gap-1.5 text-sm"
+                      />
+                    ) : null}
                   </div>
                 ) : null}
               </div>
