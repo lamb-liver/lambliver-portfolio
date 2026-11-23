@@ -7,15 +7,17 @@ import {
 type DemoLinkProps = {
   href: string;
   className?: string;
+  label?: string;
 };
 
-export function DemoLink({ href, className }: DemoLinkProps) {
+export function DemoLink({ href, className, label }: DemoLinkProps) {
   const isApk = isApkDemoUrl(href);
+  const text = label ?? getDemoLinkLabel(href);
 
   if (isApk) {
     return (
       <a href={href} download={getApkDownloadName(href)} className={className}>
-        {getDemoLinkLabel(href)}
+        {text}
       </a>
     );
   }
@@ -27,7 +29,7 @@ export function DemoLink({ href, className }: DemoLinkProps) {
       rel="noopener noreferrer"
       className={className}
     >
-      {getDemoLinkLabel(href)}
+      {text}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 12 12"
