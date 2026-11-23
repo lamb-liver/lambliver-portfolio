@@ -103,7 +103,7 @@ export const projects: Project[] = [
     monogram: "繪",
     name: "繪師個人作品集網站",
     description:
-      "繪師作品集網站：Notion 自行更新作品與委託，介面可切中英日。",
+      "繪師作品集模板的公開示範。內容可自行更新，介面可切中英日。",
     platform: "網站",
     tags: ["Next.js", "Headless CMS", "Vercel", "SSG/SSR"],
     caseStudy: {
@@ -115,7 +115,7 @@ export const projects: Project[] = [
         "語系切換後，標題、導覽與正文跟著走；沒寫的語系不假裝已翻譯",
         "圖片顯示穩定，降低外部連結失效造成的破圖",
       ],
-      outcome: "作品、介紹與委託資訊可自行更新；介面可切中英日，不必改程式。",
+      outcome: "公開示範已上線。作品、介紹與委託可自行更新，介面可切中英日。",
     },
     screenshots: [
       {

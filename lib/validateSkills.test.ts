@@ -130,6 +130,14 @@ describe("公開專案事實", () => {
     ).not.toContain("GitHub");
   });
 
+  it("繪師模板的公開示範掛在主站", () => {
+    const project = getProjectBySlug("illustrator-portfolio");
+
+    expect(project?.description).toContain("模板");
+    expect(project?.caseStudy.outcome).toContain("公開示範");
+    expect(project?.links?.demo).toBe("https://artdemo.lambliver.dev/");
+  });
+
   it("擺飾規劃只提供正式站，不公開 GitHub 連結", () => {
     const project = getProjectBySlug("oshi-shelf");
 

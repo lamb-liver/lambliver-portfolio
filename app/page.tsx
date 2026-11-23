@@ -1,8 +1,10 @@
+import { DemoLink } from "@/components/DemoLink";
 import { Hero } from "@/components/Hero";
 import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectScreenshotFigure } from "@/components/ProjectScreenshotFigure";
 import { SkillChip } from "@/components/SkillChip";
+import { isApkDemoUrl } from "@/lib/utils";
 import Link from "next/link";
 import { featuredProjectScreenshots, projects } from "@/lib/projects";
 import { getCoreSkillGroups, site } from "@/lib/site";
@@ -79,21 +81,28 @@ export default function HomePage() {
                 screenshot.orientation === "desktop" ? "md:col-span-2" : undefined
               }
             >
-              <Link
-                href={`/projects/${project.slug}`}
-                className="group block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
-              >
-                <ProjectScreenshotFigure
-                  project={project}
-                  screenshot={screenshot}
-                  variant="featured"
-                  sizes={
-                    screenshot.orientation === "desktop"
-                      ? "(max-width: 768px) 100vw, 1088px"
-                      : "(max-width: 768px) 100vw, 536px"
-                  }
-                />
-              </Link>
+              <div className="project-card group h-full">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+                >
+                  <ProjectScreenshotFigure
+                    project={project}
+                    screenshot={screenshot}
+                    variant="featured"
+                    sizes={
+                      screenshot.orientation === "desktop"
+                        ? "(max-width: 768px) 100vw, 1088px"
+                        : "(max-width: 768px) 100vw, 536px"
+                    }
+                  />
+                </Link>
+                {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
+                  <div className="border-t border-border px-5 py-3 sm:px-6">
+                    <DemoLink href={project.links.demo} className="demo-link text-sm" />
+                  </div>
+                ) : null}
+              </div>
             </li>
           ))}
         </ul>
