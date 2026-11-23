@@ -100,9 +100,12 @@ export default function HomePage() {
                 </Link>
                 {(project.links?.demo && !isApkDemoUrl(project.links.demo)) ||
                 project.links?.example ? (
-                  <div className="flex flex-wrap gap-4 border-t border-border px-5 py-3 sm:px-6">
+                  <div className="flex flex-wrap items-center gap-4 border-t border-border px-5 py-3 sm:px-6">
                     {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
-                      <DemoLink href={project.links.demo} className="demo-link text-sm" />
+                      <DemoLink
+                        href={project.links.demo}
+                        className="btn-secondary gap-1.5 text-sm"
+                      />
                     ) : null}
                     {project.links?.example ? <ExampleLink href={project.links.example} /> : null}
                   </div>
