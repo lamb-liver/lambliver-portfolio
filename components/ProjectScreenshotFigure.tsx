@@ -39,7 +39,6 @@ export function ProjectScreenshotFigure({
     <figure
       className={cn(
         "overflow-hidden bg-surface",
-        isFeatured && "project-card",
         !isFeatured && "border border-border",
         !isFeatured && isMobile && "mx-auto max-w-sm",
       )}

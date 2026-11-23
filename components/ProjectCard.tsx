@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
+import { isApkDemoUrl } from "@/lib/utils";
+import { DemoLink } from "./DemoLink";
 import { ProjectImagePlaceholder } from "./ProjectImagePlaceholder";
 
 export function ProjectCard({
@@ -9,9 +11,11 @@ export function ProjectCard({
   project: Project;
 }) {
   const screenshot = project.screenshots?.[0];
+  const demo = project.links?.demo;
+  const liveHref = demo && !isApkDemoUrl(demo) ? demo : undefined;
 
   return (
-    <article className="group project-card h-full">
+    <article className="group project-card project-card-open h-full">
       <Link
         href={`/projects/${project.slug}`}
         className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
@@ -39,6 +43,11 @@ export function ProjectCard({
           <p className="type-body mt-2 line-clamp-2">{project.description}</p>
         </div>
       </Link>
+      {liveHref ? (
+        <div className="border-t border-border px-4 py-3 sm:px-5">
+          <DemoLink href={liveHref} className="demo-link text-sm" />
+        </div>
+      ) : null}
     </article>
   );
 }
