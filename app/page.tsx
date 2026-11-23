@@ -103,15 +103,15 @@ export default function HomePage() {
                     {project.links?.demo && !isApkDemoUrl(project.links.demo) ? (
                       <DemoLink
                         href={project.links.demo}
-                        label={project.links.example ? "看模板" : undefined}
+                        label={project.links.example ? "開啟模板示範" : undefined}
                         className="btn-secondary gap-1.5 text-sm"
                       />
                     ) : null}
                     {project.links?.example ? (
                       <DemoLink
                         href={project.links.example}
-                        label="看完成範例"
-                        className="btn-secondary gap-1.5 text-sm"
+                        label="看完成案例"
+                        className="demo-link text-sm"
                       />
                     ) : null}
                   </div>

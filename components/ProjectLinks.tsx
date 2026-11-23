@@ -17,7 +17,7 @@ export function ExampleLink({ href }: { href: string }) {
       rel="noopener noreferrer"
       className="demo-link text-sm"
     >
-      看完成範例
+      看完成案例
     </a>
   );
 }
