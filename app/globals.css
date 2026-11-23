@@ -223,6 +223,11 @@ html:not(.light) .skill-chip:hover {
   @apply overflow-hidden rounded-none border border-border bg-surface transition-[background-color,border-color];
 }
 
+/* outline-offset 畫在元素外，不能被這張卡片裁掉 */
+.project-card.project-card-open {
+  overflow: visible;
+}
+
 html:not(.light) .project-card:hover {
   border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
   background-color: var(--color-surface-raised);

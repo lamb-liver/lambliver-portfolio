@@ -15,7 +15,7 @@ export function ProjectCard({
   const liveHref = demo && !isApkDemoUrl(demo) ? demo : undefined;
 
   return (
-    <article className="group project-card h-full">
+    <article className="group project-card project-card-open h-full">
       <Link
         href={`/projects/${project.slug}`}
         className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"

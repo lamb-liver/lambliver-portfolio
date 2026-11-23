@@ -81,7 +81,7 @@ export default function HomePage() {
                 screenshot.orientation === "desktop" ? "md:col-span-2" : undefined
               }
             >
-              <div className="project-card group h-full">
+              <div className="project-card project-card-open group h-full">
                 <Link
                   href={`/projects/${project.slug}`}
                   className="block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
